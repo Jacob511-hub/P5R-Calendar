@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const Dates = () => {
+const Dates = ( {dateKeys} ) => {
     const rows = 5;
     const cols = 7;
   
@@ -28,6 +28,10 @@ const Dates = () => {
         const shadowSkewX = shadowSkewPattern[row][col];
         const shadowSkewY = shadowSkewPattern[row][col];
 
+        const dateType = dateKeys[row][col];
+        const classTile = `grid-tile ${dateType}-tile`;
+        const classShadow = `grid-shadow ${dateType}-shadow`;
+
         const [clicked, setClicked] = useState(false);
 
         const handleClick = () => {
@@ -40,13 +44,13 @@ const Dates = () => {
 
         const shadowStyle = {
             transform: `skew(${shadowSkewX}deg, ${shadowSkewY}deg)`,
-            backgroundColor: clicked ? "#1bfffe" : "#000000",
+            // backgroundColor: clicked ? "#1bfffe" : "#000000",
         }
   
         gridItems.push(
           <div key={`${row}-${col}`} className="grid-item" onClick={handleClick}>
-            <div className="grid-tile" style={tileStyle}></div>
-            <div className="grid-shadow" style={shadowStyle}></div>
+            <div className={classTile} style={tileStyle}></div>
+            <div className={classShadow} style={shadowStyle}></div>
           </div>
         );
       }
