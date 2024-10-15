@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useEffect } from 'react';
 import Dates from './dates.jsx';
 
 const Months = () => {
@@ -130,13 +131,28 @@ const Months = () => {
         }
     };
 
+    useEffect(() => {
+        const handleKeyDown = (event) => {
+            if (event.key === 'ArrowLeft' && currentIndex > 0) {
+                goToPreviousImage();
+            } else if (event.key === 'ArrowRight' && currentIndex < images.length - 1) {
+                goToNextImage();
+            }
+        };
+
+        window.addEventListener('keydown', handleKeyDown);
+
+        return () => {
+            window.removeEventListener('keydown', handleKeyDown);
+        };
+    }, [currentIndex, goToPreviousImage, goToNextImage, images.length]);
+
     return (
         <div className="calendar">
             <div id="calendar-header">
                 <span
-                    className="icon-prev"
+                    className={`icon-prev ${currentIndex === 0 ? 'disabled' : ''}`}
                     onClick={goToPreviousImage}
-                    disabled={currentIndex === 0}
                     >&#x276E;
                 </span>
                 <img
@@ -145,9 +161,8 @@ const Months = () => {
                     alt={`${currentIndex + 1}`} >
                 </img>
                 <span
-                    className="icon-next"
+                    className={`icon-next ${currentIndex === images.length - 1 ? 'disabled' : ''}`}
                     onClick={goToNextImage}
-                    disabled={currentIndex === images.length - 1}
                     >&#x276F;
                 </span>
             </div>

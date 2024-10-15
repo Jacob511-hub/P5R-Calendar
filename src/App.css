@@ -27,9 +27,13 @@ body {
   height: 500px;
   transform: rotate(-10deg);
   transform-origin: center;
-  background-color: rgb(229, 25, 28);
   border: 8px solid #000;
   padding: 25px;
+  background-image: url("src/assets/calendar-bg.png");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .grid-container {
@@ -66,8 +70,12 @@ body {
   z-index: 1;
 }
 
+.free-tile {
+  background-color: rgb(255, 255, 255);
+}
+
 .none-tile {
-  background-color: rgb(16, 16, 16);
+  background-color: rgba(16, 16, 16, 0.103);
 }
 
 .skip-tile {
@@ -75,7 +83,23 @@ body {
 }
 
 .storyAll-tile {
-  background-color: rgb(121, 0, 0);
+  background-color: rgb(87, 0, 0);
+}
+
+.eveningOnly-tile {
+  background-color: rgb(255, 145, 0);
+}
+
+.afterSchoolOnly-tile {
+  background-color: rgb(25, 0, 255);
+}
+
+.deadline-tile {
+  background-color: rgb(255, 0, 0);
+}
+
+.finale-tile {
+  background-color: rgb(255, 255, 0);
 }
 
 .grid-shadow {
@@ -85,16 +109,45 @@ body {
   left: 7px;
   width: 105%;
   height: 105%;
-  background-color: rgba(0, 0, 0, 1);
+  background-color: rgb(76, 76, 76);
   transform: translate(8px, 8px) skew(10deg);
   z-index: -2;
+}
+
+.free-shadow {
+  background-color: rgb(76, 76, 76);
+}
+
+.none-shadow {
+  background-color: rgba(0, 0, 0, 0.156);
+}
+
+.skip-shadow {
+  background-color: rgb(0, 0, 0);
 }
 
 .storyAll-shadow {
   background-color: rgb(61, 0, 0);
 }
 
-.icon-prev {
+.eveningOnly-shadow {
+  background-color: rgb(120, 78, 0);
+}
+
+.afterSchoolOnly-shadow {
+  background-color: rgb(0, 4, 121);
+}
+
+.deadline-shadow {
+  background-color: rgb(76, 0, 0);
+}
+
+.finale-shadow {
+  background-color: rgb(148, 148, 35);
+}
+
+.icon-prev,
+.icon-next {
   color: #ffffff;
   font-size: 50px;
   font-weight: bold;
@@ -102,10 +155,7 @@ body {
   user-select: none; 
 }
 
-.icon-next {
-  color: #ffffff;
-  font-size: 50px;
-  font-weight: bold;
-  cursor: pointer;
-  user-select: none; 
+.disabled {
+  opacity: 0.3;
+  pointer-events: none;
 }
