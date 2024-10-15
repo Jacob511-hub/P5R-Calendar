@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 const Dates = ( {dateKeys} ) => {
-    const rows = 5;
+    const rows = 6;
     const cols = 7;
   
     const tileSkewPattern = [
@@ -10,6 +10,7 @@ const Dates = ( {dateKeys} ) => {
       [0, 9, 3, 8, 1, 10, 2],
       [8, 4, 7, 3, 7, 2, 9],
       [0, 9, 3, 8, 1, 10, 2],
+      [8, 4, 7, 3, 7, 2, 9],
     ];
   
     const shadowSkewPattern = [
@@ -18,6 +19,7 @@ const Dates = ( {dateKeys} ) => {
       [8, 4, 7, 3, 7, 2, 9],
       [0, 9, 3, 8, 1, 10, 2],
       [8, 4, 7, 3, 7, 2, 9],
+      [0, 9, 3, 8, 1, 10, 2],
     ];
   
     const gridItems = [];

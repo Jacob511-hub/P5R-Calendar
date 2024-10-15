@@ -24,7 +24,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 450px;
+  height: 500px;
   transform: rotate(-10deg);
   transform-origin: center;
   background-color: rgb(229, 25, 28);
@@ -99,6 +99,7 @@ body {
   font-size: 50px;
   font-weight: bold;
   cursor: pointer;
+  user-select: none; 
 }
 
 .icon-next {
@@ -106,4 +107,5 @@ body {
   font-size: 50px;
   font-weight: bold;
   cursor: pointer;
+  user-select: none; 
 }
