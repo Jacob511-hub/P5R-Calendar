@@ -146,6 +146,16 @@ body {
   background-color: rgb(148, 148, 35);
 }
 
+.date-number {
+  position: absolute;
+  margin: 0;
+  z-index: 3;
+  left: 3px;
+  font-size: 2em;
+  color: #000000;
+  text-shadow: -1px 0 #ffffff, 0 1px #ffffff, 1px 0 #ffffff, 0 -1px #ffffff;
+}
+
 .icon-prev,
 .icon-next {
   color: #ffffff;

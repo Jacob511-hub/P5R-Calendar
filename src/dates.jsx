@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const Dates = ( {dateKeys} ) => {
+const Dates = ( {monthIndex, dateNumbers, dateKeys} ) => {
     const rows = 6;
     const cols = 7;
   
@@ -31,6 +31,7 @@ const Dates = ( {dateKeys} ) => {
         const shadowSkewY = shadowSkewPattern[row][col];
 
         const dateType = dateKeys[row][col];
+        const dateNumber = dateNumbers[row][col];
         const classTile = `grid-tile ${dateType}-tile`;
         const classShadow = `grid-shadow ${dateType}-shadow`;
 
@@ -38,6 +39,7 @@ const Dates = ( {dateKeys} ) => {
 
         const handleClick = () => {
             setClicked((prevClicked) => !prevClicked);
+            console.log(monthIndex + "/" + dateNumber)
         };
 
         const tileStyle = {
@@ -51,6 +53,7 @@ const Dates = ( {dateKeys} ) => {
   
         gridItems.push(
           <div key={`${row}-${col}`} className="grid-item" onClick={handleClick}>
+            <h1 className="date-number">{dateNumber}</h1>
             <div className={classTile} style={tileStyle}></div>
             <div className={classShadow} style={shadowStyle}></div>
           </div>
