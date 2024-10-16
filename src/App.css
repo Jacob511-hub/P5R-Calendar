@@ -8,10 +8,16 @@ body {
 }
 
 #root {
-  max-width: 1280px;
+  max-width: 90vw;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+}
+
+#P5R-calendar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 #calendar-header{
@@ -34,6 +40,32 @@ body {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.activities-display {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 550px;
+  width: 300px;
+  transform: rotate(-5deg);
+  transform-origin: center;
+  background-color: #a80000;
+  border: 8px solid #000000;
+  padding: 25px;
+}
+
+.info-display {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 550px;
+  width: 300px;
+  transform: rotate(5deg);
+  transform-origin: center;
+  background-color: #a80000;
+  border: 8px solid #000000;
+  padding: 25px;
 }
 
 .grid-container {
@@ -68,6 +100,7 @@ body {
   height: 100%;
   background-color: rgb(255, 255, 255);
   z-index: 1;
+  cursor: pointer;
 }
 
 .free-tile {
@@ -76,6 +109,7 @@ body {
 
 .none-tile {
   background-color: rgba(16, 16, 16, 0.103);
+  cursor: context-menu;
 }
 
 .skip-tile {
@@ -153,6 +187,8 @@ body {
   left: 3px;
   font-size: 2em;
   color: #000000;
+  cursor: pointer;
+  user-select: none; 
   text-shadow: -1px 0 #ffffff, 0 1px #ffffff, 1px 0 #ffffff, 0 -1px #ffffff;
 }
 
@@ -168,4 +204,14 @@ body {
 .disabled {
   opacity: 0.3;
   pointer-events: none;
+}
+
+.dagger {
+  position: absolute;
+  top: -100px;
+  left: 57%;
+  transform: translateX(-50%);
+  z-index: 4;
+  width: 150px;
+  height: auto;
 }

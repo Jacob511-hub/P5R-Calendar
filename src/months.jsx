@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useEffect } from 'react';
 import Dates from './dates.jsx';
 
-const Months = () => {
+const Months = ({ onClick }) => {
     const images = [
         "src/assets/April.png",
         "src/assets/May.png",
@@ -250,6 +250,10 @@ const Months = () => {
 
     return (
         <div className="calendar">
+            <img
+                className="dagger"
+                src="src/assets/dagger.png">
+            </img>
             <div id="calendar-header">
                 <span
                     className={`icon-prev ${currentIndex === 0 ? 'disabled' : ''}`}
@@ -268,7 +272,7 @@ const Months = () => {
                 </span>
             </div>
             <div className="grid-container">
-                <Dates monthIndex={monthIndex} dateNumbers={dateNumbers[currentIndex]} dateKeys={dateKeys[currentIndex]} />
+                <Dates monthIndex={monthIndex} dateNumbers={dateNumbers[currentIndex]} dateKeys={dateKeys[currentIndex]} onClick={onClick}/>
             </div>
         </div>
     );

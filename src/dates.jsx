@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const Dates = ( {monthIndex, dateNumbers, dateKeys} ) => {
+const Dates = ( {monthIndex, dateNumbers, dateKeys, onClick} ) => {
     const rows = 6;
     const cols = 7;
   
@@ -39,7 +39,7 @@ const Dates = ( {monthIndex, dateNumbers, dateKeys} ) => {
 
         const handleClick = () => {
             setClicked((prevClicked) => !prevClicked);
-            console.log(monthIndex + "/" + dateNumber)
+            onClick(monthIndex + "/" + dateNumber);
         };
 
         const tileStyle = {
