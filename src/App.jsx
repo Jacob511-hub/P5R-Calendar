@@ -4,13 +4,10 @@ import Months from './months.jsx';
 import Dates from './dates.jsx';
 import Info from './info.jsx'
 import Activities from './activities.jsx'
+import {updateDateDisplay} from './updateDate.js'
 
 function App() {
-  const [dateDisplay, setDateDisplay] = useState("");
-
-  const updateDate = (newDate) => {
-      setDateDisplay(newDate);
-  };
+  const {dateDisplay, updateDate} = updateDateDisplay();
 
   return (
     <div id="P5R-calendar">
