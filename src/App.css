@@ -45,7 +45,7 @@ body {
 .activities-display {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   height: 550px;
   width: 300px;
   transform: rotate(-5deg);
@@ -216,4 +216,10 @@ body {
   z-index: 4;
   width: 150px;
   height: auto;
+}
+
+.tarot {
+  width: 75px;
+  height: auto;
+  padding: 5px;
 }

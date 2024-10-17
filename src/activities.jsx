@@ -4,7 +4,14 @@ import { useEffect } from 'react';
 const Activities = () => {
     return (
         <div className="activities-display">
-            <h1 id="activities-display">Activities goes here</h1>
+            <img
+                className="tarot"
+                src="src/assets/Fool.png">
+            </img>
+            <img
+                className="tarot"
+                src="src/assets/Magician.png">
+            </img>
         </div>
     )
 }
