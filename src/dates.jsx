@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { rows, cols, tileSkewPattern, shadowSkewPattern } from './monthData.js'
+import { dateClick } from './handleClick.js';
 
 const Dates = ( {monthIndex, dateNumbers, dateKeys, onClick} ) => {
     const gridItems = [];
@@ -15,12 +16,7 @@ const Dates = ( {monthIndex, dateNumbers, dateKeys, onClick} ) => {
         const classTile = `grid-tile ${dateType}-tile`;
         const classShadow = `grid-shadow ${dateType}-shadow`;
 
-        const [clicked, setClicked] = useState(false);
-
-        const handleClick = () => {
-            setClicked((prevClicked) => !prevClicked);
-            onClick(monthIndex + "/" + dateNumber);
-        };
+        const {clicked, handleClick} = dateClick(monthIndex, dateNumber, onClick);
 
         const tileStyle = {
             transform: `skew(${tileSkewX}deg, ${tileSkewY}deg)`,
