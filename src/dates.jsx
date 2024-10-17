@@ -1,27 +1,7 @@
 import React, { useState } from 'react';
+import { rows, cols, tileSkewPattern, shadowSkewPattern } from './monthData.js'
 
 const Dates = ( {monthIndex, dateNumbers, dateKeys, onClick} ) => {
-    const rows = 6;
-    const cols = 7;
-  
-    const tileSkewPattern = [
-      [0, 9, 3, 8, 1, 10, 2],
-      [8, 4, 7, 3, 7, 2, 9],
-      [0, 9, 3, 8, 1, 10, 2],
-      [8, 4, 7, 3, 7, 2, 9],
-      [0, 9, 3, 8, 1, 10, 2],
-      [8, 4, 7, 3, 7, 2, 9],
-    ];
-  
-    const shadowSkewPattern = [
-      [8, 4, 7, 3, 7, 2, 9],
-      [0, 9, 3, 8, 1, 10, 2],
-      [8, 4, 7, 3, 7, 2, 9],
-      [0, 9, 3, 8, 1, 10, 2],
-      [8, 4, 7, 3, 7, 2, 9],
-      [0, 9, 3, 8, 1, 10, 2],
-    ];
-  
     const gridItems = [];
     for (let row = 0; row < rows; row++) {
       for (let col = 0; col < cols; col++) {
