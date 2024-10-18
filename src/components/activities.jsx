@@ -4,8 +4,13 @@ import { tarot, tarotNames } from '../hooks/confidantassets';
 
 const Activities = () => {
     return (
-        <div className="activities-display">
-            <div>
+        <div className="activities-container">
+            <img
+                className="dagger"
+                src="src/assets/dagger.png">
+            </img>
+            <div className="activities-display">
+                <img src="src/assets/confidants.png"></img>
                 {Array.from({ length: tarot.length }).map((_, index) => (
                     <ConfidantContainer 
                         key={index}
