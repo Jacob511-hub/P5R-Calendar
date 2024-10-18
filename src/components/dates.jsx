@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { rows, cols, tileSkewPattern, shadowSkewPattern } from './monthData.js'
-import { dateClick } from './handleClick.js';
+import { rows, cols, tileSkewPattern, shadowSkewPattern } from '../hooks/monthData.js'
+import { dateClick } from '../hooks/handleClick.js';
 
 const Dates = ( {monthIndex, dateNumbers, dateKeys, onClick} ) => {
     const gridItems = [];

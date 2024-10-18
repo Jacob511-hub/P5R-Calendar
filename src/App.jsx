@@ -1,10 +1,10 @@
 import './App.css'
 import React, { useState } from 'react';
-import Months from './months.jsx';
-import Dates from './dates.jsx';
-import Info from './info.jsx'
-import Activities from './activities.jsx'
-import {updateDateDisplay} from './updateDate.js'
+import Months from './components/months.jsx';
+import Dates from './components/dates.jsx';
+import Info from './components/info.jsx'
+import Activities from './components/activities.jsx'
+import {updateDateDisplay} from './hooks/updateDate.js'
 
 function App() {
   const {dateDisplay, updateDate} = updateDateDisplay();

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useEffect } from 'react';
 import Dates from './dates.jsx';
-import { monthHeader, dateKeys, dateNumbers } from './monthData.js'
+import { monthHeader, dateKeys, dateNumbers } from '../hooks/monthData.js'
 
 const Months = ({ onClick }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
