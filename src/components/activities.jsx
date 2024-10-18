@@ -1,17 +1,19 @@
 import React, { useState } from 'react';
-import { useEffect } from 'react';
+import ConfidantContainer from './confidantContainer';
+import { tarot, tarotNames } from '../hooks/confidantassets';
 
 const Activities = () => {
     return (
         <div className="activities-display">
-            <img
-                className="tarot"
-                src="src/assets/Fool.png">
-            </img>
-            <img
-                className="tarot"
-                src="src/assets/Magician.png">
-            </img>
+            <div>
+                {Array.from({ length: tarot.length }).map((_, index) => (
+                    <ConfidantContainer 
+                        key={index}
+                        tarot={tarot[index]}
+                        name={tarotNames[index]}
+                    />
+                ))}
+            </div>
         </div>
     )
 }

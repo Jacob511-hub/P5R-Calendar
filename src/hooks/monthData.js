@@ -20,18 +20,18 @@ export const shadowSkewPattern = [
 ];
 
 export const monthHeader = [
-    "src/assets/April.png",
-    "src/assets/May.png",
-    "src/assets/June.png",
-    "src/assets/July.png",
-    "src/assets/August.png",
-    "src/assets/September.png",
-    "src/assets/October.png",
-    "src/assets/November.png",
-    "src/assets/December.png",
-    "src/assets/January.png",
-    "src/assets/February.png",
-    "src/assets/March.png",
+    "src/assets/months/April.png",
+    "src/assets/months/May.png",
+    "src/assets/months/June.png",
+    "src/assets/months/July.png",
+    "src/assets/months/August.png",
+    "src/assets/months/September.png",
+    "src/assets/months/October.png",
+    "src/assets/months/November.png",
+    "src/assets/months/December.png",
+    "src/assets/months/January.png",
+    "src/assets/months/February.png",
+    "src/assets/months/March.png",
 ];
 
 export const dateKeys = [
