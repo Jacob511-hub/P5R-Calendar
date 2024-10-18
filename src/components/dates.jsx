@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { rows, cols, tileSkewPattern, shadowSkewPattern } from '../hooks/monthData.js'
 import { dateClick } from '../hooks/handleClick.js';
+import GridItem from './gridItem';
 
 const Dates = ( {monthIndex, dateNumbers, dateKeys, onClick} ) => {
     const gridItems = [];
@@ -13,27 +14,24 @@ const Dates = ( {monthIndex, dateNumbers, dateKeys, onClick} ) => {
 
         const dateType = dateKeys[row][col];
         const dateNumber = dateNumbers[row][col];
-        const classTile = `grid-tile ${dateType}-tile`;
-        const classShadow = `grid-shadow ${dateType}-shadow`;
 
         const {clicked, handleClick} = dateClick(monthIndex, dateNumber, onClick);
-
-        const tileStyle = {
-            transform: `skew(${tileSkewX}deg, ${tileSkewY}deg)`,
-        }
-
-        const shadowStyle = {
-            transform: `skew(${shadowSkewX}deg, ${shadowSkewY}deg)`,
-            // backgroundColor: clicked ? "#1bfffe" : "#000000",
-        }
-  
+        
         gridItems.push(
-          <div key={`${row}-${col}`} className="grid-item" onClick={handleClick}>
-            <h1 className="date-number">{dateNumber}</h1>
-            <div className={classTile} style={tileStyle}></div>
-            <div className={classShadow} style={shadowStyle}></div>
-          </div>
-        );
+          <GridItem
+              key={`${row}-${col}`}
+              row={row}
+              col={col}
+              dateNumber={dateNumber}
+              dateType={dateType}
+              tileSkewX={tileSkewX}
+              tileSkewY={tileSkewY}
+              shadowSkewX={shadowSkewX}
+              shadowSkewY={shadowSkewY}
+              clicked={clicked}
+              handleClick={handleClick}
+          />
+      );
       }
     }
     return gridItems;
