@@ -15,7 +15,7 @@ const Dates = ( {monthIndex, dateNumbers, dateKeys, onClick} ) => {
         const dateType = dateKeys[row][col];
         const dateNumber = dateNumbers[row][col];
 
-        const {clicked, handleClick} = dateClick(monthIndex, dateNumber, onClick);
+        const {clicked, handleClick} = dateClick(monthIndex, dateNumber, "", onClick);
         
         gridItems.push(
           <GridItem

@@ -11,7 +11,7 @@ function App() {
 
   return (
     <div id="P5R-calendar">
-      <Activities />
+      <Activities onClick={updateDate} />
       <Months onClick={updateDate} />
       <Info dateDisplay={dateDisplay} />
     </div>
