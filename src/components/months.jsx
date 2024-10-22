@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import Dates from './dates.jsx';
 import { monthHeader, dateKeys, dateNumbers } from '../hooks/monthData.js'
 
-const Months = ({ onClick }) => {
+const Months = ({ onClick, activitiesUpdate }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
 
     const goToNextImage = () => {
@@ -60,7 +60,7 @@ const Months = ({ onClick }) => {
                 </span>
             </div>
             <div className="grid-container">
-                <Dates monthIndex={monthIndex} dateNumbers={dateNumbers[currentIndex]} dateKeys={dateKeys[currentIndex]} onClick={onClick}/>
+                <Dates monthIndex={monthIndex} dateNumbers={dateNumbers[currentIndex]} dateKeys={dateKeys[currentIndex]} onClick={onClick} activitiesUpdate={activitiesUpdate}/>
             </div>
         </div>
     );

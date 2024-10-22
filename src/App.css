@@ -91,7 +91,6 @@ body {
 .info-display {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   height: 550px;
   width: 300px;
   transform: rotate(5deg);

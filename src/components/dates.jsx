@@ -3,7 +3,7 @@ import { rows, cols, tileSkewPattern, shadowSkewPattern } from '../hooks/monthDa
 import { dateClick } from '../hooks/handleClick.js';
 import GridItem from './gridItem';
 
-const Dates = ( {monthIndex, dateNumbers, dateKeys, onClick} ) => {
+const Dates = ( {monthIndex, dateNumbers, dateKeys, onClick, activitiesUpdate} ) => {
     const gridItems = [];
     for (let row = 0; row < rows; row++) {
       for (let col = 0; col < cols; col++) {
@@ -15,7 +15,7 @@ const Dates = ( {monthIndex, dateNumbers, dateKeys, onClick} ) => {
         const dateType = dateKeys[row][col];
         const dateNumber = dateNumbers[row][col];
 
-        const {clicked, handleClick} = dateClick(monthIndex, dateNumber, "", onClick);
+        const {clicked, handleClick} = dateClick(monthIndex, dateNumber, "", onClick, activitiesUpdate);
         
         gridItems.push(
           <GridItem
