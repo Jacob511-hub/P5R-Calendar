@@ -9,7 +9,15 @@ const Info = ({ dateDisplay, activityDisplay }) => {
                 src="src/assets/dagger.png">
             </img>
             <h1 id="date-display">{dateDisplay}</h1>
-            <p id="activity-list">{activityDisplay}</p>
+            {activityDisplay.length > 0 ? (
+                <ul style={{listStyleType: 'none', padding: 0, margin: 0}}>
+                {activityDisplay.map((name, index) => (
+                    <li key={index}>{name}</li>
+                ))}
+                </ul>
+            ) : (
+                <p></p>
+            )}
         </div>
     )
 }
