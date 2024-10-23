@@ -12,7 +12,7 @@ const Info = ({ dateDisplay, activityDisplay }) => {
             {activityDisplay.length > 0 ? (
                 <ul style={{listStyleType: 'none', padding: 0, margin: 0}}>
                 {activityDisplay.map((name, index) => (
-                    <li key={index}>{name}</li>
+                    <h2 key={index}>{name}</h2>
                 ))}
                 </ul>
             ) : (

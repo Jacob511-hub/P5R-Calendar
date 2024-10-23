@@ -13,7 +13,7 @@ function App() {
 
   return (
     <div id="P5R-calendar">
-      <Activities onClick={updateDate} />
+      <Activities onClick={updateDate} activitiesUpdate={updateActivity}/>
       <Months onClick={updateDate} activitiesUpdate={updateActivity}/>
       <Info dateDisplay={dateDisplay} activityDisplay={activityList}/>
     </div>

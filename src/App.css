@@ -92,7 +92,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 550px;
-  width: 300px;
+  min-width: 350px;
   transform: rotate(5deg);
   transform-origin: center;
   background-image: url("src/assets/calendar-bg.png");

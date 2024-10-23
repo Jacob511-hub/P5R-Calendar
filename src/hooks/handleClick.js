@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { searchByDate } from './activitySearch';
+import { searchByActivity } from './activitySearch';
 
 export function dateClick(monthIndex, dateNumber, activityName, onClick, activitiesUpdate) {
     const [clicked, setClicked] = useState(false);
@@ -13,6 +14,8 @@ export function dateClick(monthIndex, dateNumber, activityName, onClick, activit
         }
         else if (dateNumber === 0) {
             onClick(activityName);
+            const dateList = searchByActivity(activityName)
+            activitiesUpdate(dateList);
         }
         else {
             onClick("");
