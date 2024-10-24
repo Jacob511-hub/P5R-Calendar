@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import { rows, cols, tileSkewPattern, shadowSkewPattern } from '../hooks/monthData.js'
+import { rows, cols, tileSkewPattern, shadowSkewPattern, weekdays } from '../hooks/monthData.js'
 import { dateClick } from '../hooks/handleClick.js';
 import GridItem from './gridItem';
 
-const Dates = ( {monthIndex, dateNumbers, dateKeys, onClick, activitiesUpdate} ) => {
+const Dates = ( {monthIndex, dateNumbers, dateKeys, onClick, activitiesUpdate, weekdayUpdate} ) => {
     const gridItems = [];
     for (let row = 0; row < rows; row++) {
       for (let col = 0; col < cols; col++) {
@@ -14,8 +14,9 @@ const Dates = ( {monthIndex, dateNumbers, dateKeys, onClick, activitiesUpdate} )
 
         const dateType = dateKeys[row][col];
         const dateNumber = dateNumbers[row][col];
+        const weekday = weekdays[row][col];
 
-        const {clicked, handleClick} = dateClick(monthIndex, dateNumber, "", onClick, activitiesUpdate);
+        const {clicked, handleClick} = dateClick(monthIndex, dateNumber, weekday, "", onClick, activitiesUpdate, weekdayUpdate);
         
         gridItems.push(
           <GridItem
@@ -28,6 +29,7 @@ const Dates = ( {monthIndex, dateNumbers, dateKeys, onClick, activitiesUpdate} )
               tileSkewY={tileSkewY}
               shadowSkewX={shadowSkewX}
               shadowSkewY={shadowSkewY}
+              weekday={weekday}
               clicked={clicked}
               handleClick={handleClick}
           />

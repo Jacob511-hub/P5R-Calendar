@@ -1,6 +1,6 @@
 import React from 'react';
 
-const GridItem = ( {row, col, dateNumber, dateType, tileSkewX, tileSkewY, shadowSkewX, shadowSkewY, clicked, handleClick} ) => {
+const GridItem = ( {row, col, dateNumber, dateType, tileSkewX, tileSkewY, shadowSkewX, shadowSkewY, weekday, clicked, handleClick} ) => {
     const classTile = `grid-tile ${dateType}-tile`;
     const classShadow = `grid-shadow ${dateType}-shadow`;
 

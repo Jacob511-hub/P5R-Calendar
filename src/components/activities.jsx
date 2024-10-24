@@ -7,7 +7,7 @@ import Divider from '@mui/material/Divider';
 import ConfidantContainer from './confidantContainer';
 import { tarot, tarotNames } from '../hooks/confidantassets';
 
-const Activities = ({ onClick, activitiesUpdate }) => {
+const Activities = ({ onClick, activitiesUpdate, weekdayUpdate }) => {
     return (
         <div className="activities-container">
             <img
@@ -47,6 +47,7 @@ const Activities = ({ onClick, activitiesUpdate }) => {
                                 name={tarotNames[index]}
                                 onClick={onClick}
                                 activitiesUpdate={activitiesUpdate}
+                                weekdayUpdate={weekdayUpdate}
                             />
                         ))}
                     </AccordionDetails>

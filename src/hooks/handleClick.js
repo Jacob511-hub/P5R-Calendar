@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { searchByDate } from './activitySearch';
 import { searchByActivity } from './activitySearch';
 
-export function dateClick(monthIndex, dateNumber, activityName, onClick, activitiesUpdate) {
+export function dateClick(monthIndex, dateNumber, weekday, activityName, onClick, activitiesUpdate, weekdayUpdate) {
     const [clicked, setClicked] = useState(false);
 
     const handleClick = () => {
@@ -11,14 +11,18 @@ export function dateClick(monthIndex, dateNumber, activityName, onClick, activit
             onClick(monthIndex + "/" + dateNumber);
             const activityList = searchByDate(monthIndex + "/" + dateNumber)
             activitiesUpdate(activityList);
+            weekdayUpdate(weekday);
         }
         else if (dateNumber === 0) {
             onClick(activityName);
             const dateList = searchByActivity(activityName)
             activitiesUpdate(dateList);
+            weekdayUpdate("");
         }
         else {
             onClick("");
+            activitiesUpdate("");
+            weekdayUpdate("");
         }
     };
 

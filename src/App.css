@@ -104,6 +104,23 @@ body {
   padding: 25px;
 }
 
+/* #date-display {
+  position: absolute;
+  color: #ffffff;
+  right: 100px;
+  top: 80px;
+  transform: skew(15deg, -15deg);
+}
+
+#weekday-display {
+  position: absolute;
+  color: #ffffff;
+  font-size: x-large;
+  right: 100px;
+  top: 80px;
+  transform: skew(15deg, -15deg);
+} */
+
 .grid-container {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
