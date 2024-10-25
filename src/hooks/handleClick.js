@@ -9,7 +9,8 @@ export function dateClick(monthIndex, dateNumber, weekday, activityName, onClick
         setClicked((prevClicked) => !prevClicked);
         if (dateNumber > 0) {
             onClick(monthIndex + "/" + dateNumber);
-            const activityList = searchByDate(monthIndex + "/" + dateNumber)
+            const activityList = [...searchByDate(monthIndex + "/" + dateNumber), ...searchByDate(weekday)]
+            console.log(activityList)
             activitiesUpdate(activityList);
             weekdayUpdate(weekday);
         }
