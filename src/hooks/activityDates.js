@@ -9,7 +9,11 @@ export const MagicianDates = [
 ];
 
 export const LoversDates = [
-    "4/15",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Friday",
+    "Sunday",
 ];
 
 export const StarDates = [
@@ -17,10 +21,6 @@ export const StarDates = [
     "Wednesday",
     "Saturday",
     "Sunday",
-]
-
-export const StarStart = [
-    "6/25",
 ]
 
 export const activityNames = [
