@@ -2,11 +2,25 @@ import React, { useState } from 'react';
 import * as activityDates from './activityDates';
 import * as activityStartDates from './activityStartDates'
 
+//Search for activities with set dates
 export function searchByDate(date) {
     const matchedArrays = activityDates.activityNames.filter((item) => item.array.includes(date)).map((item) => item.name);
     return matchedArrays;
 }
 
+//Search by start date
+export function searchByStartDate(month, day) {
+    month = parseInt(month, 10);
+    day = parseInt(day, 10);
+    
+    const matchedArrays = activityStartDates.activityStartNames
+        .filter(activity => activity.startDate.month === month && activity.startDate.day === day)
+        .map(activity => activity.name);
+
+    return matchedArrays;
+}
+
+//Search for activities with weekly schedules
 export function searchByWeekday(month, day, weekday) {
     const startDatesArray = [];
     const matchedArrays = activityDates.activityNames.filter((item) => item.array.includes(weekday)).map((item) => item.name);

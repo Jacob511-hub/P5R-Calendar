@@ -7,10 +7,12 @@ import Activities from './components/activities.jsx'
 import { updateDateDisplay } from './hooks/updateDate.js'
 import { updateActivityDisplay } from './hooks/updateActivities.js'
 import { updateWeekdayDisplay } from './hooks/updateWeekday.js';
+import { updateActivityStartDisplay } from './updateActivitiesStart.js';
 
 function App() {
   const {dateDisplay, updateDate} = updateDateDisplay();
   const {weekdayDisplay, updateWeekday} = updateWeekdayDisplay();
+  const {activityStartList, updateActivityStart} = updateActivityStartDisplay();
   const {activityList, updateActivity} = updateActivityDisplay();
 
   return (
@@ -24,10 +26,12 @@ function App() {
         onClick={updateDate}
         activitiesUpdate={updateActivity}
         weekdayUpdate={updateWeekday}
+        activitiesStartUpdate={updateActivityStart}
       />
       <Info
         dateDisplay={dateDisplay}
         weekdayDisplay={weekdayDisplay}
+        activityStartDisplay={activityStartList}
         activityDisplay={activityList}
       />
     </div>
