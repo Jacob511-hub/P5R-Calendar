@@ -101,7 +101,7 @@ export const CouncillorStart = {
 export const activityStartNames = [
     { name: "Priestess", startDate: PriestessStart },
     { name: "Empress", startDate: EmpressStart },
-    { name: "Lovers", startDate: EmperorStart },
+    { name: "Emperor", startDate: EmperorStart },
     { name: "Hierophant", startDate: HierophantStart },
     { name: "Lovers", startDate: LoversStart },
     { name: "Chariot", startDate: ChariotStart },

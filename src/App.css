@@ -99,11 +99,9 @@ body {
     2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
-.info-display {
-  display: flex;
-  flex-direction: column;
+.info-container {
+  position: relative;
   height: 550px;
-  min-width: 350px;
   transform: rotate(5deg);
   transform-origin: center;
   background-image: url("src/assets/calendar-bg.png");
@@ -112,6 +110,15 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   border: 8px solid #000000;
+}
+
+.info-display {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 300px;
+  overflow-y: auto;
+  box-sizing: border-box;
   padding: 25px;
   color: #ffffff;
   text-shadow: 
