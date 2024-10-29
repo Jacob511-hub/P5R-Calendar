@@ -28,6 +28,9 @@ export const weekdays = [
     ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
 ];
 
+//! import your images from relative paths and use the imports here
+//! ex: import April from '../assets/months/April.png';
+//! export const monthHeader = [April, ...];
 export const monthHeader = [
     "src/assets/months/April.png",
     "src/assets/months/May.png",
@@ -42,6 +45,46 @@ export const monthHeader = [
     "src/assets/months/February.png",
     "src/assets/months/March.png",
 ];
+
+/*
+  ! Consider encapsulating the dateKeys and dateNumbers into a single object with the month as the key and the values as the dateKeys and dateNumbers arrays.
+  ! Ex: 
+  export const monthData = {
+    April: {
+        dateKeys: [...],
+        dateNumbers: [...]
+    },
+    ...
+  } 
+
+  ! You could then access the data more intuitively by using the month as the key, like so: monthData[month].dateKeys
+
+  ! You cna also create an enum for the values to reduce liklihood of typos and make the code more readable.
+    ! Ex:
+    enum DateKey {
+        None = "none",
+        Skip = "skip",
+        StoryAll = "storyAll",
+        Free = "free",
+        Deadline = "deadline",
+        EveningOnly = "eveningOnly",
+        AfterSchoolOnly = "afterSchoolOnly",
+        Finale = "finale"
+    }
+
+    ! You can then use the enum values in your arrays to make the code more readable and reduce the liklihood of typos.
+    ! Ex:
+    dateKeys: [
+        [ //April
+            [DateKey.None, DateKey.None, DateKey.None, DateKey.None, DateKey.None, DateKey.Skip, DateKey.Skip],
+            [DateKey.Skip, DateKey.Skip, DateKey.Skip, DateKey.Skip, DateKey.Skip, DateKey.Skip, DateKey.StoryAll],
+    ]
+    ! Then when you need to access these values elsewhere in the code you can use the enum for checks and you significantly reduce the liklihood of typos.
+    ! Ex:
+    if (dateKeys[month][date] === DateKey.StoryAll) {
+        ...
+    }    
+*/
 
 export const dateKeys = [
     [ //April

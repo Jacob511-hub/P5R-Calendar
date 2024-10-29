@@ -22,24 +22,38 @@ export function searchByStartDate(month, day) {
 
 //Search for activities with weekly schedules
 export function searchByWeekday(month, day, weekday) {
-    const startDatesArray = [];
-    const matchedArrays = activityDates.activityNames.filter((item) => item.array.includes(weekday)).map((item) => item.name);
-    for (let index = 0; index < matchedArrays.length; index++) {
-        for (let i = 0; i < activityStartDates.activityStartNames.length; i++) {
-            if (matchedArrays[index] === activityStartDates.activityStartNames[i].name) {
-                let startMonth = activityStartDates.activityStartNames[i].startDate.month;
-                let startDay = activityStartDates.activityStartNames[i].startDate.day;
+  const startDatesArray = [];
+  const matchedArrays = activityDates.activityNames
+    .filter((item) => item.array.includes(weekday))
+    .map((item) => item.name);
 
-                let monthIndex = (((month === 12 ? 0 : month) - 4)+ 12) % 12;
-                let startMonthIndex = (((startMonth === 12 ? 0 : startMonth) - 4)+ 12) % 12;
+  //! Consider refactoring this code to improve readability by using a more functional approach. You can achieve this by using `filter` on `matchedNames`, and within that filter, leverage `find` on `activityStartDates.activityStartNames` to discard values that don't exist in `matchedNames` (return false early if not found). Once you locate the relevant `startDate`, compare it to the given date, and only retain values that satisfy the date condition. This should make the code more concise and understandable.
 
-                if (monthIndex > startMonthIndex || (monthIndex === startMonthIndex && day >= startDay)) {
-                    startDatesArray.push(matchedArrays[index]);
-                }
-            }
+  //! Cool technique: Are you familiar with destructuring ? You can destructure the month and day from the startDate object to make the code more readable.
+  //! ex: const { month: startMonth, day: startDay } = activity.startDate;
+  for (let index = 0; index < matchedArrays.length; index++) {
+    for (let i = 0; i < activityStartDates.activityStartNames.length; i++) {
+      if (
+        matchedArrays[index] === activityStartDates.activityStartNames[i].name
+      ) {
+        let startMonth =
+          activityStartDates.activityStartNames[i].startDate.month;
+        let startDay = activityStartDates.activityStartNames[i].startDate.day;
+
+        let monthIndex = ((month === 12 ? 0 : month) - 4 + 12) % 12;
+        let startMonthIndex =
+          ((startMonth === 12 ? 0 : startMonth) - 4 + 12) % 12;
+
+        if (
+          monthIndex > startMonthIndex ||
+          (monthIndex === startMonthIndex && day >= startDay)
+        ) {
+          startDatesArray.push(matchedArrays[index]);
         }
+      }
     }
-    return startDatesArray;
+  }
+  return startDatesArray;
 }
 
 export function searchByActivity(activity) {
