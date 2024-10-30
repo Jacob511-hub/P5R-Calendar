@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import { useEffect } from 'react';
 import Divider from '@mui/material/Divider';
 
-const Info = ({ dateDisplay, weekdayDisplay, activityStartDisplay, activityDisplay }) => {
+const Info = ({ dateDisplay, weekdayDisplay, activityStartDisplay, activityDisplayDay, activityDisplayNight, activityDisplayAuto }) => {
+    console.log(activityDisplayNight)
     return (
         <div className="info-container">
             <img
@@ -40,12 +41,69 @@ const Info = ({ dateDisplay, weekdayDisplay, activityStartDisplay, activityDispl
                 ) : (
                     <p></p>
                 )}
-                {activityDisplay.length > 0 ? (
+                {activityDisplayAuto.length > 0 ? (
+                <>
+                    <h1 id="auto-header">Auto</h1>
+                    <Divider variant="middle" 
+                        style={{
+                            borderColor: 'white',
+                        }}
+                    />
                     <ul style={{listStyleType: 'none', padding: 0, margin: 0}}>
-                    {activityDisplay.map((name, index) => (
+                    {activityDisplayAuto.map((name, index) => (
                         <h2 key={index}>{name}</h2>
                     ))}
                     </ul>
+                    <Divider variant="middle" 
+                        style={{
+                            borderColor: 'white',
+                        }}
+                    />
+                </>
+                ) : (
+                    <p></p>
+                )}
+                {activityDisplayDay.length > 0 ? (
+                <>
+                    <h1 id="day-header">Day</h1>
+                    <Divider variant="middle" 
+                        style={{
+                            borderColor: 'white',
+                        }}
+                    />
+                    <ul style={{listStyleType: 'none', padding: 0, margin: 0}}>
+                    {activityDisplayDay.map((name, index) => (
+                        <h2 key={index}>{name}</h2>
+                    ))}
+                    </ul>
+                    <Divider variant="middle" 
+                        style={{
+                            borderColor: 'white',
+                        }}
+                    />
+                </>
+                ) : (
+                    <p></p>
+                )}
+                {activityDisplayNight.length > 0 ? (
+                <>
+                    <h1 id="night-header">Night</h1>
+                    <Divider variant="middle" 
+                        style={{
+                            borderColor: 'white',
+                        }}
+                    />
+                    <ul style={{listStyleType: 'none', padding: 0, margin: 0}}>
+                    {activityDisplayNight.map((name, index) => (
+                        <h2 key={index}>{name}</h2>
+                    ))}
+                    </ul>
+                    <Divider variant="middle" 
+                        style={{
+                            borderColor: 'white',
+                        }}
+                    />
+                </>
                 ) : (
                     <p></p>
                 )}

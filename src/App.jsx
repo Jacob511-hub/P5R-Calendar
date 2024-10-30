@@ -5,7 +5,9 @@ import Dates from './components/dates.jsx';
 import Info from './components/info.jsx'
 import Activities from './components/activities.jsx'
 import { updateDateDisplay } from './hooks/updateDate.js'
-import { updateActivityDisplay } from './hooks/updateActivities.js'
+import { updateActivityDisplayDay } from './hooks/updateActivities.js'
+import { updateActivityDisplayNight } from './hooks/updateActivities.js'
+import { updateActivityDisplayAuto } from './hooks/updateActivities.js'
 import { updateWeekdayDisplay } from './hooks/updateWeekday.js';
 import { updateActivityStartDisplay } from './updateActivitiesStart.js';
 
@@ -13,18 +15,24 @@ function App() {
   const {dateDisplay, updateDate} = updateDateDisplay();
   const {weekdayDisplay, updateWeekday} = updateWeekdayDisplay();
   const {activityStartList, updateActivityStart} = updateActivityStartDisplay();
-  const {activityList, updateActivity} = updateActivityDisplay();
+  const {activityListDay, updateActivityDay} = updateActivityDisplayDay(); //Separate list into Day, Night, and Auto
+  const {activityListNight, updateActivityNight} = updateActivityDisplayNight();
+  const {activityListAuto, updateActivityAuto} = updateActivityDisplayAuto();
 
   return (
     <div id="P5R-calendar">
       <Activities
         onClick={updateDate}
-        activitiesUpdate={updateActivity}
+        activitiesUpdateDay={updateActivityDay}
+        activitiesUpdateNight={updateActivityNight}
+        activitiesUpdateAuto={updateActivityAuto}
         weekdayUpdate={updateWeekday}
       />
       <Months
         onClick={updateDate}
-        activitiesUpdate={updateActivity}
+        activitiesUpdateDay={updateActivityDay}
+        activitiesUpdateNight={updateActivityNight}
+        activitiesUpdateAuto={updateActivityAuto}
         weekdayUpdate={updateWeekday}
         activitiesStartUpdate={updateActivityStart}
       />
@@ -32,7 +40,9 @@ function App() {
         dateDisplay={dateDisplay}
         weekdayDisplay={weekdayDisplay}
         activityStartDisplay={activityStartList}
-        activityDisplay={activityList}
+        activityDisplayDay={activityListDay}
+        activityDisplayNight={activityListNight}
+        activityDisplayAuto={activityListAuto}
       />
     </div>
   )

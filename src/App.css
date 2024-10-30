@@ -178,6 +178,21 @@ body {
   font-size: 2em;
 }
 
+#auto-header {
+  margin: 0;
+  font-size: 2em;
+}
+
+#day-header {
+  margin: 0;
+  font-size: 2em;
+}
+
+#night-header {
+  margin: 0;
+  font-size: 2em;
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
