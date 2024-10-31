@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import Dates from './dates.jsx';
 import { monthHeader, dateKeys, dateNumbers } from '../hooks/monthData.js'
 
-const Months = ({ onClick, activitiesUpdateDay, activitiesUpdateNight, activitiesUpdateAuto, weekdayUpdate, activitiesStartUpdate }) => {
+const Months = ({ onClick, activitiesUpdateDay, activitiesUpdateNight, activitiesUpdateAuto, activitiesDateList, weekdayUpdate, activitiesStartUpdate }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
 
     const goToNextImage = () => {
@@ -68,6 +68,7 @@ const Months = ({ onClick, activitiesUpdateDay, activitiesUpdateNight, activitie
                     activitiesUpdateDay={activitiesUpdateDay}
                     activitiesUpdateNight={activitiesUpdateNight}
                     activitiesUpdateAuto={activitiesUpdateAuto}
+                    activitiesDateList={activitiesDateList}
                     weekdayUpdate={weekdayUpdate}
                     activitiesStartUpdate={activitiesStartUpdate}
                 />

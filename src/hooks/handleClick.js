@@ -5,7 +5,7 @@ import { searchByActivity } from './activitySearch';
 import { searchByWeekday } from './activitySearch';
 import splitArrayByTime from './splitArrayByTime';
 
-export const dateClick = (monthIndex, dateNumber, weekday, activityName, onClick, activitiesUpdateDay, activitiesUpdateNight, activitiesUpdateAuto, weekdayUpdate, activitiesStartUpdate) => {
+export const dateClick = (monthIndex, dateNumber, weekday, activityName, onClick, activitiesUpdateDay, activitiesUpdateNight, activitiesUpdateAuto, activitiesDateList, weekdayUpdate, activitiesStartUpdate) => {
     const [clicked, setClicked] = useState(false);
   
     const handleClick = () => {
@@ -21,6 +21,7 @@ export const dateClick = (monthIndex, dateNumber, weekday, activityName, onClick
             activitiesUpdateDay(dayArray);
             activitiesUpdateNight(nightArray);
             activitiesUpdateAuto(autoArray);
+            activitiesDateList([])
             weekdayUpdate(weekday);
     
             const activitiesStartList = searchByStartDate(monthIndex, dateNumber);
@@ -29,7 +30,12 @@ export const dateClick = (monthIndex, dateNumber, weekday, activityName, onClick
         } else if (dateNumber === 0) {
             onClick(activityName);
             const dateList = searchByActivity(activityName);
-            activitiesUpdateDay(dateList);
+
+            activitiesStartUpdate([]);
+            activitiesUpdateDay([]);
+            activitiesUpdateNight([]);
+            activitiesUpdateAuto([]);
+            activitiesDateList(dateList);
             weekdayUpdate("");
         } else {
             onClick("");
@@ -37,6 +43,7 @@ export const dateClick = (monthIndex, dateNumber, weekday, activityName, onClick
             activitiesUpdateDay([]);
             activitiesUpdateNight([]);
             activitiesUpdateAuto([]);
+            activitiesDateList([])
             weekdayUpdate("");
         }
     };

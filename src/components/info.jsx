@@ -2,8 +2,7 @@ import React, { useState } from 'react';
 import { useEffect } from 'react';
 import Divider from '@mui/material/Divider';
 
-const Info = ({ dateDisplay, weekdayDisplay, activityStartDisplay, activityDisplayDay, activityDisplayNight, activityDisplayAuto }) => {
-    console.log(activityDisplayNight)
+const Info = ({ dateDisplay, weekdayDisplay, activityStartDisplay, activityDisplayDay, activityDisplayNight, activityDisplayAuto, activityDisplayDates }) => {
     return (
         <div className="info-container">
             <img
@@ -23,15 +22,11 @@ const Info = ({ dateDisplay, weekdayDisplay, activityStartDisplay, activityDispl
                                 borderColor: 'white',
                             }}
                         />
-                        {activityStartDisplay.length > 0 ? (
-                            <ul style={{listStyleType: 'none', padding: 0, margin: 0}}>
-                            {activityStartDisplay.map((name, index) => (
-                                <h2 key={index}>{name}</h2>
-                            ))}
-                            </ul>
-                        ) : (
-                            <p></p>
-                        )}
+                        <ul style={{listStyleType: 'none', padding: 0, margin: 0}}>
+                        {activityStartDisplay.map((name, index) => (
+                            <h2 key={index}>{name}</h2>
+                        ))}
+                        </ul>
                         <Divider variant="middle" 
                             style={{
                                 borderColor: 'white',
@@ -39,7 +34,7 @@ const Info = ({ dateDisplay, weekdayDisplay, activityStartDisplay, activityDispl
                         />
                     </>
                 ) : (
-                    <p></p>
+                    <p style={{margin: 0}}></p>
                 )}
                 {activityDisplayAuto.length > 0 ? (
                 <>
@@ -61,7 +56,7 @@ const Info = ({ dateDisplay, weekdayDisplay, activityStartDisplay, activityDispl
                     />
                 </>
                 ) : (
-                    <p></p>
+                    <p style={{margin: 0}}></p>
                 )}
                 {activityDisplayDay.length > 0 ? (
                 <>
@@ -83,7 +78,7 @@ const Info = ({ dateDisplay, weekdayDisplay, activityStartDisplay, activityDispl
                     />
                 </>
                 ) : (
-                    <p></p>
+                    <p style={{margin: 0}}></p>
                 )}
                 {activityDisplayNight.length > 0 ? (
                 <>
@@ -105,7 +100,29 @@ const Info = ({ dateDisplay, weekdayDisplay, activityStartDisplay, activityDispl
                     />
                 </>
                 ) : (
-                    <p></p>
+                    <p style={{margin: 0}}></p>
+                )}
+                {activityDisplayDates.length > 0 ? (
+                <>
+                    <h1 id="dates-header">Dates</h1>
+                    <Divider variant="middle" 
+                        style={{
+                            borderColor: 'white',
+                        }}
+                    />
+                    <ul style={{listStyleType: 'none', padding: 0, margin: 0}}>
+                    {activityDisplayDates.map((name, index) => (
+                        <h2 key={index}>{name}</h2>
+                    ))}
+                    </ul>
+                    <Divider variant="middle" 
+                        style={{
+                            borderColor: 'white',
+                        }}
+                    />
+                </>
+                ) : (
+                    <p style={{margin: 0}}></p>
                 )}
             </div>
         </div>

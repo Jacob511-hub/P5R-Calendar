@@ -29,3 +29,13 @@ export function updateActivityDisplayAuto() {
 
     return {activityListAuto, updateActivityAuto};
 }
+
+export function updateActivityDisplayDateList() {
+    const [activityListDates, setActivityDisplayDates] = useState("");
+
+    const updateActivityDates = (newActivityDisplayDates) => {
+        setActivityDisplayDates(newActivityDisplayDates);
+    };
+
+    return {activityListDates, updateActivityDates};
+}
