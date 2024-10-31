@@ -1,25 +1,27 @@
 import './App.css'
 import React, { useState } from 'react';
 import Months from './components/months.jsx';
-import Dates from './components/dates.jsx';
 import Info from './components/info.jsx'
 import Activities from './components/activities.jsx'
-import { updateDateDisplay } from './hooks/updateDate.js'
-import { updateActivityDisplayDay } from './hooks/updateActivities.js'
-import { updateActivityDisplayNight } from './hooks/updateActivities.js'
-import { updateActivityDisplayAuto } from './hooks/updateActivities.js'
-import { updateActivityDisplayDateList } from './hooks/updateActivities.js'
-import { updateWeekdayDisplay } from './hooks/updateWeekday.js';
-import { updateActivityStartDisplay } from './updateActivitiesStart.js';
+import { useUpdateInfo } from './hooks/updateInfo.js';
 
 function App() {
-  const {dateDisplay, updateDate} = updateDateDisplay();
-  const {weekdayDisplay, updateWeekday} = updateWeekdayDisplay();
-  const {activityStartList, updateActivityStart} = updateActivityStartDisplay();
-  const {activityListDay, updateActivityDay} = updateActivityDisplayDay();
-  const {activityListNight, updateActivityNight} = updateActivityDisplayNight();
-  const {activityListAuto, updateActivityAuto} = updateActivityDisplayAuto();
-  const {activityListDates, updateActivityDates} = updateActivityDisplayDateList();
+  const {
+    dateDisplay,
+    updateDate,
+    weekdayDisplay,
+    updateWeekday,
+    activityStartList,
+    updateActivityStart,
+    activityListDay,
+    updateActivityDay,
+    activityListNight,
+    updateActivityNight,
+    activityListAuto,
+    updateActivityAuto,
+    activityListDates,
+    updateActivityDates,
+  } = useUpdateInfo();
 
   return (
     <div id="P5R-calendar">
