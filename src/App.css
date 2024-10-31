@@ -173,28 +173,8 @@ body {
   transform: skew(30deg, -30deg);
 }
 
-#start-header {
-  margin: 0;
-  font-size: 2em;
-}
-
-#auto-header {
-  margin: 0;
-  font-size: 2em;
-}
-
-#day-header {
-  margin: 0;
-  font-size: 2em;
-}
-
-#night-header {
-  margin: 0;
-  font-size: 2em;
-}
-
-#dates-header {
-  margin: 0;
+.info-header {
+  margin: 5px;
   font-size: 2em;
 }
 
