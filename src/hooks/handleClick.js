@@ -5,7 +5,21 @@ import { searchByActivity } from './activitySearch';
 import { searchByWeekday } from './activitySearch';
 import splitArrayByTime from './splitArrayByTime';
 
-export const dateClick = (monthIndex, dateNumber, weekday, activityName, onClick, activitiesUpdateDay, activitiesUpdateNight, activitiesUpdateAuto, activitiesDateList, weekdayUpdate, activitiesStartUpdate) => {
+export const dateClick = (
+    monthIndex,
+    dateType,
+    dateNumber,
+    weekday,
+    activityName,
+    onClick,
+    activitiesUpdateDay,
+    activitiesUpdateNight,
+    activitiesUpdateAuto,
+    activitiesDateList,
+    weekdayUpdate,
+    activitiesStartUpdate,
+    dateAvailabilityUpdate
+) => {
     const [clicked, setClicked] = useState(false);
   
     const handleClick = () => {
@@ -23,6 +37,7 @@ export const dateClick = (monthIndex, dateNumber, weekday, activityName, onClick
             activitiesUpdateAuto(autoArray);
             activitiesDateList([])
             weekdayUpdate(weekday);
+            dateAvailabilityUpdate(dateType);
     
             const activitiesStartList = searchByStartDate(monthIndex, dateNumber);
             activitiesStartUpdate(activitiesStartList);
@@ -37,6 +52,7 @@ export const dateClick = (monthIndex, dateNumber, weekday, activityName, onClick
             activitiesUpdateAuto([]);
             activitiesDateList(dateList);
             weekdayUpdate("");
+            dateAvailabilityUpdate("none");
         } else {
             onClick("");
             activitiesStartUpdate([]);
@@ -45,6 +61,7 @@ export const dateClick = (monthIndex, dateNumber, weekday, activityName, onClick
             activitiesUpdateAuto([]);
             activitiesDateList([])
             weekdayUpdate("");
+            dateAvailabilityUpdate("none");
         }
     };
   

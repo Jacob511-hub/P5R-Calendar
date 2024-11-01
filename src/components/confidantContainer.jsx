@@ -1,9 +1,34 @@
 import React from 'react';
 import { dateClick } from '../hooks/handleClick.js';
 
-const ConfidantContainer = ( {tarot, name, onClick, activitiesUpdateDay, activitiesUpdateNight, activitiesUpdateAuto, activitiesDateList, weekdayUpdate, activitiesStartUpdate } ) => {
+const ConfidantContainer = ({
+    tarot,
+    name,
+    onClick,
+    activitiesUpdateDay,
+    activitiesUpdateNight,
+    activitiesUpdateAuto,
+    activitiesDateList,
+    weekdayUpdate,
+    activitiesStartUpdate,
+    dateAvailabilityUpdate
+}) => {
 
-    const {clicked, handleClick} = dateClick(0, 0, "", name, onClick, activitiesUpdateDay, activitiesUpdateNight, activitiesUpdateAuto, activitiesDateList, weekdayUpdate, activitiesStartUpdate);
+    const {clicked, handleClick} = dateClick(
+        0,
+        "",
+        0,
+        "",
+        name,
+        onClick,
+        activitiesUpdateDay,
+        activitiesUpdateNight,
+        activitiesUpdateAuto,
+        activitiesDateList,
+        weekdayUpdate,
+        activitiesStartUpdate,
+        dateAvailabilityUpdate
+    );
 
     return (
         <div className="confidant-container" onClick={handleClick}>

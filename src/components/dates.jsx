@@ -3,7 +3,19 @@ import { rows, cols, tileSkewPattern, shadowSkewPattern, weekdays } from '../hoo
 import { dateClick } from '../hooks/handleClick.js';
 import GridItem from './gridItem';
 
-const Dates = ( {monthIndex, dateNumbers, dateKeys, onClick, activitiesUpdateDay, activitiesUpdateNight, activitiesUpdateAuto, activitiesDateList, weekdayUpdate, activitiesStartUpdate} ) => {
+const Dates = ({
+  monthIndex,
+  dateNumbers,
+  dateKeys,
+  onClick,
+  activitiesUpdateDay,
+  activitiesUpdateNight,
+  activitiesUpdateAuto,
+  activitiesDateList,
+  weekdayUpdate,
+  activitiesStartUpdate,
+  dateAvailabilityUpdate
+}) => {
     const gridItems = [];
     for (let row = 0; row < rows; row++) {
       for (let col = 0; col < cols; col++) {
@@ -16,7 +28,21 @@ const Dates = ( {monthIndex, dateNumbers, dateKeys, onClick, activitiesUpdateDay
         const dateNumber = dateNumbers[row][col];
         const weekday = weekdays[row][col];
 
-        const {clicked, handleClick} = dateClick(monthIndex, dateNumber, weekday, "", onClick, activitiesUpdateDay, activitiesUpdateNight, activitiesUpdateAuto, activitiesDateList, weekdayUpdate, activitiesStartUpdate);
+        const {clicked, handleClick} = dateClick(
+          monthIndex,
+          dateType,
+          dateNumber,
+          weekday,
+          "",
+          onClick,
+          activitiesUpdateDay,
+          activitiesUpdateNight,
+          activitiesUpdateAuto,
+          activitiesDateList,
+          weekdayUpdate,
+          activitiesStartUpdate,
+          dateAvailabilityUpdate
+        );
         
         gridItems.push(
           <GridItem

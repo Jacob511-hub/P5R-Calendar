@@ -1,10 +1,40 @@
 import React from 'react';
 import Divider from '@mui/material/Divider';
 
-const InfoBox = ({ headerText, activityData }) => {
+const InfoBox = ({
+    headerText,
+    activityData,
+    dateAvailability
+}) => {
+    const checkDateAvailability = () => {
+        if (headerText === "Day") {
+            if (dateAvailability !== "skip" && dateAvailability !== "eveningOnly" && dateAvailability !== "storyAll") {
+                return true;
+            }
+            else {
+                return false;
+            }
+        } else if (headerText === "Night") {
+            if (dateAvailability !== "skip" && dateAvailability !== "afterSchoolOnly" && dateAvailability !== "storyAll") {
+                return true;
+            }
+            else {
+                return false;
+            }
+        }
+        else if (headerText === "Start" || headerText === "Auto" || headerText === "Dates") {
+            return true;
+        }
+        else {
+            return false;
+        }
+    };
+
+    console.log(checkDateAvailability())
+
     return (
         <>
-            {activityData.length > 0 ? (
+            {activityData.length > 0 && checkDateAvailability() ? (
                 <>
                     <h1 className='info-header'>{headerText}</h1>
                     <Divider variant="middle" 

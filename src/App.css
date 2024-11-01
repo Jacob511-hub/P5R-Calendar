@@ -197,6 +197,7 @@ body {
 .month-name {
   width: 450px;
   height: auto;
+  user-select: none; 
 }
 
 .grid-item {

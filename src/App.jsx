@@ -21,6 +21,8 @@ function App() {
     updateActivityAuto,
     activityListDates,
     updateActivityDates,
+    dateAvailability,
+    updateDateAvailability,
   } = useUpdateInfo();
 
   return (
@@ -33,6 +35,7 @@ function App() {
         activitiesDateList={updateActivityDates}
         weekdayUpdate={updateWeekday}
         activitiesStartUpdate={updateActivityStart}
+        dateAvailabilityUpdate={updateDateAvailability}
       />
       <Months
         onClick={updateDate}
@@ -42,6 +45,7 @@ function App() {
         activitiesDateList={updateActivityDates}
         weekdayUpdate={updateWeekday}
         activitiesStartUpdate={updateActivityStart}
+        dateAvailabilityUpdate={updateDateAvailability}
       />
       <Info
         dateDisplay={dateDisplay}
@@ -51,6 +55,7 @@ function App() {
         activityDisplayNight={activityListNight}
         activityDisplayAuto={activityListAuto}
         activityDisplayDates={activityListDates}
+        dateAvailability={dateAvailability}
       />
     </div>
   )
