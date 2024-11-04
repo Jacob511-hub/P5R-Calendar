@@ -12,6 +12,7 @@ const Info = () => {
         activityListAuto,
         activityListDates,
         dateAvailability,
+        activityStartDate,
       } = useInfo();
 
     return (
@@ -29,6 +30,7 @@ const Info = () => {
                 <InfoBox headerText="Auto" activityData={activityListAuto} dateAvailability={dateAvailability} />
                 <InfoBox headerText="Day" activityData={activityListDay} dateAvailability={dateAvailability} />
                 <InfoBox headerText="Night" activityData={activityListNight} dateAvailability={dateAvailability} />
+                <InfoBox headerText="Start Date" activityData={activityStartDate} dateAvailability={dateAvailability} />
                 <InfoBox headerText="Dates" activityData={activityListDates} dateAvailability={dateAvailability} />
             </div>
         </div>

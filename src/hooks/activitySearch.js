@@ -45,3 +45,8 @@ export function searchByActivity(activity) {
     const matchedActivity = activityDates.activityNames.find((item) => item.name === activity);
     return matchedActivity ? matchedActivity.array : [""]; 
 }
+
+export function searchStartDateByActivity(activity) {
+    const matchedActivity = activityStartDates.activityStartNames.find((item) => item.name === activity);
+    return matchedActivity ? matchedActivity.startDate : [""]; 
+}
