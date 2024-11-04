@@ -3,7 +3,6 @@ import InfoBox from './infoBox';
 import { useInfo } from '../components/CalendarContext';
 
 const Info = () => {
-
     const {
         dateDisplay,
         weekdayDisplay,

@@ -4,64 +4,62 @@ import { searchByStartDate } from './activitySearch';
 import { searchByActivity } from './activitySearch';
 import { searchByWeekday } from './activitySearch';
 import splitArrayByTime from './splitArrayByTime';
+import { useInfo } from '../components/CalendarContext';
 
-export const dateClick = (
-    monthIndex,
-    dateType,
-    dateNumber,
-    weekday,
-    activityName,
-    onClick,
-    activitiesUpdateDay,
-    activitiesUpdateNight,
-    activitiesUpdateAuto,
-    activitiesDateList,
-    weekdayUpdate,
-    activitiesStartUpdate,
-    dateAvailabilityUpdate
-) => {
+export const dateClick = (monthIndex, dateType, dateNumber, weekday, activityName) => {
+    const {
+        updateDate,
+        updateActivityDay,
+        updateActivityNight,
+        updateActivityAuto,
+        updateActivityDates,
+        updateWeekday,
+        updateActivityStart,
+        updateDateAvailability,
+      } = useInfo();
+
     const [clicked, setClicked] = useState(false);
   
     const handleClick = () => {
         setClicked((prevClicked) => !prevClicked);
         if (dateNumber > 0) {
-            onClick(`${monthIndex}/${dateNumber}`);
+            updateDate(`${monthIndex}/${dateNumber}`);
             const activityList = [
                 ...searchByWeekday(monthIndex, dateNumber, weekday),
                 ...searchByDate(`${monthIndex}/${dateNumber}`),
             ];
             const { autoArray, dayArray, nightArray } = splitArrayByTime(activityList);
             
-            activitiesUpdateDay(dayArray);
-            activitiesUpdateNight(nightArray);
-            activitiesUpdateAuto(autoArray);
-            activitiesDateList([])
-            weekdayUpdate(weekday);
-            dateAvailabilityUpdate(dateType);
+            updateActivityDay(dayArray);
+            updateActivityNight(nightArray);
+            updateActivityAuto(autoArray);
+            updateActivityDates([])
+            updateWeekday(weekday);
+            updateDateAvailability(dateType);
     
             const activitiesStartList = searchByStartDate(monthIndex, dateNumber);
-            activitiesStartUpdate(activitiesStartList);
+            updateActivityStart(activitiesStartList);
     
         } else if (dateNumber === 0) {
-            onClick(activityName);
+            updateDate(activityName);
             const dateList = searchByActivity(activityName);
 
-            activitiesStartUpdate([]);
-            activitiesUpdateDay([]);
-            activitiesUpdateNight([]);
-            activitiesUpdateAuto([]);
-            activitiesDateList(dateList);
-            weekdayUpdate("");
-            dateAvailabilityUpdate("none");
+            updateActivityStart([]);
+            updateActivityDay([]);
+            updateActivityNight([]);
+            updateActivityAuto([]);
+            updateActivityDates(dateList);
+            updateWeekday("");
+            updateDateAvailability("none");
         } else {
-            onClick("");
-            activitiesStartUpdate([]);
-            activitiesUpdateDay([]);
-            activitiesUpdateNight([]);
-            activitiesUpdateAuto([]);
-            activitiesDateList([])
-            weekdayUpdate("");
-            dateAvailabilityUpdate("none");
+            updateDate("");
+            updateActivityStart([]);
+            updateActivityDay([]);
+            updateActivityNight([]);
+            updateActivityAuto([]);
+            updateActivityDates([])
+            updateWeekday("");
+            updateDateAvailability("none");
         }
     };
   
