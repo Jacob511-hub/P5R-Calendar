@@ -1,18 +1,22 @@
 import React from 'react';
 import { dateClick } from '../hooks/handleClick.js';
+import { useInfo } from '../components/CalendarContext';
 
 const ConfidantContainer = ({
     tarot,
     name,
-    onClick,
-    activitiesUpdateDay,
-    activitiesUpdateNight,
-    activitiesUpdateAuto,
-    activitiesDateList,
-    weekdayUpdate,
-    activitiesStartUpdate,
-    dateAvailabilityUpdate
 }) => {
+
+    const {
+        updateDate,
+        updateActivityDay,
+        updateActivityNight,
+        updateActivityAuto,
+        updateActivityDates,
+        updateWeekday,
+        updateActivityStart,
+        updateDateAvailability,
+      } = useInfo();
 
     const {clicked, handleClick} = dateClick(
         0,
@@ -20,14 +24,14 @@ const ConfidantContainer = ({
         0,
         "",
         name,
-        onClick,
-        activitiesUpdateDay,
-        activitiesUpdateNight,
-        activitiesUpdateAuto,
-        activitiesDateList,
-        weekdayUpdate,
-        activitiesStartUpdate,
-        dateAvailabilityUpdate
+        updateDate,
+        updateActivityDay,
+        updateActivityNight,
+        updateActivityAuto,
+        updateActivityDates,
+        updateWeekday,
+        updateActivityStart,
+        updateDateAvailability
     );
 
     return (

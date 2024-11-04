@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { searchByDate } from './activitySearch';
 import { searchByStartDate } from './activitySearch';
 import { searchByActivity } from './activitySearch';

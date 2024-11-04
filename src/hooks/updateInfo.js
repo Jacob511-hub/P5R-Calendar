@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 export function useUpdateInfo() {
   const [weekdayDisplay, setWeekdayDisplay] = useState("");

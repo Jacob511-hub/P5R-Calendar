@@ -1,21 +1,26 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { rows, cols, tileSkewPattern, shadowSkewPattern, weekdays } from '../hooks/monthData.js'
 import { dateClick } from '../hooks/handleClick.js';
 import GridItem from './gridItem';
+import { useInfo } from '../components/CalendarContext';
 
 const Dates = ({
   monthIndex,
   dateNumbers,
   dateKeys,
-  onClick,
-  activitiesUpdateDay,
-  activitiesUpdateNight,
-  activitiesUpdateAuto,
-  activitiesDateList,
-  weekdayUpdate,
-  activitiesStartUpdate,
-  dateAvailabilityUpdate
 }) => {
+
+  const {
+    updateDate,
+    updateActivityDay,
+    updateActivityNight,
+    updateActivityAuto,
+    updateActivityDates,
+    updateWeekday,
+    updateActivityStart,
+    updateDateAvailability,
+  } = useInfo();
+
     const gridItems = [];
     for (let row = 0; row < rows; row++) {
       for (let col = 0; col < cols; col++) {
@@ -34,14 +39,14 @@ const Dates = ({
           dateNumber,
           weekday,
           "",
-          onClick,
-          activitiesUpdateDay,
-          activitiesUpdateNight,
-          activitiesUpdateAuto,
-          activitiesDateList,
-          weekdayUpdate,
-          activitiesStartUpdate,
-          dateAvailabilityUpdate
+          updateDate,
+          updateActivityDay,
+          updateActivityNight,
+          updateActivityAuto,
+          updateActivityDates,
+          updateWeekday,
+          updateActivityStart,
+          updateDateAvailability
         );
         
         gridItems.push(

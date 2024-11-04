@@ -30,8 +30,6 @@ const InfoBox = ({
         }
     };
 
-    console.log(checkDateAvailability())
-
     return (
         <>
             {activityData.length > 0 && checkDateAvailability() ? (
