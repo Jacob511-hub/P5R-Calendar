@@ -1,3 +1,13 @@
+export const FoolStart = {
+    month: 4,
+    day: 14
+}
+
+export const MagicianStart = {
+    month: 4,
+    day: 15
+}
+
 export const PriestessStart = {
     month: 6,
     day: 24
@@ -88,6 +98,11 @@ export const SunStart = {
     day: 10
 }
 
+export const JudgementStart = {
+    month: 7,
+    day: 9
+}
+
 export const FaithStart = {
     month: 5,
     day: 30
@@ -99,6 +114,8 @@ export const CouncillorStart = {
 }
 
 export const activityStartNames = [
+    { name: "Fool", startDate: FoolStart },
+    { name: "Magician", startDate: MagicianStart },
     { name: "Priestess", startDate: PriestessStart },
     { name: "Empress", startDate: EmpressStart },
     { name: "Emperor", startDate: EmperorStart },
@@ -117,6 +134,7 @@ export const activityStartNames = [
     { name: "Star", startDate: StarStart },
     { name: "Moon", startDate: MoonStart },
     { name: "Sun", startDate: SunStart },
+    { name: "Judgement", startDate: JudgementStart },
     { name: "Faith", startDate: FaithStart },
     { name: "Councillor", startDate: CouncillorStart },
 ]
