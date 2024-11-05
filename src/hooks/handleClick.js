@@ -1,10 +1,13 @@
 import { useState } from 'react';
-import { searchByDate } from './activitySearch';
-import { searchByStartDate } from './activitySearch';
-import { searchByActivity } from './activitySearch';
-import { searchByWeekday } from './activitySearch';
-import { searchStartDateByActivity } from './activitySearch';
-import { searchEndDateByActivity } from './activitySearch';
+import {
+    searchByDate,
+    searchByStartDate,
+    searchByEndDate,
+    searchByActivity,
+    searchByWeekday,
+    searchStartDateByActivity,
+    searchEndDateByActivity
+} from './activitySearch';
 import splitArrayByTime from './splitArrayByTime';
 import { useInfo } from '../components/CalendarContext';
 
@@ -19,7 +22,8 @@ export const dateClick = (monthIndex, dateType, dateNumber, weekday, activityNam
         updateActivityStart,
         updateDateAvailability,
         updateActivityStartDate,
-        updateActivityEndDate
+        updateActivityEndDate,
+        updateActivityEnd,
       } = useInfo();
 
     const [clicked, setClicked] = useState(false);
@@ -43,6 +47,10 @@ export const dateClick = (monthIndex, dateType, dateNumber, weekday, activityNam
     
             const activitiesStartList = searchByStartDate(monthIndex, dateNumber);
             updateActivityStart(activitiesStartList);
+
+            const activitiesEndList = searchByEndDate(monthIndex, dateNumber);
+            updateActivityEnd(activitiesEndList);
+
             updateActivityStartDate("");
             updateActivityEndDate("");
         } else if (dateNumber === 0) {
@@ -52,6 +60,7 @@ export const dateClick = (monthIndex, dateType, dateNumber, weekday, activityNam
             const endDate = searchEndDateByActivity(activityName);
 
             updateActivityStart([]);
+            updateActivityEnd([]);
             updateActivityDay([]);
             updateActivityNight([]);
             updateActivityAuto([]);
@@ -63,6 +72,7 @@ export const dateClick = (monthIndex, dateType, dateNumber, weekday, activityNam
         } else {
             updateDate("");
             updateActivityStart([]);
+            updateActivityEnd([]);
             updateActivityDay([]);
             updateActivityNight([]);
             updateActivityAuto([]);

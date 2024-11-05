@@ -146,7 +146,7 @@ export const FoolEnd = {
 
 export const MagicianEnd = {
     month: 12,
-    day: 24
+    day: 23
 }
 
 export const PriestessEnd = {

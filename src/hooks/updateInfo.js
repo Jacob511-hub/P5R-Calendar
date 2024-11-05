@@ -11,6 +11,7 @@ export function useUpdateInfo() {
   const [dateAvailability, setDateAvailability] = useState("");
   const [activityStartDate, setActivityStartDate] = useState("");
   const [activityEndDate, setActivityEndDate] = useState("");
+  const [activityEndList, setActivityEndDisplay] = useState("");
 
   const updateWeekday = (newWeekdayDisplay) => setWeekdayDisplay(newWeekdayDisplay);
   const updateDate = (newDate) => setDateDisplay(newDate);
@@ -22,6 +23,7 @@ export function useUpdateInfo() {
   const updateDateAvailability = (newDateAvailability) => setDateAvailability(newDateAvailability);
   const updateActivityStartDate = (newStartDate) => setActivityStartDate(newStartDate);
   const updateActivityEndDate = (newEndDate) => setActivityEndDate(newEndDate);
+  const updateActivityEnd = (newActivityEndDisplay) => setActivityEndDisplay(newActivityEndDisplay);
 
   return {
     dateDisplay,
@@ -43,6 +45,8 @@ export function useUpdateInfo() {
     activityStartDate,
     updateActivityStartDate,
     activityEndDate,
-    updateActivityEndDate
+    updateActivityEndDate,
+    activityEndList,
+    updateActivityEnd,
   };
 }

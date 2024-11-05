@@ -22,7 +22,7 @@ const InfoBox = ({
                 return false;
             }
         }
-        else if (headerText === "Start" || headerText === "Auto" || headerText === "Dates" || headerText === "Start Date" || headerText === "End Date") {
+        else if (headerText === "Start" || headerText === "End" || headerText === "Auto" || headerText === "Dates" || headerText === "Start Date" || headerText === "End Date") {
             return true;
         }
         else {

@@ -14,6 +14,7 @@ const Info = () => {
         dateAvailability,
         activityStartDate,
         activityEndDate,
+        activityEndList,
       } = useInfo();
 
     return (
@@ -28,6 +29,7 @@ const Info = () => {
                     <h1 id="weekday-display">{weekdayDisplay}</h1>
                 </div>
                 <InfoBox headerText="Start" activityData={activityStartList} dateAvailability={dateAvailability} />
+                <InfoBox headerText="End" activityData={activityEndList} dateAvailability={dateAvailability} />
                 <InfoBox headerText="Auto" activityData={activityListAuto} dateAvailability={dateAvailability} />
                 <InfoBox headerText="Day" activityData={activityListDay} dateAvailability={dateAvailability} />
                 <InfoBox headerText="Night" activityData={activityListNight} dateAvailability={dateAvailability} />

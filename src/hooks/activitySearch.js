@@ -19,6 +19,18 @@ export function searchByStartDate(month, day) {
     return matchedArrays;
 }
 
+//Search by end date
+export function searchByEndDate(month, day) {
+    month = parseInt(month, 10);
+    day = parseInt(day, 10);
+    
+    const matchedArrays = activityStartDates.activityEndNames
+        .filter(activity => activity.endDate.month === month && activity.endDate.day === day)
+        .map(activity => activity.name);
+
+    return matchedArrays;
+}
+
 //Search for activities with weekly schedules
 export function searchByWeekday(month, day, weekday) {
     const startDatesArray = [];
