@@ -138,3 +138,144 @@ export const activityStartNames = [
     { name: "Faith", startDate: FaithStart },
     { name: "Councillor", startDate: CouncillorStart },
 ]
+
+export const FoolEnd = {
+    month: 12,
+    day: 24
+}
+
+export const MagicianEnd = {
+    month: 12,
+    day: 24
+}
+
+export const PriestessEnd = {
+    month: 2,
+    day: 2
+}
+
+export const EmpressEnd = {
+    month: 2,
+    day: 1
+}
+
+export const EmperorEnd = {
+    month: 2,
+    day: 1
+}
+
+export const HierophantEnd = {
+    month: 2,
+    day: 1
+}
+
+export const LoversEnd = {
+    month: 2,
+    day: 1
+}
+
+export const ChariotEnd = {
+    month: 2,
+    day: 2
+}
+
+export const JusticeEnd = {
+    month: 11,
+    day: 17
+}
+
+export const HermitEnd = {
+    month: 2,
+    day: 1
+}
+
+export const FortuneEnd = {
+    month: 2,
+    day: 1
+}
+
+export const StrengthEnd = {
+    month: 2,
+    day: 2
+}
+
+export const HangedManEnd = {
+    month: 2,
+    day: 1
+}
+
+export const DeathEnd = {
+    month: 2,
+    day: 2
+}
+
+export const TemperanceEnd = {
+    month: 1,
+    day: 28
+}
+
+export const DevilEnd = {
+    month: 2,
+    day: 1
+}
+
+export const TowerEnd = {
+    month: 2,
+    day: 2
+}
+
+export const StarEnd = {
+    month: 2,
+    day: 1
+}
+
+export const MoonEnd = {
+    month: 1,
+    day: 29
+}
+
+export const SunEnd = {
+    month: 11,
+    day: 13
+}
+
+export const JudgementEnd = {
+    month: 11,
+    day: 20
+}
+
+export const FaithEnd = {
+    month: 2,
+    day: 2
+}
+
+export const CouncillorEnd = {
+    month: 11,
+    day: 17
+}
+
+export const activityEndNames = [
+    { name: "Fool", endDate: FoolEnd },
+    { name: "Magician", endDate: MagicianEnd },
+    { name: "Priestess", endDate: PriestessEnd },
+    { name: "Empress", endDate: EmpressEnd },
+    { name: "Emperor", endDate: EmperorEnd },
+    { name: "Hierophant", endDate: HierophantEnd },
+    { name: "Lovers", endDate: LoversEnd },
+    { name: "Chariot", endDate: ChariotEnd },
+    { name: "Justice", endDate: JusticeEnd },
+    { name: "Hermit", endDate: HermitEnd },
+    { name: "Fortune", endDate: FortuneEnd },
+    { name: "Strength", endDate: StrengthEnd },
+    { name: "Hanged Man", endDate: HangedManEnd },
+    { name: "Death", endDate: DeathEnd },
+    { name: "Temperance", endDate: TemperanceEnd },
+    { name: "Devil", endDate: DevilEnd },
+    { name: "Tower", endDate: TowerEnd },
+    { name: "Star", endDate: StarEnd },
+    { name: "Moon", endDate: MoonEnd },
+    { name: "Sun", endDate: SunEnd },
+    { name: "Judgement", endDate: JudgementEnd },
+    { name: "Faith", endDate: FaithEnd },
+    { name: "Councillor", endDate: CouncillorEnd },
+]

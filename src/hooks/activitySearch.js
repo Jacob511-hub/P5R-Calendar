@@ -50,3 +50,8 @@ export function searchStartDateByActivity(activity) {
     const matchedActivity = activityStartDates.activityStartNames.find((item) => item.name === activity);
     return matchedActivity ? matchedActivity.startDate : [""]; 
 }
+
+export function searchEndDateByActivity(activity) {
+    const matchedActivity = activityStartDates.activityEndNames.find((item) => item.name === activity);
+    return matchedActivity ? matchedActivity.endDate : [""]; 
+}

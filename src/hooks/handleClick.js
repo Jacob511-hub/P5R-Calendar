@@ -4,6 +4,7 @@ import { searchByStartDate } from './activitySearch';
 import { searchByActivity } from './activitySearch';
 import { searchByWeekday } from './activitySearch';
 import { searchStartDateByActivity } from './activitySearch';
+import { searchEndDateByActivity } from './activitySearch';
 import splitArrayByTime from './splitArrayByTime';
 import { useInfo } from '../components/CalendarContext';
 
@@ -17,7 +18,8 @@ export const dateClick = (monthIndex, dateType, dateNumber, weekday, activityNam
         updateWeekday,
         updateActivityStart,
         updateDateAvailability,
-        updateActivityStartDate
+        updateActivityStartDate,
+        updateActivityEndDate
       } = useInfo();
 
     const [clicked, setClicked] = useState(false);
@@ -42,10 +44,12 @@ export const dateClick = (monthIndex, dateType, dateNumber, weekday, activityNam
             const activitiesStartList = searchByStartDate(monthIndex, dateNumber);
             updateActivityStart(activitiesStartList);
             updateActivityStartDate("");
+            updateActivityEndDate("");
         } else if (dateNumber === 0) {
             updateDate(activityName);
             const dateList = searchByActivity(activityName);
             const startDate = searchStartDateByActivity(activityName);
+            const endDate = searchEndDateByActivity(activityName);
 
             updateActivityStart([]);
             updateActivityDay([]);
@@ -55,6 +59,7 @@ export const dateClick = (monthIndex, dateType, dateNumber, weekday, activityNam
             updateWeekday("");
             updateDateAvailability("none");
             updateActivityStartDate([`${startDate.month}/${startDate.day}`]);
+            updateActivityEndDate([`${endDate.month}/${endDate.day}`]);
         } else {
             updateDate("");
             updateActivityStart([]);
@@ -65,6 +70,7 @@ export const dateClick = (monthIndex, dateType, dateNumber, weekday, activityNam
             updateWeekday("");
             updateDateAvailability("none");
             updateActivityStartDate("");
+            updateActivityEndDate("");
         }
     };
   
