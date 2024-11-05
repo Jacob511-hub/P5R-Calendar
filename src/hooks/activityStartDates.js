@@ -101,7 +101,6 @@ export const CouncillorStart = {
 export const activityStartNames = [
   { name: "Priestess", startDate: PriestessStart },
   { name: "Empress", startDate: EmpressStart },
-  // ! I assume this is a typo and should be "Emperor" instead of "Lovers"
   { name: "Lovers", startDate: EmperorStart },
   { name: "Hierophant", startDate: HierophantStart },
   { name: "Lovers", startDate: LoversStart },

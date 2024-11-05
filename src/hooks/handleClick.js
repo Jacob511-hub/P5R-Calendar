@@ -10,7 +10,7 @@ export function dateClick(monthIndex, dateNumber, weekday, activityName, onClick
   const [clicked, setClicked] = useState(false);
 
   /*
-    ! While the nested if statement here works fine it cna be hard to read and can be simplified by using a more functional approach. You can create helper functions for each condition and then call those in the if statement to make the code easier to read. This would also help with automated testing down the line as you can test each helper function individually.
+    ! While the nested if statement here works fine it can be hard to read and can be simplified by using a more functional approach. You can create helper functions for each condition and then call those in the if statement to make the code easier to read. This would also help with automated testing down the line as you can test each helper function individually.
 
     ex:
     const updateForDate = () => {
