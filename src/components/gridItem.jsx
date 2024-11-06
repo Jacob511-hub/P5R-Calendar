@@ -1,6 +1,18 @@
 import React from 'react';
 
-const GridItem = ( {row, col, dateNumber, dateType, tileSkewX, tileSkewY, shadowSkewX, shadowSkewY, weekday, clicked, handleClick} ) => {
+const GridItem = ({
+    row,
+    col,
+    dateNumber,
+    dateType,
+    tileSkewX,
+    tileSkewY,
+    shadowSkewX,
+    shadowSkewY,
+    weekday,
+    clicked,
+    handleClick
+}) => {
     const classTile = `grid-tile ${dateType}-tile`;
     const classShadow = `grid-shadow ${dateType}-shadow`;
 
@@ -14,7 +26,7 @@ const GridItem = ( {row, col, dateNumber, dateType, tileSkewX, tileSkewY, shadow
     };
 
     return (
-        <div key={`${row}-${col}`} className="grid-item" onClick={handleClick}>
+        <div className="grid-item" onClick={handleClick}>
             <h1 className="date-number">{dateNumber}</h1>
             <div className={classTile} style={tileStyle}></div>
             <div className={classShadow} style={shadowStyle}></div>

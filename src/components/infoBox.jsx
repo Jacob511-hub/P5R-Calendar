@@ -1,5 +1,5 @@
 import React from 'react';
-import Divider from '@mui/material/Divider';
+import DividerCustom from './dividerCustom';
 
 const InfoBox = ({
     headerText,
@@ -35,21 +35,13 @@ const InfoBox = ({
             {activityData.length > 0 && checkDateAvailability() ? (
                 <>
                     <h1 className='info-header'>{headerText}</h1>
-                    <Divider variant="middle" 
-                        style={{
-                            borderColor: 'white',
-                        }}
-                    />
+                    <DividerCustom />
                     <ul style={{ listStyleType: 'none', padding: 0, margin: 0 }}>
                         {activityData.map((name, index) => (
                             <h2 key={index}>{name}</h2>
                         ))}
                     </ul>
-                    <Divider variant="middle" 
-                        style={{
-                            borderColor: 'white',
-                        }}
-                    />
+                    <DividerCustom />
                 </>
             ) : (
                 <p style={{ margin: 0 }}></p>

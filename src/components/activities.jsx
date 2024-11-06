@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
-import Accordion from '@mui/material/Accordion';
-import AccordionActions from '@mui/material/AccordionActions';
-import AccordionSummary from '@mui/material/AccordionSummary';
-import AccordionDetails from '@mui/material/AccordionDetails';
-import Divider from '@mui/material/Divider';
+import daggerImage from '../assets/dagger.png';
+import AccordionCustom from './accordionCustom';
+import DividerCustom from './dividerCustom';
 import ConfidantContainer from './confidantContainer';
 import { tarot, tarotNames } from '../hooks/confidantassets';
 
@@ -12,43 +10,23 @@ const Activities = () => {
         <div className="activities-container">
             <img
                 className="dagger"
-                src="src/assets/dagger.png">
+                src={daggerImage}>
             </img>
             <div className="activities-display">
                 <img src="src/assets/activities.png"></img>
-                <Divider variant="middle" 
-                    style={{
-                        borderColor: 'white',
-                    }}
-                />
-                <Accordion
-                    style={{
-                        backgroundColor: 'transparent', // Make the entire accordion transparent
-                        boxShadow: 'none', // Remove box shadow
-                        color: 'white'
-                    }}
-                  >
-                    <AccordionSummary
-                        aria-controls="panel1a-content"
-                        id="panel1a-header"
-                        style={{
-                            backgroundImage: 'url("src/assets/confidants.png")',
-                            backgroundSize: 'cover',
-                            backgroundPosition: 'center',
-                            height: '75px'
-                        }}
-                    >
-                    </AccordionSummary>
-                    <AccordionDetails>
-                        {Array.from({ length: tarot.length }).map((_, index) => (
-                            <ConfidantContainer 
-                                key={index}
-                                tarot={tarot[index]}
+                <DividerCustom />
+                <AccordionCustom
+                    headerImg={'url("src/assets/confidants.png")'}
+                    renderContent={() => (
+                        tarot.map((tarotCard, index) => (
+                            <ConfidantContainer
+                                key={tarotCard}
+                                tarot={tarotCard}
                                 name={tarotNames[index]}
                             />
-                        ))}
-                    </AccordionDetails>
-                </Accordion>
+                        ))
+                    )}
+                />
             </div>
         </div>
     )

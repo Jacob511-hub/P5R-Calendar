@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
+import daggerImage from '../assets/dagger.png';
 import Dates from './dates';
 import { monthHeader, dateKeys, dateNumbers } from '../hooks/monthData.js'
 
@@ -40,7 +40,7 @@ const Months = () => {
         <div className="calendar">
             <img
                 className="dagger"
-                src="src/assets/dagger.png">
+                src={daggerImage}>
             </img>
             <div id="calendar-header">
                 <span

@@ -24,7 +24,7 @@ export const dateClick = (monthIndex, dateType, dateNumber, weekday, activityNam
         updateActivityStartDate,
         updateActivityEndDate,
         updateActivityEnd,
-      } = useInfo();
+    } = useInfo();
 
     const [clicked, setClicked] = useState(false);
   

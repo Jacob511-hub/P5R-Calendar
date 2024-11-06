@@ -1,4 +1,5 @@
 import React from 'react';
+import daggerImage from '../assets/dagger.png';
 import InfoBox from './infoBox';
 import { useInfo } from '../components/CalendarContext';
 
@@ -15,13 +16,13 @@ const Info = () => {
         activityStartDate,
         activityEndDate,
         activityEndList,
-      } = useInfo();
+    } = useInfo();
 
     return (
         <div className="info-container">
             <img
                 className="dagger"
-                src="src/assets/dagger.png">
+                src={daggerImage}>
             </img>
             <div className="info-display">
                 <div className="info-date">
