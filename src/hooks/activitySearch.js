@@ -40,11 +40,14 @@ export function searchByWeekday(month, day, weekday) {
             if (matchedArrays[index] === activityStartDates.activityStartNames[i].name) {
                 let startMonth = activityStartDates.activityStartNames[i].startDate.month;
                 let startDay = activityStartDates.activityStartNames[i].startDate.day;
+                let endMonth = activityStartDates.activityEndNames[i].endDate.month;
+                let endDay = activityStartDates.activityEndNames[i].endDate.day;
 
                 let monthIndex = (((month === 12 ? 0 : month) - 4)+ 12) % 12;
                 let startMonthIndex = (((startMonth === 12 ? 0 : startMonth) - 4)+ 12) % 12;
+                let endMonthIndex = (((endMonth === 12 ? 0 : endMonth) - 4)+ 12) % 12;
 
-                if (monthIndex > startMonthIndex || (monthIndex === startMonthIndex && day >= startDay)) {
+                if ((monthIndex > startMonthIndex || (monthIndex === startMonthIndex && day >= startDay)) && (monthIndex < endMonthIndex || (monthIndex === endMonthIndex && day <= endDay))) {
                     startDatesArray.push(matchedArrays[index]);
                 }
             }
