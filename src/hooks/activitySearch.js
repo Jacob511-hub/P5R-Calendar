@@ -31,7 +31,7 @@ export function searchByEndDate(month, day) {
     return matchedArrays;
 }
 
-//Search for activities with weekly schedules
+//Search for activities with weekly schedules, checking for the activity's start and end dates
 export function searchByWeekday(month, day, weekday) {
     const startDatesArray = [];
     const matchedArrays = activityDates.activityNames.filter((item) => item.array.includes(weekday)).map((item) => item.name);
@@ -48,6 +48,12 @@ export function searchByWeekday(month, day, weekday) {
                 let endMonthIndex = (((endMonth === 12 ? 0 : endMonth) - 4)+ 12) % 12;
 
                 if ((monthIndex > startMonthIndex || (monthIndex === startMonthIndex && day >= startDay)) && (monthIndex < endMonthIndex || (monthIndex === endMonthIndex && day <= endDay))) {
+                    const activityExceptions = activityStartDates.activityExceptionNames.find((item) => item.name === matchedArrays[index]);
+
+                    if (activityExceptions && activityExceptions.exceptionDates.includes(`${month}/${day}`)) {
+                        continue;
+                    }
+                    
                     startDatesArray.push(matchedArrays[index]);
                 }
             }

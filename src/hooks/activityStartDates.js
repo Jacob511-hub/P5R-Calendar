@@ -279,3 +279,34 @@ export const activityEndNames = [
     { name: "Faith", endDate: FaithEnd },
     { name: "Councillor", endDate: CouncillorEnd },
 ]
+
+export const LoversException = [
+    "4/18",
+    "4/20",
+];
+
+export const activityExceptionNames = [
+    // { name: "Fool", exceptionDates: FoolException },
+    // { name: "Magician", exceptionDates: MagicianException },
+    // { name: "Priestess", exceptionDates: PriestessException },
+    // { name: "Empress", exceptionDates: EmpressException },
+    // { name: "Emperor", exceptionDates: EmperorException },
+    // { name: "Hierophant", exceptionDates: HierophantException },
+    { name: "Lovers", exceptionDates: LoversException },
+    // { name: "Chariot", exceptionDates: ChariotException },
+    // { name: "Justice", exceptionDates: JusticeException },
+    // { name: "Hermit", exceptionDates: HermitException },
+    // { name: "Fortune", exceptionDates: FortuneException },
+    // { name: "Strength", exceptionDates: StrengthException },
+    // { name: "Hanged Man", exceptionDates: HangedManException },
+    // { name: "Death", exceptionDates: DeathException },
+    // { name: "Temperance", exceptionDates: TemperanceException },
+    // { name: "Devil", exceptionDates: DevilException },
+    // { name: "Tower", exceptionDates: TowerException },
+    // { name: "Star", exceptionDates: StarException },
+    // { name: "Moon", exceptionDates: MoonException },
+    // { name: "Sun", exceptionDates: SunException },
+    // { name: "Judgement", exceptionDates: JudgementException },
+    // { name: "Faith", exceptionDates: FaithException },
+    // { name: "Councillor", exceptionDates: CouncillorException },
+]
