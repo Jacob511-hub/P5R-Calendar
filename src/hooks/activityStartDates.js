@@ -282,7 +282,15 @@ export const activityEndNames = [
 
 export const LoversException = [
     "4/18",
+    "4/19",
     "4/20",
+    "4/22",
+    "4/24",
+    "4/25",
+    "4/26",
+    "4/27",
+    "4/29",
+    "5/1",
 ];
 
 export const activityExceptionNames = [

@@ -27,10 +27,7 @@ export const EmpressDates = [
 export const EmperorDates = [
     "Monday",
     "Tuesday",
-    "Wednesday",
-    "Thursday",
     "Friday",
-    "Saturday",
     "Sunday",
 ];
 
@@ -38,13 +35,9 @@ export const HierophantDates = [
     "Monday",
     "Tuesday",
     "Thursday",
-    "Friday",
-    "Saturday",
-    "Sunday",
 ];
 
 export const LoversDates = [
-    "Monday",
     "Tuesday",
     "Wednesday",
     "Friday",
@@ -52,21 +45,14 @@ export const LoversDates = [
 ];
 
 export const ChariotDates = [
-    "Monday",
     "Tuesday",
     "Wednesday",
-    "Thursday",
     "Friday",
     "Saturday",
-    "Sunday",
 ];
 
 export const JusticeDates = [
-    "Monday",
-    "Tuesday",
     "Wednesday",
-    "Thursday",
-    "Friday",
     "Saturday",
 ];
 
@@ -80,12 +66,10 @@ export const HermitDates = [
 export const FortuneDates = [
     "Tuesday",
     "Thursday",
-    "Saturday",
     "Sunday",
 ];
 
 export const HangedManDates = [
-    "Thursday",
     "Saturday",
     "Sunday",
 ];
@@ -108,11 +92,8 @@ export const TemperanceDates = [
 export const DevilDates = [
     "Monday",
     "Tuesday",
-    "Wednesday",
     "Thursday",
     "Friday",
-    "Saturday",
-    "Sunday",
 ];
 
 export const TowerDates = [
@@ -126,7 +107,6 @@ export const StarDates = [
     "Monday",
     "Wednesday",
     "Saturday",
-    "Sunday",
 ];
 
 export const MoonDates = [
@@ -192,8 +172,6 @@ export const FaithDates = [
 
 export const CouncillorDates = [
     "Monday",
-    "Tuesday",
-    "Wednesday",
     "Friday",
 ];
 
