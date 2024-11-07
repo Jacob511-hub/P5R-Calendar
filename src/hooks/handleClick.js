@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import {
     searchByDate,
+    searchByExtraDate,
     searchByStartDate,
     searchByEndDate,
     searchByActivity,
@@ -35,6 +36,7 @@ export const dateClick = (monthIndex, dateType, dateNumber, weekday, activityNam
             const activityList = [
                 ...searchByWeekday(monthIndex, dateNumber, weekday),
                 ...searchByDate(`${monthIndex}/${dateNumber}`),
+                ...searchByExtraDate(`${monthIndex}/${dateNumber}`),
             ];
             const { autoArray, dayArray, nightArray } = splitArrayByTime(activityList);
             

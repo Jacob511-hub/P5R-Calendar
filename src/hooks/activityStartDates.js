@@ -291,6 +291,11 @@ export const LoversException = [
     "4/27",
     "4/29",
     "5/1",
+    "5/18",
+    "5/20",
+    "5/22",
+    "5/25",
+    "5/27",
 ];
 
 export const activityExceptionNames = [
@@ -301,6 +306,40 @@ export const activityExceptionNames = [
     // { name: "Emperor", exceptionDates: EmperorException },
     // { name: "Hierophant", exceptionDates: HierophantException },
     { name: "Lovers", exceptionDates: LoversException },
+    // { name: "Chariot", exceptionDates: ChariotException },
+    // { name: "Justice", exceptionDates: JusticeException },
+    // { name: "Hermit", exceptionDates: HermitException },
+    // { name: "Fortune", exceptionDates: FortuneException },
+    // { name: "Strength", exceptionDates: StrengthException },
+    // { name: "Hanged Man", exceptionDates: HangedManException },
+    // { name: "Death", exceptionDates: DeathException },
+    // { name: "Temperance", exceptionDates: TemperanceException },
+    // { name: "Devil", exceptionDates: DevilException },
+    // { name: "Tower", exceptionDates: TowerException },
+    // { name: "Star", exceptionDates: StarException },
+    // { name: "Moon", exceptionDates: MoonException },
+    // { name: "Sun", exceptionDates: SunException },
+    // { name: "Judgement", exceptionDates: JudgementException },
+    // { name: "Faith", exceptionDates: FaithException },
+    // { name: "Councillor", exceptionDates: CouncillorException },
+]
+
+export const LoversExtra = [
+    "5/19",
+    "5/21",
+    "5/23",
+    "5/26",
+    "5/28",
+];
+
+export const activityExtraNames = [
+    // { name: "Fool", exceptionDates: FoolException },
+    // { name: "Magician", exceptionDates: MagicianException },
+    // { name: "Priestess", exceptionDates: PriestessException },
+    // { name: "Empress", exceptionDates: EmpressException },
+    // { name: "Emperor", exceptionDates: EmperorException },
+    // { name: "Hierophant", exceptionDates: HierophantException },
+    { name: "Lovers", extraDates: LoversExtra },
     // { name: "Chariot", exceptionDates: ChariotException },
     // { name: "Justice", exceptionDates: JusticeException },
     // { name: "Hermit", exceptionDates: HermitException },

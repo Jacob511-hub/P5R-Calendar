@@ -7,6 +7,12 @@ export function searchByDate(date) {
     return matchedArrays;
 }
 
+//Search for activities with dates outside of their weekly schedule
+export function searchByExtraDate(date) {
+    const matchedArrays = activityStartDates.activityExtraNames.filter((item) => item.extraDates.includes(date)).map((item) => item.name);
+    return matchedArrays;
+}
+
 //Search by start date
 export function searchByStartDate(month, day) {
     month = parseInt(month, 10);
