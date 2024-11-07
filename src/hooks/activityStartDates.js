@@ -280,6 +280,18 @@ export const activityEndNames = [
     { name: "Councillor", endDate: CouncillorEnd },
 ]
 
+export const HierophantException = [
+    "5/2",
+    "5/3",
+    "5/5",
+    "5/10",
+    "5/17",
+    "5/23",
+    "5/24",
+    "5/30",
+    "5/31",
+];
+
 export const LoversException = [
     "4/18",
     "4/19",
@@ -298,19 +310,27 @@ export const LoversException = [
     "5/27",
 ];
 
+export const ChariotException = [
+    "4/20",
+    "4/23",
+    "4/26",
+    "4/30",
+    "5/18",
+    "5/21",
+    "5/24",
+    "5/31",
+];
+
 export const activityExceptionNames = [
-    // { name: "Fool", exceptionDates: FoolException },
-    // { name: "Magician", exceptionDates: MagicianException },
     // { name: "Priestess", exceptionDates: PriestessException },
     // { name: "Empress", exceptionDates: EmpressException },
     // { name: "Emperor", exceptionDates: EmperorException },
-    // { name: "Hierophant", exceptionDates: HierophantException },
+    { name: "Hierophant", exceptionDates: HierophantException },
     { name: "Lovers", exceptionDates: LoversException },
-    // { name: "Chariot", exceptionDates: ChariotException },
+    { name: "Chariot", exceptionDates: ChariotException },
     // { name: "Justice", exceptionDates: JusticeException },
     // { name: "Hermit", exceptionDates: HermitException },
     // { name: "Fortune", exceptionDates: FortuneException },
-    // { name: "Strength", exceptionDates: StrengthException },
     // { name: "Hanged Man", exceptionDates: HangedManException },
     // { name: "Death", exceptionDates: DeathException },
     // { name: "Temperance", exceptionDates: TemperanceException },
@@ -319,10 +339,22 @@ export const activityExceptionNames = [
     // { name: "Star", exceptionDates: StarException },
     // { name: "Moon", exceptionDates: MoonException },
     // { name: "Sun", exceptionDates: SunException },
-    // { name: "Judgement", exceptionDates: JudgementException },
-    // { name: "Faith", exceptionDates: FaithException },
     // { name: "Councillor", exceptionDates: CouncillorException },
 ]
+
+export const HierophantExtra = [
+    "4/22",
+    "4/23",
+    "4/27",
+    "4/30",
+    "5/8",
+    "5/20",
+    "5/21",
+    "5/22",
+    "5/27",
+    "5/28",
+    "5/29",
+];
 
 export const LoversExtra = [
     "5/19",
@@ -332,28 +364,31 @@ export const LoversExtra = [
     "5/28",
 ];
 
+export const ChariotExtra = [
+    "4/28",
+    "5/1",
+    "5/9",
+    "5/22",
+    "5/23",
+];
+
 export const activityExtraNames = [
-    // { name: "Fool", exceptionDates: FoolException },
-    // { name: "Magician", exceptionDates: MagicianException },
-    // { name: "Priestess", exceptionDates: PriestessException },
-    // { name: "Empress", exceptionDates: EmpressException },
-    // { name: "Emperor", exceptionDates: EmperorException },
-    // { name: "Hierophant", exceptionDates: HierophantException },
+    // { name: "Priestess", extraDates: PriestessExtra },
+    // { name: "Empress", extraDates: EmpressExtra },
+    // { name: "Emperor", extraDates: EmperorExtra },
+    { name: "Hierophant", extraDates: HierophantExtra },
     { name: "Lovers", extraDates: LoversExtra },
-    // { name: "Chariot", exceptionDates: ChariotException },
-    // { name: "Justice", exceptionDates: JusticeException },
-    // { name: "Hermit", exceptionDates: HermitException },
-    // { name: "Fortune", exceptionDates: FortuneException },
-    // { name: "Strength", exceptionDates: StrengthException },
-    // { name: "Hanged Man", exceptionDates: HangedManException },
-    // { name: "Death", exceptionDates: DeathException },
-    // { name: "Temperance", exceptionDates: TemperanceException },
-    // { name: "Devil", exceptionDates: DevilException },
-    // { name: "Tower", exceptionDates: TowerException },
-    // { name: "Star", exceptionDates: StarException },
-    // { name: "Moon", exceptionDates: MoonException },
-    // { name: "Sun", exceptionDates: SunException },
-    // { name: "Judgement", exceptionDates: JudgementException },
-    // { name: "Faith", exceptionDates: FaithException },
-    // { name: "Councillor", exceptionDates: CouncillorException },
+    { name: "Chariot", extraDates: ChariotExtra },
+    // { name: "Justice", extraDates: JusticeExtra },
+    // { name: "Hermit", extraDates: HermitExtra },
+    // { name: "Fortune", extraDates: FortuneExtra },
+    // { name: "Hanged Man", extraDates: HangedManExtra },
+    // { name: "Death", extraDates: DeathExtra },
+    // { name: "Temperance", extraDates: TemperanceExtra },
+    // { name: "Devil", extraDates: DevilExtra },
+    // { name: "Tower", extraDates: TowerExtra },
+    // { name: "Star", extraDates: StarExtra },
+    // { name: "Moon", extraDates: MoonExtra },
+    // { name: "Sun", extraDates: SunExtra },
+    // { name: "Councillor", extraDates: CouncillorExtra },
 ]
