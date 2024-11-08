@@ -112,7 +112,7 @@ export const dateKeys = [
         ["none", "none", "none", "none", "free", "free", "free"],
         ["free", "free", "free", "free", "free", "free", "free"],
         ["free", "free", "free", "free", "free", "deadline", "deadline"],
-        ["eveningOnly", "eveningOnly", "storyAll", "storyAll", "storyAll", "eveningOnly", "storyAll"],
+        ["eveningOnly", "eveningOnly", "storyAll", "storyAll", "free", "eveningOnly", "storyAll"],
         ["storyAll", "storyAll", "storyAll", "storyAll", "storyAll", "storyAll", "storyAll"],
         ["none", "none", "none", "none", "none", "none", "none"],
     ],
