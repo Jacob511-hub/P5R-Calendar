@@ -193,7 +193,7 @@ export const activityNames = [
   { name: "Devil", array: DevilDates, time: "Night" },
   { name: "Tower", array: TowerDates, time: "Day" },
   { name: "Star", array: StarDates, time: "Night" },
-  { name: "Moon", array: MoonDates, time: "Day" },
+  { name: "Moon", array: MoonDates, time: "Night" },
   { name: "Sun", array: SunDates, time: "Night" },
   { name: "Judgement", array: JudgementDates, time: "Auto" },
   { name: "Faith", array: FaithDates, time: "Day" },

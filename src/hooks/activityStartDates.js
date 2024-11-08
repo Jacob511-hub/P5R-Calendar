@@ -1,6 +1,6 @@
 export const FoolStart = {
     month: 4,
-    day: 14
+    day: 12
 }
 
 export const MagicianStart = {
@@ -321,6 +321,25 @@ export const ChariotException = [
     "5/31",
 ];
 
+export const HangedManException = [
+    "5/7",
+    "5/15",
+];
+
+export const MoonException = [
+    "5/6",
+    "5/7",
+    "5/9",
+    "5/15",
+    "5/17",
+    "5/19",
+    "6/9",
+    "6/18",
+    "6/19",
+    "6/20",
+    "6/21",
+];
+
 export const activityExceptionNames = [
     // { name: "Priestess", exceptionDates: PriestessException },
     // { name: "Empress", exceptionDates: EmpressException },
@@ -331,13 +350,13 @@ export const activityExceptionNames = [
     // { name: "Justice", exceptionDates: JusticeException },
     // { name: "Hermit", exceptionDates: HermitException },
     // { name: "Fortune", exceptionDates: FortuneException },
-    // { name: "Hanged Man", exceptionDates: HangedManException },
+    { name: "Hanged Man", exceptionDates: HangedManException },
     // { name: "Death", exceptionDates: DeathException },
     // { name: "Temperance", exceptionDates: TemperanceException },
     // { name: "Devil", exceptionDates: DevilException },
     // { name: "Tower", exceptionDates: TowerException },
     // { name: "Star", exceptionDates: StarException },
-    // { name: "Moon", exceptionDates: MoonException },
+    { name: "Moon", exceptionDates: MoonException },
     // { name: "Sun", exceptionDates: SunException },
     // { name: "Councillor", exceptionDates: CouncillorException },
 ]
@@ -372,6 +391,10 @@ export const ChariotExtra = [
     "5/23",
 ];
 
+export const CouncillorExtra = [
+    "",
+];
+
 export const activityExtraNames = [
     // { name: "Priestess", extraDates: PriestessExtra },
     // { name: "Empress", extraDates: EmpressExtra },
@@ -388,7 +411,6 @@ export const activityExtraNames = [
     // { name: "Devil", extraDates: DevilExtra },
     // { name: "Tower", extraDates: TowerExtra },
     // { name: "Star", extraDates: StarExtra },
-    // { name: "Moon", extraDates: MoonExtra },
     // { name: "Sun", extraDates: SunExtra },
-    // { name: "Councillor", extraDates: CouncillorExtra },
+    { name: "Councillor", extraDates: CouncillorExtra },
 ]
