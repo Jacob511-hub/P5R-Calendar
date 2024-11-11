@@ -290,6 +290,13 @@ export const HierophantException = [
     "5/24",
     "5/30",
     "5/31",
+    "6/7",
+    "6/9",
+    "6/13",
+    "6/14",
+    "6/20",
+    "6/23",
+    "10/24",
 ];
 
 export const LoversException = [
@@ -324,6 +331,10 @@ export const ChariotException = [
 export const HangedManException = [
     "5/7",
     "5/15",
+];
+
+export const DeathException = [
+    "8/6"
 ];
 
 export const MoonException = [
@@ -399,7 +410,7 @@ export const activityExceptionNames = [
     // { name: "Hermit", exceptionDates: HermitException },
     // { name: "Fortune", exceptionDates: FortuneException },
     { name: "Hanged Man", exceptionDates: HangedManException },
-    // { name: "Death", exceptionDates: DeathException },
+    { name: "Death", exceptionDates: DeathException },
     // { name: "Temperance", exceptionDates: TemperanceException },
     // { name: "Devil", exceptionDates: DevilException },
     // { name: "Tower", exceptionDates: TowerException },
@@ -421,6 +432,20 @@ export const HierophantExtra = [
     "5/27",
     "5/28",
     "5/29",
+    "6/3",
+    "6/4",
+    "6/8",
+    "6/12",
+    "6/17",
+    "6/23",
+    "10/14",
+    "10/16",
+    "10/23",
+    "11/6",
+    "12/2",
+    "12/9",
+    "12/17",
+    "2/1",
 ];
 
 export const LoversExtra = [
@@ -454,7 +479,6 @@ export const activityExtraNames = [
     // { name: "Hermit", extraDates: HermitExtra },
     // { name: "Fortune", extraDates: FortuneExtra },
     // { name: "Hanged Man", extraDates: HangedManExtra },
-    // { name: "Death", extraDates: DeathExtra },
     // { name: "Temperance", extraDates: TemperanceExtra },
     // { name: "Devil", extraDates: DevilExtra },
     // { name: "Tower", extraDates: TowerExtra },
