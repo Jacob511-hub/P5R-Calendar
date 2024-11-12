@@ -7,7 +7,8 @@ import {
     searchByActivity,
     searchByWeekday,
     searchStartDateByActivity,
-    searchEndDateByActivity
+    searchEndDateByActivity,
+    searchDetailsByActivity
 } from './activitySearch';
 import splitArrayByTime from './splitArrayByTime';
 import { useInfo } from '../components/CalendarContext';
@@ -25,6 +26,7 @@ export const dateClick = (monthIndex, dateType, dateNumber, weekday, activityNam
         updateActivityStartDate,
         updateActivityEndDate,
         updateActivityEnd,
+        updateActivityDetails
     } = useInfo();
 
     const [clicked, setClicked] = useState(false);
@@ -55,11 +57,13 @@ export const dateClick = (monthIndex, dateType, dateNumber, weekday, activityNam
 
             updateActivityStartDate("");
             updateActivityEndDate("");
+            updateActivityDetails("");
         } else if (dateNumber === 0) {
             updateDate(activityName);
             const dateList = searchByActivity(activityName);
             const startDate = searchStartDateByActivity(activityName);
             const endDate = searchEndDateByActivity(activityName);
+            const details = searchDetailsByActivity(activityName);
 
             updateActivityStart([]);
             updateActivityEnd([]);
@@ -71,6 +75,7 @@ export const dateClick = (monthIndex, dateType, dateNumber, weekday, activityNam
             updateDateAvailability("none");
             updateActivityStartDate([`${startDate.month}/${startDate.day}`]);
             updateActivityEndDate([`${endDate.month}/${endDate.day}`]);
+            updateActivityDetails(details);
         } else {
             updateDate("");
             updateActivityStart([]);
@@ -83,6 +88,7 @@ export const dateClick = (monthIndex, dateType, dateNumber, weekday, activityNam
             updateDateAvailability("none");
             updateActivityStartDate("");
             updateActivityEndDate("");
+            updateActivityDetails("");
         }
     };
   

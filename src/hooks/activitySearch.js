@@ -1,5 +1,6 @@
 import * as activityDates from './activityDates';
 import * as activityStartDates from './activityStartDates'
+import * as activityDetails from './activityDetails'
 
 //Search for activities with set dates
 export function searchByDate(date) {
@@ -81,4 +82,9 @@ export function searchStartDateByActivity(activity) {
 export function searchEndDateByActivity(activity) {
     const matchedActivity = activityStartDates.activityEndNames.find((item) => item.name === activity);
     return matchedActivity ? matchedActivity.endDate : [""]; 
+}
+
+export function searchDetailsByActivity(activity) {
+    const matchedActivity = activityDetails.activityDetailsNames.find((item) => item.name === activity);
+    return matchedActivity ? matchedActivity.details : [""]; 
 }

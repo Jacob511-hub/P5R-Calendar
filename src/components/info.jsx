@@ -2,6 +2,8 @@ import React from 'react';
 import daggerImage from '../assets/dagger.png';
 import InfoBox from './infoBox';
 import { useInfo } from '../components/CalendarContext';
+import AccordionCustom from './accordionCustom';
+import DetailsBox from './detailsBox';
 
 const Info = () => {
     const {
@@ -16,6 +18,7 @@ const Info = () => {
         activityStartDate,
         activityEndDate,
         activityEndList,
+        activityDetails
     } = useInfo();
 
     return (
@@ -29,6 +32,8 @@ const Info = () => {
                     <h1 id="date-display">{dateDisplay}</h1>
                     <h1 id="weekday-display">{weekdayDisplay}</h1>
                 </div>
+                {/* <AccordionCustom headerImg={'url("src/assets/details.png")'} renderContent={() => (<h2 style = {{padding: 0, margin: 0}}>{activityDetails}</h2>)}></AccordionCustom> */}
+                <DetailsBox headerImg={'url("src/assets/details.png")'} details={activityDetails}></DetailsBox>
                 <InfoBox headerText="Start" activityData={activityStartList} dateAvailability={dateAvailability} />
                 <InfoBox headerText="End" activityData={activityEndList} dateAvailability={dateAvailability} />
                 <InfoBox headerText="Auto" activityData={activityListAuto} dateAvailability={dateAvailability} />
