@@ -1,5 +1,4 @@
 import React from 'react';
-import DividerCustom from './dividerCustom';
 import AccordionCustom from './accordionCustom';
 
 const DetailsBox = ({headerImg, details}) => {

@@ -383,6 +383,19 @@ export const JusticeException = [
     "11/16",
 ];
 
+export const HermitException = [
+    "9/25",
+    "10/2",
+    "10/9",
+    "11/16",
+    "12/3",
+    "12/15",
+    "1/14",
+    "1/15",
+    "1/26",
+    "1/29",
+];
+
 export const HangedManException = [
     "5/7",
     "5/15",
@@ -462,7 +475,7 @@ export const activityExceptionNames = [
     { name: "Lovers", exceptionDates: LoversException },
     { name: "Chariot", exceptionDates: ChariotException },
     { name: "Justice", exceptionDates: JusticeException },
-    // { name: "Hermit", exceptionDates: HermitException },
+    { name: "Hermit", exceptionDates: HermitException },
     // { name: "Fortune", exceptionDates: FortuneException },
     { name: "Hanged Man", exceptionDates: HangedManException },
     { name: "Death", exceptionDates: DeathException },
@@ -552,6 +565,11 @@ export const JusticeExtra = [
     "11/17",
 ];
 
+export const HermitExtra = [
+    "9/2",
+    "9/5",
+];
+
 export const CouncillorExtra = [
     "",
 ];
@@ -564,7 +582,7 @@ export const activityExtraNames = [
     { name: "Lovers", extraDates: LoversExtra },
     { name: "Chariot", extraDates: ChariotExtra },
     { name: "Justice", extraDates: JusticeExtra },
-    // { name: "Hermit", extraDates: HermitExtra },
+    { name: "Hermit", extraDates: HermitExtra },
     // { name: "Fortune", extraDates: FortuneExtra },
     // { name: "Hanged Man", extraDates: HangedManExtra },
     // { name: "Temperance", extraDates: TemperanceExtra },

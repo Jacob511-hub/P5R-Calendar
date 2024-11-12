@@ -2,7 +2,6 @@ import React from 'react';
 import daggerImage from '../assets/dagger.png';
 import InfoBox from './infoBox';
 import { useInfo } from '../components/CalendarContext';
-import AccordionCustom from './accordionCustom';
 import DetailsBox from './detailsBox';
 
 const Info = () => {
