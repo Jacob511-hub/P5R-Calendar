@@ -467,6 +467,18 @@ export const MoonException = [
     "12/23",
 ];
 
+export const CouncillorException = [
+    "7/29",
+    "8/1",
+    "8/5",
+    "8/8",
+    "8/12",
+    "8/15",
+    "8/19",
+    "9/19",
+    "10/10",
+];
+
 export const activityExceptionNames = [
     // { name: "Priestess", exceptionDates: PriestessException },
     // { name: "Empress", exceptionDates: EmpressException },
@@ -485,7 +497,7 @@ export const activityExceptionNames = [
     // { name: "Star", exceptionDates: StarException },
     { name: "Moon", exceptionDates: MoonException },
     // { name: "Sun", exceptionDates: SunException },
-    // { name: "Councillor", exceptionDates: CouncillorException },
+    { name: "Councillor", exceptionDates: CouncillorException },
 ]
 
 export const HierophantExtra = [
@@ -571,7 +583,24 @@ export const HermitExtra = [
 ];
 
 export const CouncillorExtra = [
-    "",
+    "6/8",
+    "6/21",
+    "9/6",
+    "9/20",
+    "9/21",
+    "9/24",
+    "9/27",
+    "9/29",
+    "10/1",
+    "10/5",
+    "10/8",
+    "10/15",
+    "11/2",
+    "11/5",
+    "11/9",
+    "11/12",
+    "11/16",
+    "11/17",
 ];
 
 export const activityExtraNames = [
