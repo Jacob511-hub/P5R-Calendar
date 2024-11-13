@@ -71,7 +71,7 @@ export const dateKeys = [
     [ //July
         ["none", "none", "none", "none", "none", "free", "free"],
         ["free", "free", "free", "deadline", "deadline", "deadline", "eveningOnly"],
-        ["eveningOnly", "eveningOnly", "free", "storyAll", "storyAll", "storyAll", "storyAll"],
+        ["storyAll", "eveningOnly", "free", "storyAll", "storyAll", "storyAll", "storyAll"],
         ["eveningOnly", "storyAll", "free", "storyAll", "storyAll", "storyAll", "storyAll"],
         ["storyAll", "storyAll", "free", "free", "free", "free", "free"],
         ["free", "none", "none", "none", "none", "none", "none"],
@@ -80,7 +80,7 @@ export const dateKeys = [
         ["none", "free", "free", "free", "free", "free", "free"],
         ["free", "free", "free", "free", "free", "free", "free"],
         ["free", "free", "free", "free", "deadline", "deadline", "deadline"],
-        ["eveningOnly", "eveningOnly", "eveningOnly", "eveningOnly", "eveningOnly", "eveningOnly", "eveningOnly"],
+        ["storyAll", "eveningOnly", "eveningOnly", "eveningOnly", "eveningOnly", "eveningOnly", "eveningOnly"],
         ["eveningOnly", "eveningOnly", "eveningOnly", "eveningOnly", "none", "none", "none"],
         ["none", "none", "none", "none", "none", "none", "none"],
     ],

@@ -50,7 +50,7 @@ export const HermitStart = {
 
 export const FortuneStart = {
     month: 6,
-    day: 22
+    day: 25
 }
 
 export const StrengthStart = {
@@ -278,7 +278,44 @@ export const activityEndNames = [
     { name: "Judgement", endDate: JudgementEnd },
     { name: "Faith", endDate: FaithEnd },
     { name: "Councillor", endDate: CouncillorEnd },
-]
+];
+
+export const EmpressException = [
+    "11/2",
+    "11/4",
+    "11/10",
+    "11/12",
+    "11/16",
+    "11/17",
+    "11/30",
+    "12/3",
+    "12/7",
+    "12/8",
+    "12/13",
+    "12/14",
+    "12/15",
+    "1/13",
+    "1/14",
+    "1/19",
+    "1/20",
+    "1/25",
+    "1/26",
+    "1/27",
+    "1/30",
+];
+
+export const EmperorException = [
+    "6/21",
+    "6/28",
+    "7/1",
+    "7/3",
+    "7/5",
+    "7/8",
+    "7/11",
+    "7/19",
+    "7/26",
+    "7/29",
+];
 
 export const HierophantException = [
     "5/2",
@@ -396,9 +433,17 @@ export const HermitException = [
     "1/29",
 ];
 
+export const FortuneException = [
+    "9/22",
+    "9/25",
+    "1/17",
+    "1/26",
+];
+
 export const HangedManException = [
     "5/7",
     "5/15",
+    "6/18",
 ];
 
 export const DeathException = [
@@ -467,6 +512,11 @@ export const MoonException = [
     "12/23",
 ];
 
+export const SunException = [
+    "6/19",
+    "7/17",
+];
+
 export const CouncillorException = [
     "7/29",
     "8/1",
@@ -481,14 +531,14 @@ export const CouncillorException = [
 
 export const activityExceptionNames = [
     // { name: "Priestess", exceptionDates: PriestessException },
-    // { name: "Empress", exceptionDates: EmpressException },
+    { name: "Empress", exceptionDates: EmpressException },
     // { name: "Emperor", exceptionDates: EmperorException },
     { name: "Hierophant", exceptionDates: HierophantException },
     { name: "Lovers", exceptionDates: LoversException },
-    { name: "Chariot", exceptionDates: ChariotException },
+    // { name: "Chariot", exceptionDates: ChariotException },
     { name: "Justice", exceptionDates: JusticeException },
     { name: "Hermit", exceptionDates: HermitException },
-    // { name: "Fortune", exceptionDates: FortuneException },
+    { name: "Fortune", exceptionDates: FortuneException },
     { name: "Hanged Man", exceptionDates: HangedManException },
     { name: "Death", exceptionDates: DeathException },
     // { name: "Temperance", exceptionDates: TemperanceException },
@@ -496,9 +546,17 @@ export const activityExceptionNames = [
     // { name: "Tower", exceptionDates: TowerException },
     // { name: "Star", exceptionDates: StarException },
     { name: "Moon", exceptionDates: MoonException },
-    // { name: "Sun", exceptionDates: SunException },
+    { name: "Sun", exceptionDates: SunException },
     { name: "Councillor", exceptionDates: CouncillorException },
-]
+];
+
+export const EmperorExtra = [
+    "6/23",
+    "6/25",
+    "6/30",
+    "7/2",
+    "7/7",
+];
 
 export const HierophantExtra = [
     "4/22",
@@ -582,6 +640,42 @@ export const HermitExtra = [
     "9/5",
 ];
 
+export const FortuneExtra = [
+    "7/30",
+    "12/22",
+    "2/1",
+];
+
+export const HangedManExtra = [
+    "6/6",
+    "6/22",
+    "7/6",
+    "7/27",
+    "8/3",
+    "8/23",
+    "9/20",
+    "10/4",
+    "11/8",
+    "12/1",
+    "12/8",
+    "12/15",
+    "12/19",
+    "12/22",
+    "1/17",
+    "1/24",
+    "1/31",
+    "2/1",
+];
+
+export const SunExtra = [
+    "8/11",
+    "8/25",
+    "9/19",
+    "9/22",
+    "10/10",
+    "11/3",
+];
+
 export const CouncillorExtra = [
     "6/8",
     "6/21",
@@ -605,19 +699,18 @@ export const CouncillorExtra = [
 
 export const activityExtraNames = [
     // { name: "Priestess", extraDates: PriestessExtra },
-    // { name: "Empress", extraDates: EmpressExtra },
     // { name: "Emperor", extraDates: EmperorExtra },
     { name: "Hierophant", extraDates: HierophantExtra },
     { name: "Lovers", extraDates: LoversExtra },
-    { name: "Chariot", extraDates: ChariotExtra },
+    // { name: "Chariot", extraDates: ChariotExtra },
     { name: "Justice", extraDates: JusticeExtra },
     { name: "Hermit", extraDates: HermitExtra },
-    // { name: "Fortune", extraDates: FortuneExtra },
-    // { name: "Hanged Man", extraDates: HangedManExtra },
+    { name: "Fortune", extraDates: FortuneExtra },
+    { name: "Hanged Man", extraDates: HangedManExtra },
     // { name: "Temperance", extraDates: TemperanceExtra },
     // { name: "Devil", extraDates: DevilExtra },
     // { name: "Tower", extraDates: TowerExtra },
     // { name: "Star", extraDates: StarExtra },
-    // { name: "Sun", extraDates: SunExtra },
+    { name: "Sun", extraDates: SunExtra },
     { name: "Councillor", extraDates: CouncillorExtra },
 ]
