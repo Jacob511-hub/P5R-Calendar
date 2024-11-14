@@ -356,3 +356,27 @@ body {
   height: 100%;
   width: auto;
 }
+
+.book-dvd-game-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  transform: skew(5deg, -5deg);
+  height: 100px;
+  width: 100%;
+  padding: 0px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.book-dvd-game-name {
+  position: relative;
+  font-size: 1.5em;
+  margin: auto;
+}
+
+.book-dvd-game-icon {
+  position: absolute;
+  height: auto;
+  width: 100%;
+}

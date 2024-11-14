@@ -7,10 +7,13 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 const AccordionCustom = ({headerImg, renderContent}) => {
     return (
         <Accordion
-            style={{
+            sx={{
                 backgroundColor: 'transparent',
                 boxShadow: 'none',
-                color: 'white'
+                color: 'white',
+                '&::before': {
+                    position: 'unset'
+                }
             }}
         >
             <AccordionSummary
