@@ -13,7 +13,43 @@ import {
 import splitArrayByTime from './splitArrayByTime';
 import { useInfo } from '../components/CalendarContext';
 
+const useReset = () => {
+    const {
+        updateDate,
+        updateActivityDay,
+        updateActivityNight,
+        updateActivityAuto,
+        updateActivityDates,
+        updateWeekday,
+        updateActivityStart,
+        updateDateAvailability,
+        updateActivityStartDate,
+        updateActivityEndDate,
+        updateActivityEnd,
+        updateActivityDetails
+    } = useInfo();
+    
+    const stateReset = () => {
+        updateDate("");
+        updateActivityStart([]);
+        updateActivityEnd([]);
+        updateActivityDay([]);
+        updateActivityNight([]);
+        updateActivityAuto([]);
+        updateActivityDates([])
+        updateWeekday("");
+        updateDateAvailability("none");
+        updateActivityStartDate("");
+        updateActivityEndDate("");
+        updateActivityDetails("");
+    };
+
+    return { stateReset };
+}
+
 export const dateClick = (monthIndex, dateType, dateNumber, weekday, activityName) => {
+    const { stateReset } = useReset();
+
     const {
         updateDate,
         updateActivityDay,
@@ -34,6 +70,7 @@ export const dateClick = (monthIndex, dateType, dateNumber, weekday, activityNam
     const handleClick = () => {
         setClicked((prevClicked) => !prevClicked);
         if (dateNumber > 0) {
+            stateReset();
             updateDate(`${monthIndex}/${dateNumber}`);
             const activityList = [
                 ...searchByWeekday(monthIndex, dateNumber, weekday),
@@ -54,41 +91,21 @@ export const dateClick = (monthIndex, dateType, dateNumber, weekday, activityNam
 
             const activitiesEndList = searchByEndDate(monthIndex, dateNumber);
             updateActivityEnd(activitiesEndList);
-
-            updateActivityStartDate("");
-            updateActivityEndDate("");
-            updateActivityDetails("");
         } else if (dateNumber === 0) {
+            stateReset();
             updateDate(activityName);
             const dateList = searchByActivity(activityName);
             const startDate = searchStartDateByActivity(activityName);
             const endDate = searchEndDateByActivity(activityName);
             const details = searchDetailsByActivity(activityName);
 
-            updateActivityStart([]);
-            updateActivityEnd([]);
-            updateActivityDay([]);
-            updateActivityNight([]);
-            updateActivityAuto([]);
             updateActivityDates(dateList);
-            updateWeekday("");
             updateDateAvailability("none");
             updateActivityStartDate([`${startDate.month}/${startDate.day}`]);
             updateActivityEndDate([`${endDate.month}/${endDate.day}`]);
             updateActivityDetails(details);
         } else {
-            updateDate("");
-            updateActivityStart([]);
-            updateActivityEnd([]);
-            updateActivityDay([]);
-            updateActivityNight([]);
-            updateActivityAuto([]);
-            updateActivityDates([])
-            updateWeekday("");
-            updateDateAvailability("none");
-            updateActivityStartDate("");
-            updateActivityEndDate("");
-            updateActivityDetails("");
+            stateReset();
         }
     };
   
