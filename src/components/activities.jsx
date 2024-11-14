@@ -39,7 +39,7 @@ const Activities = () => {
                             <BookDVDGameContainer
                                 key={book.name}
                                 itemIcon={bookIcon}
-                                name={book.name}
+                                item={book}
                             />
                         ))
                     )}
@@ -51,7 +51,7 @@ const Activities = () => {
                             <BookDVDGameContainer
                                 key={dvd.name}
                                 itemIcon={dvdIcon}
-                                name={dvd.name}
+                                item={dvd}
                             />
                         ))
                     )}
@@ -63,7 +63,7 @@ const Activities = () => {
                             <BookDVDGameContainer
                                 key={game.name}
                                 itemIcon={gameIcon}
-                                name={game.name}
+                                item={game}
                             />
                         ))
                     )}

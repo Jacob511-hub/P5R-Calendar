@@ -26,7 +26,15 @@ const useReset = () => {
         updateActivityStartDate,
         updateActivityEndDate,
         updateActivityEnd,
-        updateActivityDetails
+        updateActivityDetails,
+
+        updateBookdvdgameName,
+        updateBookdvdgameChapters,
+        updateBookdvdgameEffect,
+        updateBookdvdgameDescription,
+        updateBookdvdgamePrice,
+        updateBookdvdgameLocation,
+        updateBookdvdgameAvailable,
     } = useInfo();
     
     const stateReset = () => {
@@ -42,6 +50,14 @@ const useReset = () => {
         updateActivityStartDate("");
         updateActivityEndDate("");
         updateActivityDetails("");
+
+        updateBookdvdgameName("");
+        updateBookdvdgameChapters("");
+        updateBookdvdgameEffect("");
+        updateBookdvdgameDescription("");
+        updateBookdvdgamePrice("");
+        updateBookdvdgameLocation("");
+        updateBookdvdgameAvailable("");
     };
 
     return { stateReset };
@@ -62,7 +78,7 @@ export const dateClick = (monthIndex, dateType, dateNumber, weekday, activityNam
         updateActivityStartDate,
         updateActivityEndDate,
         updateActivityEnd,
-        updateActivityDetails
+        updateActivityDetails,
     } = useInfo();
 
     const [clicked, setClicked] = useState(false);
@@ -111,3 +127,21 @@ export const dateClick = (monthIndex, dateType, dateNumber, weekday, activityNam
   
     return { clicked, handleClick };
   };
+
+  export const BookDVDGameClick = (name, chapters, effect, description, price, location, available) => {
+    const { stateReset } = useReset();
+
+    const handleClick = () => {
+        stateReset();
+
+        updateBookdvdgameName(name);
+        updateBookdvdgameChapters(chapters);
+        updateBookdvdgameEffect(effect);
+        updateBookdvdgameDescription(description);
+        updateBookdvdgamePrice(price);
+        updateBookdvdgameLocation(location);
+        updateBookdvdgameAvailable(available);
+    }
+
+    return { handleClick };
+  }

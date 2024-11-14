@@ -1,8 +1,8 @@
 import React from 'react';
-import { dateClick } from '../hooks/handleClick.js';
+import { BookDVDGameClick } from '../hooks/handleClick.js';
 
-const BookDVDGameContainer = ({itemIcon, name}) => {
-    const {clicked, handleClick} = dateClick(0, "", 0, "", "");
+const BookDVDGameContainer = ({itemIcon, item}) => {
+    const { handleClick } = BookDVDGameClick(item.name, item.chapters, item.effect, item.description, item.price, item.location, item.available);
 
     return (
         <div className="book-dvd-game-container" onClick={handleClick}>
@@ -10,7 +10,7 @@ const BookDVDGameContainer = ({itemIcon, name}) => {
                 className="book-dvd-game-icon"
                 src={itemIcon}>
             </img>
-            <h1 className="book-dvd-game-name">{name}</h1>
+            <h1 className="book-dvd-game-name">{item.name}</h1>
         </div>
     );
 }

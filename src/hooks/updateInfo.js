@@ -14,6 +14,14 @@ export function useUpdateInfo() {
   const [activityEndList, setActivityEndDisplay] = useState("");
   const [activityDetails, setActivityDetailsDisplay] = useState("");
 
+  const [bookdvdgameName, setBookdvdgameName] = useState("");
+  const [bookdvdgameChapters, setBookdvdgameChapters] = useState("");
+  const [bookdvdgameEffect, setBookdvdgameEffect] = useState("");
+  const [bookdvdgameDescription, setBookdvdgameDescription] = useState("");
+  const [bookdvdgamePrice, setBookdvdgamePrice] = useState("");
+  const [bookdvdgameLocation, setBookdvdgameLocation] = useState("");
+  const [bookdvdgameAvailable, setBookdvdgameAvailable] = useState("");
+
   const updateWeekday = (newWeekdayDisplay) => setWeekdayDisplay(newWeekdayDisplay);
   const updateDate = (newDate) => setDateDisplay(newDate);
   const updateActivityStart = (newActivityStartDisplay) => setActivityStartDisplay(newActivityStartDisplay);
@@ -26,6 +34,14 @@ export function useUpdateInfo() {
   const updateActivityEndDate = (newEndDate) => setActivityEndDate(newEndDate);
   const updateActivityEnd = (newActivityEndDisplay) => setActivityEndDisplay(newActivityEndDisplay);
   const updateActivityDetails = (newActivityDetailsDisplay) => setActivityDetailsDisplay(newActivityDetailsDisplay);
+
+  const updateBookdvdgameName = (bookdvdgameNameDisplay) => setBookdvdgameName(bookdvdgameNameDisplay);
+  const updateBookdvdgameChapters = (bookdvdgameChaptersDisplay) => setBookdvdgameChapters(bookdvdgameChaptersDisplay);
+  const updateBookdvdgameEffect = (bookdvdgameEffectDisplay) => setBookdvdgameEffect(bookdvdgameEffectDisplay);
+  const updateBookdvdgameDescription = (bookdvdgameDescriptionDisplay) => setBookdvdgameDescription(bookdvdgameDescriptionDisplay);
+  const updateBookdvdgamePrice = (bookdvdgamePriceDisplay) => setBookdvdgamePrice(bookdvdgamePriceDisplay);
+  const updateBookdvdgameLocation = (bookdvdgameLocationDisplay) => setBookdvdgameLocation(bookdvdgameLocationDisplay);
+  const updateBookdvdgameAvailable = (bookdvdgameAvailableDisplay) => setBookdvdgameAvailable(bookdvdgameAvailableDisplay);
 
   return {
     dateDisplay,
@@ -52,5 +68,20 @@ export function useUpdateInfo() {
     updateActivityEnd,
     activityDetails,
     updateActivityDetails,
+
+    bookdvdgameName,
+    updateBookdvdgameName,
+    bookdvdgameChapters,
+    updateBookdvdgameChapters,
+    bookdvdgameEffect,
+    updateBookdvdgameEffect,
+    bookdvdgameDescription,
+    updateBookdvdgameDescription,
+    bookdvdgamePrice,
+    updateBookdvdgamePrice,
+    bookdvdgameLocation,
+    updateBookdvdgameLocation,
+    bookdvdgameAvailable,
+    updateBookdvdgameAvailable,
   };
 }
