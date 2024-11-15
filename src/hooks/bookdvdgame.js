@@ -39,6 +39,105 @@ const dvds = [
       "Shibuya, Central Street: Rental Shop Scarlet",
       "4/18"
   ),
+  new BookDVDGame(
+      "Wraith",
+      "2",
+      "Kindness +3 (Occurs both times)",
+      "A moving story of a woman who can talk to ghosts. Gives you kindness.",
+      "¥0 (All DVDs are free after the initial ¥4,800 subscription)",
+      "Shibuya, Central Street: Rental Shop Scarlet",
+      "4/18"
+  ),
+  new BookDVDGame(
+      "Guy McVer",
+      "2",
+      "Proficiency +3 (Occurs both times)",
+      "Adventures of a man who is proficient in jury rigging tools out of anything.",
+      "¥0 (All DVDs are free after the initial ¥4,800 subscription)",
+      "Shibuya, Central Street: Rental Shop Scarlet",
+      "4/18"
+  ),
+  new BookDVDGame(
+      "The X Folders",
+      "2",
+      "Guts +3 (Occurs both times)",
+      "Investigators chase after supernatural cases. Gives you guts.",
+      "¥0 (All DVDs are free after the initial ¥4,800 subscription)",
+      "Shibuya, Central Street: Rental Shop Scarlet",
+      "4/18"
+  ),
+  new BookDVDGame(
+      "Not-so-hot Betsy",
+      "2",
+      "Charm +3 (Occurs both times)",
+      "The story of a homely girl who captivates people with her inner charm.",
+      "¥0 (All DVDs are free after the initial ¥4,800 subscription)",
+      "Shibuya, Central Street: Rental Shop Scarlet",
+      "6/1"
+  ),
+  new BookDVDGame(
+      "ICU",
+      "2",
+      "Kindness +3 (Occurs both times)",
+      "A heartrending drama about working in the ER. Teaches you kindness.",
+      "¥0 (All DVDs are free after the initial ¥4,800 subscription)",
+      "Shibuya, Central Street: Rental Shop Scarlet",
+      "6/1"
+  ),
+  new BookDVDGame(
+      "Jail Break",
+      "2",
+      "Proficiency +3 (Occurs both times)",
+      "A jail break drama. You will learn from their proficiency in sneaking.",
+      "¥0 (All DVDs are free after the initial ¥4,800 subscription)",
+      "Shibuya, Central Street: Rental Shop Scarlet",
+      "6/1"
+  ),
+  new BookDVDGame(
+      "The Running Dead",
+      "2",
+      "Guts +3 (Occurs both times)",
+      "A survival horror drama. Viewing the onslaught of zombies will build guts.",
+      "¥0 (All DVDs are free after the initial ¥4,800 subscription)",
+      "Shibuya, Central Street: Rental Shop Scarlet",
+      "6/1"
+  ),
+  new BookDVDGame(
+      "D. Housewives",
+      "2",
+      "Charm +3 (Occurs both times)",
+      "Women's stories of love and passion. Learn about leading a charmed life.",
+      "¥0 (All DVDs are free after the initial ¥4,800 subscription)",
+      "Shibuya, Central Street: Rental Shop Scarlet",
+      "8/1"
+  ),
+  new BookDVDGame(
+      "Mouse M.D.",
+      "2",
+      "Kindness +3 (Occurs both times)",
+      "A maverick rodent's medical heroics. Learn about true kindness.",
+      "¥0 (All DVDs are free after the initial ¥4,800 subscription)",
+      "Shibuya, Central Street: Rental Shop Scarlet",
+      "8/1"
+  ),
+  new BookDVDGame(
+      "Tee",
+      "2",
+      "Proficiency +3 (Occurs both times)",
+      "A teacher and a near defunct high school golf team. Be proficient in persuasion.",
+      "¥0 (All DVDs are free after the initial ¥4,800 subscription)",
+      "Shibuya, Central Street: Rental Shop Scarlet",
+      "8/1"
+  ),
+  new BookDVDGame(
+      "31",
+      "2",
+      "Guts +3 (Occurs both times)",
+      "	A writer and editor battle looming deadlines. Praised for its gutsy tension.",
+      "¥0 (All DVDs are free after the initial ¥4,800 subscription)",
+      "Shibuya, Central Street: Rental Shop Scarlet",
+      "8/1"
+  ),
 ];
 
 const games = [
