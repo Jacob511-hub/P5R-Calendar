@@ -46,10 +46,55 @@ const games = [
       "Star Forneus",
       "3",
       "Guts +5",
-      "A retro boxing game. Playing could give you the charm of a challenger.",
+      "A retro space shooting game. Playing could give you guts.",
       "¥0 (Comes with the Famidrive, which is ¥5,000)",
       "Yongen-Jaya: Yumenoshima Second-hand Shop",
-      "June 5th"
+      "6/5"
+  ),
+  new BookDVDGame(
+      "Punch Ouch",
+      "3",
+      "Charm +5",
+      "A retro boxing game. Playing could give you the charm of a challenger.",
+      "¥5,300",
+      "Akihabara: Retro Game Shop Super Baron",
+      "8/31"
+  ),
+  new BookDVDGame(
+      "Train of Life",
+      "3",
+      "Kindness +5",
+      "A retro board game. Playing could expand your kindness.",
+      "¥5,600",
+      "Akihabara: Retro Game Shop Super Baron",
+      "8/31"
+  ),
+  new BookDVDGame(
+      "Power Intuition",
+      "3",
+      "Guts +5",
+      "A retro fighting game. Playing could give you guts.",
+      "¥5,500",
+      "Akihabara: Retro Game Shop Super Baron",
+      "10/1"
+  ),
+  new BookDVDGame(
+      "Gambla Goemon",
+      "2",
+      "Charm +5",
+      "A retro gambling game. Playing could build the charm not to give up.",
+      "¥5,200",
+      "Yongen-Jaya: Yumenoshima Second-hand Shop",
+      "7/26"
+  ),
+  new BookDVDGame(
+      "Golfer Sarutahiko",
+      "3",
+      "Proficiency +5",
+      "A retro golf game. Playing could make you more proficient.",
+      "¥3,200",
+      "Akihabara: Retro Game Shop Super Baron",
+      "10/1"
   ),
 ];
 
