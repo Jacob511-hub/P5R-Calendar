@@ -1,8 +1,9 @@
 import React from 'react';
 import daggerImage from '../assets/dagger.png';
 import InfoBox from './infoBox';
-import { useInfo } from '../components/CalendarContext';
 import DetailsBox from './detailsBox';
+import BookDVDGameInfo from './BookDVDGameInfo';
+import { useInfo } from '../components/CalendarContext';
 
 const Info = () => {
     const {
@@ -17,7 +18,7 @@ const Info = () => {
         activityStartDate,
         activityEndDate,
         activityEndList,
-        activityDetails
+        activityDetails,
     } = useInfo();
 
     return (
@@ -27,7 +28,11 @@ const Info = () => {
                 src={daggerImage}>
             </img>
             <div className="info-display">
-                <div className="info-date">
+                <div className="info-header-container"
+                style={{
+                    display: dateDisplay === "" && weekdayDisplay === "" ? "none" : "block",
+                }}
+                >
                     <h1 id="date-display">{dateDisplay}</h1>
                     <h1 id="weekday-display">{weekdayDisplay}</h1>
                 </div>
@@ -40,6 +45,8 @@ const Info = () => {
                 <InfoBox headerText="Start Date" activityData={activityStartDate} dateAvailability={dateAvailability} />
                 <InfoBox headerText="End Date" activityData={activityEndDate} dateAvailability={dateAvailability} />
                 <InfoBox headerText="Dates" activityData={activityListDates} dateAvailability={dateAvailability} />
+
+                <BookDVDGameInfo></BookDVDGameInfo>
             </div>
         </div>
     )

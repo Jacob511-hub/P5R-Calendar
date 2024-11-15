@@ -130,6 +130,16 @@ export const dateClick = (monthIndex, dateType, dateNumber, weekday, activityNam
 
   export const BookDVDGameClick = (name, chapters, effect, description, price, location, available) => {
     const { stateReset } = useReset();
+    
+    const {
+        updateBookdvdgameName,
+        updateBookdvdgameChapters,
+        updateBookdvdgameEffect,
+        updateBookdvdgameDescription,
+        updateBookdvdgamePrice,
+        updateBookdvdgameLocation,
+        updateBookdvdgameAvailable
+    } = useInfo();
 
     const handleClick = () => {
         stateReset();

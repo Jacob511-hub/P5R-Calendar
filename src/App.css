@@ -137,7 +137,7 @@ body {
     2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
-.info-date {
+.info-header-container {
   position: relative;
   min-height: 100px;
   min-width: 150px;
@@ -156,6 +156,10 @@ body {
     3px 0px 0px #000,
     0px -3px 0px #000,
     3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+.info-name {
+  position: relative;
 }
 
 #date-display {
