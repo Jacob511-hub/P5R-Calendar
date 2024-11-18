@@ -72,6 +72,18 @@ const Activities = () => {
                     headerImg={'url("src/assets/jobs.png")'}
                     renderContent=""
                 />
+                <AccordionCustom
+                    headerImg={'url("src/assets/crossword.png")'}
+                    renderContent=""
+                />
+                <AccordionCustom
+                    headerImg={'url("src/assets/facilities.png")'}
+                    renderContent=""
+                />
+                <AccordionCustom
+                    headerImg={'url("src/assets/leblanc.png")'}
+                    renderContent=""
+                />
             </div>
         </div>
     )
