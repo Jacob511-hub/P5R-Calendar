@@ -27,6 +27,393 @@ const books = [
       "Shujin Academy Library",
       "4/18"
   ),
+  new BookDVDGame(
+      "Zorro, the Outlaw",
+      "2",
+      "Kindness +5",
+      "The story about Zorro, the gentleman bandit. Read to be a kind gentleman.",
+      "¥0",
+      "Shujin Academy Library",
+      "4/18"
+  ),
+  new BookDVDGame(
+      "The Gallant Rogue",
+      "2",
+      "Guts +5",
+      "Ishikawa Goemon's tale. Experience the guts to defy those in power.",
+      "¥0",
+      "Shujin Academy Library",
+      "5/19"
+  ),
+  new BookDVDGame(
+      "The Illusory Popess",
+      "2",
+      "Kindness +5",
+      "The dynamic biography of Johanna. Awakens you to kindness.",
+      "¥0",
+      "Shujin Academy Library",
+      "6/20"
+  ),
+  new BookDVDGame(
+      "Cry of Cthulhu",
+      "2",
+      "Guts +5",
+      "A book of fictitious mythos. The macabre world would help build guts.",
+      "¥0",
+      "Shujin Academy Library",
+      "9/2"
+  ),
+  new BookDVDGame(
+      "Woman in the Dark",
+      "2",
+      "Proficiency +5",
+      "The story of Milady. Her changing faces helps make you proficient.",
+      "¥0",
+      "Shujin Academy Library",
+      "9/19"
+  ),
+  new BookDVDGame(
+      "Dressed in Ashes",
+      "2",
+      "Charm +5",
+      "A girl facing unfortunate circumstances. Learn about leading a charmed life.",
+      "¥0",
+      "Shujin Academy Library",
+      "10/3"
+  ),
+  new BookDVDGame(
+      "The Hero with a Bow",
+      "2",
+      "Guts +5",
+      "The daring tales of Robin Hood. Reading this could help build your guts.",
+      "¥0",
+      "Shujin Academy Library",
+      "10/30"
+  ),
+  new BookDVDGame(
+      "Musty Pages",
+      "1",
+      "Unlocks Jinbocho",
+      "A guide that lets you feel the atmosphere of the antique book town.",
+      "¥1,800",
+      "Shibuya Central Street: Taiheido Bookstore",
+      "9/1"
+  ),
+  new BookDVDGame(
+      "Wise Men's Words",
+      "2",
+      "Knowledge +5",
+      "A book of quotes by great philosophers. Read to enrich your knowledge.",
+      "¥700",
+      "Shibuya Central Street: Taiheido Bookstore",
+      "6/1"
+  ),
+  new BookDVDGame(
+      "Ghost Encounters",
+      "2",
+      "Guts +5",
+      "Hair-raising ghost stories. Reading this will surely steel your guts.",
+      "¥700",
+      "Shibuya Central Street: Taiheido Bookstore",
+      "7/1"
+  ),
+  new BookDVDGame(
+      "Tidying the Heart",
+      "2",
+      "Proficiency +5",
+      "A best-seller on cleaning. The author's proficiency is worth studying.",
+      "¥700",
+      "Shibuya Central Street: Taiheido Bookstore",
+      "4/18"
+  ),
+  new BookDVDGame(
+      "Buchiko's Story",
+      "2",
+      "Kindness +5",
+      "A heartwarming tale of a dog and his master. It is filled with kindness.",
+      "¥700",
+      "Shibuya Central Street: Taiheido Bookstore",
+      "4/18"
+  ),
+  new BookDVDGame(
+      "Flowerpedia",
+      "1",
+      "Unlocks flower shop job hints",
+      "The essential compendium for anyone in the flower industry.",
+      "¥2,800",
+      "Shinjuku: Hinokuniya Bookstore",
+      "After working at Rafflesia Flower Shop at least once"
+  ),
+  new BookDVDGame(
+      "Master Swordsman",
+      "3",
+      "Guts +7",
+      "A book chronicling a great swordsman's life. Find the guts to face death.",
+      "¥8,000",
+      "Jinbocho: Nagiuri Bookstore",
+      "After unlocking Jinbocho"
+  ),
+  new BookDVDGame(
+      "Call Me Chief",
+      "3",
+      "Kindness +7",
+      "Biography of a beloved leader. His warm character shows much kindness.",
+      "¥8,000",
+      "Jinbocho: Nagiuri Bookstore",
+      "After reading Master Swordsman"
+  ),
+  new BookDVDGame(
+      "Reckless Casanova",
+      "3",
+      "Charm +7",
+      "A book about the romantic life of a ladies man. Learn from his charm.",
+      "¥8,000",
+      "Jinbocho: Nagiuri Bookstore",
+      "After reading Master Swordsman"
+  ),
+  new BookDVDGame(
+      "Heroic Revelations",
+      "3",
+      "Knowledge +7",
+      "The epic of a tireless seeker of wisdom. May impart knowledge upon the reader.",
+      "¥8,000",
+      "Jinbocho: Nagiuri Bookstore",
+      "After reading Master Swordsman"
+  ),
+  new BookDVDGame(
+      "The Art of Automata",
+      "3",
+      "Proficiency +7",
+      "The passion involved in being an automata technician. May improve one's proficiency.",
+      "¥8,000",
+      "Jinbocho: Nagiuri Bookstore",
+      "After reading Master Swordsman"
+  ),
+  new BookDVDGame(
+      "Knowing the Heart",
+      "1",
+      "Technical combinations are expanded",
+      "Old book about the fragility of the human heart. Expands Technical conditions.",
+      "¥12,000",
+      "Jinbocho: Nagiuri Bookstore",
+      "After reading all other books from Nagiuri Bookstore"
+  ),
+  new BookDVDGame(
+      "Shitamachi Reborn",
+      "1",
+      "Unlocks Asakusa",
+      "A book on the old district reborn thanks to the new Tokyo Sky Tower.",
+      "¥0",
+      "Complete the Mementos Request 'Who's Muscling in Yongen-Jaya?'",
+      "8/30"
+  ),
+  new BookDVDGame(
+      "Tokyo Shrines",
+      "1",
+      "Unlocks Meiji Shrine",
+      "A photo guidebook of the shrines hidden in the big city.",
+      "¥1,800",
+      "Shibuya Central Street: Taiheido Bookstore",
+      "9/1"
+  ),
+  new BookDVDGame(
+      "Fishpond Spotter",
+      "1",
+      "Unlocks Ichigaya",
+      "A guidebook for beginners on the popular fishing ponds.",
+      "¥1,800",
+      "Shibuya Central Street: Taiheido Bookstore",
+      "7/17"
+  ),
+  new BookDVDGame(
+      "Yoncha Walker 04",
+      "2",
+      "Unlocks Yongen-Jaya shortcuts",
+      "A magazine compiling information about Yongen-Jaya.",
+      "¥0",
+      "Found after cleaning your room",
+      "4/18"
+  ),
+  new BookDVDGame(
+      "Social Thought",
+      "2",
+      "Knowledge +5",
+      "Broad compilation on modern social thought. May boost knowledge",
+      "¥0 (Requires Rank 2 Knowledge to read)",
+      "Found after cleaning your room",
+      "4/18"
+  ),
+  new BookDVDGame(
+      "Night Skies",
+      "1",
+      "Unlocks Ikebukuro",
+      "A star-gazing guidebook that has a special on planetariums.",
+      "¥1,800",
+      "Shibuya Central Street: Taiheido Bookstore",
+      "9/1"
+  ),
+  new BookDVDGame(
+      "Batting Science",
+      "1",
+      "Unlocks Third Eye while batting",
+      "A thorough analysis of batting. Could help with your baseball skills.",
+      "¥2,800",
+      "Shinjuku: Hinokuniya Bookstore",
+      "Gone to the Batting Cages at least once"
+  ),
+  new BookDVDGame(
+      "Essence of Fishing",
+      "1",
+      "Unlocks Third Eye while fishing",
+      "A book explaining the tricks of fishing. Now you can be a master!",
+      "¥2,800",
+      "Shinjuku: Hinokuniya Bookstore",
+      "Gone fishing at Ichigaya at least once"
+  ),
+  new BookDVDGame(
+      "Speed Reader",
+      "1",
+      "Read twice as fast",
+      "Easy-to-learn speed-reading techniques. Increases your reading speed.",
+      "¥0",
+      "Shujin Academy Library",
+      "7/1"
+  ),
+  new BookDVDGame(
+      "The Craft of Cinema",
+      "1",
+      "Increases stat points gained from watching DVDs and films",
+      "A comprehensive guide on increasing emotional depth on camera. For film buffs.",
+      "¥2,800",
+      "Shinjuku: Hinokuniya Bookstore",
+      "Watched a movie or DVD at least once"
+  ),
+  new BookDVDGame(
+      "Learn Pro Darts",
+      "1",
+      "Unlocks Third Eye while playing darts",
+      "Techniques written by a professional darts player.",
+      "¥2,800",
+      "Shinjuku: Hinokuniya Bookstore",
+      "Played darts at least once"
+  ),
+  new BookDVDGame(
+      "ABCs of Crafting",
+      "1",
+      "Doubles the maximum amount of times infiltration tools can be crafted",
+      "Basics for the aspiring craftsman. Improves skills for making infiltration tools.	",
+      "¥2,800",
+      "Shinjuku: Hinokuniya Bookstore",
+      "Crafted an infiltration tool at least once"
+  ),
+  new BookDVDGame(
+      "Expert Billiards",
+      "1",
+      "Special shots available at billiards. Helps unlock Technical Rank 2",
+      "Techniques written by a professional billiards player.	",
+      "¥3,500",
+      "Shibuya: Underground Mall Sports Store",
+      "Played billiards at least once"
+  ),
+  new BookDVDGame(
+      "Billiards Magician",
+      "1",
+      "Special shots available at billiards. Helps unlock Technical Rank 4",
+      "Miraculous techniques by a billiards master. Learn about massé.",
+      "¥0",
+      "Shibuya: Underground Mall Sports Store",
+      "Billiards Technical Rank 3"
+  ),
+  new BookDVDGame(
+      "Factorization Guide",
+      "1",
+      "Increases stat bonuses when studying	",
+      "Well-thumbed reference book. Increases the effectiveness of studying.",
+      "Trade MRE Ration",
+      "Kichijoji: Trader Sakai",
+      "7/26 - 7/30"
+  ),
+  new BookDVDGame(
+      "Chinese Sweets",
+      "1",
+      "Unlocks Chinatown",
+      "A guidebook to enjoy the sweets found within Chinatown.	",
+      "¥0",
+      "Complete the Mementos Request 'Part-time Job, Full-time Hell'",
+      "6/6"
+  ),
+  new BookDVDGame(
+      "Theme Park Escort",
+      "1",
+      "Unlocks Maihama",
+      "A book to help men not get lost while visiting amusement parks.",
+      "¥0",
+      "Complete the Mementos Request 'We Aren't Just Your Slaves'",
+      "8/2"
+  ),
+  new BookDVDGame(
+      "Medjed Menace",
+      "2",
+      "Knowledge +5",
+      "A book on the hacker group Medjed. Be knowledgeable about internet crimes.",
+      "¥1,200",
+      "Shibuya Central Street: Taiheido Bookstore",
+      "5/6"
+  ),
+  new BookDVDGame(
+      "The Art of Charm",
+      "2",
+      "Charm +5",
+      "Tips from a famous pickup artist. Learn the charm to hook up with someone.",
+      "¥700",
+      "Shibuya Central Street: Taiheido Bookstore",
+      "4/18"
+  ),
+  new BookDVDGame(
+      "Game Secrets",
+      "1",
+      "Unlocks cheat codes while playing games",
+      "A compilation of tricks for every video game. Makes any game easy.	",
+      "¥2,800",
+      "Shinjuku: Hinokuniya Bookstore",
+      "Played video games at least once"
+  ),
+  new BookDVDGame(
+      "Vague",
+      "1",
+      "Unlocks Harajuku",
+      "A fashion magazine for girls with unique tastes.",
+      "¥1,800",
+      "Shibuya Central Street: Taiheido Bookstore",
+      "5/18"
+  ),
+  new BookDVDGame(
+      "Nightlife Hotspots",
+      "1",
+      "Unlocks Seaside Park",
+      "A magazine showcasing date spots geared toward adults.",
+      "¥1,800",
+      "Shibuya Central Street: Taiheido Bookstore",
+      "6/1"
+  ),
+  new BookDVDGame(
+      "Aquarium-a-Day",
+      "1",
+      "Unlocks Shinagawa",
+      "A guidebook that lists attractions in aquariums all over Tokyo.",
+      "¥1,800",
+      "Shibuya Central Street: Taiheido Bookstore",
+      "7/17"
+  ),
+  new BookDVDGame(
+      "Nakano Walker",
+      "1",
+      "Unlocks Nakano",
+      "A guidebook that covers popular and obscure spots alike.	",
+      "¥1,800",
+      "Shibuya Central Street: Taiheido Bookstore",
+      "10/1"
+  ),
 ];
 
 const dvds = [
