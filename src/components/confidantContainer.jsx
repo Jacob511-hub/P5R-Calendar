@@ -1,8 +1,8 @@
 import React from 'react';
-import { dateClick } from '../hooks/handleClick.js';
+import { activityClick } from '../hooks/handleClick.js';
 
 const ConfidantContainer = ({tarot, name}) => {
-    const {clicked, handleClick} = dateClick(0, "", 0, "", name);
+    const {clicked, handleClick} = activityClick(name);
 
     return (
         <div className="confidant-container" onClick={handleClick}>

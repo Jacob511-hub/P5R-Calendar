@@ -16,7 +16,7 @@ const Dates = ({monthIndex, dateNumbers, dateKeys}) => {
         const dateNumber = dateNumbers[row][col];
         const weekday = weekdays[row][col];
 
-        const {clicked, handleClick} = dateClick(monthIndex, dateType, dateNumber, weekday, "");
+        const {clicked, handleClick} = dateClick(monthIndex, dateType, dateNumber, weekday);
         
         gridItems.push(
           <GridItem

@@ -63,7 +63,7 @@ const useReset = () => {
     return { stateReset };
 }
 
-export const dateClick = (monthIndex, dateType, dateNumber, weekday, activityName) => {
+export const dateClick = (monthIndex, dateType, dateNumber, weekday) => {
     const { stateReset } = useReset();
 
     const {
@@ -71,14 +71,10 @@ export const dateClick = (monthIndex, dateType, dateNumber, weekday, activityNam
         updateActivityDay,
         updateActivityNight,
         updateActivityAuto,
-        updateActivityDates,
         updateWeekday,
         updateActivityStart,
         updateDateAvailability,
-        updateActivityStartDate,
-        updateActivityEndDate,
         updateActivityEnd,
-        updateActivityDetails,
     } = useInfo();
 
     const [clicked, setClicked] = useState(false);
@@ -98,7 +94,6 @@ export const dateClick = (monthIndex, dateType, dateNumber, weekday, activityNam
             updateActivityDay(dayArray);
             updateActivityNight(nightArray);
             updateActivityAuto(autoArray);
-            updateActivityDates([])
             updateWeekday(weekday);
             updateDateAvailability(dateType);
     
@@ -107,19 +102,6 @@ export const dateClick = (monthIndex, dateType, dateNumber, weekday, activityNam
 
             const activitiesEndList = searchByEndDate(monthIndex, dateNumber);
             updateActivityEnd(activitiesEndList);
-        } else if (dateNumber === 0) {
-            stateReset();
-            updateDate(activityName);
-            const dateList = searchByActivity(activityName);
-            const startDate = searchStartDateByActivity(activityName);
-            const endDate = searchEndDateByActivity(activityName);
-            const details = searchDetailsByActivity(activityName);
-
-            updateActivityDates(dateList);
-            updateDateAvailability("none");
-            updateActivityStartDate([`${startDate.month}/${startDate.day}`]);
-            updateActivityEndDate([`${endDate.month}/${endDate.day}`]);
-            updateActivityDetails(details);
         } else {
             stateReset();
         }
@@ -128,9 +110,40 @@ export const dateClick = (monthIndex, dateType, dateNumber, weekday, activityNam
     return { clicked, handleClick };
   };
 
+  export const activityClick = (activityName) => {
+    const { stateReset } = useReset();
+
+    const {
+        updateDate,
+        updateActivityDates,
+        updateActivityStartDate,
+        updateActivityEndDate,
+        updateActivityDetails,
+    } = useInfo();
+
+    const [clicked, setClicked] = useState(false);
+  
+    const handleClick = () => {
+        stateReset();
+
+        updateDate(activityName);
+        const dateList = searchByActivity(activityName);
+        const startDate = searchStartDateByActivity(activityName);
+        const endDate = searchEndDateByActivity(activityName);
+        const details = searchDetailsByActivity(activityName);
+
+        updateActivityDates(dateList);
+        updateActivityStartDate([`${startDate.month}/${startDate.day}`]);
+        updateActivityEndDate([`${endDate.month}/${endDate.day}`]);
+        updateActivityDetails(details);
+    }
+
+    return { clicked, handleClick };
+  }
+
   export const BookDVDGameClick = (name, chapters, effect, description, price, location, available) => {
     const { stateReset } = useReset();
-    
+
     const {
         updateBookdvdgameName,
         updateBookdvdgameChapters,
