@@ -7,8 +7,10 @@ import AccordionCustom from './accordionCustom';
 import DividerCustom from './dividerCustom';
 import ConfidantContainer from './confidantContainer';
 import BookDVDGameContainer from './BookDVDGameContainer';
+import JobsContainer from './JobsContainer';
 import { tarot, tarotNames } from '../hooks/confidantassets';
 import { books, dvds, games } from '../hooks/bookdvdgame';
+import { jobs } from '../hooks/jobs';
 
 const Activities = () => {
     return (
@@ -70,7 +72,14 @@ const Activities = () => {
                 />
                 <AccordionCustom
                     headerImg={'url("src/assets/jobs.png")'}
-                    renderContent=""
+                    renderContent={() => (
+                        jobs.map((job) => (
+                            <JobsContainer
+                                key={job.name}
+                                item={job}
+                            />
+                        ))
+                    )}
                 />
                 <AccordionCustom
                     headerImg={'url("src/assets/crossword.png")'}

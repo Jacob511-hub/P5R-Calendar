@@ -21,6 +21,13 @@ export function useUpdateInfo() {
   const [bookdvdgamePrice, setBookdvdgamePrice] = useState("");
   const [bookdvdgameLocation, setBookdvdgameLocation] = useState("");
   const [bookdvdgameAvailable, setBookdvdgameAvailable] = useState("");
+  
+  const [jobName, setjobName] = useState("");
+  const [jobRequirements, setjobRequirements] = useState("");
+  const [jobPay, setjobPay] = useState("");
+  const [jobStats, setjobStats] = useState("");
+  const [jobBonus, setjobBonus] = useState("");
+  const [jobUnlocks, setjobUnlocks] = useState("");
 
   const updateWeekday = (newWeekdayDisplay) => setWeekdayDisplay(newWeekdayDisplay);
   const updateDate = (newDate) => setDateDisplay(newDate);
@@ -42,6 +49,13 @@ export function useUpdateInfo() {
   const updateBookdvdgamePrice = (bookdvdgamePriceDisplay) => setBookdvdgamePrice(bookdvdgamePriceDisplay);
   const updateBookdvdgameLocation = (bookdvdgameLocationDisplay) => setBookdvdgameLocation(bookdvdgameLocationDisplay);
   const updateBookdvdgameAvailable = (bookdvdgameAvailableDisplay) => setBookdvdgameAvailable(bookdvdgameAvailableDisplay);
+  
+  const updatejobName = (jobNameDisplay) => setjobName(jobNameDisplay);
+  const updatejobRequirements = (jobRequirementsDisplay) => setjobRequirements(jobRequirementsDisplay);
+  const updatejobPay = (jobPayDisplay) => setjobPay(jobPayDisplay);
+  const updatejobStats = (jobStatsDisplay) => setjobStats(jobStatsDisplay);
+  const updatejobBonus = (jobBonusDisplay) => setjobBonus(jobBonusDisplay);
+  const updatejobUnlocks = (jobUnlocksDisplay) => setjobUnlocks(jobUnlocksDisplay);
 
   return {
     dateDisplay,
@@ -83,5 +97,18 @@ export function useUpdateInfo() {
     updateBookdvdgameLocation,
     bookdvdgameAvailable,
     updateBookdvdgameAvailable,
+
+    jobName,
+    updatejobName,
+    jobRequirements,
+    updatejobRequirements,
+    jobPay,
+    updatejobPay,
+    jobStats,
+    updatejobStats,
+    jobBonus,
+    updatejobBonus,
+    jobUnlocks,
+    updatejobUnlocks,
   };
 }

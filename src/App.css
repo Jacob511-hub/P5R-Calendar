@@ -384,3 +384,21 @@ body {
   height: auto;
   width: 100%;
 }
+
+.jobs-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  transform: skew(5deg, -5deg);
+  height: 100px;
+  width: 100%;
+  padding: 0px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.jobs-name {
+  position: relative;
+  font-size: 2em;
+  margin: auto;
+}

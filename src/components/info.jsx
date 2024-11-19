@@ -3,6 +3,7 @@ import daggerImage from '../assets/dagger.png';
 import InfoBox from './infoBox';
 import DetailsBox from './detailsBox';
 import BookDVDGameInfo from './BookDVDGameInfo';
+import JobsInfo from './JobsInfo';
 import { useInfo } from '../components/CalendarContext';
 
 const Info = () => {
@@ -47,6 +48,7 @@ const Info = () => {
                 <InfoBox headerText="Dates" activityData={activityListDates} dateAvailability={dateAvailability} />
 
                 <BookDVDGameInfo></BookDVDGameInfo>
+                <JobsInfo></JobsInfo>
             </div>
         </div>
     )

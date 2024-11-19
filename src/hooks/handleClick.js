@@ -35,6 +35,13 @@ const useReset = () => {
         updateBookdvdgamePrice,
         updateBookdvdgameLocation,
         updateBookdvdgameAvailable,
+        
+        updatejobName,
+        updatejobRequirements,
+        updatejobPay,
+        updatejobStats,
+        updatejobBonus,
+        updatejobUnlocks,
     } = useInfo();
     
     const stateReset = () => {
@@ -58,6 +65,13 @@ const useReset = () => {
         updateBookdvdgamePrice("");
         updateBookdvdgameLocation("");
         updateBookdvdgameAvailable("");
+        
+        updatejobName("");
+        updatejobRequirements("");
+        updatejobPay("");
+        updatejobStats("");
+        updatejobBonus("");
+        updatejobUnlocks("");
     };
 
     return { stateReset };
@@ -108,9 +122,9 @@ export const dateClick = (monthIndex, dateType, dateNumber, weekday) => {
     };
   
     return { clicked, handleClick };
-  };
+};
 
-  export const activityClick = (activityName) => {
+export const activityClick = (activityName) => {
     const { stateReset } = useReset();
 
     const {
@@ -122,7 +136,7 @@ export const dateClick = (monthIndex, dateType, dateNumber, weekday) => {
     } = useInfo();
 
     const [clicked, setClicked] = useState(false);
-  
+
     const handleClick = () => {
         stateReset();
 
@@ -139,9 +153,9 @@ export const dateClick = (monthIndex, dateType, dateNumber, weekday) => {
     }
 
     return { clicked, handleClick };
-  }
+}
 
-  export const BookDVDGameClick = (name, chapters, effect, description, price, location, available) => {
+export const BookDVDGameClick = (name, chapters, effect, description, price, location, available) => {
     const { stateReset } = useReset();
 
     const {
@@ -167,4 +181,30 @@ export const dateClick = (monthIndex, dateType, dateNumber, weekday) => {
     }
 
     return { handleClick };
-  }
+}
+
+export const JobClick = (name, requirements, pay, stats, bonus, unlocks) => {
+    const { stateReset } = useReset();
+
+    const {
+        updatejobName,
+        updatejobRequirements,
+        updatejobPay,
+        updatejobStats,
+        updatejobBonus,
+        updatejobUnlocks,
+    } = useInfo();
+
+    const handleClick = () => {
+        stateReset();
+
+        updatejobName(name);
+        updatejobRequirements(requirements);
+        updatejobPay(pay);
+        updatejobStats(stats);
+        updatejobBonus(bonus);
+        updatejobUnlocks(unlocks);
+    }
+
+    return { handleClick };
+}
