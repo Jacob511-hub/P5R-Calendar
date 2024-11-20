@@ -4,6 +4,7 @@ import { InfoProvider } from './components/CalendarContext';
 import Months from './components/months';
 import Info from './components/info'
 import Activities from './components/activities'
+import ModalComponent from './components/Legend'
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Activities />
         <Months />
         <Info />
+        <ModalComponent />
       </div>
     </InfoProvider>
   );
