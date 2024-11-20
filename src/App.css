@@ -185,6 +185,7 @@ body {
 .info-header {
   margin: 5px;
   font-size: 2em;
+  white-space: pre-line;
 }
 
 .grid-container {
