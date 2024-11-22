@@ -32,7 +32,7 @@ const Legend = () => {
             }}></img>
             <LegendItem
                 dateType={"free"}
-                text={"Free day: Both Day and Night slots are available"}
+                text={"Free Day: Both Day and Night slots are available"}
             />
             <LegendItem
                 dateType={"eveningOnly"}

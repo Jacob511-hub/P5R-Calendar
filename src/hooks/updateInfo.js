@@ -29,6 +29,10 @@ export function useUpdateInfo() {
   const [jobBonus, setjobBonus] = useState("");
   const [jobUnlocks, setjobUnlocks] = useState("");
 
+  const [crosswordDates, setCrosswordDates] = useState("");
+  const [crosswordQuestion, setCrosswordQuestion] = useState("");
+  const [crosswordAnswer, setCrosswordAnswer] = useState("");
+
   const updateWeekday = (newWeekdayDisplay) => setWeekdayDisplay(newWeekdayDisplay);
   const updateDate = (newDate) => setDateDisplay(newDate);
   const updateActivityStart = (newActivityStartDisplay) => setActivityStartDisplay(newActivityStartDisplay);
@@ -56,6 +60,10 @@ export function useUpdateInfo() {
   const updatejobStats = (jobStatsDisplay) => setjobStats(jobStatsDisplay);
   const updatejobBonus = (jobBonusDisplay) => setjobBonus(jobBonusDisplay);
   const updatejobUnlocks = (jobUnlocksDisplay) => setjobUnlocks(jobUnlocksDisplay);
+
+  const updateCrosswordDates = (crosswordDatesDisplay) => setCrosswordDates(crosswordDatesDisplay);
+  const updateCrosswordQuestion = (crosswordQuestionDisplay) => setCrosswordQuestion(crosswordQuestionDisplay);
+  const updateCrosswordAnswer = (crosswordAnswerDisplay) => setCrosswordAnswer(crosswordAnswerDisplay);
 
   return {
     dateDisplay,
@@ -110,5 +118,12 @@ export function useUpdateInfo() {
     updatejobBonus,
     jobUnlocks,
     updatejobUnlocks,
+
+    crosswordDates,
+    updateCrosswordDates,
+    crosswordQuestion,
+    updateCrosswordQuestion,
+    crosswordAnswer,
+    updateCrosswordAnswer,
   };
 }

@@ -6,6 +6,7 @@ function Job(name, requirements, pay, stats, bonus, unlocks) {
     this.bonus = bonus;
     this.unlocks = unlocks;
 }
+
 const jobs = [
     new Job(
         "Triple Seven Convenience Store",
