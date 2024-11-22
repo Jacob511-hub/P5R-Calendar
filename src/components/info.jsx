@@ -4,6 +4,7 @@ import InfoBox from './infoBox';
 import DetailsBox from './detailsBox';
 import BookDVDGameInfo from './BookDVDGameInfo';
 import JobsInfo from './JobsInfo';
+import CrosswordDatesInfo from './CrosswordDatesInfo';
 import { useInfo } from '../components/CalendarContext';
 
 const Info = () => {
@@ -49,6 +50,7 @@ const Info = () => {
 
                 <BookDVDGameInfo></BookDVDGameInfo>
                 <JobsInfo></JobsInfo>
+                <CrosswordDatesInfo></CrosswordDatesInfo>
             </div>
         </div>
     )

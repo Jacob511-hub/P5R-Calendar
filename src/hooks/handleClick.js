@@ -42,6 +42,10 @@ const useReset = () => {
         updatejobStats,
         updatejobBonus,
         updatejobUnlocks,
+
+        updateCrosswordDates,
+        updateCrosswordQuestion,
+        updateCrosswordAnswer
     } = useInfo();
     
     const stateReset = () => {
@@ -72,6 +76,10 @@ const useReset = () => {
         updatejobStats("");
         updatejobBonus("");
         updatejobUnlocks("");
+
+        updateCrosswordDates("");
+        updateCrosswordQuestion("");
+        updateCrosswordAnswer("");
     };
 
     return { stateReset };
@@ -204,6 +212,22 @@ export const JobClick = (name, requirements, pay, stats, bonus, unlocks) => {
         updatejobStats(stats);
         updatejobBonus(bonus);
         updatejobUnlocks(unlocks);
+    }
+
+    return { handleClick };
+}
+
+export const CrosswordDatesClick = (dates) => {
+    const { stateReset } = useReset();
+
+    const {
+        updateCrosswordDates
+    } = useInfo();
+
+    const handleClick = () => {
+        stateReset();
+
+        updateCrosswordDates(dates);
     }
 
     return { handleClick };
