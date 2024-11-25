@@ -232,3 +232,24 @@ export const CrosswordDatesClick = (dates) => {
 
     return { handleClick };
 }
+
+export const CrosswordSolutionsClick = (crosswords) => {
+    const { stateReset } = useReset();
+
+    const {
+        updateCrosswordQuestion,
+        updateCrosswordAnswer,
+    } = useInfo();
+
+    const handleClick = () => {
+        stateReset();
+
+        const questions = crosswords.map(crossword => crossword.question);
+        const answers = crosswords.map(crossword => crossword.answer);
+
+        updateCrosswordQuestion(questions);
+        updateCrosswordAnswer(answers);
+    }
+
+    return { handleClick };
+}

@@ -8,7 +8,8 @@ import DividerCustom from './dividerCustom';
 import ConfidantContainer from './confidantContainer';
 import BookDVDGameContainer from './BookDVDGameContainer';
 import JobsContainer from './JobsContainer';
-import CrosswordDatesContainer from './CrosswordsDatesContainer';
+import CrosswordDatesContainer from './CrosswordDatesContainer';
+import CrosswordSolutionsContainer from './CrosswordSolutionContainer';
 import { tarot, tarotNames } from '../hooks/confidantassets';
 import { books, dvds, games } from '../hooks/bookdvdgame';
 import { jobs } from '../hooks/jobs';
@@ -86,10 +87,16 @@ const Activities = () => {
                 <AccordionCustom
                     headerImg={'url("src/assets/crossword.png")'}
                     renderContent={() => (
-                        <CrosswordDatesContainer
-                            text={"Dates"}
-                            dates={crosswordDates}
-                        />
+                        <>
+                            <CrosswordDatesContainer
+                                text={"Dates"}
+                                dates={crosswordDates}
+                            />
+                            <CrosswordSolutionsContainer
+                                text={"Solutions"}
+                                crosswords={crosswords}
+                            />
+                        </>
                     )}
                 />
                 <AccordionCustom
