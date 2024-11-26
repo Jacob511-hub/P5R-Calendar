@@ -7,6 +7,7 @@ import JobsInfo from './JobsInfo';
 import CrosswordDatesInfo from './CrosswordDatesInfo';
 import CrosswordSolutionsInfo from './CrosswordSolutionsInfo'
 import { useInfo } from '../components/CalendarContext';
+import CrosswordAvailable from './CrosswordAvailable';
 
 const Info = () => {
     const {
@@ -48,6 +49,7 @@ const Info = () => {
                 <InfoBox headerText="Start Date" activityData={activityStartDate} dateAvailability={dateAvailability} />
                 <InfoBox headerText="End Date" activityData={activityEndDate} dateAvailability={dateAvailability} />
                 <InfoBox headerText="Dates" activityData={activityListDates} dateAvailability={dateAvailability} />
+                <CrosswordAvailable></CrosswordAvailable>
 
                 <BookDVDGameInfo></BookDVDGameInfo>
                 <JobsInfo></JobsInfo>

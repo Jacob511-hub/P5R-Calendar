@@ -8,7 +8,8 @@ import {
     searchByWeekday,
     searchStartDateByActivity,
     searchEndDateByActivity,
-    searchDetailsByActivity
+    searchDetailsByActivity,
+    searchCrosswordDates,
 } from './activitySearch';
 import splitArrayByTime from './splitArrayByTime';
 import { useInfo } from '../components/CalendarContext';
@@ -45,7 +46,8 @@ const useReset = () => {
 
         updateCrosswordDates,
         updateCrosswordQuestion,
-        updateCrosswordAnswer
+        updateCrosswordAnswer,
+        updateCrosswordAvailable,
     } = useInfo();
     
     const stateReset = () => {
@@ -80,6 +82,7 @@ const useReset = () => {
         updateCrosswordDates("");
         updateCrosswordQuestion("");
         updateCrosswordAnswer("");
+        updateCrosswordAvailable(false);
     };
 
     return { stateReset };
@@ -97,6 +100,7 @@ export const dateClick = (monthIndex, dateType, dateNumber, weekday) => {
         updateActivityStart,
         updateDateAvailability,
         updateActivityEnd,
+        updateCrosswordAvailable,
     } = useInfo();
 
     const [clicked, setClicked] = useState(false);
@@ -124,6 +128,8 @@ export const dateClick = (monthIndex, dateType, dateNumber, weekday) => {
 
             const activitiesEndList = searchByEndDate(monthIndex, dateNumber);
             updateActivityEnd(activitiesEndList);
+
+            updateCrosswordAvailable(searchCrosswordDates(`${monthIndex}/${dateNumber}`));
         } else {
             stateReset();
         }

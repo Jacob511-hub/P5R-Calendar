@@ -32,6 +32,7 @@ export function useUpdateInfo() {
   const [crosswordDates, setCrosswordDates] = useState("");
   const [crosswordQuestion, setCrosswordQuestion] = useState("");
   const [crosswordAnswer, setCrosswordAnswer] = useState("");
+  const [crosswordAvailable, setCrosswordAvailable] = useState("");
 
   const updateWeekday = (newWeekdayDisplay) => setWeekdayDisplay(newWeekdayDisplay);
   const updateDate = (newDate) => setDateDisplay(newDate);
@@ -64,6 +65,7 @@ export function useUpdateInfo() {
   const updateCrosswordDates = (crosswordDatesDisplay) => setCrosswordDates(crosswordDatesDisplay);
   const updateCrosswordQuestion = (crosswordQuestionDisplay) => setCrosswordQuestion(crosswordQuestionDisplay);
   const updateCrosswordAnswer = (crosswordAnswerDisplay) => setCrosswordAnswer(crosswordAnswerDisplay);
+  const updateCrosswordAvailable = (crosswordAvailableDisplay) => setCrosswordAvailable(crosswordAvailableDisplay);
 
   return {
     dateDisplay,
@@ -125,5 +127,7 @@ export function useUpdateInfo() {
     updateCrosswordQuestion,
     crosswordAnswer,
     updateCrosswordAnswer,
+    crosswordAvailable,
+    updateCrosswordAvailable,
   };
 }

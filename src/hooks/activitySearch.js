@@ -1,6 +1,7 @@
 import * as activityDates from './activityDates';
-import * as activityStartDates from './activityStartDates'
-import * as activityDetails from './activityDetails'
+import * as activityStartDates from './activityStartDates';
+import * as activityDetails from './activityDetails';
+import * as crosswordDetails from './crosswords';
 
 //Search for activities with set dates
 export function searchByDate(date) {
@@ -87,4 +88,8 @@ export function searchEndDateByActivity(activity) {
 export function searchDetailsByActivity(activity) {
     const matchedActivity = activityDetails.activityDetailsNames.find((item) => item.name === activity);
     return matchedActivity ? matchedActivity.details : [""]; 
+}
+
+export function searchCrosswordDates(date) {
+    return crosswordDetails.crosswordDates.includes(date);
 }
