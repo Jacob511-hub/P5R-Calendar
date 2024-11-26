@@ -544,7 +544,7 @@ const games = [
       "A retro boxing game. Playing could give you the charm of a challenger.",
       "¥5,300",
       "Akihabara: Retro Game Shop Super Baron",
-      "8/31"
+      "9/1"
   ),
   new BookDVDGame(
       "Train of Life",
@@ -553,7 +553,7 @@ const games = [
       "A retro board game. Playing could expand your kindness.",
       "¥5,600",
       "Akihabara: Retro Game Shop Super Baron",
-      "8/31"
+      "9/1"
   ),
   new BookDVDGame(
       "Power Intuition",
@@ -562,7 +562,7 @@ const games = [
       "A retro fighting game. Playing could give you guts.",
       "¥5,500",
       "Akihabara: Retro Game Shop Super Baron",
-      "10/1"
+      "9/1"
   ),
   new BookDVDGame(
       "Gambla Goemon",
@@ -580,7 +580,16 @@ const games = [
       "A retro golf game. Playing could make you more proficient.",
       "¥3,200",
       "Akihabara: Retro Game Shop Super Baron",
-      "10/1"
+      "9/1"
+  ),
+  new BookDVDGame(
+      "Featherman Seeker",
+      "3",
+      "Knowledge +5",
+      "Featherman game with a cult following. May make you more knowledgable.",
+      "¥5,000",
+      "Akihabara: Retro Game Shop Super Baron",
+      "9/1"
   ),
 ];
 
