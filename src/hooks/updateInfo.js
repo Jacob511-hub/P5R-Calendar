@@ -34,6 +34,10 @@ export function useUpdateInfo() {
   const [crosswordAnswer, setCrosswordAnswer] = useState("");
   const [crosswordAvailable, setCrosswordAvailable] = useState("");
 
+  const [leblancActivityName, setLeblancActivityName] = useState("");
+  const [leblancActivityAvailable, setLeblancActivityAvailable] = useState("");
+  const [leblancActivityEffect, setLeblancActivityEffect] = useState("");
+
   const updateWeekday = (newWeekdayDisplay) => setWeekdayDisplay(newWeekdayDisplay);
   const updateDate = (newDate) => setDateDisplay(newDate);
   const updateActivityStart = (newActivityStartDisplay) => setActivityStartDisplay(newActivityStartDisplay);
@@ -67,6 +71,10 @@ export function useUpdateInfo() {
   const updateCrosswordAnswer = (crosswordAnswerDisplay) => setCrosswordAnswer(crosswordAnswerDisplay);
   const updateCrosswordAvailable = (crosswordAvailableDisplay) => setCrosswordAvailable(crosswordAvailableDisplay);
 
+  const updateLeblancActivityName = (leblancActivityName) => setLeblancActivityName(leblancActivityName);
+  const updateLeblancActivityAvailable = (leblancActivityAvailable) => setLeblancActivityAvailable(leblancActivityAvailable);
+  const updateLeblancActivityEffect = (leblancActivityEffect) => setLeblancActivityEffect(leblancActivityEffect);
+  
   return {
     dateDisplay,
     updateDate,
@@ -129,5 +137,12 @@ export function useUpdateInfo() {
     updateCrosswordAnswer,
     crosswordAvailable,
     updateCrosswordAvailable,
+
+    leblancActivityName,
+    updateLeblancActivityName,
+    leblancActivityAvailable,
+    updateLeblancActivityAvailable,
+    leblancActivityEffect,
+    updateLeblancActivityEffect,
   };
 }

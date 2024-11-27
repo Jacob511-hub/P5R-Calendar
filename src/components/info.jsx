@@ -7,6 +7,7 @@ import JobsInfo from './JobsInfo';
 import CrosswordDatesInfo from './CrosswordDatesInfo';
 import CrosswordSolutionsInfo from './CrosswordSolutionsInfo'
 import { useInfo } from '../components/CalendarContext';
+import LeblancInfo from './LeblancInfo';
 import CrosswordAvailable from './CrosswordAvailable';
 
 const Info = () => {
@@ -55,6 +56,7 @@ const Info = () => {
                 <JobsInfo></JobsInfo>
                 <CrosswordDatesInfo></CrosswordDatesInfo>
                 <CrosswordSolutionsInfo></CrosswordSolutionsInfo>
+                <LeblancInfo></LeblancInfo>
             </div>
         </div>
     )

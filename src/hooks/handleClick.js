@@ -48,6 +48,10 @@ const useReset = () => {
         updateCrosswordQuestion,
         updateCrosswordAnswer,
         updateCrosswordAvailable,
+
+        updateLeblancActivityName,
+        updateLeblancActivityAvailable,
+        updateLeblancActivityEffect,
     } = useInfo();
     
     const stateReset = () => {
@@ -83,6 +87,10 @@ const useReset = () => {
         updateCrosswordQuestion("");
         updateCrosswordAnswer("");
         updateCrosswordAvailable(false);
+
+        updateLeblancActivityName("");
+        updateLeblancActivityAvailable("");
+        updateLeblancActivityEffect([]);
     };
 
     return { stateReset };
@@ -255,6 +263,26 @@ export const CrosswordSolutionsClick = (crosswords) => {
 
         updateCrosswordQuestion(questions);
         updateCrosswordAnswer(answers);
+    }
+
+    return { handleClick };
+}
+
+export const LeblancActivityClick = (name, available, effect) => {
+    const { stateReset } = useReset();
+
+    const {
+        updateLeblancActivityName,
+        updateLeblancActivityAvailable,
+        updateLeblancActivityEffect,
+    } = useInfo();
+
+    const handleClick = () => {
+        stateReset();
+
+        updateLeblancActivityName(name);
+        updateLeblancActivityAvailable(available);
+        updateLeblancActivityEffect(effect);
     }
 
     return { handleClick };

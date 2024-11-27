@@ -8,11 +8,13 @@ import DividerCustom from './dividerCustom';
 import ConfidantContainer from './confidantContainer';
 import BookDVDGameContainer from './BookDVDGameContainer';
 import JobsContainer from './JobsContainer';
+import LeblancContainer from './LeblancContainer';
 import CrosswordDatesContainer from './CrosswordDatesContainer';
 import CrosswordSolutionsContainer from './CrosswordSolutionContainer';
 import { tarot, tarotNames } from '../hooks/confidantassets';
 import { books, dvds, games } from '../hooks/bookdvdgame';
 import { jobs } from '../hooks/jobs';
+import { leblancActivities } from '../hooks/leblanc';
 import { crosswordDates, crosswords } from '../hooks/crosswords';
 
 const Activities = () => {
@@ -105,7 +107,14 @@ const Activities = () => {
                 />
                 <AccordionCustom
                     headerImg={'url("src/assets/leblanc.png")'}
-                    renderContent=""
+                    renderContent={() => (
+                        leblancActivities.map((leblancActivity) => (
+                            <LeblancContainer
+                                key={leblancActivity.name}
+                                item={leblancActivity}
+                            />
+                        ))
+                    )}
                 />
             </div>
         </div>

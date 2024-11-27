@@ -73,7 +73,7 @@ const leblancActivities = [
     ),
     new LeblancActivity(
         "Attic TV",
-        "Evening",
+        "Evening (After cleaning room)",
         [
             "Watch DVD",
             "Play video game (Requires Famidrive)",
@@ -81,7 +81,7 @@ const leblancActivities = [
     ),
     new LeblancActivity(
         "Feed Plant",
-        "Every 16 days",
+        "Every 16 days (After cleaning room)",
         [
             "Use Garden Energy, +2 Kindness",
             "Use Bio Nutrients, +3 Kindness",
@@ -103,15 +103,8 @@ const leblancActivities = [
         ]
     ),
     new LeblancActivity(
-        "Bed",
-        "Evenings",
-        [
-            "Random Social Stat or Confidant increase"
-        ]
-    ),
-    new LeblancActivity(
         "Chair",
-        "Evenings, Sundays, Holidays",
+        "Evenings, Sundays, Holidays (After cleaning room)",
         [
             "Increases Max HP",
             "Amount increased based on number of times performed",
@@ -119,6 +112,13 @@ const leblancActivities = [
             "5-8: 6 HP",
             "9-12: 7 HP",
             "13+: 8 HP",
+        ]
+    ),
+    new LeblancActivity(
+        "Bed",
+        "Evenings",
+        [
+            "Random Social Stat or Confidant increase"
         ]
     ),
 ];
