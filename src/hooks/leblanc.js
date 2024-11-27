@@ -79,6 +79,48 @@ const leblancActivities = [
             "Play video game (Requires Famidrive)",
         ]
     ),
+    new LeblancActivity(
+        "Feed Plant",
+        "Every 16 days",
+        [
+            "Use Garden Energy, +2 Kindness",
+            "Use Bio Nutrients, +3 Kindness",
+            "Use Mega Fertilizer, +5 Kindness",
+        ]
+    ),
+    new LeblancActivity(
+        "Laptop",
+        "After fixing Laptop (+5 Proficiency)",
+        [
+            "Purchase items"
+        ]
+    ),
+    new LeblancActivity(
+        "Desk",
+        "Evenings, Sundays, Holidays",
+        [
+            "Make Infiltration Tools"
+        ]
+    ),
+    new LeblancActivity(
+        "Bed",
+        "Evenings",
+        [
+            "Random Social Stat or Confidant increase"
+        ]
+    ),
+    new LeblancActivity(
+        "Chair",
+        "Evenings, Sundays, Holidays",
+        [
+            "Increases Max HP",
+            "Amount increased based on number of times performed",
+            "1-4: 5 HP",
+            "5-8: 6 HP",
+            "9-12: 7 HP",
+            "13+: 8 HP",
+        ]
+    ),
 ];
 
 export { leblancActivities };
