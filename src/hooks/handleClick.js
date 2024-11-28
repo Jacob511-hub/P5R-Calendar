@@ -52,6 +52,9 @@ const useReset = () => {
         updateLeblancActivityName,
         updateLeblancActivityAvailable,
         updateLeblancActivityEffect,
+
+        updateQuizDates,
+        updateQuizAnswers,
     } = useInfo();
     
     const stateReset = () => {
@@ -91,6 +94,9 @@ const useReset = () => {
         updateLeblancActivityName("");
         updateLeblancActivityAvailable("");
         updateLeblancActivityEffect([]);
+
+        updateQuizDates("");
+        updateQuizAnswers("");
     };
 
     return { stateReset };
@@ -277,5 +283,24 @@ export const useLeblancActivityClick = () => {
         updateLeblancActivityName(name);
         updateLeblancActivityAvailable(available);
         updateLeblancActivityEffect(effect);
+    }
+}
+
+export const useTVQuizClick = () => {
+    const { stateReset } = useReset();
+
+    const {
+        updateQuizDates,
+        updateQuizAnswers,
+    } = useInfo();
+
+    return (TVQuiz) => {
+        stateReset();
+
+        const date = TVQuiz.map(TVQuiz => TVQuiz.date);
+        const answer = TVQuiz.map(TVQuiz => TVQuiz.answer);
+
+        updateQuizDates(date);
+        updateQuizAnswers(answer);
     }
 }

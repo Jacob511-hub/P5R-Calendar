@@ -2,14 +2,15 @@ import React from 'react';
 import DividerCustom from './dividerCustom';
 import { useInfo } from '../components/CalendarContext';
 
-const CrosswordDatesInfo = () => {
+const TVQuizInfo = () => {
     const {
-        crosswordDates
+        quizDates,
+        quizAnswers,
     } = useInfo();
 
     return (
         <>
-            {crosswordDates !== "" ? (
+            {quizDates !== "" ? (
                 <>
                     <div className="info-header-container"
                     style={{
@@ -22,15 +23,20 @@ const CrosswordDatesInfo = () => {
                         <h1 className='info-header'
                         style={{
                             fontSize: '2.5em'
-                        }}>Crossword Dates</h1>
+                        }}>TV Quiz Answers</h1>
                     </div>
                     <DividerCustom />
+                    
+                    {/* <h1 className='info-header'>{quizDates}</h1> */}
                     <ul style={{ listStyleType: 'none', padding: 0, margin: 0 }}>
-                        {crosswordDates.map((name, index) => (
-                            <h2 key={index}>{name}</h2>
+                        {quizDates.map((date, index) => (
+                            <div key={index}>
+                                <h2>{date}</h2>
+                                <h3>{quizAnswers[index]}</h3>
+                                <DividerCustom />
+                            </div>
                         ))}
                     </ul>
-                    <DividerCustom />
                 </>
             ) : (
                 <p style={{ margin: 0 }}></p>
@@ -39,4 +45,4 @@ const CrosswordDatesInfo = () => {
     )
 };
 
-export default CrosswordDatesInfo;
+export default TVQuizInfo;

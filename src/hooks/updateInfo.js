@@ -38,6 +38,9 @@ export function useUpdateInfo() {
   const [leblancActivityAvailable, setLeblancActivityAvailable] = useState("");
   const [leblancActivityEffect, setLeblancActivityEffect] = useState("");
 
+  const [quizDates, setQuizDates] = useState("");
+  const [quizAnswers, setQuizAnswers] = useState("");
+
   const updateWeekday = (newWeekdayDisplay) => setWeekdayDisplay(newWeekdayDisplay);
   const updateDate = (newDate) => setDateDisplay(newDate);
   const updateActivityStart = (newActivityStartDisplay) => setActivityStartDisplay(newActivityStartDisplay);
@@ -75,6 +78,9 @@ export function useUpdateInfo() {
   const updateLeblancActivityAvailable = (leblancActivityAvailable) => setLeblancActivityAvailable(leblancActivityAvailable);
   const updateLeblancActivityEffect = (leblancActivityEffect) => setLeblancActivityEffect(leblancActivityEffect);
   
+  const updateQuizDates = (quizDates) => setQuizDates(quizDates);
+  const updateQuizAnswers = (quizAnswers) => setQuizAnswers(quizAnswers);
+
   return {
     dateDisplay,
     updateDate,
@@ -144,5 +150,10 @@ export function useUpdateInfo() {
     updateLeblancActivityAvailable,
     leblancActivityEffect,
     updateLeblancActivityEffect,
+
+    quizDates,
+    updateQuizDates,
+    quizAnswers,
+    updateQuizAnswers,
   };
 }

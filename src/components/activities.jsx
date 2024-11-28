@@ -14,14 +14,16 @@ import { books, dvds, games } from '../hooks/bookdvdgame';
 import { jobs } from '../hooks/jobs';
 import { leblancActivities } from '../hooks/leblanc';
 import { crosswordDates, crosswords } from '../hooks/crosswords';
+import { TVQuizAnswers } from '../hooks/quizAnswers.js';
 
-import { useJobClick, useCrosswordDatesClick, useCrosswordSolutionsClick, useLeblancActivityClick } from '../hooks/handleClick.js';
+import { useJobClick, useCrosswordDatesClick, useCrosswordSolutionsClick, useLeblancActivityClick, useTVQuizClick } from '../hooks/handleClick.js';
 
 const Activities = () => {
     const jobClick = useJobClick();
     const crosswordDatesClick = useCrosswordDatesClick();
     const crosswordSolutionsClick = useCrosswordSolutionsClick();
     const leblancActivityClick = useLeblancActivityClick();
+    const TVQuizClick = useTVQuizClick();
 
     const handleJobClick = (job) => () => {
         jobClick(job.name, job.requirements, job.pay, job.stats, job.bonus, job.unlocks);
@@ -37,6 +39,10 @@ const Activities = () => {
 
     const handleLeblancActivityClick = (item) => () => {
         leblancActivityClick(item.name, item.available, item.effects);
+    };
+
+    const handleTVQuizClick = (item) => () => {
+        TVQuizClick(item);
     };
 
     return (
@@ -131,6 +137,17 @@ const Activities = () => {
                             <ActivityContainerBasic
                                 name={"Solutions"}
                                 handleClick={handleCrosswordSolutionsClick(crosswords)}
+                            />
+                        </>
+                    )}
+                />
+                <AccordionCustom
+                    headerImg={'url("src/assets/tv.png")'}
+                    renderContent={() => (
+                        <>
+                            <ActivityContainerBasic
+                                name={"TV Quizzes"}
+                                handleClick={handleTVQuizClick(TVQuizAnswers)}
                             />
                         </>
                     )}
