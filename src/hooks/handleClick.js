@@ -205,7 +205,7 @@ export const BookDVDGameClick = (name, chapters, effect, description, price, loc
     return { handleClick };
 }
 
-export const JobClick = (name, requirements, pay, stats, bonus, unlocks) => {
+export const useJobClick = () => {
     const { stateReset } = useReset();
 
     const {
@@ -217,7 +217,7 @@ export const JobClick = (name, requirements, pay, stats, bonus, unlocks) => {
         updatejobUnlocks,
     } = useInfo();
 
-    const handleClick = () => {
+    return (name, requirements, pay, stats, bonus, unlocks) => {
         stateReset();
 
         updatejobName(name);
@@ -226,28 +226,24 @@ export const JobClick = (name, requirements, pay, stats, bonus, unlocks) => {
         updatejobStats(stats);
         updatejobBonus(bonus);
         updatejobUnlocks(unlocks);
-    }
+    };
+};
 
-    return { handleClick };
-}
-
-export const CrosswordDatesClick = (dates) => {
+export const useCrosswordDatesClick = () => {
     const { stateReset } = useReset();
 
     const {
         updateCrosswordDates
     } = useInfo();
 
-    const handleClick = () => {
+    return (dates) => {
         stateReset();
 
         updateCrosswordDates(dates);
-    }
-
-    return { handleClick };
+    };
 }
 
-export const CrosswordSolutionsClick = (crosswords) => {
+export const useCrosswordSolutionsClick = () => {
     const { stateReset } = useReset();
 
     const {
@@ -255,7 +251,7 @@ export const CrosswordSolutionsClick = (crosswords) => {
         updateCrosswordAnswer,
     } = useInfo();
 
-    const handleClick = () => {
+    return (crosswords) => {
         stateReset();
 
         const questions = crosswords.map(crossword => crossword.question);
@@ -264,11 +260,9 @@ export const CrosswordSolutionsClick = (crosswords) => {
         updateCrosswordQuestion(questions);
         updateCrosswordAnswer(answers);
     }
-
-    return { handleClick };
 }
 
-export const LeblancActivityClick = (name, available, effect) => {
+export const useLeblancActivityClick = () => {
     const { stateReset } = useReset();
 
     const {
@@ -277,13 +271,11 @@ export const LeblancActivityClick = (name, available, effect) => {
         updateLeblancActivityEffect,
     } = useInfo();
 
-    const handleClick = () => {
+    return (name, available, effect) => {
         stateReset();
 
         updateLeblancActivityName(name);
         updateLeblancActivityAvailable(available);
         updateLeblancActivityEffect(effect);
     }
-
-    return { handleClick };
 }

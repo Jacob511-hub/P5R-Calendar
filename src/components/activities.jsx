@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import daggerImage from '../assets/dagger.png';
 import bookIcon from '../assets/book-icon.png';
 import dvdIcon from '../assets/dvd-icon.png';
@@ -7,17 +7,38 @@ import AccordionCustom from './accordionCustom';
 import DividerCustom from './dividerCustom';
 import ConfidantContainer from './confidantContainer';
 import BookDVDGameContainer from './BookDVDGameContainer';
-import JobsContainer from './JobsContainer';
-import LeblancContainer from './LeblancContainer';
-import CrosswordDatesContainer from './CrosswordDatesContainer';
-import CrosswordSolutionsContainer from './CrosswordSolutionContainer';
+import ActivityContainerBasic from './ActivityContainerBasic.jsx';
+
 import { tarot, tarotNames } from '../hooks/confidantassets';
 import { books, dvds, games } from '../hooks/bookdvdgame';
 import { jobs } from '../hooks/jobs';
 import { leblancActivities } from '../hooks/leblanc';
 import { crosswordDates, crosswords } from '../hooks/crosswords';
 
+import { useJobClick, useCrosswordDatesClick, useCrosswordSolutionsClick, useLeblancActivityClick } from '../hooks/handleClick.js';
+
 const Activities = () => {
+    const jobClick = useJobClick();
+    const crosswordDatesClick = useCrosswordDatesClick();
+    const crosswordSolutionsClick = useCrosswordSolutionsClick();
+    const leblancActivityClick = useLeblancActivityClick();
+
+    const handleJobClick = (job) => () => {
+        jobClick(job.name, job.requirements, job.pay, job.stats, job.bonus, job.unlocks);
+    };
+
+    const handleCrosswordDatesClick = (date) => () => {
+        crosswordDatesClick(date);
+    };
+
+    const handleCrosswordSolutionsClick = (crosswords) => () => {
+        crosswordSolutionsClick(crosswords);
+    };
+
+    const handleLeblancActivityClick = (item) => () => {
+        leblancActivityClick(item.name, item.available, item.effects);
+    };
+
     return (
         <div className="activities-container">
             <img
@@ -79,9 +100,22 @@ const Activities = () => {
                     headerImg={'url("src/assets/jobs.png")'}
                     renderContent={() => (
                         jobs.map((job) => (
-                            <JobsContainer
+                            <ActivityContainerBasic
                                 key={job.name}
-                                item={job}
+                                name={job.name}
+                                handleClick={handleJobClick(job)}
+                            />
+                        ))
+                    )}
+                />
+                <AccordionCustom
+                    headerImg={'url("src/assets/leblanc.png")'}
+                    renderContent={() => (
+                        leblancActivities.map((leblancActivity) => (
+                            <ActivityContainerBasic
+                                key={leblancActivity.name}
+                                name={leblancActivity.name}
+                                handleClick={handleLeblancActivityClick(leblancActivity)}
                             />
                         ))
                     )}
@@ -90,13 +124,13 @@ const Activities = () => {
                     headerImg={'url("src/assets/crossword.png")'}
                     renderContent={() => (
                         <>
-                            <CrosswordDatesContainer
-                                text={"Dates"}
-                                dates={crosswordDates}
+                            <ActivityContainerBasic
+                                name={"Dates"}
+                                handleClick={handleCrosswordDatesClick(crosswordDates)}
                             />
-                            <CrosswordSolutionsContainer
-                                text={"Solutions"}
-                                crosswords={crosswords}
+                            <ActivityContainerBasic
+                                name={"Solutions"}
+                                handleClick={handleCrosswordSolutionsClick(crosswords)}
                             />
                         </>
                     )}
@@ -104,17 +138,6 @@ const Activities = () => {
                 <AccordionCustom
                     headerImg={'url("src/assets/facilities.png")'}
                     renderContent=""
-                />
-                <AccordionCustom
-                    headerImg={'url("src/assets/leblanc.png")'}
-                    renderContent={() => (
-                        leblancActivities.map((leblancActivity) => (
-                            <LeblancContainer
-                                key={leblancActivity.name}
-                                item={leblancActivity}
-                            />
-                        ))
-                    )}
                 />
             </div>
         </div>
