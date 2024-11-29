@@ -38,6 +38,12 @@ export function useUpdateInfo() {
   const [leblancActivityAvailable, setLeblancActivityAvailable] = useState("");
   const [leblancActivityEffect, setLeblancActivityEffect] = useState("");
 
+  const [homeShoppingDates, setHomeShoppingDates] = useState("");
+  const [homeShoppingItemA, setHomeShoppingItemA] = useState("");
+  const [homeShoppingPriceA, setHomeShoppingPriceA] = useState("");
+  const [homeShoppingItemB, setHomeShoppingItemB] = useState("");
+  const [homeShoppingPriceB, setHomeShoppingPriceB] = useState("");
+
   const [quizDates, setQuizDates] = useState("");
   const [quizAnswers, setQuizAnswers] = useState("");
 
@@ -77,6 +83,12 @@ export function useUpdateInfo() {
   const updateLeblancActivityName = (leblancActivityName) => setLeblancActivityName(leblancActivityName);
   const updateLeblancActivityAvailable = (leblancActivityAvailable) => setLeblancActivityAvailable(leblancActivityAvailable);
   const updateLeblancActivityEffect = (leblancActivityEffect) => setLeblancActivityEffect(leblancActivityEffect);
+
+  const updateHomeShoppingDates = (homeShoppingDates) => setHomeShoppingDates(homeShoppingDates);
+  const updateHomeShoppingItemA = (homeShoppingItemA) => setHomeShoppingItemA(homeShoppingItemA);
+  const updateHomeShoppingPriceA = (homeShoppingPriceA) => setHomeShoppingPriceA(homeShoppingPriceA);
+  const updateHomeShoppingItemB = (homeShoppingItemB) => setHomeShoppingItemB(homeShoppingItemB);
+  const updateHomeShoppingPriceB = (homeShoppingPriceB) => setHomeShoppingPriceB(homeShoppingPriceB);
   
   const updateQuizDates = (quizDates) => setQuizDates(quizDates);
   const updateQuizAnswers = (quizAnswers) => setQuizAnswers(quizAnswers);
@@ -150,6 +162,17 @@ export function useUpdateInfo() {
     updateLeblancActivityAvailable,
     leblancActivityEffect,
     updateLeblancActivityEffect,
+
+    homeShoppingDates,
+    updateHomeShoppingDates,
+    homeShoppingItemA,
+    updateHomeShoppingItemA,
+    homeShoppingPriceA,
+    updateHomeShoppingPriceA,
+    homeShoppingItemB,
+    updateHomeShoppingItemB,
+    homeShoppingPriceB,
+    updateHomeShoppingPriceB,
 
     quizDates,
     updateQuizDates,

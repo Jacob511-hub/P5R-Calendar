@@ -53,6 +53,12 @@ const useReset = () => {
         updateLeblancActivityAvailable,
         updateLeblancActivityEffect,
 
+        updateHomeShoppingDates,
+        updateHomeShoppingItemA,
+        updateHomeShoppingPriceA,
+        updateHomeShoppingItemB,
+        updateHomeShoppingPriceB,
+
         updateQuizDates,
         updateQuizAnswers,
     } = useInfo();
@@ -94,6 +100,12 @@ const useReset = () => {
         updateLeblancActivityName("");
         updateLeblancActivityAvailable("");
         updateLeblancActivityEffect([]);
+
+        updateHomeShoppingDates("");
+        updateHomeShoppingItemA("");
+        updateHomeShoppingPriceA("");
+        updateHomeShoppingItemB("");
+        updateHomeShoppingPriceB("");
 
         updateQuizDates("");
         updateQuizAnswers("");
@@ -283,6 +295,34 @@ export const useLeblancActivityClick = () => {
         updateLeblancActivityName(name);
         updateLeblancActivityAvailable(available);
         updateLeblancActivityEffect(effect);
+    }
+}
+
+export const useHomeShoppingClick = () => {
+    const { stateReset } = useReset();
+
+    const {
+        updateHomeShoppingDates,
+        updateHomeShoppingItemA,
+        updateHomeShoppingPriceA,
+        updateHomeShoppingItemB,
+        updateHomeShoppingPriceB,
+    } = useInfo();
+
+    return (homeShopping) => {
+        stateReset();
+
+        const date = homeShopping.map(homeShopping => homeShopping.date);
+        const itemA = homeShopping.map(homeShopping => homeShopping.itemA);
+        const priceA = homeShopping.map(homeShopping => homeShopping.priceA);
+        const itemB = homeShopping.map(homeShopping => homeShopping.itemB);
+        const priceB = homeShopping.map(homeShopping => homeShopping.priceB);
+
+        updateHomeShoppingDates(date);
+        updateHomeShoppingItemA(itemA);
+        updateHomeShoppingPriceA(priceA);
+        updateHomeShoppingItemB(itemB);
+        updateHomeShoppingPriceB(priceB);
     }
 }
 

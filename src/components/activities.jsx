@@ -15,14 +15,16 @@ import { jobs } from '../hooks/jobs';
 import { leblancActivities } from '../hooks/leblanc';
 import { crosswordDates, crosswords } from '../hooks/crosswords';
 import { TVQuizAnswers } from '../hooks/quizAnswers.js';
+import { HomeShoppingProgramItems } from '../hooks/homeShopping.js';
 
-import { useJobClick, useCrosswordDatesClick, useCrosswordSolutionsClick, useLeblancActivityClick, useTVQuizClick } from '../hooks/handleClick.js';
+import { useJobClick, useCrosswordDatesClick, useCrosswordSolutionsClick, useLeblancActivityClick, useHomeShoppingClick, useTVQuizClick } from '../hooks/handleClick.js';
 
 const Activities = () => {
     const jobClick = useJobClick();
     const crosswordDatesClick = useCrosswordDatesClick();
     const crosswordSolutionsClick = useCrosswordSolutionsClick();
     const leblancActivityClick = useLeblancActivityClick();
+    const homeShoppingClick = useHomeShoppingClick();
     const TVQuizClick = useTVQuizClick();
 
     const handleJobClick = (job) => () => {
@@ -40,6 +42,10 @@ const Activities = () => {
     const handleLeblancActivityClick = (item) => () => {
         leblancActivityClick(item.name, item.available, item.effects);
     };
+
+    const handleHomeShoppingClick = (item) => () => {
+        homeShoppingClick(item);
+    }
 
     const handleTVQuizClick = (item) => () => {
         TVQuizClick(item);
@@ -145,6 +151,10 @@ const Activities = () => {
                     headerImg={'url("src/assets/tv.png")'}
                     renderContent={() => (
                         <>
+                            <ActivityContainerBasic
+                                name={"TV Shopping"}
+                                handleClick={handleHomeShoppingClick(HomeShoppingProgramItems)}
+                            />
                             <ActivityContainerBasic
                                 name={"TV Quizzes"}
                                 handleClick={handleTVQuizClick(TVQuizAnswers)}
