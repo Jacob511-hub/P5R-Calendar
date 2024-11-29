@@ -33,10 +33,23 @@ const HomeShoppingInfo = () => {
                         {homeShoppingDates.map((date, index) => (
                             <div key={index}>
                                 <h2>{date}</h2>
-                                <h3>{homeShoppingItemA[index]}</h3>
-                                <h3>{homeShoppingPriceA[index]}</h3>
-                                <h3>{homeShoppingItemB[index]}</h3>
-                                <h3>{homeShoppingPriceB[index]}</h3>
+                                <ul style={{ listStyleType: 'none', padding: 0, margin: 0 }}>
+                                    {homeShoppingItemA[index]
+                                        .split('\n')
+                                        .map((item, idx) => (
+                                            <h3 key={idx}>{item.trim()}</h3>
+                                        ))}
+                                </ul>
+                                <h2>Price: {homeShoppingPriceA[index]}</h2>
+                                <p style={{ height: 20 }}></p>
+                                <ul style={{ listStyleType: 'none', padding: 0, margin: 0 }}>
+                                    {homeShoppingItemB[index]
+                                        .split('\n')
+                                        .map((item, idx) => (
+                                            <h3 key={idx}>{item.trim()}</h3>
+                                        ))}
+                                </ul>
+                                <h2>Price: {homeShoppingPriceB[index]}</h2>
                                 <DividerCustom />
                             </div>
                         ))}
