@@ -1,8 +1,9 @@
 class LeblancActivity {
-    constructor(name, available, effects) {
+    constructor(name, available, effects, stat) {
         this.name = name;
         this.available = available;
         this.effects = effects;
+        this.stat = stat;
     }
 }
 
@@ -13,7 +14,8 @@ const leblancActivities = [
         [
             "Brew 2 Leblanc Coffee, +2 Charm (Hierophant Rank 2)",
             "Brew 2 Master Coffee, +2 Charm (Hierophant Rank 6)",
-        ]
+        ],
+        ["Charm"]
     ),
     new LeblancActivity(
         "Fridge",
@@ -27,7 +29,8 @@ const leblancActivities = [
             "Fruit Danish (5/26, 8/16)",
             "Moist Katsu Bun (6/28, 8/4, 9/20, 11/15, 12/10)",
             "Legendary Yaki-Imo (10/15)",
-        ]
+        ],
+        ["Guts"]
     ),
     new LeblancActivity(
         "Counter",
@@ -35,7 +38,8 @@ const leblancActivities = [
         [
             "Study, +3 Knowledge",
             "Read a book",
-        ]
+        ],
+        ["Knowledge"]
     ),
     new LeblancActivity(
         "Bathroom",
@@ -43,7 +47,8 @@ const leblancActivities = [
         [
             "Check Social Stat progress (Does not pass time)",
             "Clean Leblanc, +2 Kindness (Hierophant progress if present)",
-        ]
+        ],
+        ["Kindness"]
     ),
     new LeblancActivity(
         "Phone",
@@ -62,14 +67,16 @@ const leblancActivities = [
         "Thursdays",
         [
             "Answer quiz show question correctly, +2 Knowledge (Does not pass time)",
-        ]
+        ],
+        ["Knowledge"]
     ),
     new LeblancActivity(
         "Crossword",
         "Certain days",
         [
             "Complete crossword puzzle, +2 Knowledge (Does not pass time)",
-        ]
+        ],
+        ["Knowledge"]
     ),
     new LeblancActivity(
         "Attic TV",
@@ -86,11 +93,12 @@ const leblancActivities = [
             "Use Garden Energy, +2 Kindness",
             "Use Bio Nutrients, +3 Kindness",
             "Use Mega Fertilizer, +5 Kindness",
-        ]
+        ],
+        ["Kindness"]
     ),
     new LeblancActivity(
         "Laptop",
-        "After fixing Laptop (+5 Proficiency)",
+        "After fixing Laptop",
         [
             "Purchase items"
         ]
@@ -99,8 +107,10 @@ const leblancActivities = [
         "Desk",
         "Evenings, Sundays, Holidays",
         [
-            "Make Infiltration Tools"
-        ]
+            "Make Infiltration Tools, +3 Proficiency",
+            "Fix Laptop, +5 Proficiency"
+        ],
+        ["Proficiency"]
     ),
     new LeblancActivity(
         "Chair",

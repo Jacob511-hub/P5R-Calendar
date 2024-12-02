@@ -1,10 +1,11 @@
-function Job(name, requirements, pay, stats, bonus, unlocks) {
+function Job(name, requirements, pay, stats, bonus, unlocks, stat) {
     this.name = name;
     this.requirements = requirements;
     this.pay = pay;
     this.stats = stats;
     this.bonus = bonus;
     this.unlocks = unlocks;
+    this.stat = stat;
 }
 
 const jobs = [
@@ -17,7 +18,8 @@ const jobs = [
         \nCorrect answer on the first attempt: ¥7,400, Charm +5
         \nCorrect answer on the second attempt: ¥5,800, Charm +3
         \nIncorrect answers on both attempts: ¥3,500, Charm +3`,
-        "At least 3 shifts required to ID 'Calling Justice for Cats'"
+        "At least 3 shifts required to ID 'Calling Justice for Cats'",
+        ["Charm"]
     ),
     new Job(
         "Flower Shop Rafflesia",
@@ -28,7 +30,8 @@ const jobs = [
         \n3 correct flowers: ¥7,800, Kindness +5
         \n2 correct flowers: ¥3,200, Kindness +3
         \n1 or 0 correct flowers: ¥2,400, Kindness +2`,
-        "At least 3 shifts required to ID 'Who's Been Assaulting People'"
+        "At least 3 shifts required to ID 'Who's Been Assaulting People'",
+        ["Kindness"]
     ),
     new Job(
         "Ore no Beko Beef Bowl Shop",
@@ -39,7 +42,8 @@ const jobs = [
         \n4 correct orders: ¥4,800, Proficiency +5
         \n3 correct orders: ¥3,600, Proficiency +3
         \n2 or fewer correct orders: ¥2,600, Proficiency +2`,
-        "At least 2 shifts required to unlock the Sun Confidant"
+        "At least 2 shifts required to unlock the Sun Confidant",
+        ["Proficiency"]
     ),
     new Job(
         "Crossroads Bar",
@@ -53,7 +57,8 @@ const jobs = [
         \nFemale Office Worker: Proficiency +2
         \nDowncast Man: Kindness +2
         \nWoman in Evening Dress: Charm +2`,
-        "At least 2 shifts required to ID 'We Aren't Just Your Slaves'"
+        "At least 2 shifts required to ID 'We Aren't Just Your Slaves'",
+        ["Charm"]
     ),
 ];
 
