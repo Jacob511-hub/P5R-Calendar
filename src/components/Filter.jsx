@@ -32,11 +32,11 @@ const Filter = () => {
                 width: '50%',
                 height: 'auto'
             }}></img>
-            <StatsFilterItem img="src/assets/knowledge.png" text="Knowledge"></StatsFilterItem>
-            <StatsFilterItem img="src/assets/charm.png" text="Charm"></StatsFilterItem>
-            <StatsFilterItem img="src/assets/proficiency.png" text="Proficiency"></StatsFilterItem>
-            <StatsFilterItem img="src/assets/guts.png" text="Guts"></StatsFilterItem>
-            <StatsFilterItem img="src/assets/kindness.png" text="Kindness"></StatsFilterItem>
+            <StatsFilterItem img="src/assets/knowledge.png" stat="Knowledge"></StatsFilterItem>
+            <StatsFilterItem img="src/assets/charm.png" stat="Charm"></StatsFilterItem>
+            <StatsFilterItem img="src/assets/proficiency.png" stat="Proficiency"></StatsFilterItem>
+            <StatsFilterItem img="src/assets/guts.png" stat="Guts"></StatsFilterItem>
+            <StatsFilterItem img="src/assets/kindness.png" stat="Kindness"></StatsFilterItem>
         </ModalCustom>
     </div>
   );

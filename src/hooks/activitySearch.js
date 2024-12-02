@@ -2,6 +2,9 @@ import * as activityDates from './activityDates';
 import * as activityStartDates from './activityStartDates';
 import * as activityDetails from './activityDetails';
 import * as crosswordDetails from './crosswords';
+import { books, dvds, games } from './bookdvdgame';
+import { leblancActivities } from './leblanc';
+import { jobs } from './jobs';
 
 //Search for activities with set dates
 export function searchByDate(date) {
@@ -92,4 +95,11 @@ export function searchDetailsByActivity(activity) {
 
 export function searchCrosswordDates(date) {
     return crosswordDetails.crosswordDates.includes(date);
+}
+
+//Search function for filtering by stats
+export function statSearch(searchStat) {
+    const allArrays = [books, dvds, games, leblancActivities, jobs];
+    console.log(allArrays.flat().filter((obj) => Array.isArray(obj.stat) && obj.stat.includes(searchStat)))
+    return allArrays.flat().filter((obj) => Array.isArray(obj.stat) && obj.stat.includes(searchStat));
 }
