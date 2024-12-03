@@ -99,7 +99,8 @@ export function searchCrosswordDates(date) {
 
 //Search function for filtering by stats
 export function statSearch(searchStat) {
+
     const allArrays = [books, dvds, games, leblancActivities, jobs];
-    console.log(allArrays.flat().filter((obj) => Array.isArray(obj.stat) && obj.stat.includes(searchStat)))
+    console.log(allArrays.flat().filter((obj) => Array.isArray(obj.stat) && obj.stat.includes(searchStat)));
     return allArrays.flat().filter((obj) => Array.isArray(obj.stat) && obj.stat.includes(searchStat));
 }

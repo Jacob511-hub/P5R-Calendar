@@ -424,7 +424,7 @@ body {
   display: inline-flex;
   flex-direction: row;
   align-items: center;
-  height: 80px;
+  height: 75px;
   width: 100%;
   padding: 5px;
   box-sizing: border-box;
@@ -435,4 +435,25 @@ body {
   font-size: 1.7em;
   margin-left: 40px;
   color: #ffffff;
+}
+
+.reset-button {
+  position: relative;
+  width: 100px;
+  height: 45px;
+  z-index: 1;
+  cursor: pointer;
+  background-color: #bf0000;
+  border: 6px solid #000;
+}
+
+.reset-text {
+  position: absolute;
+  margin: 0;
+  z-index: 3;
+  font-size: 2em;
+  transform: translateX(10%);
+  color: #000000;
+  user-select: none; 
+  text-shadow: -1px 0 #ffffff, 0 1px #ffffff, 1px 0 #ffffff, 0 -1px #ffffff;
 }

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import StatsFilterItem from "./StatsFilterItem";
 import ModalCustom from "./ModalCustom";
+import ResetButton from "./ResetButton";
 
 const Filter = () => {
     const [open, setOpen] = useState(false);
@@ -37,6 +38,7 @@ const Filter = () => {
             <StatsFilterItem img="src/assets/proficiency.png" stat="Proficiency"></StatsFilterItem>
             <StatsFilterItem img="src/assets/guts.png" stat="Guts"></StatsFilterItem>
             <StatsFilterItem img="src/assets/kindness.png" stat="Kindness"></StatsFilterItem>
+            <ResetButton></ResetButton>
         </ModalCustom>
     </div>
   );

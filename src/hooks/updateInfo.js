@@ -47,6 +47,8 @@ export function useUpdateInfo() {
   const [quizDates, setQuizDates] = useState("");
   const [quizAnswers, setQuizAnswers] = useState("");
 
+  const [filter, setFilter] = useState("");
+
   const updateWeekday = (newWeekdayDisplay) => setWeekdayDisplay(newWeekdayDisplay);
   const updateDate = (newDate) => setDateDisplay(newDate);
   const updateActivityStart = (newActivityStartDisplay) => setActivityStartDisplay(newActivityStartDisplay);
@@ -92,6 +94,8 @@ export function useUpdateInfo() {
   
   const updateQuizDates = (quizDates) => setQuizDates(quizDates);
   const updateQuizAnswers = (quizAnswers) => setQuizAnswers(quizAnswers);
+
+  const updateFilter = (filter) => setFilter(filter);
 
   return {
     dateDisplay,
@@ -178,5 +182,8 @@ export function useUpdateInfo() {
     updateQuizDates,
     quizAnswers,
     updateQuizAnswers,
+
+    filter,
+    updateFilter,
   };
 }
