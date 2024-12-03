@@ -17,9 +17,14 @@ import { crosswordDates, crosswords } from '../hooks/crosswords';
 import { TVQuizAnswers } from '../hooks/quizAnswers.js';
 import { HomeShoppingProgramItems } from '../hooks/homeShopping.js';
 
+import { useInfo } from '../components/CalendarContext';
 import { useJobClick, useCrosswordDatesClick, useCrosswordSolutionsClick, useLeblancActivityClick, useHomeShoppingClick, useTVQuizClick } from '../hooks/handleClick.js';
 
 const Activities = () => {
+    const {
+        filter
+    } = useInfo();
+
     const jobClick = useJobClick();
     const crosswordDatesClick = useCrosswordDatesClick();
     const crosswordSolutionsClick = useCrosswordSolutionsClick();
@@ -52,122 +57,132 @@ const Activities = () => {
     };
 
     return (
-        <div className="activities-container">
-            <img
-                className="dagger"
-                src={daggerImage}>
-            </img>
-            <div className="activities-display">
-                <img src="src/assets/activities.png"></img>
-                <DividerCustom />
-                <AccordionCustom
-                    headerImg={'url("src/assets/confidants.png")'}
-                    renderContent={() => (
-                        tarot.map((tarotCard, index) => (
-                            <ConfidantContainer
-                                key={tarotCard}
-                                tarot={tarotCard}
-                                name={tarotNames[index]}
+        <>
+            <div className="activities-container">
+                <img
+                    className="dagger"
+                    src={daggerImage}>
+                </img>
+                <div className="activities-display">
+                    <img src="src/assets/activities.png"></img>
+                    <DividerCustom />
+                    {filter.length === 0 ? (
+                        <div>
+                            <AccordionCustom
+                                headerImg={'url("src/assets/confidants.png")'}
+                                renderContent={() => (
+                                    tarot.map((tarotCard, index) => (
+                                        <ConfidantContainer
+                                            key={tarotCard}
+                                            tarot={tarotCard}
+                                            name={tarotNames[index]}
+                                        />
+                                    ))
+                                )}
                             />
-                        ))
+                            <AccordionCustom
+                                headerImg={'url("src/assets/books.png")'}
+                                renderContent={() => (
+                                    books.map((book) => (
+                                        <BookDVDGameContainer
+                                            key={book.name}
+                                            itemIcon={bookIcon}
+                                            item={book}
+                                        />
+                                    ))
+                                )}
+                            />
+                            <AccordionCustom
+                                headerImg={'url("src/assets/dvds.png")'}
+                                renderContent={() => (
+                                    dvds.map((dvd) => (
+                                        <BookDVDGameContainer
+                                            key={dvd.name}
+                                            itemIcon={dvdIcon}
+                                            item={dvd}
+                                        />
+                                    ))
+                                )}
+                            />
+                            <AccordionCustom
+                                headerImg={'url("src/assets/games.png")'}
+                                renderContent={() => (
+                                    games.map((game) => (
+                                        <BookDVDGameContainer
+                                            key={game.name}
+                                            itemIcon={gameIcon}
+                                            item={game}
+                                        />
+                                    ))
+                                )}
+                            />
+                            <AccordionCustom
+                                headerImg={'url("src/assets/jobs.png")'}
+                                renderContent={() => (
+                                    jobs.map((job) => (
+                                        <ActivityContainerBasic
+                                            key={job.name}
+                                            name={job.name}
+                                            handleClick={handleJobClick(job)}
+                                        />
+                                    ))
+                                )}
+                            />
+                            <AccordionCustom
+                                headerImg={'url("src/assets/leblanc.png")'}
+                                renderContent={() => (
+                                    leblancActivities.map((leblancActivity) => (
+                                        <ActivityContainerBasic
+                                            key={leblancActivity.name}
+                                            name={leblancActivity.name}
+                                            handleClick={handleLeblancActivityClick(leblancActivity)}
+                                        />
+                                    ))
+                                )}
+                            />
+                            <AccordionCustom
+                                headerImg={'url("src/assets/crossword.png")'}
+                                renderContent={() => (
+                                    <>
+                                        <ActivityContainerBasic
+                                            name={"Dates"}
+                                            handleClick={handleCrosswordDatesClick(crosswordDates)}
+                                        />
+                                        <ActivityContainerBasic
+                                            name={"Solutions"}
+                                            handleClick={handleCrosswordSolutionsClick(crosswords)}
+                                        />
+                                    </>
+                                )}
+                            />
+                            <AccordionCustom
+                                headerImg={'url("src/assets/tv.png")'}
+                                renderContent={() => (
+                                    <>
+                                        <ActivityContainerBasic
+                                            name={"TV Shopping"}
+                                            handleClick={handleHomeShoppingClick(HomeShoppingProgramItems)}
+                                        />
+                                        <ActivityContainerBasic
+                                            name={"TV Quizzes"}
+                                            handleClick={handleTVQuizClick(TVQuizAnswers)}
+                                        />
+                                    </>
+                                )}
+                            />
+                            <AccordionCustom
+                                headerImg={'url("src/assets/facilities.png")'}
+                                renderContent=""
+                            />
+                        </div>
+                    ) : (
+                        <div>
+                            <h2>Test</h2>
+                        </div>
                     )}
-                />
-                <AccordionCustom
-                    headerImg={'url("src/assets/books.png")'}
-                    renderContent={() => (
-                        books.map((book) => (
-                            <BookDVDGameContainer
-                                key={book.name}
-                                itemIcon={bookIcon}
-                                item={book}
-                            />
-                        ))
-                    )}
-                />
-                <AccordionCustom
-                    headerImg={'url("src/assets/dvds.png")'}
-                    renderContent={() => (
-                        dvds.map((dvd) => (
-                            <BookDVDGameContainer
-                                key={dvd.name}
-                                itemIcon={dvdIcon}
-                                item={dvd}
-                            />
-                        ))
-                    )}
-                />
-                <AccordionCustom
-                    headerImg={'url("src/assets/games.png")'}
-                    renderContent={() => (
-                        games.map((game) => (
-                            <BookDVDGameContainer
-                                key={game.name}
-                                itemIcon={gameIcon}
-                                item={game}
-                            />
-                        ))
-                    )}
-                />
-                <AccordionCustom
-                    headerImg={'url("src/assets/jobs.png")'}
-                    renderContent={() => (
-                        jobs.map((job) => (
-                            <ActivityContainerBasic
-                                key={job.name}
-                                name={job.name}
-                                handleClick={handleJobClick(job)}
-                            />
-                        ))
-                    )}
-                />
-                <AccordionCustom
-                    headerImg={'url("src/assets/leblanc.png")'}
-                    renderContent={() => (
-                        leblancActivities.map((leblancActivity) => (
-                            <ActivityContainerBasic
-                                key={leblancActivity.name}
-                                name={leblancActivity.name}
-                                handleClick={handleLeblancActivityClick(leblancActivity)}
-                            />
-                        ))
-                    )}
-                />
-                <AccordionCustom
-                    headerImg={'url("src/assets/crossword.png")'}
-                    renderContent={() => (
-                        <>
-                            <ActivityContainerBasic
-                                name={"Dates"}
-                                handleClick={handleCrosswordDatesClick(crosswordDates)}
-                            />
-                            <ActivityContainerBasic
-                                name={"Solutions"}
-                                handleClick={handleCrosswordSolutionsClick(crosswords)}
-                            />
-                        </>
-                    )}
-                />
-                <AccordionCustom
-                    headerImg={'url("src/assets/tv.png")'}
-                    renderContent={() => (
-                        <>
-                            <ActivityContainerBasic
-                                name={"TV Shopping"}
-                                handleClick={handleHomeShoppingClick(HomeShoppingProgramItems)}
-                            />
-                            <ActivityContainerBasic
-                                name={"TV Quizzes"}
-                                handleClick={handleTVQuizClick(TVQuizAnswers)}
-                            />
-                        </>
-                    )}
-                />
-                <AccordionCustom
-                    headerImg={'url("src/assets/facilities.png")'}
-                    renderContent=""
-                />
+                </div>
             </div>
-        </div>
+        </>
     )
 }
 
