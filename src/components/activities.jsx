@@ -8,6 +8,7 @@ import DividerCustom from './dividerCustom';
 import ConfidantContainer from './confidantContainer';
 import BookDVDGameContainer from './BookDVDGameContainer';
 import ActivityContainerBasic from './ActivityContainerBasic.jsx';
+import FilteredList from './FilteredList.jsx';
 
 import { tarot, tarotNames } from '../hooks/confidantassets';
 import { books, dvds, games } from '../hooks/bookdvdgame';
@@ -18,19 +19,24 @@ import { TVQuizAnswers } from '../hooks/quizAnswers.js';
 import { HomeShoppingProgramItems } from '../hooks/homeShopping.js';
 
 import { useInfo } from '../components/CalendarContext';
-import { useJobClick, useCrosswordDatesClick, useCrosswordSolutionsClick, useLeblancActivityClick, useHomeShoppingClick, useTVQuizClick } from '../hooks/handleClick.js';
+import { useBookDVDGameClick, useJobClick, useCrosswordDatesClick, useCrosswordSolutionsClick, useLeblancActivityClick, useHomeShoppingClick, useTVQuizClick } from '../hooks/handleClick.js';
 
 const Activities = () => {
     const {
         filter
     } = useInfo();
 
+    const BookDVDGameClick = useBookDVDGameClick();
     const jobClick = useJobClick();
     const crosswordDatesClick = useCrosswordDatesClick();
     const crosswordSolutionsClick = useCrosswordSolutionsClick();
     const leblancActivityClick = useLeblancActivityClick();
     const homeShoppingClick = useHomeShoppingClick();
     const TVQuizClick = useTVQuizClick();
+
+    const handleBookDVDGameClick = (bookdvdgame) => () => {
+        BookDVDGameClick(bookdvdgame.name, bookdvdgame.chapters, bookdvdgame.effect, bookdvdgame.description, bookdvdgame.price, bookdvdgame.location, bookdvdgame.available);
+    };
 
     const handleJobClick = (job) => () => {
         jobClick(job.name, job.requirements, job.pay, job.stats, job.bonus, job.unlocks);
@@ -88,6 +94,7 @@ const Activities = () => {
                                             key={book.name}
                                             itemIcon={bookIcon}
                                             item={book}
+                                            handleClick={handleBookDVDGameClick(book)}
                                         />
                                     ))
                                 )}
@@ -100,6 +107,7 @@ const Activities = () => {
                                             key={dvd.name}
                                             itemIcon={dvdIcon}
                                             item={dvd}
+                                            handleClick={handleBookDVDGameClick(dvd)}
                                         />
                                     ))
                                 )}
@@ -112,6 +120,7 @@ const Activities = () => {
                                             key={game.name}
                                             itemIcon={gameIcon}
                                             item={game}
+                                            handleClick={handleBookDVDGameClick(game)}
                                         />
                                     ))
                                 )}
@@ -177,7 +186,7 @@ const Activities = () => {
                         </div>
                     ) : (
                         <div>
-                            <h2>Test</h2>
+                            <FilteredList filter={filter} />
                         </div>
                     )}
                 </div>

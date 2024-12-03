@@ -195,7 +195,7 @@ export const activityClick = (activityName) => {
     return { clicked, handleClick };
 }
 
-export const BookDVDGameClick = (name, chapters, effect, description, price, location, available) => {
+export const useBookDVDGameClick = () => {
     const { stateReset } = useReset();
 
     const {
@@ -208,7 +208,7 @@ export const BookDVDGameClick = (name, chapters, effect, description, price, loc
         updateBookdvdgameAvailable
     } = useInfo();
 
-    const handleClick = () => {
+    return (name, chapters, effect, description, price, location, available) => {
         stateReset();
 
         updateBookdvdgameName(name);
@@ -218,9 +218,7 @@ export const BookDVDGameClick = (name, chapters, effect, description, price, loc
         updateBookdvdgamePrice(price);
         updateBookdvdgameLocation(location);
         updateBookdvdgameAvailable(available);
-    }
-
-    return { handleClick };
+    };
 }
 
 export const useJobClick = () => {

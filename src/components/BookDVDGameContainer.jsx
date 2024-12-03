@@ -1,9 +1,7 @@
 import React from 'react';
-import { BookDVDGameClick } from '../hooks/handleClick.js';
+import { useBookDVDGameClick } from '../hooks/handleClick.js';
 
-const BookDVDGameContainer = ({itemIcon, item}) => {
-    const { handleClick } = BookDVDGameClick(item.name, item.chapters, item.effect, item.description, item.price, item.location, item.available);
-
+const BookDVDGameContainer = ({itemIcon, item, handleClick}) => {
     return (
         <div className="book-dvd-game-container" onClick={handleClick}>
             <img
