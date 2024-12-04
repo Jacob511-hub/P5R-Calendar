@@ -33,12 +33,34 @@ const Filter = () => {
                 width: '50%',
                 height: 'auto'
             }}></img>
-            <StatsFilterItem img="src/assets/knowledge.png" stat="Knowledge"></StatsFilterItem>
-            <StatsFilterItem img="src/assets/charm.png" stat="Charm"></StatsFilterItem>
-            <StatsFilterItem img="src/assets/proficiency.png" stat="Proficiency"></StatsFilterItem>
-            <StatsFilterItem img="src/assets/guts.png" stat="Guts"></StatsFilterItem>
-            <StatsFilterItem img="src/assets/kindness.png" stat="Kindness"></StatsFilterItem>
-            <ResetButton></ResetButton>
+            <StatsFilterItem
+                img="src/assets/knowledge.png"
+                stat="Knowledge"
+                onClick = {handleClose}
+            />
+            <StatsFilterItem
+                img="src/assets/charm.png"
+                stat="Charm"
+                onClick = {handleClose}
+            />
+            <StatsFilterItem
+                img="src/assets/proficiency.png"
+                stat="Proficiency"
+                onClick = {handleClose}
+            />
+            <StatsFilterItem
+                img="src/assets/guts.png"  
+                stat="Guts"
+                onClick = {handleClose}
+            />
+            <StatsFilterItem
+                img="src/assets/kindness.png"
+                stat="Kindness"
+                onClick = {handleClose}
+            />
+            <ResetButton
+                onClick = {handleClose}
+            />
         </ModalCustom>
     </div>
   );
