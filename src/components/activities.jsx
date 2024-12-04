@@ -11,7 +11,6 @@ import ActivityContainerBasic from './ActivityContainerBasic.jsx';
 import FilteredList from './FilteredList.jsx';
 
 import { tarot, tarotNames } from '../hooks/confidantassets';
-import { books as booksData, dvds as dvdsData, games as gamesData } from '../hooks/bookdvdgame';
 import { jobs } from '../hooks/jobs';
 import { leblancActivities } from '../hooks/leblanc';
 import { crosswordDates, crosswords } from '../hooks/crosswords';
@@ -23,7 +22,13 @@ import { useBookDVDGameClick, useJobClick, useCrosswordDatesClick, useCrosswordS
 
 const Activities = () => {
     const {
-        filter
+        filter,
+        books,
+        setBooks,
+        dvds,
+        setDvds,
+        games,
+        setGames,
     } = useInfo();
 
     const BookDVDGameClick = useBookDVDGameClick();
@@ -62,25 +67,22 @@ const Activities = () => {
         TVQuizClick(item);
     };
 
-    const [books, setBooks] = useState(booksData);
-    const [dvds, setDvds] = useState(dvdsData);
-    const [games, setGames] = useState(gamesData);
-
     const toggleChecked = (itemName, category) => {
         const updateItems = (items, setItems) => {
-        setItems(
-            items.map((item) =>
-            item.name === itemName ? { ...item, checked: !item.checked } : item
-            )
-        );
+            setItems(
+                items.map((item) => {
+                    const updatedItem = item.name === itemName ? { ...item, checked: !item.checked } : item;
+                    return updatedItem;
+                })
+            );
         };
-
+    
         if (category === 'books') {
-        updateItems(books, setBooks);
+            updateItems(books, setBooks);
         } else if (category === 'dvds') {
-        updateItems(dvds, setDvds);
+            updateItems(dvds, setDvds);
         } else if (category === 'games') {
-        updateItems(games, setGames);
+            updateItems(games, setGames);
         }
     };
 
