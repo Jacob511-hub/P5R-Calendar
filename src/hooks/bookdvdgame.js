@@ -1,4 +1,4 @@
-function BookDVDGame(name, chapters, effect, description, price, location, available, stat) {
+function BookDVDGame(name, chapters, effect, description, price, location, available, stat, checked) {
     this.name = name;
     this.chapters = chapters;
     this.effect = effect;
@@ -7,6 +7,7 @@ function BookDVDGame(name, chapters, effect, description, price, location, avail
     this.location = location;
     this.available = available;
     this.stat = stat;
+    this.checked = checked;
 }
 
 const books = [
@@ -18,7 +19,8 @@ const books = [
       "¥0",
       "Shujin Academy Library",
       "4/18",
-      ["Knowledge"]
+      ["Knowledge"],
+      false
   ),
   new BookDVDGame(
       "Pirate Legend",
@@ -28,7 +30,8 @@ const books = [
       "¥0",
       "Shujin Academy Library",
       "4/18",
-      ["Guts"]
+      ["Guts"],
+      false
   ),
   new BookDVDGame(
       "Zorro, the Outlaw",
@@ -38,7 +41,8 @@ const books = [
       "¥0",
       "Shujin Academy Library",
       "4/18",
-      ["Kindness"]
+      ["Kindness"],
+      false
   ),
   new BookDVDGame(
       "The Gallant Rogue",
@@ -48,7 +52,8 @@ const books = [
       "¥0",
       "Shujin Academy Library",
       "5/19",
-      ["Guts"]
+      ["Guts"],
+      false
   ),
   new BookDVDGame(
       "The Illusory Popess",
@@ -58,7 +63,8 @@ const books = [
       "¥0",
       "Shujin Academy Library",
       "6/20",
-      ["Kindness"]
+      ["Kindness"],
+      false
   ),
   new BookDVDGame(
       "Cry of Cthulhu",
@@ -68,7 +74,8 @@ const books = [
       "¥0",
       "Shujin Academy Library",
       "9/2",
-      ["Guts"]
+      ["Guts"],
+      false
   ),
   new BookDVDGame(
       "Woman in the Dark",
@@ -78,7 +85,8 @@ const books = [
       "¥0",
       "Shujin Academy Library",
       "9/19",
-      ["Proficiency"]
+      ["Proficiency"],
+      false
   ),
   new BookDVDGame(
       "Dressed in Ashes",
@@ -88,7 +96,8 @@ const books = [
       "¥0",
       "Shujin Academy Library",
       "10/3",
-      ["Charm"]
+      ["Charm"],
+      false
   ),
   new BookDVDGame(
       "The Hero with a Bow",
@@ -98,7 +107,8 @@ const books = [
       "¥0",
       "Shujin Academy Library",
       "10/30",
-      ["Guts"]
+      ["Guts"],
+      false
   ),
   new BookDVDGame(
       "Musty Pages",
@@ -108,7 +118,8 @@ const books = [
       "¥1,800",
       "Shibuya Central Street: Taiheido Bookstore",
       "9/1",
-      ["None"]
+      ["None"],
+      false
   ),
   new BookDVDGame(
       "Wise Men's Words",
@@ -118,7 +129,8 @@ const books = [
       "¥700",
       "Shibuya Central Street: Taiheido Bookstore",
       "6/1",
-      ["Knowledge"]
+      ["Knowledge"],
+      false
   ),
   new BookDVDGame(
       "Ghost Encounters",
@@ -128,7 +140,8 @@ const books = [
       "¥700",
       "Shibuya Central Street: Taiheido Bookstore",
       "7/1",
-      ["Guts"]
+      ["Guts"],
+      false
   ),
   new BookDVDGame(
       "Tidying the Heart",
@@ -138,7 +151,8 @@ const books = [
       "¥700",
       "Shibuya Central Street: Taiheido Bookstore",
       "4/18",
-      ["Proficiency"]
+      ["Proficiency"],
+      false
   ),
   new BookDVDGame(
       "Buchiko's Story",
@@ -148,7 +162,8 @@ const books = [
       "¥700",
       "Shibuya Central Street: Taiheido Bookstore",
       "4/18",
-      ["Kindness"]
+      ["Kindness"],
+      false
   ),
   new BookDVDGame(
       "Flowerpedia",
@@ -158,7 +173,8 @@ const books = [
       "¥2,800",
       "Shinjuku: Hinokuniya Bookstore",
       "After working at Rafflesia Flower Shop at least once",
-      ["None"]
+      ["None"],
+      false
   ),
   new BookDVDGame(
       "Master Swordsman",
@@ -168,7 +184,8 @@ const books = [
       "¥8,000",
       "Jinbocho: Nagiuri Bookstore",
       "After unlocking Jinbocho",
-      ["Guts"]
+      ["Guts"],
+      false
   ),
   new BookDVDGame(
       "Call Me Chief",
@@ -178,7 +195,8 @@ const books = [
       "¥8,000",
       "Jinbocho: Nagiuri Bookstore",
       "After reading Master Swordsman",
-      ["Kindness"]
+      ["Kindness"],
+      false
   ),
   new BookDVDGame(
       "Reckless Casanova",
@@ -188,7 +206,8 @@ const books = [
       "¥8,000",
       "Jinbocho: Nagiuri Bookstore",
       "After reading Master Swordsman",
-      ["Charm"]
+      ["Charm"],
+      false
   ),
   new BookDVDGame(
       "Heroic Revelations",
@@ -198,7 +217,8 @@ const books = [
       "¥8,000",
       "Jinbocho: Nagiuri Bookstore",
       "After reading Master Swordsman",
-      ["Knowledge"]
+      ["Knowledge"],
+      false
   ),
   new BookDVDGame(
       "The Art of Automata",
@@ -208,7 +228,8 @@ const books = [
       "¥8,000",
       "Jinbocho: Nagiuri Bookstore",
       "After reading Master Swordsman",
-      ["Proficiency"]
+      ["Proficiency"],
+      false
   ),
   new BookDVDGame(
       "Knowing the Heart",
@@ -218,7 +239,8 @@ const books = [
       "¥12,000",
       "Jinbocho: Nagiuri Bookstore",
       "After reading all other books from Nagiuri Bookstore",
-      ["None"]
+      ["None"],
+      false
   ),
   new BookDVDGame(
       "Shitamachi Reborn",
@@ -228,7 +250,8 @@ const books = [
       "¥0",
       "Complete the Mementos Request 'Who's Muscling in Yongen-Jaya?'",
       "8/30",
-      ["None"]
+      ["None"],
+      false
   ),
   new BookDVDGame(
       "Tokyo Shrines",
@@ -238,7 +261,8 @@ const books = [
       "¥1,800",
       "Shibuya Central Street: Taiheido Bookstore",
       "9/1",
-      ["None"]
+      ["None"],
+      false
   ),
   new BookDVDGame(
       "Fishpond Spotter",
@@ -248,7 +272,8 @@ const books = [
       "¥1,800",
       "Shibuya Central Street: Taiheido Bookstore",
       "7/17",
-      ["None"]
+      ["None"],
+      false
   ),
   new BookDVDGame(
       "Yoncha Walker 04",
@@ -258,7 +283,8 @@ const books = [
       "¥0",
       "Found after cleaning your room",
       "4/18",
-      ["None"]
+      ["None"],
+      false
   ),
   new BookDVDGame(
       "Social Thought",
@@ -268,7 +294,8 @@ const books = [
       "¥0 (Requires Rank 2 Knowledge to read)",
       "Found after cleaning your room",
       "4/18",
-      ["Knowledge"]
+      ["Knowledge"],
+      false
   ),
   new BookDVDGame(
       "Night Skies",
@@ -278,7 +305,8 @@ const books = [
       "¥1,800",
       "Shibuya Central Street: Taiheido Bookstore",
       "9/1",
-      ["None"]
+      ["None"],
+      false
   ),
   new BookDVDGame(
       "Batting Science",
@@ -288,7 +316,8 @@ const books = [
       "¥2,800",
       "Shinjuku: Hinokuniya Bookstore",
       "Gone to the Batting Cages at least once",
-      ["None"]
+      ["None"],
+      false
   ),
   new BookDVDGame(
       "Essence of Fishing",
@@ -298,7 +327,8 @@ const books = [
       "¥2,800",
       "Shinjuku: Hinokuniya Bookstore",
       "Gone fishing at Ichigaya at least once",
-      ["None"]
+      ["None"],
+      false
   ),
   new BookDVDGame(
       "Speed Reader",
@@ -308,7 +338,8 @@ const books = [
       "¥0",
       "Shujin Academy Library",
       "7/1",
-      ["None"]
+      ["None"],
+      false
   ),
   new BookDVDGame(
       "The Craft of Cinema",
@@ -318,7 +349,8 @@ const books = [
       "¥2,800",
       "Shinjuku: Hinokuniya Bookstore",
       "Watched a movie or DVD at least once",
-      ["None"]
+      ["None"],
+      false
   ),
   new BookDVDGame(
       "Learn Pro Darts",
@@ -328,7 +360,8 @@ const books = [
       "¥2,800",
       "Shinjuku: Hinokuniya Bookstore",
       "Played darts at least once",
-      ["None"]
+      ["None"],
+      false
   ),
   new BookDVDGame(
       "ABCs of Crafting",
@@ -338,7 +371,8 @@ const books = [
       "¥2,800",
       "Shinjuku: Hinokuniya Bookstore",
       "Crafted an infiltration tool at least once",
-      ["None"]
+      ["None"],
+      false
   ),
   new BookDVDGame(
       "Expert Billiards",
@@ -348,7 +382,8 @@ const books = [
       "¥3,500",
       "Shibuya: Underground Mall Sports Store",
       "Played billiards at least once",
-      ["None"]
+      ["None"],
+      false
   ),
   new BookDVDGame(
       "Billiards Magician",
@@ -358,7 +393,8 @@ const books = [
       "¥0",
       "Shibuya: Underground Mall Sports Store",
       "Billiards Technical Rank 3",
-      ["None"]
+      ["None"],
+      false
   ),
   new BookDVDGame(
       "Factorization Guide",
@@ -368,7 +404,8 @@ const books = [
       "Trade MRE Ration",
       "Kichijoji: Trader Sakai",
       "7/26 - 7/30",
-      ["None"]
+      ["None"],
+      false
   ),
   new BookDVDGame(
       "Chinese Sweets",
@@ -378,7 +415,8 @@ const books = [
       "¥0",
       "Complete the Mementos Request 'Part-time Job, Full-time Hell'",
       "6/6",
-      ["None"]
+      ["None"],
+      false
   ),
   new BookDVDGame(
       "Theme Park Escort",
@@ -388,7 +426,8 @@ const books = [
       "¥0",
       "Complete the Mementos Request 'We Aren't Just Your Slaves'",
       "8/2",
-      ["None"]
+      ["None"],
+      false
   ),
   new BookDVDGame(
       "Medjed Menace",
@@ -398,7 +437,8 @@ const books = [
       "¥1,200",
       "Shibuya Central Street: Taiheido Bookstore",
       "5/6",
-      ["Knowledge"]
+      ["Knowledge"],
+      false
   ),
   new BookDVDGame(
       "The Art of Charm",
@@ -408,7 +448,8 @@ const books = [
       "¥700",
       "Shibuya Central Street: Taiheido Bookstore",
       "4/18",
-      ["Charm"]
+      ["Charm"],
+      false
   ),
   new BookDVDGame(
       "Game Secrets",
@@ -418,7 +459,8 @@ const books = [
       "¥2,800",
       "Shinjuku: Hinokuniya Bookstore",
       "Played video games at least once",
-      ["None"]
+      ["None"],
+      false
   ),
   new BookDVDGame(
       "Vague",
@@ -428,7 +470,8 @@ const books = [
       "¥1,800",
       "Shibuya Central Street: Taiheido Bookstore",
       "5/18",
-      ["None"]
+      ["None"],
+      false
   ),
   new BookDVDGame(
       "Nightlife Hotspots",
@@ -438,7 +481,8 @@ const books = [
       "¥1,800",
       "Shibuya Central Street: Taiheido Bookstore",
       "6/1",
-      ["None"]
+      ["None"],
+      false
   ),
   new BookDVDGame(
       "Aquarium-a-Day",
@@ -448,7 +492,8 @@ const books = [
       "¥1,800",
       "Shibuya Central Street: Taiheido Bookstore",
       "7/17",
-      ["None"]
+      ["None"],
+      false
   ),
   new BookDVDGame(
       "Nakano Walker",
@@ -458,7 +503,8 @@ const books = [
       "¥1,800",
       "Shibuya Central Street: Taiheido Bookstore",
       "10/1",
-      ["None"]
+      ["None"],
+      false
   ),
 ];
 
@@ -471,7 +517,8 @@ const dvds = [
       "¥0 (All DVDs are free after the initial ¥4,800 subscription)",
       "Shibuya, Central Street: Rental Shop Scarlet",
       "4/18",
-      ["Charm"]
+      ["Charm"],
+      false
   ),
   new BookDVDGame(
       "Wraith",
@@ -481,7 +528,8 @@ const dvds = [
       "¥0 (All DVDs are free after the initial ¥4,800 subscription)",
       "Shibuya, Central Street: Rental Shop Scarlet",
       "4/18",
-      ["Kindness"]
+      ["Kindness"],
+      false
   ),
   new BookDVDGame(
       "Guy McVer",
@@ -491,7 +539,8 @@ const dvds = [
       "¥0 (All DVDs are free after the initial ¥4,800 subscription)",
       "Shibuya, Central Street: Rental Shop Scarlet",
       "4/18",
-      ["Proficiency"]
+      ["Proficiency"],
+      false
   ),
   new BookDVDGame(
       "The X Folders",
@@ -501,7 +550,8 @@ const dvds = [
       "¥0 (All DVDs are free after the initial ¥4,800 subscription)",
       "Shibuya, Central Street: Rental Shop Scarlet",
       "4/18",
-      ["Guts"]
+      ["Guts"],
+      false
   ),
   new BookDVDGame(
       "Not-so-hot Betsy",
@@ -511,7 +561,8 @@ const dvds = [
       "¥0 (All DVDs are free after the initial ¥4,800 subscription)",
       "Shibuya, Central Street: Rental Shop Scarlet",
       "6/1",
-      ["Charm"]
+      ["Charm"],
+      false
   ),
   new BookDVDGame(
       "ICU",
@@ -521,7 +572,8 @@ const dvds = [
       "¥0 (All DVDs are free after the initial ¥4,800 subscription)",
       "Shibuya, Central Street: Rental Shop Scarlet",
       "6/1",
-      ["Kindness"]
+      ["Kindness"],
+      false
   ),
   new BookDVDGame(
       "Jail Break",
@@ -531,7 +583,8 @@ const dvds = [
       "¥0 (All DVDs are free after the initial ¥4,800 subscription)",
       "Shibuya, Central Street: Rental Shop Scarlet",
       "6/1",
-      ["Proficiency"]
+      ["Proficiency"],
+      false
   ),
   new BookDVDGame(
       "The Running Dead",
@@ -541,7 +594,8 @@ const dvds = [
       "¥0 (All DVDs are free after the initial ¥4,800 subscription)",
       "Shibuya, Central Street: Rental Shop Scarlet",
       "6/1",
-      ["Guts"]
+      ["Guts"],
+      false
   ),
   new BookDVDGame(
       "D. Housewives",
@@ -551,7 +605,8 @@ const dvds = [
       "¥0 (All DVDs are free after the initial ¥4,800 subscription)",
       "Shibuya, Central Street: Rental Shop Scarlet",
       "8/1",
-      ["Charm"]
+      ["Charm"],
+      false
   ),
   new BookDVDGame(
       "Mouse M.D.",
@@ -561,7 +616,8 @@ const dvds = [
       "¥0 (All DVDs are free after the initial ¥4,800 subscription)",
       "Shibuya, Central Street: Rental Shop Scarlet",
       "8/1",
-      ["Kindness"]
+      ["Kindness"],
+      false
   ),
   new BookDVDGame(
       "Tee",
@@ -571,7 +627,8 @@ const dvds = [
       "¥0 (All DVDs are free after the initial ¥4,800 subscription)",
       "Shibuya, Central Street: Rental Shop Scarlet",
       "8/1",
-      ["Proficiency"]
+      ["Proficiency"],
+      false
   ),
   new BookDVDGame(
       "31",
@@ -581,7 +638,8 @@ const dvds = [
       "¥0 (All DVDs are free after the initial ¥4,800 subscription)",
       "Shibuya, Central Street: Rental Shop Scarlet",
       "8/1",
-      ["Guts"]
+      ["Guts"],
+      false
   ),
 ];
 
@@ -594,7 +652,8 @@ const games = [
       "¥0 (Comes with the Famidrive, which is ¥5,000)",
       "Yongen-Jaya: Yumenoshima Second-hand Shop",
       "6/5",
-      ["Guts"]
+      ["Guts"],
+      false
   ),
   new BookDVDGame(
       "Punch Ouch",
@@ -604,7 +663,8 @@ const games = [
       "¥5,300",
       "Akihabara: Retro Game Shop Super Baron",
       "9/1",
-      ["Charm"]
+      ["Charm"],
+      false
   ),
   new BookDVDGame(
       "Train of Life",
@@ -614,7 +674,8 @@ const games = [
       "¥5,600",
       "Akihabara: Retro Game Shop Super Baron",
       "9/1",
-      ["Kindness"]
+      ["Kindness"],
+      false
   ),
   new BookDVDGame(
       "Power Intuition",
@@ -624,7 +685,8 @@ const games = [
       "¥5,500",
       "Akihabara: Retro Game Shop Super Baron",
       "9/1",
-      ["Guts"]
+      ["Guts"],
+      false
   ),
   new BookDVDGame(
       "Gambla Goemon",
@@ -634,7 +696,8 @@ const games = [
       "¥5,200",
       "Yongen-Jaya: Yumenoshima Second-hand Shop",
       "7/26",
-      ["Charm"]
+      ["Charm"],
+      false
   ),
   new BookDVDGame(
       "Golfer Sarutahiko",
@@ -644,7 +707,8 @@ const games = [
       "¥3,200",
       "Akihabara: Retro Game Shop Super Baron",
       "9/1",
-      ["Proficiency"]
+      ["Proficiency"],
+      false
   ),
   new BookDVDGame(
       "Featherman Seeker",
@@ -654,7 +718,8 @@ const games = [
       "¥5,000",
       "Akihabara: Retro Game Shop Super Baron",
       "9/1",
-      ["Knowledge"]
+      ["Knowledge"],
+      false
   ),
 ];
 

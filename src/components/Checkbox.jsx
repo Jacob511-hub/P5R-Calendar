@@ -1,19 +1,13 @@
 import React, { useState } from 'react';
 
-const Checkbox = () => {
-  const [checked, setChecked] = useState(false);
-
-  const handleClick = () => {
-    setChecked((prev) => {
-      const newChecked = !prev;
-      return newChecked;
-    });
-  };
-
+const Checkbox = ({ checked, toggleChecked }) => {
   return (
     <div
       className="checkbox-container"
-      onClick={handleClick}
+      onClick={(e) => {
+        e.stopPropagation();
+        toggleChecked();
+      }}
       style={{
         position: 'absolute',
         top: '0px',

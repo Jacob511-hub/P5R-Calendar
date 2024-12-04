@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import daggerImage from '../assets/dagger.png';
 import bookIcon from '../assets/book-icon.png';
 import dvdIcon from '../assets/dvd-icon.png';
@@ -11,7 +11,7 @@ import ActivityContainerBasic from './ActivityContainerBasic.jsx';
 import FilteredList from './FilteredList.jsx';
 
 import { tarot, tarotNames } from '../hooks/confidantassets';
-import { books, dvds, games } from '../hooks/bookdvdgame';
+import { books as booksData, dvds as dvdsData, games as gamesData } from '../hooks/bookdvdgame';
 import { jobs } from '../hooks/jobs';
 import { leblancActivities } from '../hooks/leblanc';
 import { crosswordDates, crosswords } from '../hooks/crosswords';
@@ -62,6 +62,28 @@ const Activities = () => {
         TVQuizClick(item);
     };
 
+    const [books, setBooks] = useState(booksData);
+    const [dvds, setDvds] = useState(dvdsData);
+    const [games, setGames] = useState(gamesData);
+
+    const toggleChecked = (itemName, category) => {
+        const updateItems = (items, setItems) => {
+        setItems(
+            items.map((item) =>
+            item.name === itemName ? { ...item, checked: !item.checked } : item
+            )
+        );
+        };
+
+        if (category === 'books') {
+        updateItems(books, setBooks);
+        } else if (category === 'dvds') {
+        updateItems(dvds, setDvds);
+        } else if (category === 'games') {
+        updateItems(games, setGames);
+        }
+    };
+
     return (
         <>
             <div className="activities-container">
@@ -95,6 +117,7 @@ const Activities = () => {
                                             itemIcon={bookIcon}
                                             item={book}
                                             handleClick={handleBookDVDGameClick(book)}
+                                            toggleChecked={() => toggleChecked(book.name, 'books')}
                                         />
                                     ))
                                 )}
@@ -108,6 +131,7 @@ const Activities = () => {
                                             itemIcon={dvdIcon}
                                             item={dvd}
                                             handleClick={handleBookDVDGameClick(dvd)}
+                                            toggleChecked={() => toggleChecked(dvd.name, 'dvds')}
                                         />
                                     ))
                                 )}
@@ -121,6 +145,7 @@ const Activities = () => {
                                             itemIcon={gameIcon}
                                             item={game}
                                             handleClick={handleBookDVDGameClick(game)}
+                                            toggleChecked={() => toggleChecked(game.name, 'games')}
                                         />
                                     ))
                                 )}
