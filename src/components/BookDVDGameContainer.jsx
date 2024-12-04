@@ -1,5 +1,5 @@
 import React from 'react';
-import { useBookDVDGameClick } from '../hooks/handleClick.js';
+import Checkbox from './Checkbox';
 
 const BookDVDGameContainer = ({itemIcon, item, handleClick}) => {
     return (
@@ -9,6 +9,7 @@ const BookDVDGameContainer = ({itemIcon, item, handleClick}) => {
                 src={itemIcon}>
             </img>
             <h1 className="book-dvd-game-name">{item.name}</h1>
+            <Checkbox />
         </div>
     );
 }
