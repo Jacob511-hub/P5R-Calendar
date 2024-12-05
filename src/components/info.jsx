@@ -11,6 +11,7 @@ import LeblancInfo from './LeblancInfo';
 import CrosswordAvailable from './CrosswordAvailable';
 import TVQuizInfo from './TVQuizInfo';
 import HomeShoppingInfo from './HomeShoppingInfo';
+import ClassroomInfo from './ClassroomInfo';
 
 const Info = () => {
     const {
@@ -52,15 +53,16 @@ const Info = () => {
                 <InfoBox headerText="Start Date" activityData={activityStartDate} dateAvailability={dateAvailability} />
                 <InfoBox headerText="End Date" activityData={activityEndDate} dateAvailability={dateAvailability} />
                 <InfoBox headerText="Dates" activityData={activityListDates} dateAvailability={dateAvailability} />
-                <CrosswordAvailable></CrosswordAvailable>
+                <CrosswordAvailable />
 
-                <BookDVDGameInfo></BookDVDGameInfo>
-                <JobsInfo></JobsInfo>
-                <CrosswordDatesInfo></CrosswordDatesInfo>
-                <CrosswordSolutionsInfo></CrosswordSolutionsInfo>
-                <LeblancInfo></LeblancInfo>
-                <HomeShoppingInfo></HomeShoppingInfo>
-                <TVQuizInfo></TVQuizInfo>
+                <BookDVDGameInfo />
+                <JobsInfo />
+                <CrosswordDatesInfo />
+                <CrosswordSolutionsInfo />
+                <LeblancInfo />
+                <HomeShoppingInfo />
+                <TVQuizInfo />
+                <ClassroomInfo />
             </div>
         </div>
     )

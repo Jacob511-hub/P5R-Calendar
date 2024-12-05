@@ -16,9 +16,10 @@ import { leblancActivities } from '../hooks/leblanc';
 import { crosswordDates, crosswords } from '../hooks/crosswords';
 import { TVQuizAnswers } from '../hooks/quizAnswers.js';
 import { HomeShoppingProgramItems } from '../hooks/homeShopping.js';
+import { ClassroomQuestions } from '../hooks/classroom.js';
 
 import { useInfo } from '../components/CalendarContext';
-import { useBookDVDGameClick, useJobClick, useCrosswordDatesClick, useCrosswordSolutionsClick, useLeblancActivityClick, useHomeShoppingClick, useTVQuizClick } from '../hooks/handleClick.js';
+import { useBookDVDGameClick, useJobClick, useCrosswordDatesClick, useCrosswordSolutionsClick, useLeblancActivityClick, useHomeShoppingClick, useTVQuizClick, useClassroomQuestionClick } from '../hooks/handleClick.js';
 
 const Activities = () => {
     const {
@@ -38,6 +39,7 @@ const Activities = () => {
     const leblancActivityClick = useLeblancActivityClick();
     const homeShoppingClick = useHomeShoppingClick();
     const TVQuizClick = useTVQuizClick();
+    const classroomQuestionClick = useClassroomQuestionClick();
 
     const handleBookDVDGameClick = (bookdvdgame) => () => {
         BookDVDGameClick(bookdvdgame.name, bookdvdgame.chapters, bookdvdgame.effect, bookdvdgame.description, bookdvdgame.price, bookdvdgame.location, bookdvdgame.available);
@@ -66,6 +68,10 @@ const Activities = () => {
     const handleTVQuizClick = (item) => () => {
         TVQuizClick(item);
     };
+
+    const handleClassroomQuestionClick = (item) => () => {
+        classroomQuestionClick(item);
+    }
 
     const toggleChecked = (itemName, category) => {
         const updateItems = (items, setItems, storageKey) => {
@@ -201,6 +207,21 @@ const Activities = () => {
                                         <ActivityContainerBasic
                                             name={"TV Quizzes"}
                                             handleClick={handleTVQuizClick(TVQuizAnswers)}
+                                        />
+                                    </>
+                                )}
+                            />
+                            <AccordionCustom
+                                headerImg={'url("src/assets/classroom.png")'}
+                                renderContent={() => (
+                                    <>
+                                        <ActivityContainerBasic
+                                            name={"Classroom Questions"}
+                                            handleClick={handleClassroomQuestionClick(ClassroomQuestions)}
+                                        />
+                                        <ActivityContainerBasic
+                                            name={"Exams"}
+                                            handleClick={null}
                                         />
                                     </>
                                 )}

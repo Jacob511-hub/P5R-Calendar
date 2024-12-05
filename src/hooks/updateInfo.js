@@ -64,6 +64,9 @@ export function useUpdateInfo() {
     setGames(savedGames);
   }, []);
 
+  const [classroomQuestionDates, setClassroomQuestionDates] = useState("");
+  const [classroomQuestionAnswers, setClassroomQuestionAnswers] = useState("");
+
   const updateWeekday = (newWeekdayDisplay) => setWeekdayDisplay(newWeekdayDisplay);
   const updateDate = (newDate) => setDateDisplay(newDate);
   const updateActivityStart = (newActivityStartDisplay) => setActivityStartDisplay(newActivityStartDisplay);
@@ -111,6 +114,9 @@ export function useUpdateInfo() {
   const updateQuizAnswers = (quizAnswers) => setQuizAnswers(quizAnswers);
 
   const updateFilter = (filter) => setFilter(filter);
+
+  const updateClassroomQuestionDates = (classroomQuestionDates) => setClassroomQuestionDates(classroomQuestionDates);
+  const updateClassroomQuestionAnswers = (classroomQuestionAnswers) => setClassroomQuestionAnswers(classroomQuestionAnswers);
 
   return {
     dateDisplay,
@@ -207,5 +213,10 @@ export function useUpdateInfo() {
     setDvds,
     games,
     setGames,
+
+    classroomQuestionDates,
+    updateClassroomQuestionDates,
+    classroomQuestionAnswers,
+    updateClassroomQuestionAnswers,
   };
 }

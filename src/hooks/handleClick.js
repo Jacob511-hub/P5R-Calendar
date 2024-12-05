@@ -61,6 +61,9 @@ const useReset = () => {
 
         updateQuizDates,
         updateQuizAnswers,
+
+        updateClassroomQuestionDates,
+        updateClassroomQuestionAnswers,
     } = useInfo();
     
     const stateReset = () => {
@@ -109,6 +112,9 @@ const useReset = () => {
 
         updateQuizDates("");
         updateQuizAnswers("");
+
+        updateClassroomQuestionDates("");
+        updateClassroomQuestionAnswers("");
     };
 
     return { stateReset };
@@ -340,5 +346,24 @@ export const useTVQuizClick = () => {
 
         updateQuizDates(date);
         updateQuizAnswers(answer);
+    }
+}
+
+export const useClassroomQuestionClick = () => {
+    const { stateReset } = useReset();
+
+    const {
+        updateClassroomQuestionDates,
+        updateClassroomQuestionAnswers,
+    } = useInfo();
+
+    return (question) => {
+        stateReset();
+
+        const date = question.map(question => question.date);
+        const answer = question.map(question => question.answer);
+
+        updateClassroomQuestionDates(date);
+        updateClassroomQuestionAnswers(answer);
     }
 }
