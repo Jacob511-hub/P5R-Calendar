@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { books as booksData, dvds as dvdsData, games as gamesData } from '../hooks/bookdvdgame';
 
 export function useUpdateInfo() {
@@ -53,6 +53,16 @@ export function useUpdateInfo() {
   const [books, setBooks] = useState(booksData);
   const [dvds, setDvds] = useState(dvdsData);
   const [games, setGames] = useState(gamesData);
+
+  useEffect(() => {
+    const savedBooks = JSON.parse(localStorage.getItem('books')) || booksData;
+    const savedDvds = JSON.parse(localStorage.getItem('dvds')) || dvdsData;
+    const savedGames = JSON.parse(localStorage.getItem('games')) || gamesData;
+  
+    setBooks(savedBooks);
+    setDvds(savedDvds);
+    setGames(savedGames);
+  }, []);
 
   const updateWeekday = (newWeekdayDisplay) => setWeekdayDisplay(newWeekdayDisplay);
   const updateDate = (newDate) => setDateDisplay(newDate);

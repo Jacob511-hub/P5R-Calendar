@@ -68,23 +68,22 @@ const Activities = () => {
     };
 
     const toggleChecked = (itemName, category) => {
-        const updateItems = (items, setItems) => {
-            setItems(
-                items.map((item) => {
-                    const updatedItem = item.name === itemName ? { ...item, checked: !item.checked } : item;
-                    return updatedItem;
-                })
-            );
+        const updateItems = (items, setItems, storageKey) => {
+          const updatedItems = items.map((item) => 
+            item.name === itemName ? { ...item, checked: !item.checked } : item
+          );
+          setItems(updatedItems);
+          localStorage.setItem(storageKey, JSON.stringify(updatedItems));
         };
-    
+      
         if (category === 'books') {
-            updateItems(books, setBooks);
+          updateItems(books, setBooks, 'books');
         } else if (category === 'dvds') {
-            updateItems(dvds, setDvds);
+          updateItems(dvds, setDvds, 'dvds');
         } else if (category === 'games') {
-            updateItems(games, setGames);
+          updateItems(games, setGames, 'games');
         }
-    };
+      };
 
     return (
         <>
