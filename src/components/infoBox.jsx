@@ -30,22 +30,22 @@ const InfoBox = ({
         }
     };
 
+    if (activityData.length <= 0 || !checkDateAvailability()) {
+        return null;
+    }
+
     return (
         <>
-            {activityData.length > 0 && checkDateAvailability() ? (
-                <>
-                    <h1 className='info-header'>{headerText}</h1>
-                    <DividerCustom />
-                    <ul style={{ listStyleType: 'none', padding: 0, margin: 0 }}>
-                        {activityData.map((name, index) => (
-                            <h2 key={index}>{name}</h2>
-                        ))}
-                    </ul>
-                    <DividerCustom />
-                </>
-            ) : (
-                <p style={{ margin: 0 }}></p>
-            )}
+            <>
+                <h1 className='info-header'>{headerText}</h1>
+                <DividerCustom />
+                <ul style={{ listStyleType: 'none', padding: 0, margin: 0 }}>
+                    {activityData.map((name, index) => (
+                        <h2 key={index}>{name}</h2>
+                    ))}
+                </ul>
+                <DividerCustom />
+            </>
         </>
     );
 };

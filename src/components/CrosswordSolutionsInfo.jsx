@@ -7,10 +7,13 @@ const CrosswordSolutionsInfo = () => {
         crosswordQuestion,
         crosswordAnswer
     } = useInfo();
+    
+    if (crosswordQuestion === "") {
+        return null;
+    }
 
     return (
         <>
-        {crosswordQuestion !== "" ? (
             <>
                 <div className="info-header-container"
                 style={{
@@ -36,9 +39,6 @@ const CrosswordSolutionsInfo = () => {
                     ))}
                 </ul>
             </>
-            ) : (
-                <p style={{ margin: 0 }}></p>
-            )}
         </>
     )
 };

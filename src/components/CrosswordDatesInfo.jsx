@@ -7,34 +7,34 @@ const CrosswordDatesInfo = () => {
         crosswordDates
     } = useInfo();
 
+    if (crosswordDates === "") {
+        return null;
+    }
+
     return (
         <>
-            {crosswordDates !== "" ? (
-                <>
-                    <div className="info-header-container"
+            <>
+                <div className="info-header-container"
+                style={{
+                    minHeight: 'unset',
+                    maxHeight: 'unset',
+                    minWidth: 'unset',
+                    maxWidth: 'unset',
+                    top: '0px',
+                }}>
+                    <h1 className='info-header'
                     style={{
-                        minHeight: 'unset',
-                        maxHeight: 'unset',
-                        minWidth: 'unset',
-                        maxWidth: 'unset',
-                        top: '0px',
-                    }}>
-                        <h1 className='info-header'
-                        style={{
-                            fontSize: '2.5em'
-                        }}>Crossword Dates</h1>
-                    </div>
-                    <DividerCustom />
-                    <ul style={{ listStyleType: 'none', padding: 0, margin: 0 }}>
-                        {crosswordDates.map((name, index) => (
-                            <h2 key={index}>{name}</h2>
-                        ))}
-                    </ul>
-                    <DividerCustom />
-                </>
-            ) : (
-                <p style={{ margin: 0 }}></p>
-            )}
+                        fontSize: '2.5em'
+                    }}>Crossword Dates</h1>
+                </div>
+                <DividerCustom />
+                <ul style={{ listStyleType: 'none', padding: 0, margin: 0 }}>
+                    {crosswordDates.map((name, index) => (
+                        <h2 key={index}>{name}</h2>
+                    ))}
+                </ul>
+                <DividerCustom />
+            </>
         </>
     )
 };

@@ -8,37 +8,37 @@ const TVQuizInfo = () => {
         quizAnswers,
     } = useInfo();
 
+    if (quizDates === "") {
+        return null;
+    }
+
     return (
         <>
-            {quizDates !== "" ? (
-                <>
-                    <div className="info-header-container"
+            <>
+                <div className="info-header-container"
+                style={{
+                    minHeight: 'unset',
+                    maxHeight: 'unset',
+                    minWidth: 'unset',
+                    maxWidth: 'unset',
+                    top: '0px',
+                }}>
+                    <h1 className='info-header'
                     style={{
-                        minHeight: 'unset',
-                        maxHeight: 'unset',
-                        minWidth: 'unset',
-                        maxWidth: 'unset',
-                        top: '0px',
-                    }}>
-                        <h1 className='info-header'
-                        style={{
-                            fontSize: '2.5em'
-                        }}>TV Quiz Answers</h1>
-                    </div>
-                    <DividerCustom />
-                    <ul style={{ listStyleType: 'none', padding: 0, margin: 0 }}>
-                        {quizDates.map((date, index) => (
-                            <div key={index}>
-                                <h2>{date}</h2>
-                                <h3>{quizAnswers[index]}</h3>
-                                <DividerCustom />
-                            </div>
-                        ))}
-                    </ul>
-                </>
-            ) : (
-                <p style={{ margin: 0 }}></p>
-            )}
+                        fontSize: '2.5em'
+                    }}>TV Quiz Answers</h1>
+                </div>
+                <DividerCustom />
+                <ul style={{ listStyleType: 'none', padding: 0, margin: 0 }}>
+                    {quizDates.map((date, index) => (
+                        <div key={index}>
+                            <h2>{date}</h2>
+                            <h3>{quizAnswers[index]}</h3>
+                            <DividerCustom />
+                        </div>
+                    ))}
+                </ul>
+            </>
         </>
     )
 };
