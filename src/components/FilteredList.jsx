@@ -1,11 +1,12 @@
 import React from 'react';
 import ActivityContainerBasic from './ActivityContainerBasic';
-import { useBookDVDGameClick, useJobClick, useLeblancActivityClick } from '../hooks/handleClick.js';
+import { useBookDVDGameClick, useJobClick, useLeblancActivityClick, useFacilityClick } from '../hooks/handleClick.js';
 
 const FilteredList = ({filter}) => {
     const BookDVDGameClick = useBookDVDGameClick();
     const jobClick = useJobClick();
     const leblancActivityClick = useLeblancActivityClick();
+    const facilityClick = useFacilityClick();
 
     const handleBookDVDGameClick = (bookdvdgame) => {
         BookDVDGameClick(bookdvdgame.name, bookdvdgame.chapters, bookdvdgame.effect, bookdvdgame.description, bookdvdgame.price, bookdvdgame.location, bookdvdgame.available);
@@ -19,6 +20,10 @@ const FilteredList = ({filter}) => {
         leblancActivityClick(item.name, item.available, item.effects);
     };
 
+    const handleFacilityClick = (item) => {
+        facilityClick(item.name, item.availability, item.effects);
+    };
+
     const determineClickHandler = (item) => {
         if (item.chapters) {
             return () => handleBookDVDGameClick(item);
@@ -28,6 +33,9 @@ const FilteredList = ({filter}) => {
         }
         else if (item.available) {
             return () => handleLeblancActivityClick(item);
+        }
+        else if (item.availability) {
+            return () => handleFacilityClick(item);
         }
         else {
             return null;

@@ -3,6 +3,7 @@ import { statSearch } from "../hooks/activitySearch";
 import { useInfo } from '../components/CalendarContext';
 import { leblancActivities } from '../hooks/leblanc';
 import { jobs } from '../hooks/jobs';
+import { facilities } from '../hooks/facilities';
 
 const StatsFilterItem = ({img, stat, onClick}) => {
     const {
@@ -16,7 +17,7 @@ const StatsFilterItem = ({img, stat, onClick}) => {
         <div
             className="stats-container"
             onClick={() => {
-                updateFilter(statSearch(stat, books, dvds, games, leblancActivities, jobs))
+                updateFilter(statSearch(stat, books, dvds, games, leblancActivities, jobs, facilities))
                 if (onClick) onClick();
             }}
         >

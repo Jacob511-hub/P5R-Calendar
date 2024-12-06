@@ -1,6 +1,6 @@
-function Facility(name, available, effects, stat) {
+function Facility(name, availability, effects, stat) {
     this.name = name;
-    this.available = available;
+    this.availability = availability;
     this.effects = effects;
     this.stat = stat;
 }
@@ -8,7 +8,7 @@ function Facility(name, available, effects, stat) {
 const facilities = [
     new Facility(
         "Bathhouse",
-        "Evenings",
+        "Evening",
         [
             "Charm +3",
             "Sundays: Charm +5",

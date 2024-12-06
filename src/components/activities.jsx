@@ -76,7 +76,7 @@ const Activities = () => {
     };
 
     const handleFacilityClick = (item) => () => {
-        facilityClick(item.name, item.available, item.effects);
+        facilityClick(item.name, item.availability, item.effects);
     };
 
     const toggleChecked = (itemName, category) => {

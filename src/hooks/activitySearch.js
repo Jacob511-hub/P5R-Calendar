@@ -95,8 +95,8 @@ export function searchCrosswordDates(date) {
 }
 
 //Search function for filtering by stats
-export function statSearch(searchStat, books, dvds, games, leblancActivities, jobs) {
-    const allArrays = [books, dvds, games, leblancActivities, jobs];
+export function statSearch(searchStat, books, dvds, games, leblancActivities, jobs, facilities) {
+    const allArrays = [books, dvds, games, leblancActivities, jobs, facilities];
     return allArrays
         .flat()
         .filter((obj) => Array.isArray(obj.stat) && obj.stat.includes(searchStat) && !obj.checked);
