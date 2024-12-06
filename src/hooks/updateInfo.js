@@ -67,6 +67,10 @@ export function useUpdateInfo() {
   const [classroomQuestionDates, setClassroomQuestionDates] = useState("");
   const [classroomQuestionAnswers, setClassroomQuestionAnswers] = useState("");
 
+  const [facilityName, setFacilityName] = useState("");
+  const [facilityAvailable, setFacilityAvailable] = useState("");
+  const [facilityEffect, setFacilityEffect] = useState("");
+
   const updateWeekday = (newWeekdayDisplay) => setWeekdayDisplay(newWeekdayDisplay);
   const updateDate = (newDate) => setDateDisplay(newDate);
   const updateActivityStart = (newActivityStartDisplay) => setActivityStartDisplay(newActivityStartDisplay);
@@ -117,6 +121,10 @@ export function useUpdateInfo() {
 
   const updateClassroomQuestionDates = (classroomQuestionDates) => setClassroomQuestionDates(classroomQuestionDates);
   const updateClassroomQuestionAnswers = (classroomQuestionAnswers) => setClassroomQuestionAnswers(classroomQuestionAnswers);
+
+  const updateFacilityName = (facilityName) => setFacilityName(facilityName);
+  const updateFacilityAvailable = (facilityAvailable) => setFacilityAvailable(facilityAvailable);
+  const updateFacilityEffect = (facilityEffect) => setFacilityEffect(facilityEffect);
 
   return {
     dateDisplay,
@@ -218,5 +226,12 @@ export function useUpdateInfo() {
     updateClassroomQuestionDates,
     classroomQuestionAnswers,
     updateClassroomQuestionAnswers,
+
+    facilityName,
+    updateFacilityName,
+    facilityAvailable,
+    updateFacilityAvailable,
+    facilityEffect,
+    updateFacilityEffect,
   };
 }

@@ -12,6 +12,7 @@ import CrosswordAvailable from './CrosswordAvailable';
 import TVQuizInfo from './TVQuizInfo';
 import HomeShoppingInfo from './HomeShoppingInfo';
 import ClassroomInfo from './ClassroomInfo';
+import FacilitiesInfo from './FacilitiesInfo';
 
 const Info = () => {
     const {
@@ -63,6 +64,7 @@ const Info = () => {
                 <HomeShoppingInfo />
                 <TVQuizInfo />
                 <ClassroomInfo />
+                <FacilitiesInfo />
             </div>
         </div>
     )

@@ -17,9 +17,10 @@ import { crosswordDates, crosswords } from '../hooks/crosswords';
 import { TVQuizAnswers } from '../hooks/quizAnswers.js';
 import { HomeShoppingProgramItems } from '../hooks/homeShopping.js';
 import { ClassroomQuestions } from '../hooks/classroom.js';
+import { facilities } from '../hooks/facilities.js';
 
 import { useInfo } from '../components/CalendarContext';
-import { useBookDVDGameClick, useJobClick, useCrosswordDatesClick, useCrosswordSolutionsClick, useLeblancActivityClick, useHomeShoppingClick, useTVQuizClick, useClassroomQuestionClick } from '../hooks/handleClick.js';
+import { useBookDVDGameClick, useJobClick, useCrosswordDatesClick, useCrosswordSolutionsClick, useLeblancActivityClick, useHomeShoppingClick, useTVQuizClick, useClassroomQuestionClick, useFacilityClick } from '../hooks/handleClick.js';
 
 const Activities = () => {
     const {
@@ -40,6 +41,7 @@ const Activities = () => {
     const homeShoppingClick = useHomeShoppingClick();
     const TVQuizClick = useTVQuizClick();
     const classroomQuestionClick = useClassroomQuestionClick();
+    const facilityClick = useFacilityClick();
 
     const handleBookDVDGameClick = (bookdvdgame) => () => {
         BookDVDGameClick(bookdvdgame.name, bookdvdgame.chapters, bookdvdgame.effect, bookdvdgame.description, bookdvdgame.price, bookdvdgame.location, bookdvdgame.available);
@@ -63,7 +65,7 @@ const Activities = () => {
 
     const handleHomeShoppingClick = (item) => () => {
         homeShoppingClick(item);
-    }
+    };
 
     const handleTVQuizClick = (item) => () => {
         TVQuizClick(item);
@@ -71,7 +73,11 @@ const Activities = () => {
 
     const handleClassroomQuestionClick = (item) => () => {
         classroomQuestionClick(item);
-    }
+    };
+
+    const handleFacilityClick = (item) => () => {
+        facilityClick(item.name, item.available, item.effects);
+    };
 
     const toggleChecked = (itemName, category) => {
         const updateItems = (items, setItems, storageKey) => {
@@ -228,7 +234,15 @@ const Activities = () => {
                             />
                             <AccordionCustom
                                 headerImg={'url("src/assets/facilities.png")'}
-                                renderContent=""
+                                renderContent={() => (
+                                    facilities.map((facility) => (
+                                        <ActivityContainerBasic
+                                            key={facility.name}
+                                            name={facility.name}
+                                            handleClick={handleFacilityClick(facility)}
+                                        />
+                                    ))
+                                )}
                             />
                         </div>
                     ) : (

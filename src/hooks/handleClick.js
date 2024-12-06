@@ -64,6 +64,10 @@ const useReset = () => {
 
         updateClassroomQuestionDates,
         updateClassroomQuestionAnswers,
+
+        updateFacilityName,
+        updateFacilityAvailable,
+        updateFacilityEffect,
     } = useInfo();
     
     const stateReset = () => {
@@ -115,6 +119,10 @@ const useReset = () => {
 
         updateClassroomQuestionDates("");
         updateClassroomQuestionAnswers("");
+
+        updateFacilityName("");
+        updateFacilityAvailable("");
+        updateFacilityEffect("");
     };
 
     return { stateReset };
@@ -365,5 +373,23 @@ export const useClassroomQuestionClick = () => {
 
         updateClassroomQuestionDates(date);
         updateClassroomQuestionAnswers(answer);
+    }
+}
+
+export const useFacilityClick = () => {
+    const { stateReset } = useReset();
+
+    const {
+        updateFacilityName,
+        updateFacilityAvailable,
+        updateFacilityEffect,
+    } = useInfo();
+
+    return (name, available, effect) => {
+        stateReset();
+
+        updateFacilityName(name);
+        updateFacilityAvailable(available);
+        updateFacilityEffect(effect);
     }
 }
