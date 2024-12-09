@@ -10,7 +10,6 @@ import BookDVDGameContainer from './BookDVDGameContainer';
 import ActivityContainerBasic from './ActivityContainerBasic.jsx';
 import FilteredList from './FilteredList.jsx';
 
-import { tarot, tarotNames } from '../hooks/confidantassets';
 import { jobs } from '../hooks/jobs';
 import { leblancActivities } from '../hooks/leblanc';
 import { crosswordDates, crosswords } from '../hooks/crosswords';
@@ -31,6 +30,9 @@ const Activities = () => {
         setDvds,
         games,
         setGames,
+
+        confidants,
+        setConfidants,
     } = useInfo();
 
     const BookDVDGameClick = useBookDVDGameClick();
@@ -95,7 +97,26 @@ const Activities = () => {
         } else if (category === 'games') {
           updateItems(games, setGames, 'games');
         }
-      };
+    };
+
+    const toggleRank = (itemName, index) => {
+        const updateItems = (items, storageKey) => {
+            const updatedItems = items.map((item) => {
+                if (item.name === itemName) {
+                    return {
+                        ...item,
+                        rank: index + 1
+                    };
+                }
+                return item;
+            });
+            
+            setConfidants(updatedItems);
+            localStorage.setItem(storageKey, JSON.stringify(updatedItems));
+        };
+    
+        updateItems(confidants, 'confidants');
+    };
 
     return (
         <>
@@ -112,11 +133,13 @@ const Activities = () => {
                             <AccordionCustom
                                 headerImg={'url("src/assets/confidants.png")'}
                                 renderContent={() => (
-                                    tarot.map((tarotCard, index) => (
+                                    confidants.map((confidant) => (
                                         <ConfidantContainer
-                                            key={tarotCard}
-                                            tarot={tarotCard}
-                                            name={tarotNames[index]}
+                                            key={confidant.name}
+                                            tarot={confidant.tarot}
+                                            name={confidant.name}
+                                            item={confidant}
+                                            toggleRank={toggleRank}
                                         />
                                     ))
                                 )}

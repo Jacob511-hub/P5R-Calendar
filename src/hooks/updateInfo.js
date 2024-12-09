@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { books as booksData, dvds as dvdsData, games as gamesData } from '../hooks/bookdvdgame';
+import { confidants as confidantData } from '../hooks/confidants';
 
 export function useUpdateInfo() {
   const [weekdayDisplay, setWeekdayDisplay] = useState("");
@@ -62,6 +63,16 @@ export function useUpdateInfo() {
     setBooks(savedBooks);
     setDvds(savedDvds);
     setGames(savedGames);
+  }, []);
+
+  const [confidants, setConfidants] = useState(
+    JSON.parse(localStorage.getItem('confidants')) || confidantData
+  );
+
+  useEffect(() => {
+    const savedConfidants = JSON.parse(localStorage.getItem('confidants')) || confidantData;
+
+    setConfidants(savedConfidants);
   }, []);
 
   const [classroomQuestionDates, setClassroomQuestionDates] = useState("");
@@ -221,6 +232,9 @@ export function useUpdateInfo() {
     setDvds,
     games,
     setGames,
+
+    confidants,
+    setConfidants,
 
     classroomQuestionDates,
     updateClassroomQuestionDates,
