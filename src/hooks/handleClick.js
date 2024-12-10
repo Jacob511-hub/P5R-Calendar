@@ -10,6 +10,7 @@ import {
     searchEndDateByActivity,
     searchDetailsByActivity,
     searchCrosswordDates,
+    searchHomeShoppingDates,
 } from './activitySearch';
 import splitArrayByTime from './splitArrayByTime';
 import { useInfo } from '../components/CalendarContext';
@@ -141,6 +142,7 @@ export const dateClick = (monthIndex, dateType, dateNumber, weekday) => {
         updateDateAvailability,
         updateActivityEnd,
         updateCrosswordAvailable,
+        updateHomeShoppingAvailable,
     } = useInfo();
 
     const [clicked, setClicked] = useState(false);
@@ -170,6 +172,7 @@ export const dateClick = (monthIndex, dateType, dateNumber, weekday) => {
             updateActivityEnd(activitiesEndList);
 
             updateCrosswordAvailable(searchCrosswordDates(`${monthIndex}/${dateNumber}`));
+            updateHomeShoppingAvailable(searchHomeShoppingDates(`${monthIndex}/${dateNumber}`));
         } else {
             stateReset();
         }

@@ -2,6 +2,7 @@ import * as activityDates from './activityDates';
 import * as activityStartDates from './activityStartDates';
 import * as activityDetails from './activityDetails';
 import * as crosswordDetails from './crosswords';
+import { HomeShoppingProgramItems } from './homeShopping';
 
 //Search for activities with set dates
 export function searchByDate(date) {
@@ -92,6 +93,10 @@ export function searchDetailsByActivity(activity) {
 
 export function searchCrosswordDates(date) {
     return crosswordDetails.crosswordDates.includes(date);
+}
+
+export function searchHomeShoppingDates(date) {
+    return HomeShoppingProgramItems.some(obj => obj.date === date);
 }
 
 //Search function for filtering by stats

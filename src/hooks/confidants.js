@@ -69,7 +69,7 @@ const confidants = [
     ),
     new Confidant (
         "Hanged Man",
-        "src/assets/tarot/Hanged Man.png",
+        "src/assets/tarot/HangedMan.png",
         1,
     ),
     new Confidant (

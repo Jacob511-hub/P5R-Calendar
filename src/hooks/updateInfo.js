@@ -45,6 +45,7 @@ export function useUpdateInfo() {
   const [homeShoppingPriceA, setHomeShoppingPriceA] = useState("");
   const [homeShoppingItemB, setHomeShoppingItemB] = useState("");
   const [homeShoppingPriceB, setHomeShoppingPriceB] = useState("");
+  const [homeShoppingAvailable, sethomeShoppingAvailable] = useState("");
 
   const [quizDates, setQuizDates] = useState("");
   const [quizAnswers, setQuizAnswers] = useState("");
@@ -124,7 +125,8 @@ export function useUpdateInfo() {
   const updateHomeShoppingPriceA = (homeShoppingPriceA) => setHomeShoppingPriceA(homeShoppingPriceA);
   const updateHomeShoppingItemB = (homeShoppingItemB) => setHomeShoppingItemB(homeShoppingItemB);
   const updateHomeShoppingPriceB = (homeShoppingPriceB) => setHomeShoppingPriceB(homeShoppingPriceB);
-  
+  const updateHomeShoppingAvailable = (homeShoppingAvailable) => sethomeShoppingAvailable(homeShoppingAvailable);
+
   const updateQuizDates = (quizDates) => setQuizDates(quizDates);
   const updateQuizAnswers = (quizAnswers) => setQuizAnswers(quizAnswers);
 
@@ -217,6 +219,8 @@ export function useUpdateInfo() {
     updateHomeShoppingItemB,
     homeShoppingPriceB,
     updateHomeShoppingPriceB,
+    homeShoppingAvailable,
+    updateHomeShoppingAvailable,
 
     quizDates,
     updateQuizDates,
