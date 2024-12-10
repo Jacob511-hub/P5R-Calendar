@@ -10,6 +10,8 @@ import { useInfo } from '../components/CalendarContext';
 import LeblancInfo from './LeblancInfo';
 import CrosswordAvailable from './CrosswordAvailable';
 import HomeShoppingAvailable from './HomeShoppingAvailable';
+import TVQuizAvailable from './TVQuizAvailable';
+import ClassroomQuestionAvailable from './ClassroomQuestionAvailable';
 import TVQuizInfo from './TVQuizInfo';
 import HomeShoppingInfo from './HomeShoppingInfo';
 import ClassroomInfo from './ClassroomInfo';
@@ -57,6 +59,8 @@ const Info = () => {
                 <InfoBox headerText="Dates" activityData={activityListDates} dateAvailability={dateAvailability} />
                 <CrosswordAvailable />
                 <HomeShoppingAvailable />
+                <TVQuizAvailable />
+                <ClassroomQuestionAvailable />
 
                 <BookDVDGameInfo />
                 <JobsInfo />

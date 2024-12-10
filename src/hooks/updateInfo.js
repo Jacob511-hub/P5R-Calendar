@@ -49,6 +49,7 @@ export function useUpdateInfo() {
 
   const [quizDates, setQuizDates] = useState("");
   const [quizAnswers, setQuizAnswers] = useState("");
+  const [quizAvailable, setQuizAvailable] = useState("");
 
   const [filter, setFilter] = useState("");
 
@@ -78,6 +79,7 @@ export function useUpdateInfo() {
 
   const [classroomQuestionDates, setClassroomQuestionDates] = useState("");
   const [classroomQuestionAnswers, setClassroomQuestionAnswers] = useState("");
+  const [classroomQuestionAvailable, setClassroomQuestionAvailable] = useState("");
 
   const [facilityName, setFacilityName] = useState("");
   const [facilityAvailable, setFacilityAvailable] = useState("");
@@ -129,11 +131,13 @@ export function useUpdateInfo() {
 
   const updateQuizDates = (quizDates) => setQuizDates(quizDates);
   const updateQuizAnswers = (quizAnswers) => setQuizAnswers(quizAnswers);
+  const updateQuizAvailable = (quizAvailable) => setQuizAvailable(quizAvailable);
 
   const updateFilter = (filter) => setFilter(filter);
 
   const updateClassroomQuestionDates = (classroomQuestionDates) => setClassroomQuestionDates(classroomQuestionDates);
   const updateClassroomQuestionAnswers = (classroomQuestionAnswers) => setClassroomQuestionAnswers(classroomQuestionAnswers);
+  const updateClassroomQuestionAvailable = (classroomQuestionAvailable) => setClassroomQuestionAvailable(classroomQuestionAvailable);
 
   const updateFacilityName = (facilityName) => setFacilityName(facilityName);
   const updateFacilityAvailable = (facilityAvailable) => setFacilityAvailable(facilityAvailable);
@@ -226,6 +230,8 @@ export function useUpdateInfo() {
     updateQuizDates,
     quizAnswers,
     updateQuizAnswers,
+    quizAvailable,
+    updateQuizAvailable,
 
     filter,
     updateFilter,
@@ -244,6 +250,8 @@ export function useUpdateInfo() {
     updateClassroomQuestionDates,
     classroomQuestionAnswers,
     updateClassroomQuestionAnswers,
+    classroomQuestionAvailable,
+    updateClassroomQuestionAvailable,
 
     facilityName,
     updateFacilityName,

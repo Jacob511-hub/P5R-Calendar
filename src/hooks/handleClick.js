@@ -11,6 +11,8 @@ import {
     searchDetailsByActivity,
     searchCrosswordDates,
     searchHomeShoppingDates,
+    searchQuizDates,
+    searchClassroomQuestionDates,
 } from './activitySearch';
 import splitArrayByTime from './splitArrayByTime';
 import { useInfo } from '../components/CalendarContext';
@@ -59,12 +61,15 @@ const useReset = () => {
         updateHomeShoppingPriceA,
         updateHomeShoppingItemB,
         updateHomeShoppingPriceB,
+        updateHomeShoppingAvailable,
 
         updateQuizDates,
         updateQuizAnswers,
+        updateQuizAvailable,
 
         updateClassroomQuestionDates,
         updateClassroomQuestionAnswers,
+        updateClassroomQuestionAvailable,
 
         updateFacilityName,
         updateFacilityAvailable,
@@ -114,12 +119,15 @@ const useReset = () => {
         updateHomeShoppingPriceA("");
         updateHomeShoppingItemB("");
         updateHomeShoppingPriceB("");
+        updateHomeShoppingAvailable(false);
 
         updateQuizDates("");
         updateQuizAnswers("");
+        updateQuizAvailable(false);
 
         updateClassroomQuestionDates("");
         updateClassroomQuestionAnswers("");
+        updateClassroomQuestionAvailable(false);
 
         updateFacilityName("");
         updateFacilityAvailable("");
@@ -143,6 +151,8 @@ export const dateClick = (monthIndex, dateType, dateNumber, weekday) => {
         updateActivityEnd,
         updateCrosswordAvailable,
         updateHomeShoppingAvailable,
+        updateQuizAvailable,
+        updateClassroomQuestionAvailable,
     } = useInfo();
 
     const [clicked, setClicked] = useState(false);
@@ -173,6 +183,8 @@ export const dateClick = (monthIndex, dateType, dateNumber, weekday) => {
 
             updateCrosswordAvailable(searchCrosswordDates(`${monthIndex}/${dateNumber}`));
             updateHomeShoppingAvailable(searchHomeShoppingDates(`${monthIndex}/${dateNumber}`));
+            updateQuizAvailable(searchQuizDates(`${monthIndex}/${dateNumber}`));
+            updateClassroomQuestionAvailable(searchClassroomQuestionDates(`${monthIndex}/${dateNumber}`));
         } else {
             stateReset();
         }

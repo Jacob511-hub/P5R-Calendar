@@ -3,6 +3,8 @@ import * as activityStartDates from './activityStartDates';
 import * as activityDetails from './activityDetails';
 import * as crosswordDetails from './crosswords';
 import { HomeShoppingProgramItems } from './homeShopping';
+import { TVQuizAnswers } from './quizAnswers';
+import { ClassroomQuestions } from './classroom';
 
 //Search for activities with set dates
 export function searchByDate(date) {
@@ -97,6 +99,14 @@ export function searchCrosswordDates(date) {
 
 export function searchHomeShoppingDates(date) {
     return HomeShoppingProgramItems.some(obj => obj.date === date);
+}
+
+export function searchQuizDates(date) {
+    return TVQuizAnswers.some(obj => obj.date === date);
+}
+
+export function searchClassroomQuestionDates(date) {
+    return ClassroomQuestions.some(obj => obj.date === date);
 }
 
 //Search function for filtering by stats
