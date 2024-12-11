@@ -153,6 +153,8 @@ export const dateClick = (monthIndex, dateType, dateNumber, weekday) => {
         updateHomeShoppingAvailable,
         updateQuizAvailable,
         updateClassroomQuestionAvailable,
+
+        confidants,
     } = useInfo();
 
     const [clicked, setClicked] = useState(false);
@@ -163,7 +165,7 @@ export const dateClick = (monthIndex, dateType, dateNumber, weekday) => {
             stateReset();
             updateDate(`${monthIndex}/${dateNumber}`);
             const activityList = [
-                ...searchByWeekday(monthIndex, dateNumber, weekday),
+                ...searchByWeekday(monthIndex, dateNumber, weekday, confidants),
                 ...searchByDate(`${monthIndex}/${dateNumber}`),
                 ...searchByExtraDate(`${monthIndex}/${dateNumber}`),
             ];

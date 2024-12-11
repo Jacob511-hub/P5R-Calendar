@@ -2,6 +2,7 @@ import * as activityDates from './activityDates';
 import * as activityStartDates from './activityStartDates';
 import * as activityDetails from './activityDetails';
 import * as crosswordDetails from './crosswords';
+import * as confidantRankExceptions from './confidantRankExceptions'
 import { HomeShoppingProgramItems } from './homeShopping';
 import { TVQuizAnswers } from './quizAnswers';
 import { ClassroomQuestions } from './classroom';
@@ -43,7 +44,7 @@ export function searchByEndDate(month, day) {
 }
 
 //Search for activities with weekly schedules, checking for the activity's start and end dates
-export function searchByWeekday(month, day, weekday) {
+export function searchByWeekday(month, day, weekday, confidants) {
     const startDatesArray = [];
     const matchedArrays = activityDates.activityNames.filter((item) => item.array.includes(weekday)).map((item) => item.name);
     for (let index = 0; index < matchedArrays.length; index++) {
@@ -60,8 +61,22 @@ export function searchByWeekday(month, day, weekday) {
 
                 if ((monthIndex > startMonthIndex || (monthIndex === startMonthIndex && day >= startDay)) && (monthIndex < endMonthIndex || (monthIndex === endMonthIndex && day <= endDay))) {
                     const activityExceptions = activityStartDates.activityExceptionNames.find((item) => item.name === matchedArrays[index]);
+                    const activityRankExceptions = confidantRankExceptions.activityRankExceptionNames.find(
+                        (item) => item.name === matchedArrays[index]
+                    );
 
-                    if (activityExceptions && activityExceptions.exceptionDates.includes(`${month}/${day}`)) {
+                    const confidant = confidants.find((c) => c.name === matchedArrays[index]);
+                    const rank = confidant ? confidant.rank : null;
+
+                    if ((activityExceptions && activityExceptions.exceptionDates.includes(`${month}/${day}`))) {
+                        continue;
+                    }
+
+                    if (
+                        rank !== null &&
+                        activityRankExceptions &&
+                        activityRankExceptions.rankExceptionDates[rank]?.includes(`${month}/${day}`)
+                    ) {
                         continue;
                     }
                     
