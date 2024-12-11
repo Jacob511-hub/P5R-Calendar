@@ -8,15 +8,61 @@ import { TVQuizAnswers } from './quizAnswers';
 import { ClassroomQuestions } from './classroom';
 
 //Search for activities with set dates
-export function searchByDate(date) {
+export function searchByDate(date, confidants) {
+    const finalArray = [];
     const matchedArrays = activityDates.activityNames.filter((item) => item.array.includes(date)).map((item) => item.name);
-    return matchedArrays;
+    for (let index = 0; index < matchedArrays.length; index++) {
+        for (let i = 0; i < activityDates.activityNames.length; i++) {
+            if (matchedArrays[index] === activityDates.activityNames[i].name) {
+                const activityRankExceptions = confidantRankExceptions.activityRankExceptionNames.find(
+                    (item) => item.name === matchedArrays[index]
+                );
+
+                const confidant = confidants.find((c) => c.name === matchedArrays[index]);
+                const rank = confidant ? confidant.rank : null;
+
+                if (
+                    rank !== null &&
+                    activityRankExceptions &&
+                    activityRankExceptions.rankExceptionDates[rank]?.includes(date)
+                ) {
+                    continue;
+                }
+                
+                finalArray.push(matchedArrays[index]);
+            }
+        }
+    }
+    return finalArray;
 }
 
 //Search for activities with dates outside of their weekly schedule
-export function searchByExtraDate(date) {
+export function searchByExtraDate(date, confidants) {
+    const finalArray = [];
     const matchedArrays = activityStartDates.activityExtraNames.filter((item) => item.extraDates.includes(date)).map((item) => item.name);
-    return matchedArrays;
+    for (let index = 0; index < matchedArrays.length; index++) {
+        for (let i = 0; i < activityStartDates.activityExtraNames.length; i++) {
+            if (matchedArrays[index] === activityStartDates.activityExtraNames[i].name) {
+                const activityRankExceptions = confidantRankExceptions.activityRankExceptionNames.find(
+                    (item) => item.name === matchedArrays[index]
+                );
+
+                const confidant = confidants.find((c) => c.name === matchedArrays[index]);
+                const rank = confidant ? confidant.rank : null;
+
+                if (
+                    rank !== null &&
+                    activityRankExceptions &&
+                    activityRankExceptions.rankExceptionDates[rank]?.includes(date)
+                ) {
+                    continue;
+                }
+                
+                finalArray.push(matchedArrays[index]);
+            }
+        }
+    }
+    return finalArray;
 }
 
 //Search by start date

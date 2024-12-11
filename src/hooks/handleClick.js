@@ -166,8 +166,8 @@ export const dateClick = (monthIndex, dateType, dateNumber, weekday) => {
             updateDate(`${monthIndex}/${dateNumber}`);
             const activityList = [
                 ...searchByWeekday(monthIndex, dateNumber, weekday, confidants),
-                ...searchByDate(`${monthIndex}/${dateNumber}`),
-                ...searchByExtraDate(`${monthIndex}/${dateNumber}`),
+                ...searchByDate(`${monthIndex}/${dateNumber}`, confidants),
+                ...searchByExtraDate(`${monthIndex}/${dateNumber}`, confidants),
             ];
             const { autoArray, dayArray, nightArray } = splitArrayByTime(activityList);
             
