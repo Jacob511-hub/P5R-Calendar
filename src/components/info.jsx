@@ -2,6 +2,7 @@ import React from 'react';
 import daggerImage from '../assets/dagger.png';
 import InfoBox from './infoBox';
 import DetailsBox from './detailsBox';
+import ConfidantDetailsModal from './ConfidantDetailsModal';
 import BookDVDGameInfo from './BookDVDGameInfo';
 import JobsInfo from './JobsInfo';
 import CrosswordDatesInfo from './CrosswordDatesInfo';
@@ -46,9 +47,10 @@ const Info = () => {
                 }}
                 >
                     <h1 id="date-display">{dateDisplay}</h1>
-                    <h1 id="weekday-display">{weekdayDisplay}</h1>
+                    {weekdayDisplay && <h1 id="weekday-display">{weekdayDisplay}</h1>}
                 </div>
-                <DetailsBox headerImg={'url("src/assets/details.png")'} details={activityDetails} />
+                {/* <DetailsBox headerImg={'url("src/assets/details.png")'} details={activityDetails} /> */}
+                <ConfidantDetailsModal details={activityDetails}/>
                 <InfoBox headerText="Start" activityData={activityStartList} dateAvailability={dateAvailability} />
                 <InfoBox headerText="End" activityData={activityEndList} dateAvailability={dateAvailability} />
                 <InfoBox headerText="Auto" activityData={activityListAuto} dateAvailability={dateAvailability} />

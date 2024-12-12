@@ -6,10 +6,11 @@ const ConfidantContainer = ({tarot, name, item, toggleRank}) => {
     const {clicked, handleClick} = activityClick(name);
 
     return (
-        <div className="confidant-container" onClick={handleClick}>
+        <div className="confidant-container">
             <img
                 className="tarot"
-                src={tarot}>
+                src={tarot}
+                onClick={handleClick}>
             </img>
             <div style={{
                 display: 'flex',
