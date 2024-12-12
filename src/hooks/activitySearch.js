@@ -154,6 +154,11 @@ export function searchDetailsByActivity(activity) {
     return matchedActivity ? matchedActivity.details : [""]; 
 }
 
+export function searchChoicesByConfidant(activity) {
+    const matchedActivity = activityDetails.activityDetailsChoices.find((item) => item.name === activity);
+    return matchedActivity ? matchedActivity.details : [""]; 
+}
+
 export function searchCrosswordDates(date) {
     return crosswordDetails.crosswordDates.includes(date);
 }

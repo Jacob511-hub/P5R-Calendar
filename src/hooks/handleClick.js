@@ -9,6 +9,7 @@ import {
     searchStartDateByActivity,
     searchEndDateByActivity,
     searchDetailsByActivity,
+    searchChoicesByConfidant,
     searchCrosswordDates,
     searchHomeShoppingDates,
     searchQuizDates,
@@ -31,6 +32,7 @@ const useReset = () => {
         updateActivityEndDate,
         updateActivityEnd,
         updateActivityDetails,
+        updateConfidantChoices,
 
         updateBookdvdgameName,
         updateBookdvdgameChapters,
@@ -89,6 +91,7 @@ const useReset = () => {
         updateActivityStartDate("");
         updateActivityEndDate("");
         updateActivityDetails("");
+        updateConfidantChoices([]);
 
         updateBookdvdgameName("");
         updateBookdvdgameChapters("");
@@ -204,6 +207,7 @@ export const activityClick = (activityName) => {
         updateActivityStartDate,
         updateActivityEndDate,
         updateActivityDetails,
+        updateConfidantChoices,
     } = useInfo();
 
     const [clicked, setClicked] = useState(false);
@@ -216,11 +220,13 @@ export const activityClick = (activityName) => {
         const startDate = searchStartDateByActivity(activityName);
         const endDate = searchEndDateByActivity(activityName);
         const details = searchDetailsByActivity(activityName);
+        const choices = searchChoicesByConfidant(activityName);
 
         updateActivityDates(dateList);
         updateActivityStartDate([`${startDate.month}/${startDate.day}`]);
         updateActivityEndDate([`${endDate.month}/${endDate.day}`]);
         updateActivityDetails(details);
+        updateConfidantChoices(choices);
     }
 
     return { clicked, handleClick };

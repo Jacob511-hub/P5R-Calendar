@@ -15,6 +15,7 @@ export function useUpdateInfo() {
   const [activityEndDate, setActivityEndDate] = useState("");
   const [activityEndList, setActivityEndDisplay] = useState("");
   const [activityDetails, setActivityDetailsDisplay] = useState("");
+  const [confidantChoices, setConfidantChoicesDisplay] = useState("");
 
   const [bookdvdgameName, setBookdvdgameName] = useState("");
   const [bookdvdgameChapters, setBookdvdgameChapters] = useState("");
@@ -97,6 +98,7 @@ export function useUpdateInfo() {
   const updateActivityEndDate = (newEndDate) => setActivityEndDate(newEndDate);
   const updateActivityEnd = (newActivityEndDisplay) => setActivityEndDisplay(newActivityEndDisplay);
   const updateActivityDetails = (newActivityDetailsDisplay) => setActivityDetailsDisplay(newActivityDetailsDisplay);
+  const updateConfidantChoices = (newConfidantChoices) => setConfidantChoicesDisplay(newConfidantChoices);
 
   const updateBookdvdgameName = (bookdvdgameNameDisplay) => setBookdvdgameName(bookdvdgameNameDisplay);
   const updateBookdvdgameChapters = (bookdvdgameChaptersDisplay) => setBookdvdgameChapters(bookdvdgameChaptersDisplay);
@@ -168,6 +170,8 @@ export function useUpdateInfo() {
     updateActivityEnd,
     activityDetails,
     updateActivityDetails,
+    confidantChoices,
+    updateConfidantChoices,
 
     bookdvdgameName,
     updateBookdvdgameName,
