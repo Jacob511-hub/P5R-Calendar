@@ -1,9 +1,11 @@
 const ChoicesTable = ({ confidantChoices, rank }) => {
-    const choices = confidantChoices[rank];
+    const data = confidantChoices[rank];
   
-    if (!choices) {
+    if (!data) {
       return <p>No data available for the selected rank.</p>;
     }
+
+    const { points, choices } = data;
   
     return (
       <div>
