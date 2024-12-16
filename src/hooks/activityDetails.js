@@ -291,6 +291,270 @@ export const PriestessChoices = {
   },
 };
 
+export const CouncillorChoices = {
+  1: {
+    points: 0,
+    choices: [
+      [
+        ["That's right.", "0"],
+        ["You too, huh?", "0"],
+      ],
+      [
+        ["Didn't have much choice.", "0"],
+        ["We made a deal.", "+5"],
+        ["I'm a little nervous.", "+5"],
+      ],
+      [
+        ["It's in the past.", "0"],
+        ["I'm doing okay now.", "0"],
+        ["So much for my privacy.", "0"],
+      ],
+      [
+        ["But it sounds right.", "+10"],
+        ["Yep.", "+5"],
+        ["Kinda creeping me out here.", "0"],
+      ],
+      [
+        ["So... what?", "0"],
+        ["I'll need more details.", "0"],
+        ["Uh...", "0"],
+      ],
+      [
+        ["Well, okay.", "+5"],
+        ["Better make it worth it.", "0"],
+        ["Why me, though?", "0"],
+      ],
+    ]
+  },
+  2: {
+    points: 28,
+    choices: [
+      [
+        ["So they have, huh?", "+5"],
+        ["You worry too much.", "0"],
+        ["Thanks to you, probably.", "+5"],
+      ],
+      [
+        ["Of course.", "+5"],
+        ["Yeah, for our deal.", "+5"],
+        ["I forgot.", "0"],
+      ],
+      [
+        ["When someone betrays me.", "0"],
+        ["When I lie.", "0"],
+        ["When I get punched.", "0"],
+      ],
+      [
+        ["That one seems necessary.", "+5"],
+        ["We'd be better off without it.", "0"],
+        ["It's a seed for new loves.", "+5"],
+      ],
+      [
+        ["Did that help?", "+5"],
+        ["Don't worry about it.", "+5"],
+      ],
+      [
+        ["Good work over there.", "+5"],
+        ["So you're actually working?", "0"],
+        ["Getting to your research now?", "0"],
+      ],
+    ]
+  },
+  3: {
+    points: 42,
+    choices: [
+      [
+        ["Where's this coming from?", "0"],
+        ["What are you talking about?", "0"],
+      ],
+      [
+        ["I know, right...?", "+10"],
+        ["It's not the worst.", "0"],
+        ["Talk about a reward.", "+5"],
+      ],
+      [
+        ["That'd be great.", "+5"],
+        ["Is that possible?", "0"],
+        ["Is that what you're researching?", "+10"],
+      ],
+      [
+        ["......", "0"],
+        ["Are you okay?", "0"],
+      ],
+      [
+        ["That's a grand plan.", "+5"],
+        ["You're so kind.", "+5"],
+      ],
+      [
+        ["That sounds fun.", "+10"],
+        ["I'm not the \"free labor\" type.", "0"],
+        ["Nope.", "0"],
+      ],
+      [
+        ["I feel completely fine.", "+5"],
+        ["It's part of our deal, so...", "+5"],
+        ["I'm struggling, to be honest.", "0"],
+      ],
+    ]
+  },
+  4: {
+    points: 32,
+    choices: [
+      [
+        ["This looks great!", "+10"],
+        ["How old do you think I am?", "0"],
+        ["I could just take cash...", "+5"],
+      ],
+      [
+        ["The one-cookie container.", "0"],
+        ["The ten-cookie container.", "0"],
+        ["It was a tie.", "0"],
+      ],
+      [
+        ["I never considered that.", "0"],
+        ["They're getting played.", "+5"],
+        ["You know, you're right.", "+10"],
+      ],
+      [
+        ["My senses lied to me!", "+5"],
+        ["Hey, as long as it tastes good.", "+5"],
+        ["It's a little scary.", "0"],
+      ],
+      [
+        ["Not \"truth\" exactly...", "0"],
+        ["I guess so.", "+5"],
+        ["I don't know...", "0"],
+      ],
+      [
+        ["I really don't mind.", "+5"],
+        ["Come on, man.", "0"],
+        ["It was thought-provoking.", "+5"],
+      ],
+    ]
+  },
+  5: {
+    points: 28,
+    choices: [
+      [
+        ["You wanted to talk?", "0"],
+        ["Another cup?", "+5"],
+        ["We've got curry too.", "+5"],
+      ],
+      [
+        ["I can do that.", "+10"],
+        ["It's a deal.", "+5"],
+        ["I'm not up for this...", "0"],
+      ],
+      [
+        ["Isn't that enough?", "0"],
+        ["You need more than that?", "0"],
+      ],
+      [
+        ["So what CAN we do?", "0"],
+        ["It's a hard question...", "0"],
+        ["So give up.", "+5"],
+      ],
+      [
+        ["All hearts share some things.", "0"],
+        ["What if they're connected?", "0"],
+      ],
+      [
+        ["Calm down.", "0"],
+        ["Where's this coming from?", "0"],
+        ["Cognitive psience?", "0"],
+      ],
+      [
+        ["Calm down.", "+5"],
+        ["What's going on?", "+5"],
+        ["Heavy breathing? Pervert.", "0"],
+      ],
+    ]
+  },
+  6: {
+    points: 60,
+    choices: [
+      [
+        ["You really are dedicated.", "+10"],
+        ["Are they even relevant?", "0"],
+        ["Are you a fan?", "+10"],
+      ],
+      [
+        ["No idea.", "+10"],
+        ["As in, removing them?", "+15"],
+        ["How about you, Maruki?", "+15"],
+      ],
+      [
+        ["The change of heart...?", "+15"],
+        ["......", "0"],
+      ],
+      [
+        ["I have no clue.", "0"],
+        ["Sounds pretty far-fetched.", "+10"],
+        ["It's intriguing.", "+15"],
+      ],
+    ]
+  },
+  7: {
+    points: 30,
+    choices: [
+      [
+        ["I'm good on cookies, thanks.", "+5"],
+        ["What do you mean?", "+10"],
+        ["Thanks, but I should get going.", "0"],
+      ],
+      [
+        ["Ooh, really?", "+10"],
+        ["Can you afford that?", "+5"],
+        ["Sorry, I prefer sushi.", "+5"],
+      ],
+      [
+        ["Thanks for the food!", "+10"],
+        ["Self-control much?", "0"],
+        ["This is quite the spread.", "+5"],
+      ],
+      [
+        ["I'm his pupil.", "+5"],
+        ["It's complicated...", "0"],
+        ["We've made a deal.", "+10"],
+      ],
+      [
+        ["Congratulations.", "+10"],
+        ["Way to go.", "+10"],
+      ],
+      [
+        ["I sure do.", "+10"],
+        ["Let's celebrate.", "+10"],
+        ["I don't care who pays.", "0"],
+      ],
+      [
+        ["She a girlfriend of yours?", "0"],
+        ["Who's Rumi?", "0"],
+        ["Should I leave you two to talk?", "0"],
+      ],
+      [
+        ["He's a good friend.", "+5"],
+        ["Learn some independence.", "0"],
+        ["You'll get the tab next time.", "0"],
+      ],
+    ]
+  },
+  8: {
+    points: 0,
+    choices: [
+      [
+        ["Yeah.", "0"],
+        ["Kind of.", "0"],
+      ],
+      [
+        ["Kind of sad...", "+10"],
+        ["Is our deal over?", "+5"],
+        ["Well... take care of yourself.", "+5"],
+      ],
+    ]
+  },
+}
+
 export const activityDetailsChoices = [
   { name: "Priestess", details: PriestessChoices },
+  { name: "Councillor", details: CouncillorChoices },
 ];
