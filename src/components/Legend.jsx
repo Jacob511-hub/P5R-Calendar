@@ -20,7 +20,8 @@ const Legend = () => {
             position: 'fixed',
             bottom: '10px',
             right: '10px',
-            cursor: 'pointer'
+            cursor: 'pointer',
+            zIndex: '99',
         }}></img>
         <ModalCustom
             handleClose = {handleClose}

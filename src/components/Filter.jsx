@@ -23,7 +23,8 @@ const Filter = () => {
             width: 'auto',
             top: '10px',
             left: '10px',
-            cursor: 'pointer'
+            cursor: 'pointer',
+            zIndex: '99',
         }}></img>
         <ModalCustom
             handleClose = {handleClose}
