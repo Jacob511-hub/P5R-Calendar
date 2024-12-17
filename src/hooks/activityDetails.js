@@ -43,7 +43,7 @@ export const PriestessChoices = {
       [
         ["You're very well informed.", "+5"],
         ["Have you ever been here?", "0"],
-        ["Stay close to me.", "+0"]
+        ["Stay close to me.", "0"]
       ],
       [
         ["You should have known better.", "+5"],
@@ -290,6 +290,100 @@ export const PriestessChoices = {
     ]
   },
 };
+
+export const FaithChoices = {
+  1: {
+    points: 15,
+    choices: [
+      [
+        ["We're just getting started.", "+5"],
+        ["Go easy on me.", "0"],
+        ["I'm so done with this.", "+5"]
+      ],
+      [
+        ["Next time, then.", "+5"],
+        ["You doing okay?", "0"],
+        ["Lucky for me...", "0"],
+      ],
+      [
+        ["I see.", "0"],
+        ["So now...?", "0"],
+      ],
+      [
+        ["No problem.", "0"],
+        ["You sure?", "0"],
+        ["Uh, romantically?", "0"],
+      ],
+      [
+        ["Leave it to me.", "0"],
+        ["Let's give it a try.", "0"],
+        ["Then follow my lead.", "0"],
+      ],
+      [
+        ["Impressive.", "+5"],
+        ["Gotta push through it.", "0"],
+        ["You did eat eventually, right?", "0"],
+      ],
+    ]
+  },
+  2: {
+    points: 51,
+    choices: [
+      [
+        ["Making bento?", "+10"],
+        ["Potluck parties?", "0"],
+        ["\"This\" being…?", "0"]
+      ],
+      [
+        ["I'm touched!", "+5"],
+        ["It looks delicious.", "+5"],
+        ["Let's see if it's good...", "0"]
+      ],
+      [
+        ["Is that all for you?", "+10"],
+        ["That seems a little much.", "+5"],
+        ["What IS that?", "0"]
+      ],
+      [
+        ["This tastes like...", "0"],
+        ["It's definitely unique.", "+5"],
+        ["It's... greeeaaat...", "0"]
+      ],
+      [
+        ["Not exactly.", "0"],
+        ["Is there a third option...?", "0"],
+      ],
+      [
+        ["Calm down.", "0"],
+        ["You're going to get it now?", "0"],
+      ],
+      [
+        ["This works fine as is.", "0"],
+        ["I'm enjoying this.", "0"],
+        ["Let's just eat.", "0"]
+      ],
+      [
+        ["You could try again sometime?", "+10"],
+        ["It happens.", "+10"],
+        ["Just keep at it.", "+10"]
+      ],
+      [
+        ["That sounds right.", "0"],
+        ["Maybe...", "0"],
+      ],
+    ]
+  },
+  3: {
+    points: 0,
+    choices: [
+      [
+        ["XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", "+XXXXX"],
+        ["XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", "+XXXXX"],
+        ["XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", "+XXXXX"]
+      ],
+    ]
+  },
+}
 
 export const CouncillorChoices = {
   1: {
@@ -556,5 +650,6 @@ export const CouncillorChoices = {
 
 export const activityDetailsChoices = [
   { name: "Priestess", details: PriestessChoices },
+  { name: "Faith", details: FaithChoices },
   { name: "Councillor", details: CouncillorChoices },
 ];
