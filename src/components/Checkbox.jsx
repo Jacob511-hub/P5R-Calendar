@@ -8,15 +8,6 @@ const Checkbox = ({ checked, toggleChecked }) => {
         e.stopPropagation();
         toggleChecked();
       }}
-      style={{
-        position: 'absolute',
-        top: '0px',
-        right: '-10px',
-        width: '70px',
-        height: 'auto',
-        display: 'inline-block',
-        cursor: 'pointer'
-    }}
     >
       <img
         src="src\assets\checkbox.png"

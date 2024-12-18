@@ -389,6 +389,16 @@ body {
   width: 100%;
 }
 
+.checkbox-container {
+  position: absolute;
+  top: 0px;
+  right: -10px;
+  width: 70px;
+  height: auto;
+  display: inline-block;
+  cursor: pointer;
+}
+
 .jobs-container {
   display: flex;
   flex-direction: row;
@@ -461,7 +471,7 @@ body {
   text-shadow: -1px 0 #ffffff, 0 1px #ffffff, 1px 0 #ffffff, 0 -1px #ffffff;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1350px) {
   #P5R-calendar {
     display: grid;
     grid-template-rows: 1fr 1fr;
@@ -519,6 +529,16 @@ body {
     width: auto;
   }
 
+  .book-dvd-game-container {
+    height: auto;
+    width: 100%;
+    aspect-ratio: 2 / 1;
+  }
+
+  .book-dvd-game-name {
+    font-size: 4vw;
+  }
+
   @media (max-width: 750px) {
     #P5R-calendar {
       display: grid;
@@ -548,6 +568,10 @@ body {
       grid-column: 1 / 2;
       width: 50vw;
       z-index: 2;
+    }
+
+    .checkbox-container {
+      width: 20%;
     }
   }
 }
