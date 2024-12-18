@@ -8,6 +8,7 @@ const AccordionCustom = ({headerImg, renderContent}) => {
     return (
         <Accordion
             sx={{
+                width: '100%',
                 backgroundColor: 'transparent',
                 boxShadow: 'none',
                 color: 'white',
@@ -19,15 +20,34 @@ const AccordionCustom = ({headerImg, renderContent}) => {
             <AccordionSummary
                 aria-controls="panel1a-content"
                 id="panel1a-header"
-                style={{
+                sx={{
                     backgroundImage: headerImg,
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
-                    height: '75px'
+                    width: '100%',
+                    aspectRatio: '4 / 1',
+                    boxSizing: 'border-box',
+                    overflow: 'hidden',
+                    padding: '0',
+                    transition: 'all 0.3s ease',
+                    '&.Mui-expanded': {
+                        aspectRatio: '4 / 1',
+                        minHeight: 'unset',
+                    },
+                    '& .MuiAccordionSummaryContent': {
+                        margin: '0',
+                        alignItems: 'center',
+                        transition: 'none',
+                    }
                 }}
             >
             </AccordionSummary>
-            <AccordionDetails>
+            <AccordionDetails
+                sx={{
+                    padding: '16px',
+                    boxSizing: 'border-box',
+                }}
+            >
                 {renderContent && renderContent()}
             </AccordionDetails>
         </Accordion>

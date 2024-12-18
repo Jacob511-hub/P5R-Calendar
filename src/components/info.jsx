@@ -36,6 +36,27 @@ const Info = () => {
         confidants,
     } = useInfo();
 
+    let title = "";
+
+    if (dateDisplay === "Hierophant") {
+        title = "Hiero";
+    }
+    else if (dateDisplay === "Hanged Man") {
+        title = "Hanged";
+    }
+    else if (dateDisplay === "Temperance") {
+        title = "Temp";
+    }
+    else if (dateDisplay === "Judgement") {
+        title = "Judge";
+    }
+    else if (dateDisplay === "Councillor") {
+        title = "Council";
+    }
+    else {
+        title = dateDisplay;
+    }
+
     return (
         <div className="info-container">
             <img
@@ -45,10 +66,10 @@ const Info = () => {
             <div className="info-display">
                 <div className="info-header-container"
                 style={{
-                    display: dateDisplay === "" && weekdayDisplay === "" ? "none" : "block",
+                    display: title === "" && weekdayDisplay === "" ? "none" : "block",
                 }}
                 >
-                    <h1 id="date-display">{dateDisplay}</h1>
+                    <h1 id="date-display">{title}</h1>
                     {weekdayDisplay && <h1 id="weekday-display">{weekdayDisplay}</h1>}
                 </div>
                 <ConfidantDetailsModal details={activityDetails} choices={confidantChoices} confidants={confidants}/>
