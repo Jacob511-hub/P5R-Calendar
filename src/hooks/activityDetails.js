@@ -374,12 +374,105 @@ export const FaithChoices = {
     ]
   },
   3: {
+    points: 20,
+    choices: [
+      [
+        ["You have bad eyesight?", "0"],
+        ["You're looking to buy?", "+5"],
+        ["I have enough glasses.", "0"]
+      ],
+      [
+        ["A pretty modern look.", "+10"],
+        ["Not my style.", "0"],
+        ["I look so aloof in these.", "+5"]
+      ],
+      [
+        ["Do they suit your dad, though?", "0"],
+        ["I'm not so sure...", "0"],
+      ],
+      [
+        ["Of course.", "+5"],
+        ["Let's keep going.", "+5"],
+        ["Sure, whatever.", "0"]
+      ],
+      [
+        ["Trust your instincts.", "0"],
+        ["Don't overthink it.", "0"],
+      ],
+      [
+        ["Good choice.", "+5"],
+        ["I'm sure he'll love it.", "0"],
+      ],
+      [
+        ["It's part of our deal.", "0"],
+        ["Not a problem at all.", "0"],
+        ["I expect compensation.", "0"]
+      ],
+      [
+        ["Everyone deals with that.", "+5"],
+        ["That's your slump talking.", "0"],
+      ],
+      [
+        ["Good luck.", "0"],
+        ["We'll work at it together.", "+5"],
+        ["No rush, though.", "0"]
+      ],
+      [
+        ["I'm glad to hear that.", "+5"],
+        ["You should be more confident.", "+5"],
+        ["Of course he is.", "0"]
+      ],
+    ]
+  },
+  4: {
     points: 0,
     choices: [
       [
-        ["XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", "+XXXXX"],
-        ["XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", "+XXXXX"],
-        ["XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", "+XXXXX"]
+        ["It's a surprise, yeah.", "+5"],
+        ["Not at all.", "0"],
+        ["What are you scheming?", "0"]
+      ],
+      [
+        ["This seems kind of sudden.", "0"],
+        ["If I'm just watching...", "0"],
+      ],
+      [
+        ["It is a good idea.", "+5"],
+        ["Go ahead. I'll watch.", "+10"],
+        ["Maybe stick to gymnastics.", "0"]
+      ],
+      [
+        ["Don't give up yet.", "0"],
+        ["Just don't lose hope.", "0"],
+        ["You can beat this, right?", "0"]
+      ],
+      [
+        ["Congratulations.", "+10"],
+        ["I saw!", "+10"],
+        ["How's that feel?", "+5"]
+      ],
+      [
+        ["That's important.", "+10"],
+        ["Don't forget how that feels.", "+5"],
+      ],
+      [
+        ["Nicely done.", "0"],
+        ["It's not over yet.", "0"],
+      ],
+      [
+        ["Swimming.", "+10"],
+        ["Running.", "+5"],
+        ["Gymnastics.", "+10"]
+      ],
+    ]
+  },
+  5: {
+    points: 0,
+    choices: [
+      [
+        ["XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", "+5"],
+        ["XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", "0"],
+        ["XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", "0"]
       ],
     ]
   },
