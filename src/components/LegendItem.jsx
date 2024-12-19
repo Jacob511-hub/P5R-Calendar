@@ -15,6 +15,7 @@ const LegendItem = ({dateType, text}) => {
                 weekday={""}
                 clicked={""}
                 handleClick={undefined}
+                style={'grid-item grid-item-alt'}
             />
             <h1 className="legend-text">{text}</h1>
         </div>

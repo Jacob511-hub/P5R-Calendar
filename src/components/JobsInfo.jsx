@@ -27,10 +27,7 @@ const JobsInfo = () => {
                     maxWidth: 'unset',
                     top: '0px',
                 }}>
-                    <h1 className='info-header'
-                    style={{
-                        fontSize: '2.5em'
-                    }}>{jobName}</h1>
+                    <h1 className='info-header info-header-alt'>{jobName}</h1>
                 </div>
                 <DividerCustom />
                 <h1 className='info-header'

@@ -26,10 +26,7 @@ const HomeShoppingInfo = () => {
                     maxWidth: 'unset',
                     top: '0px',
                 }}>
-                    <h1 className='info-header'
-                    style={{
-                        fontSize: '2.5em'
-                    }}>Home Shopping Program Items</h1>
+                    <h1 className='info-header info-header-alt'>Home Shopping Program Items</h1>
                 </div>
                 <DividerCustom />
                 <ul style={{ listStyleType: 'none', padding: 0, margin: 0 }}>

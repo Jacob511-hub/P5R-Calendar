@@ -146,7 +146,6 @@ body {
   max-height: 100px;
   max-width: 150px;
   margin: 0;
-  left: -10px;
   top: 10px;
   text-shadow: 
     3px 3px 0px #000,
@@ -188,6 +187,10 @@ body {
   margin: 5px;
   font-size: 2em;
   white-space: pre-line;
+}
+
+.info-header-alt {
+  font-size: 2.5em;
 }
 
 .grid-container {
@@ -532,6 +535,11 @@ body {
     aspect-ratio: 1;
   }
 
+  .grid-item-alt {
+    width: 10%;
+    aspect-ratio: 1;
+  }
+
   .date-number {
     font-size: 3.5vw;
   }
@@ -596,6 +604,18 @@ body {
       z-index: 3;
     }
 
+    .info-display {
+      padding: 10px;
+    }
+
+    .info-header {
+      font-size: 5vw;
+    }
+
+    .info-header-alt {
+      font-size: 7vw;
+    }
+
     .icon-prev,
     .icon-next {
       font-size: 7vw;
@@ -634,7 +654,16 @@ body {
     }
 
     .jobs-name {
-      font-size: 7vw;
+      font-size: 5vw;
+    }
+
+    .stats-text {
+      font-size: 6vw;
+      margin-left: 15px;
+    }
+
+    .legend-text {
+      font-size: 4vw;
     }
   }
 }

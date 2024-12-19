@@ -23,10 +23,7 @@ const TVQuizInfo = () => {
                     maxWidth: 'unset',
                     top: '0px',
                 }}>
-                    <h1 className='info-header'
-                    style={{
-                        fontSize: '2.5em'
-                    }}>TV Quiz Answers</h1>
+                    <h1 className='info-header info-header-alt'>TV Quiz Answers</h1>
                 </div>
                 <DividerCustom />
                 <ul style={{ listStyleType: 'none', padding: 0, margin: 0 }}>

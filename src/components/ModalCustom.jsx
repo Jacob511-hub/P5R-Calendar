@@ -1,6 +1,7 @@
 import React from "react";
 import { Modal, Box } from "@mui/material";
 import { keyframes } from "@emotion/react";
+import { useMediaQuery } from '@mui/material';
 
 const slideDownFadeRotate = keyframes`
     from {
@@ -13,28 +14,30 @@ const slideDownFadeRotate = keyframes`
     }
 `;
 
-const modalStyle = {
-    position: "absolute",
-    top: "50%",
-    left: "50%",
-    transform: "translate(-50%, -50%) rotate(-10deg)",
-    width: 450,
-    height: 550,
-    animation: `${slideDownFadeRotate} 0.4s ease-out`,
-    backgroundImage: `url(src/assets/calendar-bg.png)`,
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    border: "10px solid #000000",
-    boxShadow: 24,
-    p: 4,
-    overflowY: 'auto',
-    outline: 'none',
-    '&:focus-visible': {
-        outline: 'none',
-    }, 
-};
-
 const ModalCustom = ({ handleClose, open, children }) => {
+    const isSmallScreen = useMediaQuery('(max-width:750px)');
+
+    const modalStyle = {
+        position: "absolute",
+        top: "50%",
+        left: "50%",
+        transform: "translate(-50%, -50%) rotate(-10deg)",
+        width: isSmallScreen ? '60vw' : 450,
+        height: 550,
+        animation: `${slideDownFadeRotate} 0.4s ease-out`,
+        backgroundImage: `url(src/assets/calendar-bg.png)`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        border: "10px solid #000000",
+        boxShadow: 24,
+        p: 4,
+        overflowY: 'auto',
+        outline: 'none',
+        '&:focus-visible': {
+            outline: 'none',
+        }, 
+    };
+
     return (
         <div>
             <Modal

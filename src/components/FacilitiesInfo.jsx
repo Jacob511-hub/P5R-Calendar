@@ -24,10 +24,7 @@ const FacilitiesInfo = () => {
                     maxWidth: 'unset',
                     top: '0px',
                 }}>
-                    <h1 className='info-header'
-                    style={{
-                        fontSize: '2.5em'
-                    }}>{facilityName}</h1>
+                    <h1 className='info-header info-header-alt'>{facilityName}</h1>
                 </div>
                 <DividerCustom />
                 <h1 className='info-header'

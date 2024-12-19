@@ -32,6 +32,7 @@ const Dates = ({monthIndex, dateNumbers, dateKeys}) => {
               weekday={weekday}
               clicked={clicked}
               handleClick={handleClick}
+              style={'grid-item'}
           />
       );
       }

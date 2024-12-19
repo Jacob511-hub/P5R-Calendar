@@ -11,7 +11,8 @@ const GridItem = ({
     shadowSkewY,
     weekday,
     clicked,
-    handleClick
+    handleClick,
+    style,
 }) => {
     const classTile = `grid-tile ${dateType}-tile`;
     const classShadow = `grid-shadow ${dateType}-shadow`;
@@ -26,7 +27,7 @@ const GridItem = ({
     };
 
     return (
-        <div className="grid-item" onClick={handleClick}>
+        <div className={style} onClick={handleClick}>
             <h1 className="date-number">{dateNumber}</h1>
             <div className={classTile} style={tileStyle}></div>
             <div className={classShadow} style={shadowStyle}></div>
