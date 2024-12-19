@@ -19,12 +19,12 @@ const ConfidantRank = ({ name, rank, toggleRank }) => {
     return (
     <div>
         {rows.map((row, rowIndex) => (
-        <div key={rowIndex} style={{ display: 'flex', gap: '5px', marginBottom: '10px' }}>
+        <div key={rowIndex} style={{ display: 'flex', justifyContent: 'center', gap: '5px', marginBottom: '10px' }}>
             {row.map((index) => (
             <img
                 key={index}
                 src={index <= activeIndex ? image1 : image0}
-                style={{ cursor: 'pointer', width: '30px', height: '30px' }}
+                className="rank-star"
                 onClick={(e) => {
                 e.stopPropagation();
                 handleClick(index);

@@ -42,12 +42,7 @@ const AccordionCustom = ({headerImg, renderContent}) => {
                 }}
             >
             </AccordionSummary>
-            <AccordionDetails
-                sx={{
-                    padding: '16px',
-                    boxSizing: 'border-box',
-                }}
-            >
+            <AccordionDetails className='accordion-details-custom'>
                 {renderContent && renderContent()}
             </AccordionDetails>
         </Accordion>

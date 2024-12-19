@@ -471,6 +471,17 @@ body {
   text-shadow: -1px 0 #ffffff, 0 1px #ffffff, 1px 0 #ffffff, 0 -1px #ffffff;
 }
 
+.MuiAccordionDetails-root.accordion-details-custom {
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+.rank-star {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
 @media (max-width: 1350px) {
   #P5R-calendar {
     display: grid;
@@ -529,6 +540,20 @@ body {
     width: auto;
   }
 
+  .confidant-container {
+    height: 200px;
+  }
+  
+  .confidant-name {
+    font-size: 1.7em;
+    margin: auto;
+  }
+
+  .rank-star {
+    width: 19%;
+    height: auto;
+  }
+
   .book-dvd-game-container {
     height: auto;
     width: 100%;
@@ -553,6 +578,7 @@ body {
       grid-row: 1 / 2;
       grid-column: 1 / 2;
       width: 50vw;
+      padding: 15px;
       z-index: 1;
     }
   
@@ -577,6 +603,38 @@ body {
 
     .checkbox-container {
       width: 20%;
+    }
+
+    .dagger {
+      width: 100px;
+      top: -60px
+    }
+
+    .MuiAccordionDetails-root.accordion-details-custom {
+      padding: 0;
+    }
+
+    .confidant-container {
+      height: 120px;
+    }
+    
+    .confidant-name {
+      font-size: 4vw;
+      margin: auto;
+    }
+
+    .rank-star {
+      width: 15%;
+      height: auto;
+    }
+
+    .book-dvd-game-container {
+      width: 90%;
+      margin: auto;
+    }
+
+    .jobs-name {
+      font-size: 7vw;
     }
   }
 }
