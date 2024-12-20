@@ -470,9 +470,90 @@ export const FaithChoices = {
     points: 0,
     choices: [
       [
-        ["XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", "+5"],
-        ["XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", "0"],
-        ["XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", "0"]
+        ["It wasn't on purpose.", "0"],
+        ["What could you have done?", "0"],
+        ["At least you realize it now.", "0"]
+      ],
+      [
+        ["Don't beat yourself up.", "0"],
+        ["What'll you do now?", "0"],
+        ["Calm down.", "0"]
+      ],
+      [
+        ["You two were close, then.", "0"],
+        ["Those must be good memories.", "0"],
+        ["All for ice cream, huh?", "0"]
+      ],
+      [
+        ["...That IS genius.", "0"],
+        ["How old was she again?", "0"],
+      ],
+      [
+        ["She cared about you.", "0"],
+        ["Sounds like tough training.", "0"],
+        ["For the ice cream, right?", "0"]
+      ],
+      [
+        ["Why?", "0"],
+        ["I can imagine.", "0"],
+      ],
+      [
+        ["It must have been hard.", "0"],
+        ["What about Kasumi's feelings?", "0"],
+        ["Sounds like running away.", "0"]
+      ],
+      [
+        ["You have to accept it.", "0"],
+        ["Try not to think about it.", "0"],
+        ["So what happens now?", "0"]
+      ],
+      [
+        ["I will.", "0"],
+        ["I can manage that.", "0"],
+        ["If it's part of the deal.", "0"]
+      ],
+      [
+        ["Do you want to run away?", "0"],
+        ["You have to face it.", "+10"],
+        ["So what if it is?", "0"]
+      ],
+    ]
+  },
+  6: {
+    points: 55,
+    choices: [
+      [
+        ["Maybe.", "0"],
+        ["Who knows?", "0"],
+        ["Were you frustrated?", "0"],
+      ],
+      [
+        ["Is she scary?", "0"],
+        ["Is she strict?", "0"],
+      ],
+      [
+        ["You okay?", "+10"],
+        ["That was a big sigh.", "0"],
+        ["She's a real taskmaster.", "0"],
+      ],
+      [
+        ["That isn't true.", "+15"],
+        ["You need more confidence.", "0"],
+        ["That's just a mental block.", "0"],
+      ],
+      [
+        ["It'll be like a duet.", "0"],
+        ["You'll become stronger.", "0"],
+      ],
+      [
+        ["Of course.", "+15"],
+        ["I could watch you forever.", "+10"],
+        ["Another love confession?", "+15"],
+      ],
+      [
+        ["I was internally screaming.", "0"],
+        ["Yeah, that was a breeze.", "0"],
+        ["I love a good challenge.", "+10"],
       ],
     ]
   },
