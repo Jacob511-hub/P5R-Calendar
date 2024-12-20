@@ -23,7 +23,7 @@ const ModalCustom = ({ handleClose, open, children }) => {
         left: "50%",
         transform: "translate(-50%, -50%) rotate(-10deg)",
         width: isSmallScreen ? '60vw' : 450,
-        height: 550,
+        height: isSmallScreen ? 450 : 550,
         animation: `${slideDownFadeRotate} 0.4s ease-out`,
         backgroundImage: `url(src/assets/calendar-bg.png)`,
         backgroundSize: "cover",
