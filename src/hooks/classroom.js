@@ -20,4 +20,24 @@ const ClassroomQuestions = [
     ),
 ];
 
-export { ClassroomQuestions };
+const ExamAnswers = [
+    new ClassroomQuestion(
+        "5/11",
+        `Minamoto no Yoshitsune
+        \nMinamoto no Yoritomo
+        \nYoritomo won
+        \nThe weak`,
+    ),
+    new ClassroomQuestion(
+        "5/12",
+        `Cognition
+        \nBoth`,
+    ),
+    new ClassroomQuestion(
+        "5/13",
+        `The Devil's Dictionary
+        \nFemme Fatale`,
+    ),
+]
+
+export { ClassroomQuestions, ExamAnswers };

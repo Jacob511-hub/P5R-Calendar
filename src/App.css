@@ -605,6 +605,10 @@ body {
       z-index: 3;
     }
 
+    .date-number {
+      font-size: 5vw;
+    }
+
     .info-display {
       padding: 10px;
     }

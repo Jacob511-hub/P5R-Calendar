@@ -15,7 +15,7 @@ import { leblancActivities } from '../hooks/leblanc';
 import { crosswordDates, crosswords } from '../hooks/crosswords';
 import { TVQuizAnswers } from '../hooks/quizAnswers.js';
 import { HomeShoppingProgramItems } from '../hooks/homeShopping.js';
-import { ClassroomQuestions } from '../hooks/classroom.js';
+import { ClassroomQuestions, ExamAnswers } from '../hooks/classroom.js';
 import { facilities } from '../hooks/facilities.js';
 
 import { useInfo } from '../components/CalendarContext';
@@ -250,7 +250,7 @@ const Activities = () => {
                                         />
                                         <ActivityContainerBasic
                                             name={"Exams"}
-                                            handleClick={null}
+                                            handleClick={handleClassroomQuestionClick(ExamAnswers)}
                                         />
                                     </>
                                 )}
