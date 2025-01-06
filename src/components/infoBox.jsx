@@ -37,11 +37,14 @@ const InfoBox = ({
     return (
         <>
             <>
-                <h1 className='info-header'>{headerText}</h1>
+                <h1 className='info-header'
+                style={{
+                    textAlign: 'left'
+                }}>{headerText}</h1>
                 <DividerCustom />
                 <ul style={{ listStyleType: 'none', padding: 0, margin: 0 }}>
                     {activityData.map((name, index) => (
-                        <h2 key={index}>{name}</h2>
+                        <h2 className='info-header' key={index}>{name}</h2>
                     ))}
                 </ul>
                 <DividerCustom />

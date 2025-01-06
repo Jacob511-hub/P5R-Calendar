@@ -485,6 +485,11 @@ body {
   cursor: pointer;
 }
 
+.details-button {
+  width: 100%;
+  cursor: pointer;
+}
+
 @media (max-width: 1350px) {
   #P5R-calendar {
     display: grid;
@@ -546,20 +551,26 @@ body {
 
   .activities-display {
     width: auto;
+    padding: 10px;
   }
 
   .confidant-container {
-    height: 200px;
+    height: auto;
   }
-  
-  .confidant-name {
-    font-size: 1.7em;
-    margin: auto;
+
+  .tarot {
+    height: auto;
+    width: 10vw;
   }
 
   .rank-star {
-    width: 19%;
+    width: 4vw;
     height: auto;
+  }
+  
+  .confidant-name {
+    font-size: 4vw;
+    margin: auto;
   }
 
   .book-dvd-game-container {
@@ -610,7 +621,11 @@ body {
     }
 
     .info-display {
-      padding: 10px;
+      padding: 25px;
+    }
+
+    .info-header-container {
+      top: 30px;
     }
 
     .info-header {
@@ -623,7 +638,7 @@ body {
 
     .icon-prev,
     .icon-next {
-      font-size: 7vw;
+      font-size: 10vw;
     }
 
     .checkbox-container {
@@ -639,17 +654,23 @@ body {
       padding: 0;
     }
 
-    .confidant-container {
-      height: 120px;
+    .activities-display {
+      width: auto;
+      padding: 15px;
+    }
+
+    .tarot {
+      height: auto;
+      width: 20vw;
     }
     
     .confidant-name {
-      font-size: 4vw;
+      font-size: 6vw;
       margin: auto;
     }
 
     .rank-star {
-      width: 15%;
+      width: 7vw;
       height: auto;
     }
 
@@ -679,6 +700,10 @@ body {
       height: 7vh;
       width: auto;
       aspect-ratio: 1;
+    }
+
+    .details-button {
+      width: 50vw;
     }
   }
 }

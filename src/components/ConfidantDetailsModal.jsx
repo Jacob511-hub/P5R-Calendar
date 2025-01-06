@@ -29,11 +29,7 @@ const ConfidantDetailsModal = ({ details, choices, confidants }) => {
     return (
         <>
             <div>
-                <img src="src/assets/details.png" onClick={handleOpen}
-                style={{
-                    width: '100%',
-                    cursor: 'pointer'
-                }}></img>
+                <img src="src/assets/details.png" onClick={handleOpen} className="details-button"></img>
                 <ModalCustom
                     handleClose = {handleClose}
                     open = {open}

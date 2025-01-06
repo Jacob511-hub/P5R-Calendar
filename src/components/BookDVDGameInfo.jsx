@@ -28,10 +28,8 @@ const BookDVDGameInfo = () => {
                     maxWidth: 'unset',
                     top: '0px',
                 }}>
-                    <h1 className='info-header'
-                    style={{
-                        fontSize: '3em'
-                    }}>{bookdvdgameName}</h1>
+                    <h1 className='info-header info-header-alt'
+                    >{bookdvdgameName}</h1>
                 </div>
                 <DividerCustom />
                 <h1 className='info-header'
