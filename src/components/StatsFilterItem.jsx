@@ -11,6 +11,8 @@ const StatsFilterItem = ({img, stat, onClick}) => {
         books,
         dvds,
         games,
+
+        updateStat,
     } = useInfo();
 
     return (
@@ -18,6 +20,7 @@ const StatsFilterItem = ({img, stat, onClick}) => {
             className="stats-container"
             onClick={() => {
                 updateFilter(statSearch(stat, books, dvds, games, leblancActivities, jobs, facilities))
+                updateStat(stat);
                 if (onClick) onClick();
             }}
         >

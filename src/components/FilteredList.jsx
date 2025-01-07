@@ -1,6 +1,7 @@
 import React from 'react';
 import ActivityContainerBasic from './ActivityContainerBasic';
 import { useBookDVDGameClick, useJobClick, useLeblancActivityClick, useFacilityClick } from '../hooks/handleClick.js';
+import StatPoint from './StatPoint.jsx';
 
 const FilteredList = ({filter}) => {
     const BookDVDGameClick = useBookDVDGameClick();
@@ -44,6 +45,7 @@ const FilteredList = ({filter}) => {
 
     return (
         <div>
+            <StatPoint />
             {filter.map((item) => (
                 <ActivityContainerBasic
                     key={item.name}

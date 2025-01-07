@@ -53,6 +53,7 @@ export function useUpdateInfo() {
   const [quizAvailable, setQuizAvailable] = useState("");
 
   const [filter, setFilter] = useState("");
+  const [stat, setStat] = useState("");
 
   const [books, setBooks] = useState(booksData);
   const [dvds, setDvds] = useState(dvdsData);
@@ -136,6 +137,7 @@ export function useUpdateInfo() {
   const updateQuizAvailable = (quizAvailable) => setQuizAvailable(quizAvailable);
 
   const updateFilter = (filter) => setFilter(filter);
+  const updateStat = (stat) => setStat(stat);
 
   const updateClassroomQuestionDates = (classroomQuestionDates) => setClassroomQuestionDates(classroomQuestionDates);
   const updateClassroomQuestionAnswers = (classroomQuestionAnswers) => setClassroomQuestionAnswers(classroomQuestionAnswers);
@@ -239,6 +241,8 @@ export function useUpdateInfo() {
 
     filter,
     updateFilter,
+    stat,
+    updateStat,
 
     books,
     setBooks,
