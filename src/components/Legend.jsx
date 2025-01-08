@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import LegendItem from "./LegendItem";
 import ModalCustom from "./ModalCustom";
+import questionImage from '../assets/question.png';
+import legendImage from '../assets/legend.png';
 
 const Legend = () => {
     const [open, setOpen] = useState(false);
@@ -15,7 +17,7 @@ const Legend = () => {
 
   return (
     <div>
-        <img src="src/assets/question.png" onClick={handleOpen}
+        <img src={questionImage} onClick={handleOpen}
         style={{
             position: 'fixed',
             bottom: '10px',
@@ -27,7 +29,7 @@ const Legend = () => {
             handleClose = {handleClose}
             open = {open}
         >
-            <img src="src/assets/legend.png" style={{
+            <img src={legendImage} style={{
                 width: '70%',
                 height: 'auto'
             }}></img>

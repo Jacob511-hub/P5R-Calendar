@@ -1,3 +1,16 @@
+import April from '../assets/months/April.png';
+import May from '../assets/months/May.png';
+import June from '../assets/months/June.png';
+import July from '../assets/months/July.png';
+import August from '../assets/months/August.png';
+import September from '../assets/months/September.png';
+import October from '../assets/months/October.png';
+import November from '../assets/months/November.png';
+import December from '../assets/months/December.png';
+import January from '../assets/months/January.png';
+import February from '../assets/months/February.png';
+import March from '../assets/months/March.png';
+
 export const rows = 6;
 export const cols = 7;
 
@@ -29,18 +42,18 @@ export const weekdays = [
 ];
 
 export const monthHeader = [
-    "src/assets/months/April.png",
-    "src/assets/months/May.png",
-    "src/assets/months/June.png",
-    "src/assets/months/July.png",
-    "src/assets/months/August.png",
-    "src/assets/months/September.png",
-    "src/assets/months/October.png",
-    "src/assets/months/November.png",
-    "src/assets/months/December.png",
-    "src/assets/months/January.png",
-    "src/assets/months/February.png",
-    "src/assets/months/March.png",
+    April,
+    May,
+    June,
+    July,
+    August,
+    September,
+    October,
+    November,
+    December,
+    January,
+    February,
+    March,
 ];
 
 export const dateKeys = [

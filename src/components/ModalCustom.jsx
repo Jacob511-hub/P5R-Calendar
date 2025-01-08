@@ -2,6 +2,8 @@ import React from "react";
 import { Modal, Box } from "@mui/material";
 import { keyframes } from "@emotion/react";
 import { useMediaQuery } from '@mui/material';
+import bgImage from '../assets/calendar-bg.png';
+import closeImage from '../assets/close.png';
 
 const slideDownFadeRotate = keyframes`
     from {
@@ -25,7 +27,7 @@ const ModalCustom = ({ handleClose, open, children }) => {
         width: isSmallScreen ? '60vw' : 450,
         height: isSmallScreen ? 450 : 550,
         animation: `${slideDownFadeRotate} 0.4s ease-out`,
-        backgroundImage: `url(src/assets/calendar-bg.png)`,
+        backgroundImage: `url(${bgImage})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         border: "10px solid #000000",
@@ -51,7 +53,7 @@ const ModalCustom = ({ handleClose, open, children }) => {
                         <div>{children}</div>
                     </Box>
                     <img
-                        src="src/assets/close.png"
+                        src={closeImage}
                         onClick={handleClose}
                         style={{
                             position: 'fixed',

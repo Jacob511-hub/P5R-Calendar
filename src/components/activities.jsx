@@ -1,8 +1,21 @@
 import React, { useState } from 'react';
+
 import daggerImage from '../assets/dagger.png';
 import bookIcon from '../assets/book-icon.png';
 import dvdIcon from '../assets/dvd-icon.png';
 import gameIcon from '../assets/game-icon.png';
+import activityImage from '../assets/activities.png';
+import confidantsImage from '../assets/confidants.png';
+import booksImage from '../assets/books.png';
+import dvdsImage from '../assets/dvds.png';
+import gamesImage from '../assets/games.png';
+import jobsImage from '../assets/jobs.png';
+import leblancImage from '../assets/leblanc.png';
+import crosswordImage from '../assets/crossword.png';
+import tvImage from '../assets/tv.png';
+import classroomImage from '../assets/classroom.png';
+import facilitiesImage from '../assets/facilities.png';
+
 import AccordionCustom from './accordionCustom';
 import DividerCustom from './dividerCustom';
 import ConfidantContainer from './confidantContainer';
@@ -126,12 +139,12 @@ const Activities = () => {
                     src={daggerImage}>
                 </img>
                 <div className="activities-display">
-                    <img src="src/assets/activities.png"></img>
+                    <img src={activityImage}></img>
                     <DividerCustom />
                     {filter.length === 0 ? (
                         <div>
                             <AccordionCustom
-                                headerImg={'url("src/assets/confidants.png")'}
+                                headerImg={`url(${confidantsImage})`}
                                 renderContent={() => (
                                     confidants.map((confidant) => (
                                         <ConfidantContainer
@@ -145,7 +158,7 @@ const Activities = () => {
                                 )}
                             />
                             <AccordionCustom
-                                headerImg={'url("src/assets/books.png")'}
+                                headerImg={`url(${booksImage})`}
                                 renderContent={() => (
                                     books.map((book) => (
                                         <BookDVDGameContainer
@@ -159,7 +172,7 @@ const Activities = () => {
                                 )}
                             />
                             <AccordionCustom
-                                headerImg={'url("src/assets/dvds.png")'}
+                                headerImg={`url(${dvdsImage})`}
                                 renderContent={() => (
                                     dvds.map((dvd) => (
                                         <BookDVDGameContainer
@@ -173,7 +186,7 @@ const Activities = () => {
                                 )}
                             />
                             <AccordionCustom
-                                headerImg={'url("src/assets/games.png")'}
+                                headerImg={`url(${gamesImage})`}
                                 renderContent={() => (
                                     games.map((game) => (
                                         <BookDVDGameContainer
@@ -187,7 +200,7 @@ const Activities = () => {
                                 )}
                             />
                             <AccordionCustom
-                                headerImg={'url("src/assets/jobs.png")'}
+                                headerImg={`url(${jobsImage})`}
                                 renderContent={() => (
                                     jobs.map((job) => (
                                         <ActivityContainerBasic
@@ -199,7 +212,7 @@ const Activities = () => {
                                 )}
                             />
                             <AccordionCustom
-                                headerImg={'url("src/assets/leblanc.png")'}
+                                headerImg={`url(${leblancImage})`}
                                 renderContent={() => (
                                     leblancActivities.map((leblancActivity) => (
                                         <ActivityContainerBasic
@@ -211,7 +224,7 @@ const Activities = () => {
                                 )}
                             />
                             <AccordionCustom
-                                headerImg={'url("src/assets/crossword.png")'}
+                                headerImg={`url(${crosswordImage})`}
                                 renderContent={() => (
                                     <>
                                         <ActivityContainerBasic
@@ -226,7 +239,7 @@ const Activities = () => {
                                 )}
                             />
                             <AccordionCustom
-                                headerImg={'url("src/assets/tv.png")'}
+                                headerImg={`url(${tvImage})`}
                                 renderContent={() => (
                                     <>
                                         <ActivityContainerBasic
@@ -241,7 +254,7 @@ const Activities = () => {
                                 )}
                             />
                             <AccordionCustom
-                                headerImg={'url("src/assets/classroom.png")'}
+                                headerImg={`url(${classroomImage})`}
                                 renderContent={() => (
                                     <>
                                         <ActivityContainerBasic
@@ -256,7 +269,7 @@ const Activities = () => {
                                 )}
                             />
                             <AccordionCustom
-                                headerImg={'url("src/assets/facilities.png")'}
+                                headerImg={`url(${facilitiesImage})`}
                                 renderContent={() => (
                                     facilities.map((facility) => (
                                         <ActivityContainerBasic

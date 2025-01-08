@@ -1,4 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
+import checkboxImage from '../assets/checkbox.png'
+import checkmarkImage from '../assets/checkmark.png'
 
 const Checkbox = ({ checked, toggleChecked }) => {
   return (
@@ -10,12 +12,12 @@ const Checkbox = ({ checked, toggleChecked }) => {
       }}
     >
       <img
-        src="src\assets\checkbox.png"
+        src={checkboxImage}
         style={{ display: 'block', width: '100%' }}
       />
       {checked && (
         <img
-          src="src\assets\checkmark.png"
+          src={checkmarkImage}
           style={{
             position: 'absolute',
             top: 0,

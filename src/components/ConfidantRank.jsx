@@ -1,10 +1,12 @@
 import React, { useState } from "react";
+import starBlankImage from '../assets/star-blank.png';
+import starFilledImage from '../assets/star-filled.png';
 
 const ConfidantRank = ({ name, rank, toggleRank }) => {
     const [activeIndex, setActiveIndex] = useState(rank - 1);
   
-    const image0 = "src/assets/star-blank.png";
-    const image1 = "src/assets/star-filled.png";
+    const image0 = starBlankImage;
+    const image1 = starFilledImage;
   
     const handleClick = (index) => {
       setActiveIndex(index);

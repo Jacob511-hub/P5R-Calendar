@@ -1,5 +1,5 @@
 body {
-  background-image: url("src/assets/bg.png");
+  background-image: url("./assets/bg.png");
   background-color: #00000000;
   background-size: cover;
   background-attachment: fixed;
@@ -58,7 +58,7 @@ body {
   transform-origin: center;
   border: 8px solid #000;
   padding: 25px;
-  background-image: url("src/assets/calendar-bg.png");
+  background-image: url("./assets/calendar-bg.png");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -70,7 +70,7 @@ body {
   height: 550px;
   transform: rotate(-5deg);
   transform-origin: center;
-  background-image: url("src/assets/calendar-bg.png");
+  background-image: url("./assets/calendar-bg.png");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -106,7 +106,7 @@ body {
   width: 300px;
   transform: rotate(5deg);
   transform-origin: center;
-  background-image: url("src/assets/calendar-bg.png");
+  background-image: url("./assets/calendar-bg.png");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;

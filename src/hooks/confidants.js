@@ -1,3 +1,27 @@
+import Fool from '../assets/tarot/Fool.png';
+import Magician from '../assets/tarot/Magician.png';
+import Priestess from '../assets/tarot/Priestess.png';
+import Empress from '../assets/tarot/Empress.png';
+import Emperor from '../assets/tarot/Emperor.png';
+import Hierophant from '../assets/tarot/Hierophant.png';
+import Lovers from '../assets/tarot/Lovers.png';
+import Chariot from '../assets/tarot/Chariot.png';
+import Justice from '../assets/tarot/Justice.png';
+import Hermit from '../assets/tarot/Hermit.png';
+import Fortune from '../assets/tarot/Fortune.png';
+import Strength from '../assets/tarot/Strength.png';
+import HangedMan from '../assets/tarot/HangedMan.png';
+import Death from '../assets/tarot/Death.png';
+import Temperance from '../assets/tarot/Temperance.png';
+import Devil from '../assets/tarot/Devil.png';
+import Tower from '../assets/tarot/Tower.png';
+import Star from '../assets/tarot/Star.png';
+import Moon from '../assets/tarot/Moon.png';
+import Sun from '../assets/tarot/Sun.png';
+import Judgement from '../assets/tarot/Judgement.png';
+import Faith from '../assets/tarot/Faith.png';
+import Councillor from '../assets/tarot/Councillor.png';
+
 class Confidant {
     constructor(name, tarot, rank) {
         this.name = name;
@@ -9,117 +33,117 @@ class Confidant {
 const confidants = [
     new Confidant (
         "Fool",
-        "src/assets/tarot/Fool.png",
+        Fool,
         1,
     ),
     new Confidant (
         "Magician",
-        "src/assets/tarot/Magician.png",
+        Magician,
         1,
     ),
     new Confidant (
         "Priestess",
-        "src/assets/tarot/Priestess.png",
+        Priestess,
         1,
     ),
     new Confidant (
         "Empress",
-        "src/assets/tarot/Empress.png",
+        Empress,
         1,
     ),
     new Confidant (
         "Emperor",
-        "src/assets/tarot/Emperor.png",
+        Emperor,
         1,
     ),
     new Confidant (
         "Hierophant",
-        "src/assets/tarot/Hierophant.png",
+        Hierophant,
         1,
     ),
     new Confidant (
         "Lovers",
-        "src/assets/tarot/Lovers.png",
+        Lovers,
         1,
     ),
     new Confidant (
         "Chariot",
-        "src/assets/tarot/Chariot.png",
+        Chariot,
         1,
     ),
     new Confidant (
         "Justice",
-        "src/assets/tarot/Justice.png",
+        Justice,
         1,
     ),
     new Confidant (
         "Hermit",
-        "src/assets/tarot/Hermit.png",
+        Hermit,
         1,
     ),
     new Confidant (
         "Fortune",
-        "src/assets/tarot/Fortune.png",
+        Fortune,
         1,
     ),
     new Confidant (
         "Strength",
-        "src/assets/tarot/Strength.png",
+        Strength,
         1,
     ),
     new Confidant (
         "Hanged Man",
-        "src/assets/tarot/HangedMan.png",
+        HangedMan,
         1,
     ),
     new Confidant (
         "Death",
-        "src/assets/tarot/Death.png",
+        Death,
         1,
     ),
     new Confidant (
         "Temperance",
-        "src/assets/tarot/Temperance.png",
+        Temperance,
         1,
     ),
     new Confidant (
         "Devil",
-        "src/assets/tarot/Devil.png",
+        Devil,
         1,
     ),
     new Confidant (
         "Tower",
-        "src/assets/tarot/Tower.png",
+        Tower,
         1,
     ),
     new Confidant (
         "Star",
-        "src/assets/tarot/Star.png",
+        Star,
         1,
     ),
     new Confidant (
         "Moon",
-        "src/assets/tarot/Moon.png",
+        Moon,
         1,
     ),
     new Confidant (
         "Sun",
-        "src/assets/tarot/Sun.png",
+        Sun,
         1,
     ),
     new Confidant (
         "Judgement",
-        "src/assets/tarot/Judgement.png",
+        Judgement,
         1,
     ),
     new Confidant (
         "Faith",
-        "src/assets/tarot/Faith.png",
+        Faith,
         1,
     ),
     new Confidant (
         "Councillor",
-        "src/assets/tarot/Councillor.png",
+        Councillor,
         1,
     ),
 ];

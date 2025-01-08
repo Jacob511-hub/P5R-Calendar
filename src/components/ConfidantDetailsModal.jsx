@@ -3,6 +3,7 @@ import ModalCustom from "./ModalCustom";
 import DividerCustom from "./dividerCustom";
 import * as activityDetails from '../hooks/activityDetails';
 import ChoicesTable from "./ChoicesTable";
+import detailsImage from '../assets/details.png'
 
 const ConfidantDetailsModal = ({ details, choices, confidants }) => {
     if (!details) {
@@ -29,12 +30,12 @@ const ConfidantDetailsModal = ({ details, choices, confidants }) => {
     return (
         <>
             <div>
-                <img src="src/assets/details.png" onClick={handleOpen} className="details-button"></img>
+                <img src={detailsImage} onClick={handleOpen} className="details-button"></img>
                 <ModalCustom
                     handleClose = {handleClose}
                     open = {open}
                 >
-                    <img src="src/assets/details.png" style={{
+                    <img src={detailsImage} style={{
                         width: '60%',
                         height: 'auto'
                     }}></img>

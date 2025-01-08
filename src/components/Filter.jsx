@@ -2,6 +2,12 @@ import React, { useState } from "react";
 import StatsFilterItem from "./StatsFilterItem";
 import ModalCustom from "./ModalCustom";
 import ResetButton from "./ResetButton";
+import statsImage from '../assets/stats.png';
+import knowledgeImage from '../assets/knowledge.png';
+import charmImage from '../assets/charm.png';
+import proficiencyImage from '../assets/proficiency.png';
+import gutsImage from '../assets/guts.png';
+import kindnessImage from '../assets/kindness.png';
 
 const Filter = () => {
     const [open, setOpen] = useState(false);
@@ -16,7 +22,7 @@ const Filter = () => {
 
   return (
     <div>
-        <img src="src/assets/stats.png" onClick={handleOpen}
+        <img src={statsImage} onClick={handleOpen}
         style={{
             position: 'fixed',
             height: '70px',
@@ -30,32 +36,32 @@ const Filter = () => {
             handleClose = {handleClose}
             open = {open}
         >
-            <img src="src/assets/stats.png" style={{
+            <img src={statsImage} style={{
                 width: '50%',
                 height: 'auto'
             }}></img>
             <StatsFilterItem
-                img="src/assets/knowledge.png"
+                img={knowledgeImage}
                 stat="Knowledge"
                 onClick = {handleClose}
             />
             <StatsFilterItem
-                img="src/assets/charm.png"
+                img={charmImage}
                 stat="Charm"
                 onClick = {handleClose}
             />
             <StatsFilterItem
-                img="src/assets/proficiency.png"
+                img={proficiencyImage}
                 stat="Proficiency"
                 onClick = {handleClose}
             />
             <StatsFilterItem
-                img="src/assets/guts.png"  
+                img={gutsImage}
                 stat="Guts"
                 onClick = {handleClose}
             />
             <StatsFilterItem
-                img="src/assets/kindness.png"
+                img={kindnessImage}
                 stat="Kindness"
                 onClick = {handleClose}
             />
