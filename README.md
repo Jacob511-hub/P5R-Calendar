@@ -1,8 +1,8 @@
-# Persona 5 Royal Calendar
+# Persona 5 Royal Calendar :calendar:
 
 This is a calendar tool for Persona 5 Royal to help you plan out activities and see what is available throughout the game.
 
-**TRY IT OUT HERE: GitHub Pages (Placeholder)**
+**TRY IT OUT HERE: [GitHub Pages](https://jacob511-hub.github.io/P5R-Calendar/)**
 
 ## Description
 
@@ -10,7 +10,7 @@ This is a calendar tool for Persona 5 Royal to help you plan out activities and 
 - Persona 5 Royal is a game where the player has a finite amount of time to participate in various optional activities that assist in their progression, with certain activities only being available at certain times, or become completely unavailable after a certain point or if certain conditions are not met. Certain optional choices may also accelerate this progress or unlock certain features. However, new players will not always be aware of how best to use their time or what the best choices to make are.
 - While resources for these choices and optimizations exist online, what this tool aims to achieve is to present all of that information in a quick, easy-to-read format that can all be found on a single page so that a player looking for a specific piece of information does not have to search for it elsewhere.
 
-!ProjectPhoto1(Placeholder)
+![P5RProjectPhoto1](https://github.com/user-attachments/assets/9177bd56-8f05-4735-a813-98ccffb1b34a)
 
 ## Usage
 
@@ -23,19 +23,21 @@ This is a calendar tool for Persona 5 Royal to help you plan out activities and 
 ### Activities:
 - A list of almost every activity a player can participate in is listed and grouped into relevant categories.
 - Selecting an activity will display any info related to that activity, including its availability, what it does, when it first becomes available, etc.
+- Certain activities, such as Confidants, Books, DVDS, and Games can only be performed a finite number of times. These can have their current progress set or they can be marked as "completed" by the user. These changes are saved to local storage and are used for displaying information dependent on the progress of these activities and for filtering purposes.
 
-!ProjectPhoto2(Placeholder)
+![P5RProjectPhoto2](https://github.com/user-attachments/assets/835fc1ec-5d6b-4ca9-bcc5-7afed02e8837)
 
 ### Info:
 - Whenever the user selects a date or activity, the info pertaining to it will be displayed on the right-hand side of the page.
 
-!ProjectPhoto3(Placeholder)
+![P5RProjectPhoto3](https://github.com/user-attachments/assets/8a01d049-c6c0-48d5-91a1-da0952c00095)
 
 ### Filter:
 - A button is placed in the top-left corner of the page that opens a menu that allows the user to filter the list of activities based on which stat they increase.
 - Pressing the "Reset" button in this menu will remove any active filter.
+- Activities marked as "completed" are not shown when filtering.
 
-!ProjectPhoto4(Placeholder)
+![P5RProjectPhoto4](https://github.com/user-attachments/assets/b17e9ef6-2301-43cb-9eb6-6852e4950cb1)
 
 ### Other:
 - A button is provided within the webpage in the bottom-right corner that provides a legend of the color-coding used on the calendar.
