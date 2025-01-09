@@ -557,6 +557,170 @@ export const FaithChoices = {
       ],
     ]
   },
+  7: {
+    points: 40,
+    choices: [
+      [
+        ["Walk up to Sumire (RANK 5 GUTS)", "+10"],
+        ["Watch her from a distance", "0"],
+        ["Slowly walk away", "0"],
+      ],
+      [
+        ["Look at yourself.", "0"],
+        ["You're just standing out.", "0"],
+      ],
+      [
+        ["Try to stay positive.", "+10"],
+        ["I'm here for you.", "+10"],
+        ["It'll work out.", "+10"],
+      ],
+      [
+        ["What is it?", "0"],
+        ["......", "0"],
+      ],
+      [
+        ["You started it.", "0"],
+        ["What, I can't look at you?", "0"],
+      ],
+      [
+        ["It looks great.", "+10"],
+        ["You look really cute.", "+10"],
+        ["I'm in love.", "+10"],
+      ],
+      [
+        ["Did I help?", "0"],
+        ["You found your answer?", "0"],
+      ],
+      [
+        ["I see…", "0"],
+        ["So that's how it was.", "0"],
+      ],
+      [
+        ["That's how it should be.", "+10"],
+        ["Sounds like progress.", "+10"],
+      ],
+      [
+        ["The airsoft shop.", "0"],
+        ["The resale shop.", "+10"],
+        ["Online.", "+10"],
+      ],
+    ]
+  },
+  8: {
+    points: 80,
+    choices: [
+      [
+        ["Wanna come over?", "0"],
+        ["We have a café.", "0"],
+      ],
+      [
+        ["It's no problem.", "+10"],
+        ["We'll call it holiday hours.", "+10"],
+      ],
+      [
+        ["Definitely.", "+10"],
+        ["Of course.", "+10"],
+      ],
+      [
+        ["Of course I do.", "+10"],
+        ["Vaguely...", "0"],
+        ["What about it?", "0"],
+      ],
+      [
+        ["I know you did.", "+15"],
+        ["You're not worthless.", "+15"],
+        ["This is a new beginning.", "+15"],
+      ],
+      [
+        ["What's going on?", "0"],
+        ["There's something else?", "0"],
+        ["Go ahead.", "+10"],
+      ],
+      [
+        ["What?", "0"],
+        ["In luh?", "0"],
+      ],
+      [
+        ["Let's stay friends, okay?", "0 (FRIENDS)"],
+        ["I love you too.", "0 (ROMANCE)"],
+      ],
+      [
+        ["(ROMANCE) Calm down.", "+10"],
+        ["(ROMANCE) Take your time.", "+10"],
+      ],
+      [
+        ["(ROMANCE) So? Any different?", "+10"],
+        ["(ROMANCE) You are so red right now.", "+10"],
+        ["(ROMANCE) You're so cute.", "+10"],
+      ],
+      [
+        ["(ROMANCE) Get used to it.", "+10"],
+        ["(ROMANCE) Should I hang up...?", "0"],
+        ["(ROMANCE) That's just how it is.", "0"],
+      ],
+      [
+        ["(FRIENDS) Show me your best.", "+10"],
+        ["(FRIENDS) I can't wait to see it.", "+10"],
+        ["(FRIENDS) You can always rely on me.", "+15"],
+      ],
+      [
+        ["(FRIENDS) I'm glad to hear that.", "+10"],
+        ["(FRIENDS) I didn't do much.", "0"],
+        ["(FRIENDS) I'll always have your back.", "+10"],
+      ],
+    ]
+  },
+  9: {
+    points: 0,
+    choices: [
+      [
+        ["You look radiant today.", "0"],
+        ["Now I'm getting nervous.", "0"],
+      ],
+      [
+        ["It's all Sumire.", "0"],
+        ["Just watch.", "0"],
+      ],
+      [
+        ["(ROMANCE) Calm down.", "0"],
+        ["(ROMANCE) Don't rush it.", "0"],
+      ],
+      [
+        ["You must be happy.", "0"],
+        ["I'm so relieved.", "0"],
+        ["It's only natural, Sumire.", "0"],
+      ],
+      [
+        ["(FRIENDS) You did all the work.", "+15"],
+        ["(FRIENDS) We're not done yet.", "+15"],
+        ["(FRIENDS) It's been my pleasure.", "+15"],
+      ],
+      [
+        ["(ROMANCE) And that is...?", "0"],
+        ["(ROMANCE) What do you mean?", "+10"],
+        ["(ROMANCE) Is it someone you love?", "+10"],
+      ],
+      [
+        ["(FRIENDS) Bring it on.", "0"],
+        ["(FRIENDS) Give me a break.", "0"],
+        ["(FRIENDS) I'll get my passport.", "0"],
+      ],
+      [
+        ["(ROMANCE) And there's more to come.", "0"],
+        ["(ROMANCE) You were amazing out there.", "0"],
+      ],
+      [
+        ["(ROMANCE) I'll stop if you want.", "0"],
+        ["(ROMANCE) I feel the same way.", "0"],
+        ["(ROMANCE) I don't want to let you go.", "0"],
+      ],
+      [
+        ["I'm counting on you.", "+10"],
+        ["Don't get ahead of yourself.", "+10"],
+        ["We're our world's champions.", "+15"],
+      ],
+    ]
+  },
 }
 
 export const CouncillorChoices = {
