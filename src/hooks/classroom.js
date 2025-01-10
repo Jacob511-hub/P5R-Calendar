@@ -8,15 +8,240 @@ class ClassroomQuestion {
 const ClassroomQuestions = [
     new ClassroomQuestion(
         "4/12",
-        `Villains`,
+        `Villains.`,
     ),
     new ClassroomQuestion(
         "4/19",
-        `They're the same`,
+        `They're the same.`,
     ),
     new ClassroomQuestion(
         "4/23",
-        `All of them`,
+        `All of them.`,
+    ),
+    new ClassroomQuestion(
+        "4/25",
+        `You unquestionably support it
+        \nYou have a duty to correct it.`,
+    ),
+    new ClassroomQuestion(
+        "4/27",
+        `Four color theorem.`,
+    ),
+    new ClassroomQuestion(
+        "4/30",
+        `Wonder.
+        \nChild.
+        \nA prodigy.`,
+    ),
+    new ClassroomQuestion(
+        "5/7",
+        `Fatal woman.`,
+    ),
+    new ClassroomQuestion(
+        "5/10",
+        `The Heian period.`,
+    ),
+    new ClassroomQuestion(
+        "5/16",
+        `The Placebo effect.`,
+    ),
+    new ClassroomQuestion(
+        "5/19",
+        `Katsushika Hokusai.`,
+    ),
+    new ClassroomQuestion(
+        "5/21",
+        `1:1.414.`,
+    ),
+    new ClassroomQuestion(
+        "5/23",
+        `Together
+        \nSenses
+        \nSenses coming together.`,
+    ),
+    new ClassroomQuestion(
+        "5/26",
+        `Arthur Conan Doyle.`,
+    ),
+    new ClassroomQuestion(
+        "5/31",
+        `John Silver.`,
+    ),
+    new ClassroomQuestion(
+        "6/4",
+        `The halo effect.`,
+    ),
+    new ClassroomQuestion(
+        "6/7",
+        `The number of legs.`,
+    ),
+    new ClassroomQuestion(
+        "6/8",
+        `Controlling Public Thought.`,
+    ),
+    new ClassroomQuestion(
+        "6/13",
+        `Green.`,
+    ),
+    new ClassroomQuestion(
+        "6/15",
+        `Coins.`,
+    ),
+    new ClassroomQuestion(
+        "6/20",
+        `Smartphone.`,
+    ),
+    new ClassroomQuestion(
+        "6/23",
+        `A pope.`,
+    ),
+    new ClassroomQuestion(
+        "6/27",
+        `Dogs.`,
+    ),
+    new ClassroomQuestion(
+        "6/29",
+        `Gold.`,
+    ),
+    new ClassroomQuestion(
+        "7/1",
+        `Barbarian's Head.`,
+    ),
+    new ClassroomQuestion(
+        "7/4",
+        `Julius and Augustus.`,
+    ),
+    new ClassroomQuestion(
+        "7/7",
+        `The Milky Way
+        \nSoumen's noodles.`,
+    ),
+    new ClassroomQuestion(
+        "7/9",
+        `A triangle.`,
+    ),
+    new ClassroomQuestion(
+        "7/11",
+        `Memories that last a long time.
+        \nInfinite.
+        \nForever.`,
+    ),
+    new ClassroomQuestion(
+        "7/12",
+        `Thievery.`,
+    ),
+    new ClassroomQuestion(
+        "9/3",
+        `Prosperity.`,
+    ),
+    new ClassroomQuestion(
+        "9/6",
+        `Chronostasis.`,
+    ),
+    new ClassroomQuestion(
+        "9/14",
+        `Money loans for collateral.`,
+    ),
+    new ClassroomQuestion(
+        "9/17",
+        `Cats eating human tongues.`,
+    ),
+    new ClassroomQuestion(
+        "9/21",
+        `Central Europe.`,
+    ),
+    new ClassroomQuestion(
+        "9/24",
+        `20 white, 12 black.`,
+    ),
+    new ClassroomQuestion(
+        "9/28",
+        `Phantom.
+        \nVibration.
+        \nSyndrome.`,
+    ),
+    new ClassroomQuestion(
+        "9/29",
+        `Imperial Household Agency.`,
+    ),
+    new ClassroomQuestion(
+        "10/3",
+        `Stars.`,
+    ),
+    new ClassroomQuestion(
+        "10/6",
+        `Joseph-Ignace Guillotine.`,
+    ),
+    new ClassroomQuestion(
+        "10/11",
+        `Bouba.`,
+    ),
+    new ClassroomQuestion(
+        "10/22",
+        `15.`,
+    ),
+    new ClassroomQuestion(
+        "10/24",
+        `Memory Bias.`,
+    ),
+    new ClassroomQuestion(
+        "11/2",
+        `A share of stolen goods.`,
+    ),
+    new ClassroomQuestion(
+        "11/4",
+        `A sword.`,
+    ),
+    new ClassroomQuestion(
+        "11/8",
+        `Any age.`,
+    ),
+    new ClassroomQuestion(
+        "11/10",
+        `Crow eyes are hard to see.`,
+    ),
+    new ClassroomQuestion(
+        "11/12",
+        `Because the voice is synthetic.`,
+    ),
+    new ClassroomQuestion(
+        "11/14",
+        `Because of high altitude.`,
+    ),
+    new ClassroomQuestion(
+        "11/15",
+        `His head was put on display.`,
+    ),
+    new ClassroomQuestion(
+        "11/17",
+        `Cochleoid.`,
+    ),
+    new ClassroomQuestion(
+        "1/11",
+        `How numerous they are.
+        \nThe Eight Million Gods.`,
+    ),
+    new ClassroomQuestion(
+        "1/14",
+        `Iwate.`,
+    ),
+    new ClassroomQuestion(
+        "1/18",
+        `Impressive.`,
+    ),
+    new ClassroomQuestion(
+        "1/20",
+        `A snake.`,
+    ),
+    new ClassroomQuestion(
+        "1/24",
+        `Kind-hearted.
+        \nNegative.
+        \nResentful.`,
+    ),
+    new ClassroomQuestion(
+        "1/27",
+        `To friends of friends of friends.`,
     ),
 ];
 
