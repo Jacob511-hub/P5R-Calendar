@@ -291,6 +291,265 @@ export const PriestessChoices = {
   },
 };
 
+export const EmpressChoices = {
+  1: {
+    points: 0,
+    choices: [
+      [
+        ["You like coffee?", "+5"],
+        ["Are you opening a café?", "+10"],
+        ["Are you starting a farm?", "+10"]
+      ],
+      [
+        ["What do you mean?", "0"],
+        ["So you won't accept his offer?", "0"],
+        ["He sounds suspicious.", "+5"]
+      ],
+      [
+        ["This is a complex issue.", "+10"],
+        ["You might be wrong.", "+5"],
+        ["Maybe you should fire him.", "+5"]
+      ],
+      [
+        ["Moonlight Carrot.", "+5"],
+        ["Sun Tomato.", "+5"],
+        ["Jewel Melon.", "+10"]
+      ],
+    ]
+  },
+  2: {
+    points: 14,
+    choices: [
+      [
+        ["A phantom thief doesn't worry.", "+5"],
+        ["They won't find out.", "+10"],
+        ["It'll be okay, I promise.", "+10"]
+      ],
+      [
+        ["\"I don't want to go with you.\"", "+5"],
+        ["\"I'm afraid of flying.\"", "0"],
+        ["\"We should break up.\"", "0"]
+      ],
+      [
+        ["I have.", "+5"],
+        ["Not yet.", "+10"],
+        ["Too many times to count.", "+5"]
+      ],
+      [
+        ["Smart response.", "+5"],
+        ["Sounds like a hassle.", "0"],
+        ["Which friend?", "0"]
+      ],
+    ]
+  },
+  3: {
+    points: 28,
+    choices: [
+      [
+        ["That's pricey.", "+5"],
+        ["What a rip-off.", "0"],
+        ["It must be amazing.", "+10"]
+      ],
+      [
+        ["I can't let you do that.", "+10"],
+        ["Let me cover the bill.", "+5"],
+        ["Cheers.", "+10"]
+      ],
+      [
+        ["You mean... poop!?", "+10"],
+        ["I can taste the elephant.", "+10"],
+        ["Excuse me while I vomit.", "+10"]
+      ],
+      [
+        ["Hands off my cat.", "0"],
+        ["I'd rather not think about it.", "0"],
+        ["Let's ask him.", "+5"]
+      ],
+      [
+        ["He seemed nice enough.", "0"],
+        ["He was a little sketchy.", "0"],
+        ["I'm not really sure.", "+5"]
+      ],
+      [
+        ["I don't mind.", "0"],
+        ["It was rather intriguing.", "0"],
+        ["Let's get coffee again sometime.", "+5"]
+      ],
+    ]
+  },
+  4: {
+    points: 15,
+    choices: [
+      [
+        ["Trust who you want to trust.", "0"],
+        ["Somebody's telling the truth.", "+10"],
+        ["Trust no one.", "+5"]
+      ],
+      [
+        ["Are you really considering it?", "0"],
+        ["You can't just give in.", "0"],
+        ["There has to be another way.", "+10"]
+      ],
+      [
+        ["That doesn't matter now.", "+5"],
+        ["You didn't have a choice.", "0"],
+        ["I don't think so.", "+10"]
+      ],
+      [
+        ["Are you okay?", "0"],
+        ["We're all here for you.", "0"],
+        ["Pinch yourself.", "+5"]
+      ],
+    ]
+  },
+  5: {
+    points: 20,
+    choices: [
+      [
+        ["That's fascinating.", "+10"],
+        ["You're so studious.", "+5"],
+        ["Can you make some for me?", "+10"]
+      ],
+      [
+        ["I had no idea.", "+5"],
+        ["That's a surprise.", "0"],
+        ["I could've guessed that.", "0"]
+      ],
+      [
+        ["You might be right.", "0"],
+        ["That would be bad.", "+10"],
+        ["Black like coffee?", "+10"]
+      ],
+      [
+        ["You don't need to apologize.", "0"],
+        ["That guy is horrible.", "0"],
+      ],
+      [
+        ["You're not powerless.", "0"],
+        ["Be strong, Haru.", "+10"],
+      ],
+      [
+        ["You can talk to me anytime.", "+5"],
+        ["Let him say what he wants.", "+5"],
+        ["Wanna run away together?", "0"]
+      ],
+    ]
+  },
+  6: {
+    points: 40,
+    choices: [
+      [
+        ["You look exhausted.", "0"],
+        ["Don't overwork yourself.", "0"],
+        ["Let's go see the nurse.", "0"]
+      ],
+      [
+        ["That sounds really tough...", "+5"],
+        ["You should ask some employees.", "0"],
+        ["What do you want to do?", "+10"]
+      ],
+      [
+        ["What does Takakura-san think?", "+10"],
+        ["There has to be a way.", "+10"],
+        ["You should tell him that.", "+10"]
+      ],
+      [
+        ["That's the spirit.", "+10"],
+        ["You can do it, Haru.", "+10"],
+      ],
+      [
+        ["Don't relax yet.", "0"],
+        ["I'll always have your back.", "+5"],
+        ["So what's this \"magic item\"?", "0"]
+      ],
+    ]
+  },
+  7: {
+    points: 22,
+    choices: [
+      [
+        ["The soil?", "+10"],
+        ["The planters?", "0"],
+        ["This beetle?", "0"]
+      ],
+      [
+        ["It'll help him understand you.", "+10"],
+        ["He's going to love it.", "+10"],
+        ["He might not like it.", "0"]
+      ],
+      [
+        ["I'll be cheering for you.", "+10"],
+        ["You're amazing, Haru.", "+10"],
+        ["Are you sure you can do that?", "+5"]
+      ],
+      [
+        ["You can understand them?", "0"],
+        ["It's in your nature to nurture.", "+5"],
+        ["I want some too.", "+5"]
+      ],
+    ]
+  },
+  8: {
+    points: 20,
+    choices: [
+      [
+        ["Don't forget to breathe.", "0"],
+        ["Believe in yourself.", "0"],
+        ["I'm here for you, Haru.", "0"]
+      ],
+      [
+        ["I'm sure you'll do great.", "+10"],
+        ["It'll be fine.", "+5"],
+        ["Give it all you've got, Haru.", "+10"]
+      ],
+      [
+        ["You're very welcome.", "+10"],
+        ["You did amazing.", "+10"],
+        ["Do I get a reward?", "0"]
+      ],
+      [
+        ["He saw us as good friends.", "0 (FRIENDS)"],
+        ["I like you too, Haru.", "0 (ROMANCE)"],
+      ],
+      [
+        ["(FRIENDS) Thanks", "0"],
+        ["(FRIENDS) You sound so happy.", "+5"],
+        ["(FRIENDS) I can't wait to try it.", "0"],
+        ["(ROMANCE) What're you up to?", "0"],
+        ["(ROMANCE) I wanted to hear your voice.", "+5"],
+        ["(ROMANCE) I miss you.", "+5"]
+      ],
+    ]
+  },
+  9: {
+    points: 0,
+    choices: [
+      [
+        ["Will things be okay?", "0"],
+        ["That's good to hear.", "+5"],
+        ["You've done great, Haru.", "+10"]
+      ],
+      [
+        ["I'm sure you'll succeed.", "+10"],
+        ["This won't be easy.", "+5"],
+        ["It all comes down to flavor.", "+5"]
+      ],
+      [
+        ["If you want.", "0"],
+        ["Probably not.", "0"],
+        ["It's hard work, you know.", "0"]
+      ],
+      [
+        ["(FRIENDS) I look forward to that.", "0"],
+        ["(FRIENDS) I'll bring you a present.", "0"],
+        ["(ROMANCE) I'm glad too.", "+10"],
+        ["(ROMANCE) Don't deny yourself.", "+5"],
+        ["(ROMANCE) Just my teammate?", "+10"]
+      ],
+    ]
+  },
+};
+
 export const FaithChoices = {
   1: {
     points: 15,
@@ -988,6 +1247,7 @@ export const CouncillorChoices = {
 
 export const activityDetailsChoices = [
   { name: "Priestess", details: PriestessChoices },
+  { name: "Empress", details: EmpressChoices },
   { name: "Faith", details: FaithChoices },
   { name: "Councillor", details: CouncillorChoices },
 ];
