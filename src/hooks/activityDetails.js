@@ -550,6 +550,201 @@ export const EmpressChoices = {
   },
 };
 
+export const EmperorChoices = {
+  1: {
+    points: 0,
+    choices: [
+      [
+        ["It's novel.", "+5"],
+        ["It's enigmatic.", "+5"],
+        ["...What is it?", "0"]
+      ],
+      [
+        ["I can't wait.", "+10"],
+        ["I hope you're right.", "+10"],
+        ["Will people like it?", "0"]
+      ],
+      [
+        ["You're already doing enough.", "+5"],
+        ["I'm looking forward to it.", "0"],
+        ["Will you really?", "0"]
+      ],
+    ]
+  },
+  2: {
+    points: 25,
+    choices: [
+      [
+        ["That was harsh.", "0"],
+        ["What a dick...", "0"],
+        ["Don't let it bother you.", "+5"]
+      ],
+      [
+        ["Stop exaggerating.", "0"],
+        ["This is just the beginning.", "0"],
+        ["Stand up.", "0"]
+      ],
+      [
+        ["You're really giving up?", "+5"],
+        ["This isn't like you.", "+10"],
+        ["Stand up, Yusuke.", "0"]
+      ],
+      [
+        ["How exactly?", "+5"],
+        ["That's the spirit.", "+5"],
+      ],
+      [
+        ["That's the spirit.", "+5"],
+        ["You're taking this too far.", "0"],
+        ["That's all?", "0"]
+      ],
+    ]
+  },
+  3: {
+    points: 15,
+    choices: [
+      [
+        ["What are we doing here?", "0"],
+        ["Why are we in a boat?", "+5"],
+        ["I should bring a girl here.", "+5"]
+      ],
+      [
+        ["Love comes in all forms.", "+10"],
+        ["Maybe you should train more.", "+5"],
+        ["You have a wild imagination.", "0"]
+      ],
+      [
+        ["Don't get discouraged.", "+5"],
+        ["Just keep drawing.", "0"],
+        ["You lack love yourself.", "0"]
+      ],
+    ]
+  },
+  4: {
+    points: 25,
+    choices: [
+      [
+        ["Make me beautiful.", "0"],
+        ["I dunno if I can do it...", "+5"],
+        ["Do you want me to strip?", "+10"]
+      ],
+      [
+        ["I'm sure you will.", "+10"],
+        ["It doesn't look like it.", "+10"],
+        ["Do you want to give up?", "+5"]
+      ],
+      [
+        ["Don't overthink it.", "0"],
+        ["You have to keep drawing.", "0"],
+        ["There's still hope.", "+5"]
+      ],
+    ]
+  },
+  5: {
+    points: 20,
+    choices: [
+      [
+        ["It feels nostalgic.", "+5"],
+        ["Why are we here again?", "0"],
+        ["Are you going in?", "0"]
+      ],
+      [
+        ["We should get it fixed.", "0"],
+        ["Let's force it open.", "0"],
+      ],
+      [
+        ["Are you okay?", "0"],
+        ["You're not looking so good.", "0"],
+      ],
+      [
+        ["Maybe he was sympathetic.", "+10"],
+        ["He somehow knew you had skill.", "+5"],
+        ["I couldn't possibly tell you.", "+10"]
+      ],
+      [
+        ["He had a certain dignity.", "+5"],
+        ["He seems reliable.", "0"],
+        ["I'm not sure.", "0"]
+      ],
+    ]
+  },
+  6: {
+    points: 26,
+    choices: [
+      [
+        ["That's a great name.", "0"],
+        ["What do you mean?", "+5"],
+        ["Handsome...?", "0"]
+      ],
+      [
+        ["The truth is within you.", "+10"],
+        ["Money is important.", "0"],
+      ],
+      [
+        ["Calm down.", "+5"],
+        ["It's not a crime to enjoy sushi.", "+5"],
+        ["Let's go again sometime.", "0"]
+      ],
+    ]
+  },
+  7: {
+    points: 22,
+    choices: [
+      [
+        ["Scenery is always nice.", "0"],
+        ["I'd say Morgana.", "0"],
+        ["It has to be Ann.", "+5"]
+      ],
+      [
+        ["What's wrong with that?", "+5"],
+        ["The same applies to everyone.", "0"],
+        ["You've really grown, Yusuke.", "+10"]
+      ],
+    ]
+  },
+  8: {
+    points: 35,
+    choices: [
+      [
+        ["Her love for her son.", "+10"],
+        ["The pain of separation.", "+10"],
+        ["I don't know.", "+5"]
+      ],
+      [
+        ["You've really changed, Yusuke.", "+10"],
+        ["That's a great idea.", "+5"],
+        ["It won't be easy.", "0"]
+      ],
+    ]
+  },
+  9: {
+    points: 0,
+    choices: [
+      [
+        ["It turned out well.", "0"],
+        ["So you added hope?", "0"],
+      ],
+      [
+        ["You provoked Yusuke on purpose?", "0"],
+        ["Are you scheming something?", "0"],
+      ],
+      [
+        ["\"He\"?", "0"],
+        ["Do you mean Madarame?", "0"],
+      ],
+      [
+        ["He was a good man deep down.", "+10"],
+        ["That was another aspect of him.", "+10"],
+      ],
+      [
+        ["Yeah...", "0"],
+        ["You're stranger, Yusuke.", "0"],
+        ["Are you sure about this?", "0"]
+      ],
+    ]
+  },
+};
+
 export const FaithChoices = {
   1: {
     points: 15,
