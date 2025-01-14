@@ -745,6 +745,190 @@ export const EmperorChoices = {
   },
 };
 
+export const HierophantChoices = {
+  1: {
+    points: 30,
+    choices: [
+      [
+        ["Making coffee.", "+5"],
+        ["Hitting on girls.", "0"],
+        ["No idea.", "0"]
+      ],
+      [
+        ["Who was he?", "0"],
+        ["That guy seemed suspicious.", "+5"],
+        ["Who's the \"her\" he mentioned?", "0"]
+      ],
+      [
+        ["I want the ladies to love me.", "+5"],
+        ["I don't care about that stuff.", "0"],
+      ],
+      [
+        ["Got it.", "+5"],
+        ["Give me a break.", "0"],
+        ["Why'd you call my cell?", "0"]
+      ],
+    ]
+  },
+  2: {
+    points: 40,
+    choices: [
+      [
+        ["Medium-fine.", "+5"],
+        ["Coarse.", "0"],
+        ["Anything goes.", "0"]
+      ],
+      [
+        ["Is it a date?", "0"],
+        ["Is it trouble?", "+5"],
+        ["You don't want my help anymore?", "0"]
+      ],
+      [
+        ["I'm ready to work.", "+5"],
+        ["Go easy on me.", "0"],
+        ["Thank you in advance.", "+5"]
+      ],
+    ]
+  },
+  3: {
+    points: 43,
+    choices: [
+      [
+        ["Tell me more.", "+10"],
+        ["That sounds tough...", "0"],
+        ["It all tastes the same to me.", "0"]
+      ],
+      [
+        ["Run for help", "0"],
+        ["Call Sojiro's phone", "+10"],
+        ["Kick the man out", "0"]
+      ],
+      [
+        ["Understood.", "+5"],
+        ["I'm kind of nervous...", "0"],
+        ["I'll kick him out.", "0"]
+      ],
+    ]
+  },
+  4: {
+    points: 20,
+    choices: [
+      [
+        ["It wasn't bad.", "+5"],
+        ["Nothing special.", "0"],
+        ["I think I'm addicted!", "+10"]
+      ],
+      [
+        ["Was she like Futaba?", "+5"],
+        ["She wasn't normal, huh?", "+10"],
+        ["So that's why you're a bachelor?", "0"]
+      ],
+      [
+        ["It really paid off in the end.", "+5"],
+        ["Almost brings a tear to my eye.", "0"],
+        ["So much history...", "0"]
+      ],
+      [
+        ["Sounds good to me.", "0"],
+        ["She needs a balanced diet.", "+5"],
+        ["There's always instant noodles.", "0"]
+      ],
+    ]
+  },
+  5: {
+    points: 20,
+    choices: [
+      [
+        ["I admire it.", "0"],
+        ["I'm not impressed.", "0"],
+        ["To each his own.", "+5"]
+      ],
+      [
+        ["You're wrong.", "+5"],
+        ["I'm sorry.", "0"],
+        ["Shut your mouth.", "+10"]
+      ],
+      [
+        ["Saving Futaba was no mistake.", "+5"],
+        ["Just cut your ties with him.", "0"],
+      ],
+      [
+        ["Is she okay?", "0"],
+        ["Try to relax.", "0"],
+        ["If I can help somehow...", "+5"]
+      ],
+    ]
+  },
+  6: {
+    points: 14,
+    choices: [
+      [
+        ["You might be right.", "+10"],
+        ["That's not true.", "0"],
+        ["They're still delicious.", "0"]
+      ],
+      [
+        ["Are you all right?", "0"],
+        ["Have you calmed down?", "0"],
+        ["Do you want to talk?", "0"]
+      ],
+      [
+        ["Let's talk to him.", "0"],
+        ["You should tell him that.", "0"],
+        ["You guys are one awkward duo.", "0"]
+      ],
+      [
+        ["I'm truly glad.", "0"],
+        ["You're welcome.", "0"],
+        ["Feel like a real dad now?", "+5"]
+      ],
+    ]
+  },
+  7: {
+    points: 0,
+    choices: [
+      [
+        ["You want my suggestion?", "+10"],
+        ["Something with curry.", "+15"],
+        ["I can't decide!", "0"]
+      ],
+      [
+        ["I didn't do anything wrong.", "0"],
+        ["I was just protecting Futaba.", "+5"],
+        ["I'm sorry.", "0"]
+      ],
+    ]
+  },
+  8: {
+    points: 40,
+    choices: [
+      [
+        ["It's great.", "+15"],
+        ["He's a bit of a nag.", "+10"],
+      ],
+      [
+        ["Are you crying?", "0"],
+        ["You have a great daughter.", "+15"],
+        ["Congrats.", "+15"]
+      ],
+      [
+        ["You did great.", "+10"],
+        ["Futaba did great.", "+10"],
+        ["You two were already family.", "+10"]
+      ],
+    ]
+  },
+  9: {
+    points: 0,
+    choices: [
+      [
+        ["Good for you.", "+10"],
+        ["Thank you.", "+15"],
+      ],
+    ]
+  },
+};
+
 export const FaithChoices = {
   1: {
     points: 15,
@@ -1443,6 +1627,8 @@ export const CouncillorChoices = {
 export const activityDetailsChoices = [
   { name: "Priestess", details: PriestessChoices },
   { name: "Empress", details: EmpressChoices },
+  { name: "Emperor", details: EmperorChoices },
+  { name: "Hierophant", details: HierophantChoices },
   { name: "Faith", details: FaithChoices },
   { name: "Councillor", details: CouncillorChoices },
 ];
