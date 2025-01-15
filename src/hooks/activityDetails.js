@@ -929,6 +929,207 @@ export const HierophantChoices = {
   },
 };
 
+export const ChariotChoices = {
+  1: {
+    points: 0,
+    choices: [
+      [
+        ["I'm counting on you.", "+15"],
+        ["You seem pretty excited.", "+10"],
+        ["...Help with what?", "+5"]
+      ],
+      [
+        ["What about them?", "0"],
+        ["And then you punched him?", "0"],
+      ],
+      [
+        ["Do you go want to go back?", "+5"],
+        ["Do you regret it?", "+5"],
+      ],
+      [
+        ["You're already fast enough.", "+5"],
+        ["Are your legs okay?", "+5"],
+        ["It's never too late, man.", "+5"]
+      ],
+    ]
+  },
+  2: {
+    points: 0,
+    choices: [
+      [
+        ["Let's not fight.", "+5"],
+        ["Want to train with us?", "0"],
+        ["It's nice to meet you.", "0"]
+      ],
+      [
+        ["Calm down, Ryuji.", "+10"],
+        ["Just endure it.", "+5"],
+        ["I'll shut them up.", "0"]
+      ],
+      [
+        ["I can't exactly blame you.", "+5"],
+        ["Violence is not the answer.", "0"],
+        ["Yeah, that'd be best.", "0"]
+      ],
+    ]
+  },
+  3: {
+    points: 0,
+    choices: [
+      [
+        ["Nakaoka?", "0"],
+        ["Are you worried about him?", "+5"],
+        ["Just leave him be.", "0"]
+      ],
+      [
+        ["But you're doing great.", "+15"],
+        ["It's not so bad.", "+5"],
+        ["I know how you feel.", "+10"]
+      ],
+    ]
+  },
+  4: {
+    points: 0,
+    choices: [
+      [
+        ["A towel?", "+5"],
+        ["Protein powder?", "+10"],
+      ],
+      [
+        ["You seem conflicted.", "+5"],
+        ["Do you want to rejoin?", "+5"],
+        ["You're done with them, right?", "0"]
+      ],
+      [
+        ["So he's short?", "+5"],
+        ["So he's an asshole?", "+10"],
+      ],
+      [
+        ["Don't worry. I gotcha.", "+5"],
+        ["I haven't agreed to anything.", "0"],
+        ["Fine, but you're buying ramen.", "0"]
+      ],
+    ]
+  },
+  5: {
+    points: 0,
+    choices: [
+      [
+        ["Let's stay here.", "+5"],
+        ["How about Protein Lovers?", "+5"],
+        ["We can train at my place.", "+10"]
+      ],
+      [
+        ["You guys should trust Nakaoka.", "+15"],
+        ["This is no time for arguing.", "+10"],
+      ],
+      [
+        ["Absolutely.", "+15"],
+        ["More or less.", "+10"],
+        ["Not in the slightest.", "0"]
+      ],
+      [
+        ["I don't get it.", "0"],
+        ["Can you explain that?", "0"],
+      ],
+      [
+        ["...Huh?", "0"],
+        ["I really don't understand.", "0"],
+      ],
+      [
+        ["Sounds like you two were close.", "0"],
+        ["Just like you.", "0"],
+        ["So he should've punched back?", "+5"]
+      ],
+    ]
+  },
+  6: {
+    points: 0,
+    choices: [
+      [
+        ["Should we change his heart?", "0"],
+        ["Let's talk to Takeishi.", "+10"],
+      ],
+      [
+        ["I think it's cool, Ryuji.", "+15"],
+        ["Wait, what?", "+5"],
+      ],
+      [
+        ["Never know until you try.", "+5"],
+        ["It's out of our hands.", "0"],
+        ["We'll use force if we have to.", "0"]
+      ],
+    ]
+  },
+  7: {
+    points: 0,
+    choices: [
+      [
+        ["What if they start fighting?", "0"],
+        ["I doubt they'll believe you.", "0"],
+      ],
+      [
+        ["Things turned out for the best.", "+15"],
+        ["You deserved it.", "+10"],
+      ],
+      [
+        ["All I did was watch.", "+10"],
+        ["Are you gonna pay me back?", "+5"],
+      ],
+      [
+        ["But I was just standing here...", "+5"],
+        ["You weren't cool though.", "+10"],
+      ],
+      [
+        ["You did a great job.", "0"],
+        ["So. Case closed?", "+5"],
+        ["We make a good team too.", "0"]
+      ],
+    ]
+  },
+  8: {
+    points: 0,
+    choices: [
+      [
+        ["Are you satisfied now?", "+10"],
+        ["Not running?", "+5"],
+      ],
+      [
+        ["What did you say?", "+5"],
+        ["Do you have any time for that?", "+5"],
+        ["Don't do it.", "+10"]
+      ],
+      [
+        ["You're right.", "+10"],
+        ["I never realized that.", "+15"],
+      ],
+      [
+        ["I agree.", "+5"],
+        ["Be more specific.", "0"],
+        ["And where is this place?", "0"]
+      ],
+      [
+        ["Congratulations.", "+5"],
+        ["Got him under control, how?", "0"],
+        ["Better watch out for them.", "+5"]
+      ],
+    ]
+  },
+  9: {
+    points: 0,
+    choices: [
+      [
+        ["I'm looking forward to it.", "+15"],
+        ["We can't lose either.", "+15"],
+      ],
+      [
+        ["You're welcome.", "0"],
+        ["It's all because of you.", "0"],
+      ],
+    ]
+  },
+};
+
 export const FaithChoices = {
   1: {
     points: 15,
@@ -1629,6 +1830,7 @@ export const activityDetailsChoices = [
   { name: "Empress", details: EmpressChoices },
   { name: "Emperor", details: EmperorChoices },
   { name: "Hierophant", details: HierophantChoices },
+  { name: "Chariot", details: ChariotChoices },
   { name: "Faith", details: FaithChoices },
   { name: "Councillor", details: CouncillorChoices },
 ];
