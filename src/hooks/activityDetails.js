@@ -931,7 +931,7 @@ export const HierophantChoices = {
 
 export const ChariotChoices = {
   1: {
-    points: 0,
+    points: 20,
     choices: [
       [
         ["I'm counting on you.", "+15"],
@@ -954,7 +954,7 @@ export const ChariotChoices = {
     ]
   },
   2: {
-    points: 0,
+    points: 30,
     choices: [
       [
         ["Let's not fight.", "+5"],
@@ -974,7 +974,7 @@ export const ChariotChoices = {
     ]
   },
   3: {
-    points: 0,
+    points: 20,
     choices: [
       [
         ["Nakaoka?", "0"],
@@ -989,7 +989,7 @@ export const ChariotChoices = {
     ]
   },
   4: {
-    points: 0,
+    points: 30,
     choices: [
       [
         ["A towel?", "+5"],
@@ -1012,7 +1012,7 @@ export const ChariotChoices = {
     ]
   },
   5: {
-    points: 0,
+    points: 45,
     choices: [
       [
         ["Let's stay here.", "+5"],
@@ -1044,7 +1044,7 @@ export const ChariotChoices = {
     ]
   },
   6: {
-    points: 0,
+    points: 45,
     choices: [
       [
         ["Should we change his heart?", "0"],
@@ -1062,7 +1062,7 @@ export const ChariotChoices = {
     ]
   },
   7: {
-    points: 0,
+    points: 60,
     choices: [
       [
         ["What if they start fighting?", "0"],
@@ -1088,7 +1088,7 @@ export const ChariotChoices = {
     ]
   },
   8: {
-    points: 0,
+    points: 60,
     choices: [
       [
         ["Are you satisfied now?", "+10"],
@@ -1125,6 +1125,252 @@ export const ChariotChoices = {
       [
         ["You're welcome.", "0"],
         ["It's all because of you.", "0"],
+      ],
+    ]
+  },
+};
+
+export const JusticeChoices = {
+  1: {
+    points: 0,
+    choices: [
+      [
+        ["You always seem so busy.", "+5"],
+        ["Do you have no friends?", "0"],
+      ],
+      [
+        ["Is that your win?", "0"],
+        ["Not bad.", "0"],
+      ],
+      [
+        ["Shoot very carefully.", "+5"],
+        ["I'll go for a power shot.", "+5"],
+      ],
+      [
+        ["You used your right hand.", "0"],
+        ["...Aren't you left-handed?", "0"],
+      ],
+      [
+        ["Maybe I'll be a detective.", "+5"],
+        ["No holding back next time.", "+5"],
+        ["I see a lot of things.", "+10"]
+      ],
+      [
+        ["Sure.", "0"],
+        ["I'll think about it.", "0"],
+        ["As rivals?", "+5"]
+      ],
+    ]
+  },
+  2: {
+    points: 23,
+    choices: [
+      [
+        ["Got a sweet tooth, huh?", "0"],
+        ["Come here often?", "0"],
+      ],
+      [
+        ["Should've figured.", "+10"],
+        ["Your life must be so hard.", "+5"],
+        ["I can shoo them away...", "0"]
+      ],
+      [
+        ["You've done nothing wrong.", "0"],
+        ["Why the rush?", "0"],
+      ],
+      [
+        ["How about we find out?", "0"],
+        ["Come here a sec.", "0"],
+      ],
+      [
+        ["You looked great.", "0"],
+        ["It was a necessary evil.", "0"],
+        ["I should've taken a picture...", "0"]
+      ],
+      [
+        ["That was careless, huh?", "0"],
+        ["Wasn't it fun?", "+5"],
+        ["I can always dress you up again.", "0"]
+      ],
+    ]
+  },
+  3: {
+    points: 40,
+    choices: [
+      [
+        ["What kind of place is this?", "0"],
+        ["This looks shady...", "0"],
+      ],
+      [
+        ["Do they have coffee?", "+5"],
+        ["But I'm underage.", "0"],
+        ["Now this is my kind of club.", "+10"]
+      ],
+      [
+        ["Any recommendations?", "+10"],
+        ["Anything's fine by me.", "+5"],
+        ["An ice-cold beer for me.", "0"]
+      ],
+      [
+        ["It's a great place.", "+5"],
+        ["I feel a bit nervous.", "0"],
+      ],
+      [
+        ["A run-down café.", "0"],
+        ["A shop with great coffee.", "0"],
+        ["I live there, actually.", "0"]
+      ],
+      [
+        ["Pretty frequently.", "+10"],
+        ["I can use a microwave...", "+10"],
+        ["All I need is curry.", "+5"]
+      ],
+      [
+        ["What are you talking about?", "0"],
+        ["I kinda get it.", "+5"],
+        ["You really are having fun.", "0"]
+      ],
+    ]
+  },
+  4: {
+    points: 0,
+    choices: [
+      [
+        ["All the time.", "0"],
+        ["I'm not great at them.", "0"],
+        ["Have you played any?", "0"]
+      ],
+      [
+        ["Are you used to gunplay?", "+5"],
+        ["You took that seriously, huh.", "0"],
+      ],
+      [
+        ["You wanted to be a hero?", "+10"],
+        ["Very interesting.", "+5"],
+        ["Hard to imagine.", "0"]
+      ],
+      [
+        ["Sticking to your justice.", "0"],
+        ["Doing what people want.", "0"],
+        ["Neither, really.", "0"]
+      ],
+      [
+        ["You did fine.", "+5"],
+        ["You've still got a long way to go.", "+5"],
+        ["You were getting cocky.", "+5"]
+      ],
+    ]
+  },
+  5: {
+    points: 0,
+    choices: [
+      [
+        ["So relaxing...", "+5"],
+        ["Seeing you here is weird.", "0"],
+        ["A while, huh?", "+10"]
+      ],
+      [
+        ["That was horrible of her.", "0"],
+        ["...You've been through a lot.", "+5"],
+      ],
+      [
+        ["This is nothing.", "+10"],
+        ["I'll stay until you're ready.", "+10"],
+        ["Are YOU okay?", "+5"]
+      ],
+      [
+        ["Same.", "+10"],
+        ["I'm just fine.", "0"],
+        ["Guess I win.", "+5"]
+      ],
+      [
+        ["Because we get along.", "+5"],
+        ["Because we're similar.", "+5"],
+      ],
+      [
+        ["I think you're right.", "+10"],
+        ["I don't know about that.", "0"],
+        ["Can I put my clothes on?", "+5"]
+      ],
+      [
+        ["True.", "0"],
+        ["They'd probably love it.", "0"],
+        ["My bad, I guess.", "+5"]
+      ],
+    ]
+  },
+  6: {
+    points: 0,
+    choices: [
+      [
+        ["Yeah, it's convoluted...", "0"],
+        ["That's why it's so fun.", "+10"],
+      ],
+      [
+        ["The psychotic breakdowns.", "0"],
+        ["What're you getting at?", "0"],
+      ],
+      [
+        ["I've made up my mind.", "0"],
+        ["I won't miss my shot.", "0"],
+      ],
+      [
+        ["It's thanks to you.", "0"],
+        ["I couldn't let myself lose.", "+10"],
+      ],
+      [
+        ["But we're teammates now.", "0"],
+        ["You want to join us?", "0"],
+      ],
+      [
+        ["I'll think about it.", "0"],
+        ["I'm not doing that.", "0"],
+        ["You're my rival.", "0"]
+      ],
+      [
+        ["Do I?", "0"],
+        ["I don't know.", "0"],
+        ["We're rivals, aren't we?", "+5"]
+      ],
+    ]
+  },
+  7: {
+    points: 0,
+    choices: [
+      [
+        ["What'd you want to discuss?", "0"],
+        ["Why are we in Mementos?", "0"],
+      ],
+      [
+        ["I thought you meant in pool.", "0"],
+        ["You want to fight?", "0"],
+        ["But why, though?", "0"]
+      ],
+      [
+        ["All right.", "0"],
+        ["Let's do this.", "0"],
+      ],
+      [
+        ["Are you satisfied?", "0"],
+        ["Was that all you've got?", "0"],
+        ["Do you want to keep going?", "0"]
+      ],
+      [
+        ["I'd say the same for you.", "0"],
+        ["The feeling's mutual.", "0"],
+      ],
+      [
+        ["I definitely wouldn't lose.", "+10"],
+        ["I don't know.", "0"],
+        ["Probably.", "0"]
+      ],
+      [
+        ["Same here.", "+5"],
+        ["Really hate losing, don't you?", "+10"],
+      ],
+      [
+        ["I accept.", "0"],
+        ["Let me think about it.", "0"],
       ],
     ]
   },
@@ -1831,6 +2077,7 @@ export const activityDetailsChoices = [
   { name: "Emperor", details: EmperorChoices },
   { name: "Hierophant", details: HierophantChoices },
   { name: "Chariot", details: ChariotChoices },
+  { name: "Justice", details: JusticeChoices },
   { name: "Faith", details: FaithChoices },
   { name: "Councillor", details: CouncillorChoices },
 ];
