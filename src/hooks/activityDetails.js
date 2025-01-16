@@ -1376,6 +1376,255 @@ export const JusticeChoices = {
   },
 };
 
+export const HangedChoices = {
+  1: {
+    points: 5,
+    choices: [
+      [
+        ["Maybe I should call him.", "0 (SKIPS PROMPT 2 AND 3)"],
+        ["Iwai seems sick.", "0"],
+      ],
+      [
+        ["That's probably the signal.", "0 (SKIPS PROMPT 3)"],
+        ["Iwai seems... really sick.", "0"],
+      ],
+      [
+        ["Yeah, I really need to call him.", "0"],
+        ["I guess I should call him...", "0"],
+      ],
+      [
+        ["Nothing in particular.", "0"],
+        ["I was daydreaming, sorry.", "0"],
+      ],
+      [
+        ["Who was that guy?", "0"],
+        ["What should I do now?", "+5"],
+        ["How's your cold?", "+5"]
+      ],
+    ]
+  },
+  2: {
+    points: 15,
+    choices: [
+      [
+        ["I know how that feels.", "0"],
+        ["Is it seriously that hard?", "0"],
+      ],
+      [
+        ["I always knew you were a thug.", "+10"],
+        ["Oh. I, uh... have to go.", "0"],
+        ["Y-Yakuza!?", "+5"]
+      ],
+      [
+        ["Not really.", "0"],
+        ["No, I like that stuff.", "0"],
+        ["We made a deal, didn't we?", "+10"]
+      ],
+      [
+        ["Is that one of your customers?", "0"],
+        ["Why are you being so mean?", "0"],
+      ],
+    ]
+  },
+  3: {
+    points: 25,
+    choices: [
+      [
+        ["Iwai.", "0"],
+        ["I can't tell you.", "0"],
+        ["It's none of your business.", "0"]
+      ],
+      [
+        ["What was that about?", "0"],
+        ["So that was Tsuda?", "0"],
+        ["What did he mean, \"sell\" him?", "0"]
+      ],
+      [
+        ["The Hong Kong mafia.", "0"],
+        ["A 100 million yen deal.", "0"],
+      ],
+      [
+        ["Give it your all.", "0"],
+        ["You two should play nice.", "+5"],
+        ["Where's my reward?", "+10"]
+      ],
+      [
+        ["I agree.", "+5"],
+        ["Is that a threat?", "0"],
+        ["What's the issue?", "0"]
+      ],
+    ]
+  },
+  4: {
+    points: 40,
+    choices: [
+      [
+        ["Why not?", "0"],
+        ["You shouldn't lie to your son.", "0"],
+      ],
+      [
+        ["You're so kind, Iwai.", "0"],
+        ["You're pathetic.", "+10"],
+        ["You should call the cops.", "0"]
+      ],
+      [
+        ["That's right.", "+5"],
+        ["Don't make assumptions.", "0"],
+        ["I'll stick around for the guns.", "+10"]
+      ],
+      [
+        ["You're right.", "+5"],
+        ["Is it really all for Kaoru?", "0"],
+        ["Well, you got this.", "0"]
+      ],
+    ]
+  },
+  5: {
+    points: 40,
+    choices: [
+      [
+        ["Why would he say that?", "0"],
+        ["No, nothing even close.", "0"],
+      ],
+      [
+        ["He definitely does.", "0"],
+        ["You should ask him.", "0"],
+      ],
+      [
+        ["Our futures.", "+5"],
+        ["Girls.", "+10"],
+        ["That's a secret.", "+10"]
+      ],
+      [
+        ["Right.", "+5"],
+        ["You should tell him, Iwai.", "0"],
+        ["You should buy us something.", "+10"]
+      ],
+      [
+        ["He's my age, so it comes easier.", "+5"],
+        ["All I did was listen to him.", "+5"],
+        ["It's part of the job.", "0"]
+      ],
+    ]
+  },
+  6: {
+    points: 0,
+    choices: [
+      [
+        ["Not at all.", "0"],
+        ["Absolutely.", "+10"],
+        ["I guess he likes guns?", "+5"]
+      ],
+      [
+        ["That's horrible.", "0"],
+        ["He's clever.", "+10"],
+        ["What a crafty bastard.", "+5"]
+      ],
+      [
+        ["Is Tsuda seriously dangerous?", "0"],
+        ["Are you going alone?", "0"],
+      ],
+      [
+        ["Bring it on.", "+5"],
+        ["I'm worried...", "0"],
+        ["So what's our first move?", "0"]
+      ],
+    ]
+  },
+  7: {
+    points: 25,
+    choices: [
+      [
+        ["It most definitely was.", "+5"],
+        ["I did it all for Iwai.", "+10"],
+        ["Actually, it's been fun.", "0"]
+      ],
+      [
+        ["I will.", "+5"],
+        ["I want to help you.", "+5"],
+        ["I can't.", "0"]
+      ],
+      [
+        ["What's his full name?", "0"],
+        ["Tell me his name.", "0"],
+      ],
+      [
+        ["COMPLETE \"Shady Deal in the Shadows\"", "0"],
+      ],
+      [
+        ["It's not impossible.", "0"],
+        ["I dunno.", "+5"],
+        ["He's matured.", "0"]
+      ],
+      [
+        ["I'm back, baby.", "+5"],
+        ["I guess I could consider it.", "+10"],
+        ["If you pay me well.", "+10"]
+      ],
+      [
+        ["Understood.", "+5"],
+        ["You worry too much.", "0"],
+        ["Now let's catch him off-guard.", "0"]
+      ],
+    ]
+  },
+  8: {
+    points: 40,
+    choices: [
+      [
+        ["That's great news.", "+5"],
+        ["I feel bad for him.", "0"],
+        ["Are you sure he's still alive?", "+10"]
+      ],
+      [
+        ["Who's Masa?", "0"],
+        ["Will Kaoru be okay?", "0"],
+      ],
+      [
+        ["We should hurry.", "0"],
+        ["Let's close up shop.", "0"],
+      ],
+      [
+        ["What's your goal here, Masa?", "0"],
+        ["Cut the bullshit.", "0"],
+      ],
+      [
+        ["Tell him the truth.", "+10"],
+        ["You need to trust your son.", "+10"],
+      ],
+      [
+        ["Kaoru is really strong-willed.", "+15"],
+        ["He gets that maturity from you.", "+5"],
+        ["He's a cool kid, huh?", "+10"]
+      ],
+      [
+        ["Like father, like son.", "+5"],
+        ["Gecko bonds go beyond blood.", "+5"],
+        ["Why not newts?", "0"]
+      ],
+    ]
+  },
+  9: {
+    points: 0,
+    choices: [
+      [
+        ["It's up to you now, Iwai.", "+15"],
+        ["Kaoru won't lose.", "+10"],
+        ["Iwai's kind of slow.", "0"]
+      ],
+      [
+        ["I couldn't leave him.", "0"],
+        ["It was for the special menu.", "0"],
+      ],
+      [
+        ["It's a coincidence.", "0"],
+        ["Should we close up?", "0"],
+        ["What if you're right?", "+5"]
+      ],
+    ]
+  },
+};
+
 export const FaithChoices = {
   1: {
     points: 15,
@@ -2078,6 +2327,7 @@ export const activityDetailsChoices = [
   { name: "Hierophant", details: HierophantChoices },
   { name: "Chariot", details: ChariotChoices },
   { name: "Justice", details: JusticeChoices },
+  { name: "Hanged Man", details: HangedChoices },
   { name: "Faith", details: FaithChoices },
   { name: "Councillor", details: CouncillorChoices },
 ];
