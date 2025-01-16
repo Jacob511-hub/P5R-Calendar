@@ -1625,6 +1625,181 @@ export const HangedChoices = {
   },
 };
 
+export const SunChoices = {
+  1: {
+    points: 0,
+    choices: [
+      [
+        ["I want to change the world.", "0"],
+        ["I want to improve my speech.", "+5"],
+        ["I'm not sure...", "0"]
+      ],
+      [
+        ["One with conviction.", "+5"],
+        ["A popular one.", "0"],
+        ["I don't know yet.", "+5"]
+      ],
+      [
+        ["That was helpful.", "+5"],
+        ["I knew that already.", "0"],
+        ["What I want to accomplish?", "0"]
+      ],
+      [
+        ["It was helpful.", "+5"],
+        ["Somewhat.", "+5"],
+        ["It changed my whole outlook.", "+5"]
+      ],
+    ]
+  },
+  2: {
+    points: 0,
+    choices: [
+      [
+        ["Yes, Mr. Yoshida told me.", "0"],
+        ["No, and I don't care.", "0"],
+      ],
+      [
+        ["His message.", "+5"],
+        ["His speaking skills.", "+5"],
+        ["It's hard to say.", "0"]
+      ],
+      [
+        ["I will.", "0"],
+        ["I'm not sure I get it.", "0"],
+        ["You think I'll ever find it?", "+5"]
+      ],
+    ]
+  },
+  3: {
+    points: 0,
+    choices: [
+      [
+        ["Stop interrupting him.", "0"],
+        ["You're annoying the audience.", "0"],
+        ["Just shut up and listen.", "0"]
+      ],
+      [
+        ["Yep.", "0"],
+        ["What do you think?", "0"],
+      ],
+      [
+        ["The ex-convict has a point.", "0"],
+        ["Listen to what he has to say.", "0"],
+        ["So what if he's No-Good Tora?", "0"]
+      ],
+      [
+        ["I couldn't help myself.", "+5"],
+        ["I just spoke the truth.", "0"],
+      ],
+      [
+        ["I will.", "+5"],
+        ["I'm not sure if I can.", "0"],
+        ["Can't forget your roots.", "+5"]
+      ],
+    ]
+  },
+  4: {
+    points: 0,
+    choices: [
+      [
+        ["I think so.", "+5"],
+        ["Don't let your guard down.", "0"],
+        ["The media doesn't matter.", "+10"]
+      ],
+    ]
+  },
+  5: {
+    points: 0,
+    choices: [
+      [
+        ["I'm for them.", "+5"],
+        ["I'm against them.", "0"],
+        ["I don't really care.", "+10"]
+      ],
+      [
+        ["I'd decline.", "+10"],
+        ["I'd take the offer.", "0"],
+        ["I'd leave it to chance.", "+5"]
+      ],
+      [
+        ["I'll keep that in mind.", "+5"],
+        ["Lose sight of who I am?", "0"],
+        ["You make quite a case.", "+5"]
+      ],
+    ]
+  },
+  6: {
+    points: 0,
+    choices: [
+      [
+        ["You should decline.", "+5"],
+        ["That's a sweet deal.", "0"],
+        ["I wasn't paying attention.", "0"]
+      ],
+      [
+        ["He's not No-Good Tora.", "0"],
+        ["Call him Mr. Yoshida.", "0"],
+        ["He'll get elected this time.", "0"]
+      ],
+      [
+        ["That's not for you to decide.", "0"],
+        ["Maybe...", "0"],
+        ["I still believe in him.", "0"]
+      ],
+    ]
+  },
+  7: {
+    points: 0,
+    choices: [
+      [
+        ["Are you going to do it?", "0"],
+        ["Don't do it.", "0"],
+        ["That's a difficult decision.", "+5"]
+      ],
+      [
+        ["Stick to your beliefs.", "+10"],
+        ["Clear your name.", "0"],
+        ["Get elected.", "0"]
+      ],
+      [
+        ["What good would that do?", "0"],
+        ["So what if you're right?", "0"],
+        ["......", "0"]
+      ],
+      [
+        ["I'll never forget that.", "+5"],
+        ["It's tougher than it seems.", "+5"],
+        ["......", "0"]
+      ],
+    ]
+  },
+  8: {
+    points: 0,
+    choices: [
+      [
+        ["Do your best.", "+10"],
+        ["Break a leg.", "0"],
+        ["I'm getting nervous.", "+5"]
+      ],
+      [
+        ["What are you talking about?", "0"],
+        ["You had a change of heart.", "+5"],
+        ["......", "0"]
+      ],
+    ]
+  },
+  9: {
+    points: 0,
+    choices: [
+      [
+        ["Your true self was revealed.", "+15"],
+        ["You're going to be popular.", "+5"],
+        ["Don't let your guard down.", "+10"]
+      ],
+    ]
+  },
+};
+
 export const FaithChoices = {
   1: {
     points: 15,
@@ -2328,6 +2503,7 @@ export const activityDetailsChoices = [
   { name: "Chariot", details: ChariotChoices },
   { name: "Justice", details: JusticeChoices },
   { name: "Hanged Man", details: HangedChoices },
+  { name: "Sun", details: SunChoices },
   { name: "Faith", details: FaithChoices },
   { name: "Councillor", details: CouncillorChoices },
 ];
