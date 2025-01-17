@@ -1625,6 +1625,214 @@ export const HangedChoices = {
   },
 };
 
+export const TowerChoices = {
+  1: {
+    points: 0,
+    choices: [
+      [
+        ["Sorry...", "+5"],
+        ["Don't compare me to you.", "+10"],
+        ["Praise would be encouraging.", "0"]
+      ],
+      [
+        ["Let's go.", "0"],
+        ["What a rude employee.", "+5"],
+        ["Something bothering you?", "0"]
+      ],
+      [
+        ["Are they strong?", "0"],
+        ["Do you admire them?", "+5"],
+      ],
+      [
+        ["So do I.", "+10"],
+        ["They're more than strong.", "0"],
+        ["I'll let them know.", "+10"]
+      ],
+      [
+        ["I'll work hard.", "+5"],
+        ["If I feel like it.", "0"],
+        ["So then I can beat you?", "+5"]
+      ],
+    ]
+  },
+  2: {
+    points: 11,
+    choices: [
+      [
+        ["Are they bullying you?", "0"],
+        ["Sounds like fun.", "0"],
+        ["You shouldn't waste food.", "0"]
+      ],
+      [
+        ["That's the spirit.", "+5"],
+        ["Want to learn martial arts?", "0"],
+        ["You really love your mom.", "0"]
+      ],
+      [
+        ["Sure.", "+5"],
+        ["If our schedules line up.", "0"],
+        ["Any food requests?", "0"]
+      ],
+    ]
+  },
+  3: {
+    points: 14,
+    choices: [
+      [
+        ["Calm down.", "0"],
+        ["You're being a sore loser.", "0"],
+        ["Yeah, you tell him!", "+5"]
+      ],
+      [
+        ["Don't get so worked up.", "0"],
+        ["Get your revenge.", "+5"],
+        ["Pros are amazing, huh?", "0"]
+      ],
+    ]
+  },
+  4: {
+    points: 20,
+    choices: [
+      [
+        ["It was pretty weird.", "+10"],
+        ["It happens.", "0"],
+        ["He must've rigged it.", "+10"]
+      ],
+      [
+        ["You think you have a chance?", "0"],
+        ["I'm sure you can do it.", "+5"],
+        ["Don't get so worked up.", "0"]
+      ],
+      [
+        ["Are you going to give up?", "+5"],
+        ["You need a new strategy.", "+10"],
+      ],
+      [
+        ["I'll be cheering you on.", "+5"],
+        ["You're a sharp kid.", "0"],
+        ["Think you can take him?", "+5"]
+      ],
+    ]
+  },
+  5: {
+    points: 25,
+    choices: [
+      [
+        ["I can pay for myself.", "0"],
+        ["If you insist.", "0"],
+        ["Do you have enough?", "0"]
+      ],
+      [
+        ["You should return the money.", "0"],
+        ["You're acting like one.", "0"],
+      ],
+      [
+        ["That's good.", "+5"],
+        ["I believe in you.", "+10"],
+      ],
+      [
+        ["A little bit.", "0"],
+        ["Not at all.", "+10"],
+        ["I'm worried about you.", "0"]
+      ],
+      [
+        ["Of course I won't.", "+5"],
+        ["That's up to you.", "0"],
+        ["I'm your big brother, right?", "0"]
+      ],
+    ]
+  },
+  6: {
+    points: 0,
+    choices: [
+      [
+        ["I haven't done anything.", "0"],
+        ["Calm down.", "0"],
+        ["Bad influence?", "0"]
+      ],
+      [
+        ["Take it easy on him.", "0"],
+        ["Think about his feelings.", "0"],
+      ],
+      [
+        ["Bring it on, lady.", "0"],
+        ["I haven't done anything.", "0"],
+        ["That wouldn't be good.", "0"]
+      ],
+      [
+        ["What's your mom's name?", "0"],
+        ["Tell me about your mom.", "0"],
+      ],
+    ]
+  },
+  7: {
+    points: 0,
+    choices: [
+      [
+        ["She's out of control.", "0"],
+        ["No, she's not.", "+5"],
+        ["Is that what you think?", "+5"]
+      ],
+      [
+        ["It'll all work out.", "+5"],
+        ["I can't guarantee it.", "0"],
+        ["Believe in them.", "+10"]
+      ],
+      [
+        ["Is it too much for you?", "0"],
+        ["Way to step up.", "0"],
+      ],
+      [
+        ["Let's save her.", "+10"],
+        ["That's admirable.", "+10"],
+      ],
+    ]
+  },
+  8: {
+    points: 30,
+    choices: [
+      [
+        ["I'm glad to hear that.", "+10"],
+        ["That's hard to believe.", "0"],
+        ["Thank the Phantom Thieves.", "+5"]
+      ],
+      [
+        ["A little bit, yeah.", "+5"],
+        ["No, that makes sense.", "+10"],
+        ["It means you've matured.", "+15"]
+      ],
+      [
+        ["He wants to win at all costs.", "+5"],
+        ["He's too lazy to practice.", "0"],
+        ["I wouldn't know...", "0"]
+      ],
+      [
+        ["Your wish came true.", "+5"],
+        ["You really think it was them?", "+5"],
+        ["You did a great job too.", "+5"]
+      ],
+    ]
+  },
+  9: {
+    points: 0,
+    choices: [
+      [
+        ["Thanks to my hard work.", "+5"],
+        ["Thanks to my teacher.", "+10"],
+      ],
+      [
+        ["You got your revenge.", "0"],
+        ["You made things right.", "+5"],
+        ["You made new friends.", "+10"]
+      ],
+      [
+        ["I'll let you in.", "0"],
+        ["Ask them yourself.", "0"],
+      ],
+    ]
+  },
+};
+
 export const SunChoices = {
   1: {
     points: 0,
@@ -2503,6 +2711,7 @@ export const activityDetailsChoices = [
   { name: "Chariot", details: ChariotChoices },
   { name: "Justice", details: JusticeChoices },
   { name: "Hanged Man", details: HangedChoices },
+  { name: "Tower", details: TowerChoices },
   { name: "Sun", details: SunChoices },
   { name: "Faith", details: FaithChoices },
   { name: "Councillor", details: CouncillorChoices },
