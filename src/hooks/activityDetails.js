@@ -1833,6 +1833,220 @@ export const TowerChoices = {
   },
 };
 
+export const StarChoices = {
+  1: {
+    points: 0,
+    choices: [
+      [
+        ["That's interesting.", "+5"],
+        ["I like the attitude change.", "0"],
+        ["It's a bit scary.", "0"]
+      ],
+      [
+        ["Have confidence in yourself.", "0"],
+        ["Don't worry about them.", "0"],
+      ],
+      [
+        ["When is it coming out?", "0"],
+        ["You're, like, an idol.", "0"],
+        ["But you don't want to, right?", "+5"]
+      ],
+    ]
+  },
+  2: {
+    points: 10,
+    choices: [
+      [
+        ["Describes you perfectly.", "+5"],
+        ["No, I didn't.", "0"],
+        ["That's quite the headline.", "0"]
+      ],
+      [
+        ["You don't enjoy it?", "0"],
+        ["Having a difficult time?", "+5"],
+        ["You should just decline.", "0"]
+      ],
+      [
+        ["Bring it on.", "+5"],
+        ["Don't worry about it.", "0"],
+        ["This is part of our deal too.", "0"]
+      ],
+    ]
+  },
+  3: {
+    points: 14,
+    choices: [
+      [
+        ["I didn't mind.", "+5"],
+        ["She has a bad vibe.", "0"],
+        ["Must've been the katsu curry.", "+5"]
+      ],
+      [
+        ["They're ridiculous.", "0"],
+        ["They're cool.", "+5"],
+        ["Never heard of them.", "0"]
+      ],
+      [
+        ["I'd love to.", "+5"],
+        ["If our schedules match up.", "0"],
+        ["Where shall we go next?", "+5"]
+      ],
+    ]
+  },
+  4: {
+    points: 14,
+    choices: [
+      [
+        ["You're not allowed to date?", "0"],
+        ["She's scary.", "+5"],
+        ["Accomplish things?", "0"]
+      ],
+      [
+        ["You don't like the attention?", "0"],
+        ["You should stop then.", "+5"],
+        ["Have you told your mother?", "0"]
+      ],
+      [
+        ["No worries.", "0"],
+        ["You've got a lot to deal with...", "+5"],
+        ["Why do you have to apologize?", "0"]
+      ],
+    ]
+  },
+  5: {
+    points: 22,
+    choices: [
+      [
+        ["You'll be famous.", "0"],
+        ["Is that frustrating?", "+5"],
+        ["The media is scary.", "0"]
+      ],
+      [
+        ["Do you still like shogi?", "+5"],
+        ["Is that what you want to do?", "0"],
+        ["Do what you love.", "+5"]
+      ],
+      [
+        ["You think so?", "0"],
+        ["You're imagining things.", "+5"],
+        ["Confess your sins, my child.", "0"]
+      ],
+    ]
+  },
+  6: {
+    points: 0,
+    choices: [
+      [
+        ["That's almost a relief.", "+5"],
+        ["Don't let your guard down.", "0"],
+        ["It may come down to luck.", "+10"]
+      ],
+      [
+        ["Give it your all.", "+5"],
+        ["I believe in you.", "+10"],
+        ["Idols are cool too.", "0"]
+      ],
+    ]
+  },
+  7: {
+    points: 30,
+    choices: [
+      [
+        ["What do you mean?", "0"],
+        ["I don't understand.", "0"],
+      ],
+      [
+        ["That won't work.", "+5"],
+        ["That's a great strategy.", "0"],
+        ["Do you intend to lose?", "0"]
+      ],
+      [
+        ["Let's make her reconsider.", "0"],
+        ["Let's do something about it.", "0"],
+      ],
+      [
+        ["What's your mother's name?", "0"],
+        ["Tell me her name.", "0"],
+      ],
+      [
+        ["COMPLETE \"Upstaging the Stage Mother\"", "0"],
+      ],
+      [
+        ["Maybe...", "+5"],
+        ["You're overthinking it.", "0"],
+        ["I'm glad her heart changed.", "+10"]
+      ],
+      [
+        ["Lose what?", "0"],
+        ["What're you talking about?", "0"],
+      ],
+      [
+        ["I support it.", "+5"],
+        ["You should really rethink this.", "0"],
+        ["It's certainly admirable...", "0"]
+      ],
+    ]
+  },
+  8: {
+    points: 30,
+    choices: [
+      [
+        ["Give it all you got.", "+5"],
+        ["Do you feel confident?", "0"],
+        ["You can do it.", "0"]
+      ],
+      [
+        ["It was a good effort.", "0"],
+        ["You'll win next time.", "0"],
+        ["A very queenly decision.", "+10"]
+      ],
+      [
+        ["I want to become stronger.", "0 (FRIENDS)"],
+        ["I want to stay by your side.", "0 (ROMANCE)"],
+      ],
+      [
+        ["(ROMANCE) I want us to date.", "0 (ROMANCE)"],
+        ["(ROMANCE) We'll be friends forever.", "0 (FRIENDS)"],
+      ],
+      [
+        ["(ROMANCE) Anything for you.", "+5"],
+        ["(ROMANCE) It was all a big coincidence.", "+5"],
+        ["(ROMANCE) It was love at first sight.", "+5"],
+        ["(FRIENDS) That's a great way to see it.", "+5"],
+        ["(FRIENDS) You're overthinking it.", "+5"],
+        ["(FRIENDS) Let's win the next one.", "+5"]
+      ],
+    ]
+  },
+  9: {
+    points: 0,
+    choices: [
+      [
+        ["That's rough.", "+5"],
+        ["You'll triumph in the end.", "+10"],
+        ["Just don't lose.", "+15"]
+      ],
+      [
+        ["You can do it.", "0"],
+        ["That's reassuring.", "0"],
+      ],
+      [
+        ["So you know.", "0"],
+        ["What do you mean?", "0"],
+        ["We do.", "0"]
+      ],
+      [
+        ["Thank you.", "0"],
+        ["That's reassuring.", "0"],
+      ],
+      [
+        ["(ROMANCE) What's wrong?", "0"],
+        ["(ROMANCE) Are you nervous?", "0"],
+      ],
+    ]
+  },
+};
+
 export const SunChoices = {
   1: {
     points: 0,
@@ -2712,6 +2926,7 @@ export const activityDetailsChoices = [
   { name: "Justice", details: JusticeChoices },
   { name: "Hanged Man", details: HangedChoices },
   { name: "Tower", details: TowerChoices },
+  { name: "Star", details: StarChoices },
   { name: "Sun", details: SunChoices },
   { name: "Faith", details: FaithChoices },
   { name: "Councillor", details: CouncillorChoices },
