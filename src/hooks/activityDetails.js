@@ -2047,6 +2047,262 @@ export const StarChoices = {
   },
 };
 
+export const MoonChoices = {
+  1: {
+    points: 0,
+    choices: [
+      [
+        ["I don't understand.", "0"],
+        ["...Phan-Site?", "0"],
+      ],
+      [
+        ["You've done good, kid.", "+15"],
+        ["That sounds pretty tough.", "0"],
+        ["Is this really necessary?", "0"]
+      ],
+      [
+        ["Uh, strategic... what?", "0"],
+        ["Sounds cool.", "+10"],
+        ["You're really hyped for this.", "+5"]
+      ],
+      [
+        ["Nice hustle, image manager.", "+5"],
+        ["Calm down.", "0"],
+        ["All-nighters can mess you up.", "0"]
+      ],
+    ]
+  },
+  2: {
+    points: 0,
+    choices: [
+      [
+        ["I've never heard that before.", "0"],
+        ["Great idea.", "+10"],
+        ["I'm already taken.", "+5"]
+      ],
+      [
+        ["I'm worried about this...", "0"],
+        ["We're part of... the Phandom?", "+5"],
+        ["Let's tell them the truth.", "+5"]
+      ],
+      [
+        ["It's not your fault.", "+5"],
+        ["Don't overwork yourself.", "0"],
+        ["I can't trust anyone anymore...", "0"]
+      ],
+      [
+        ["Of course.", "+5"],
+        ["Really?", "+5"],
+        ["You'll get it right next time.", "+5"]
+      ],
+    ]
+  },
+  3: {
+    points: 0,
+    choices: [
+      [
+        ["Steak sounds good.", "+10"],
+        ["Some nice organic veggies.", "0"],
+        ["I love desserts.", "+5"]
+      ],
+      [
+        ["You're amazing.", "+5"],
+        ["That sounds like a scam.", "0"],
+        ["Stop this at once.", "0"]
+      ],
+      [
+        ["You're right.", "0"],
+        ["Of course it would.", "0"],
+        ["Maybe we can keep it...", "0"]
+      ],
+      [
+        ["Yup.", "+5"],
+        ["That's one way to view it.", "0"],
+        ["You'll get better ideas.", "+5"]
+      ],
+    ]
+  },
+  4: {
+    points: 0,
+    choices: [
+      [
+        ["Why was it so expensive?", "+5"],
+        ["It looks almost real.", "0"],
+        ["Is it for me?", "+10"]
+      ],
+      [
+        ["That's a good idea.", "+5"],
+        ["Are you sure that's necessary?", "0"],
+        ["Don't do anything stupid.", "0"]
+      ],
+      [
+        ["All right.", "+5"],
+        ["I expect great things.", "0"],
+        ["...Did something happen?", "0"]
+      ],
+    ]
+  },
+  5: {
+    points: 0,
+    choices: [
+      [
+        ["Just tell me already.", "+5"],
+        ["I'm not interested.", "0"],
+        ["You sure are fired up...", "+5"]
+      ],
+      [
+        ["Calm yourself.", "0"],
+        ["Rumors are wrong all the time...", "+5"],
+        ["It's none of our business.", "+5"]
+      ],
+      [
+        ["Why?", "0"],
+        ["I didn't ask for that.", "0"],
+      ],
+      [
+        ["Is that right...?", "0"],
+        ["Absolutely. Nice job.", "+5"],
+      ],
+    ]
+  },
+  6: {
+    points: 0,
+    choices: [
+      [
+        ["And what exactly will we win?", "+5"],
+        ["You're so reliable.", "+15"],
+        ["Chill out, dude.", "0"]
+      ],
+      [
+        ["Sounds pretty twisted.", "+5"],
+        ["By changing their hearts?", "0"],
+        ["You really need to chill.", "+5"]
+      ],
+      [
+        ["Fun...?", "0"],
+        ["This isn't like you.", "0"],
+        ["You're worrying me.", "0"]
+      ],
+      [
+        ["We very well might.", "0"],
+        ["Are you feeling guilty?", "0"],
+      ],
+      [
+        ["Let's go.", "0"],
+        ["This is the only way...", "0"],
+      ],
+      [
+        ["You're riding our coattails.", "0"],
+        ["Would that really satisfy you?", "0"],
+      ],
+      [
+        ["Do it yourself.", "0"],
+        ["We're leaving.", "0"],
+        ["There's no need.", "0"]
+      ],
+      
+      [
+        ["(REQUIRES ANOTHER HANGOUT)", "0"],
+      ],
+      [
+        ["I don't wanna change his heart.", "0"],
+        ["Let's cancel the request.", "0"],
+      ],
+      [
+        ["Stop worrying about fame.", "0"],
+        ["You still care about fame?", "0"],
+      ],
+      [
+        ["I'm sure there is.", "+5"],
+        ["I hope so.", "0"],
+        ["Maybe the Phan-Site?", "+10"]
+      ],
+      [
+        ["Kind of worrying...", "+5"],
+        ["Be careful.", "0"],
+        ["It's your time to shine.", "+5"]
+      ],
+    ]
+  },
+  7: {
+    points: 0,
+    choices: [
+      [
+        ["I'm not leaving.", "+10"],
+        ["You should run too.", "+5"],
+        ["What are you going to do?", "0"]
+      ],
+      [
+        ["You're just gonna take that?", "+5"],
+        ["Believe in yourself.", "+5"],
+        ["They're the real losers.", "+5"]
+      ],
+      [
+        ["Totally.", "+5"],
+        ["You were super cool.", "+15"],
+        ["Wait, that was all an act?", "+10"]
+      ],
+      [
+        ["You'll be fine.", "+5"],
+        ["Calm down.", "0"],
+        ["You've got this, man.", "+5"]
+      ],
+    ]
+  },
+  8: {
+    points: 0,
+    choices: [
+      [
+        ["Yup, dead as a doornail.", "0"],
+        ["You showed some real courage.", "+10"],
+        ["I'm glad you're still alive.", "+5"]
+      ],
+      [
+        ["Something like that.", "0"],
+        ["Exactly.", "0"],
+      ],
+      [
+        ["Don't use our real names.", "0"],
+        ["This came out of nowhere.", "0"],
+        ["I can't wait to watch it.", "0"]
+      ],
+      [
+        ["Meh.", "0"],
+        ["What about a parfait instead?", "0"],
+        ["I'm feeling steak, actually.", "0"]
+      ],
+      [
+        ["The sparkle in your eyes.", "+5"],
+        ["......", "0"],
+        ["Your hair?", "0"]
+      ],
+    ]
+  },
+  9: {
+    points: 0,
+    choices: [
+      [
+        ["Did you find your answer?", "0"],
+        ["Were you scared stiff?", "0"],
+      ],
+      [
+        ["That was courageous.", "+15"],
+        ["But you were afraid.", "+5"],
+      ],
+      [
+        ["I didn't do anything.", "0"],
+        ["Nobody stole your heart.", "0"],
+        ["You changed yourself.", "0"]
+      ],
+      [
+        ["I'm sure you will.", "0"],
+        ["Make it a bestseller.", "0"],
+        ["You have to write it first.", "0"]
+      ],
+    ]
+  },
+};
+
 export const SunChoices = {
   1: {
     points: 0,
@@ -2927,6 +3183,7 @@ export const activityDetailsChoices = [
   { name: "Hanged Man", details: HangedChoices },
   { name: "Tower", details: TowerChoices },
   { name: "Star", details: StarChoices },
+  { name: "Moon", details: MoonChoices },
   { name: "Sun", details: SunChoices },
   { name: "Faith", details: FaithChoices },
   { name: "Councillor", details: CouncillorChoices },
