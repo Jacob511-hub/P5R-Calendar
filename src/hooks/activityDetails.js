@@ -1130,6 +1130,301 @@ export const ChariotChoices = {
   },
 };
 
+export const LoversChoices = {
+  1: {
+    points: 35,
+    choices: [
+      [
+        ["Are you feeling better now?", "+10"],
+        ["She's so strong.", "+15"],
+        ["So are you friends again?", "+5"],
+      ],
+      [
+        ["You can't blame yourself.", "+5"],
+        ["You might be right.", "+10"],
+        ["Kamoshida had the upper hand.", "+5"],
+      ],
+      [
+        ["It was no big deal.", "+5"],
+        ["I couldn't just ignore you.", "+10"],
+      ],
+      [
+        ["I'll help.", "+15"],
+        ["Let's find it together.", "+15"],
+      ],
+      [
+        ["Of course. You're my teammate.", "+5"],
+        ["Leave it to me.", "+5"],
+        ["The no-refills thing again?", "+5"],
+      ],
+    ]
+  },
+  2: {
+    points: 25,
+    choices: [
+      [
+        ["How's that?", "0"],
+        ["You're amazing.", "0"],
+      ],
+      [
+        ["What kind of stuff...?", "0"],
+        ["That's your training...?", "0"],
+        ["I don't get it...", "0"],
+      ],
+      [
+        ["You're stupid.", "0"],
+        ["You're an airhead.", "0"],
+        ["You're... unique.", "0"],
+      ],
+      [
+        ["You're a hard worker.", "0"],
+        ["That response was annoying.", "0"],
+        ["Can we stop yet?", "0"],
+      ],
+      [
+        ["I like you.", "+5"],
+        ["I love you.", "+5"],
+        ["Can we stop yet?", "+10"],
+      ],
+      [
+        ["Listen to me.", "0"],
+        ["This won't help your heart.", "0"],
+        ["You're a genius...", "0"],
+      ],
+      [
+        ["You're right.", "0"],
+        ["You finally get it.", "0"],
+      ],
+      [
+        ["That's odd.", "+5"],
+        ["Has that happened to you?", "+10"],
+      ],
+      [
+        ["Are you lonely?", "0"],
+        ["That freedom sounds nice.", "+5"],
+      ],
+      [
+        ["Could be.", "+5"],
+        ["You're so self-conscious.", "0"],
+        ["Was she a child model?", "0"],
+      ],
+    ]
+  },
+  3: {
+    points: 20,
+    choices: [
+      [
+        ["I know what you mean.", "+10"],
+        ["I'm not sure I follow.", "0"],
+        ["That comes down to you.", "+5"],
+      ],
+      [
+        ["That was mean of her.", "+5"],
+        ["That's hilarious.", "+15"],
+        ["Was she right?", "0"],
+      ],
+      [
+        ["Tell me.", "+15"],
+        ["I'm afraid to know.", "+5"],
+        ["...Who?", "0"],
+      ],
+      [
+        ["Good idea.", "+10"],
+        ["How exactly?", "+5"],
+      ],
+      [
+        ["That's not going to work.", "0"],
+        ["You haven't learned anything.", "0"],
+        ["Good luck with that.", "+15"],
+      ],
+      [
+        ["I train everyday.", "+5"],
+        ["Not really.", "0"],
+        ["I carry Morgana in my bag.", "+5"],
+      ],
+    ]
+  },
+  4: {
+    points: 35,
+    choices: [
+      [
+        ["Maybe.", "0"],
+        ["Give it up.", "+5"],
+      ],
+      [
+        ["You're outmatched.", "0"],
+        ["She's amazing, huh...", "+5"],
+      ],
+      [
+        ["It had grace.", "+5"],
+        ["She'd be a great phantom thief.", "0"],
+      ],
+      [
+        ["So how do you do it?", "0"],
+        ["Tell me more.", "0"],
+      ],
+      [
+        ["I figured that much.", "0"],
+        ["I mean, that's why it's \"fake.\"", "0"],
+      ],
+    ]
+  },
+  5: {
+    points: 45,
+    choices: [
+      [
+        ["It seems that way.", "+10"],
+        ["That's such a simple solution.", "0"],
+        ["If it's a friend, yeah.", "+5"],
+      ],
+      [
+        ["How so?", "0"],
+        ["Was she working hard?", "0"],
+        ["Was she in pain?", "0"],
+      ],
+      [
+        ["You're not weak.", "0"],
+        ["It's because you're kind.", "0"],
+      ],
+      [
+        ["Comfort her.", "+10"],
+        ["Listen to what she has to say.", "+5"],
+        ["Show her your own strength.", "+15"],
+      ],
+      [
+        ["Someone's motivated.", "+5"],
+        ["I'll cheer you on.", "+5"],
+        ["You gonna be okay?", "0"],
+      ],
+    ]
+  },
+  6: {
+    points: 30,
+    choices: [
+      [
+        ["It's a trap!", "0"],
+        ["She admires you.", "+5"],
+      ],
+      [
+        ["So she could show you up.", "0"],
+        ["Because you're a natural beauty.", "0"],
+      ],
+      [
+        ["Cheer up.", "0"],
+        ["Please don't cry.", "0"],
+      ],
+      [
+        ["You already are one.", "0"],
+        ["Go get 'em, tiger.", "+5"],
+        ["What about your action movies...?", "0"],
+      ],
+      [
+        ["You got this.", "+5"],
+        ["Don't strain yourself.", "0"],
+        ["Trying to be like Mika?", "0"],
+      ],
+    ]
+  },
+  7: {
+    points: 67,
+    choices: [
+      [
+        ["That's a lot of work...", "0"],
+        ["You have some real guts.", "+10"],
+        ["You're beautiful as is.", "+5"],
+      ],
+      [
+        ["There's no doubt in my mind.", "+15"],
+        ["I hope so.", "+10"],
+        ["Good luck finding it.", "+10"],
+      ],
+      [
+        ["Good advice.", "0"],
+        ["You're so dumb, Ryuji...", "0"],
+      ],
+      [
+        ["She'll be happy to hear that.", "+15"],
+        ["I'm sure she already knows.", "+15"],
+      ],
+      [
+        ["That's probably it.", "+5"],
+        ["I wonder.", "0"],
+        ["You can ask her yourself.", "+5"],
+      ],
+    ]
+  },
+  8: {
+    points: 35,
+    choices: [
+      [
+        ["It's dangerous up here.", "0"],
+        ["Step away from the ledge.", "0"],
+        ["Why did you want to come here?", "0"],
+      ],
+      [
+        ["And?", "0"],
+        ["She's gone, isn't she?", "0"],
+      ],
+      [
+        ["Hang in there.", "+15"],
+        ["I believe in you, Ann.", "+15"],
+      ],
+      [
+        ["You have me.", "0 (ROMANCE)"],
+        ["You have the others.", "0 (FRIENDS)"],
+      ],
+      [
+        ["(ROMANCE) You said \"I love you.\"", "0"],
+        ["(ROMANCE) I didn't hear you.", "0"],
+      ],
+      [
+        ["(ROMANCE) Of course.", "0"],
+        ["(ROMANCE) I'm yours forever.", "+10"],
+        ["(ROMANCE) That's up to you.", "0"],
+      ],
+    ]
+  },
+  9: {
+    points: 0,
+    choices: [
+      [
+        ["You really gave it your all.", "+10"],
+        ["You still have a ways to go.", "+5"],
+        ["Everyone was complimenting you.", "+10"],
+      ],
+      [
+        ["That's so embarrassing.", "+5"],
+        ["I'll be there with you.", "+10"],
+        ["You can do it, Ann.", "+10"],
+      ],
+      [
+        ["(ROMANCE) What's wrong?", "0"],
+        ["(ROMANCE) It's just the two of us.", "0"],
+      ],
+      [
+        ["Of course.", "+10"],
+        ["Ask me anything.", "+10"],
+      ],
+      [
+        ["I will.", "0"],
+        ["I already am.", "0"],
+      ],
+      [
+        ["(FRIENDS) What's that?", "0"],
+        ["(FRIENDS) Eternal?", "0"],
+      ],
+      [
+        ["(ROMANCE) Of course.", "0"],
+        ["(ROMANCE) I should be asking you that.", "0"],
+      ],
+      [
+        ["(ROMANCE) Couples?", "0"],
+        ["(ROMANCE) Just one?", "0"],
+      ],
+    ]
+  },
+};
+
 export const JusticeChoices = {
   1: {
     points: 0,
@@ -3178,6 +3473,7 @@ export const activityDetailsChoices = [
   { name: "Empress", details: EmpressChoices },
   { name: "Emperor", details: EmperorChoices },
   { name: "Hierophant", details: HierophantChoices },
+  { name: "Lovers", details: LoversChoices },
   { name: "Chariot", details: ChariotChoices },
   { name: "Justice", details: JusticeChoices },
   { name: "Hanged Man", details: HangedChoices },
