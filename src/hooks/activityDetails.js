@@ -929,207 +929,6 @@ export const HierophantChoices = {
   },
 };
 
-export const ChariotChoices = {
-  1: {
-    points: 20,
-    choices: [
-      [
-        ["I'm counting on you.", "+15"],
-        ["You seem pretty excited.", "+10"],
-        ["...Help with what?", "+5"]
-      ],
-      [
-        ["What about them?", "0"],
-        ["And then you punched him?", "0"],
-      ],
-      [
-        ["Do you go want to go back?", "+5"],
-        ["Do you regret it?", "+5"],
-      ],
-      [
-        ["You're already fast enough.", "+5"],
-        ["Are your legs okay?", "+5"],
-        ["It's never too late, man.", "+5"]
-      ],
-    ]
-  },
-  2: {
-    points: 30,
-    choices: [
-      [
-        ["Let's not fight.", "+5"],
-        ["Want to train with us?", "0"],
-        ["It's nice to meet you.", "0"]
-      ],
-      [
-        ["Calm down, Ryuji.", "+10"],
-        ["Just endure it.", "+5"],
-        ["I'll shut them up.", "0"]
-      ],
-      [
-        ["I can't exactly blame you.", "+5"],
-        ["Violence is not the answer.", "0"],
-        ["Yeah, that'd be best.", "0"]
-      ],
-    ]
-  },
-  3: {
-    points: 20,
-    choices: [
-      [
-        ["Nakaoka?", "0"],
-        ["Are you worried about him?", "+5"],
-        ["Just leave him be.", "0"]
-      ],
-      [
-        ["But you're doing great.", "+15"],
-        ["It's not so bad.", "+5"],
-        ["I know how you feel.", "+10"]
-      ],
-    ]
-  },
-  4: {
-    points: 30,
-    choices: [
-      [
-        ["A towel?", "+5"],
-        ["Protein powder?", "+10"],
-      ],
-      [
-        ["You seem conflicted.", "+5"],
-        ["Do you want to rejoin?", "+5"],
-        ["You're done with them, right?", "0"]
-      ],
-      [
-        ["So he's short?", "+5"],
-        ["So he's an asshole?", "+10"],
-      ],
-      [
-        ["Don't worry. I gotcha.", "+5"],
-        ["I haven't agreed to anything.", "0"],
-        ["Fine, but you're buying ramen.", "0"]
-      ],
-    ]
-  },
-  5: {
-    points: 45,
-    choices: [
-      [
-        ["Let's stay here.", "+5"],
-        ["How about Protein Lovers?", "+5"],
-        ["We can train at my place.", "+10"]
-      ],
-      [
-        ["You guys should trust Nakaoka.", "+15"],
-        ["This is no time for arguing.", "+10"],
-      ],
-      [
-        ["Absolutely.", "+15"],
-        ["More or less.", "+10"],
-        ["Not in the slightest.", "0"]
-      ],
-      [
-        ["I don't get it.", "0"],
-        ["Can you explain that?", "0"],
-      ],
-      [
-        ["...Huh?", "0"],
-        ["I really don't understand.", "0"],
-      ],
-      [
-        ["Sounds like you two were close.", "0"],
-        ["Just like you.", "0"],
-        ["So he should've punched back?", "+5"]
-      ],
-    ]
-  },
-  6: {
-    points: 45,
-    choices: [
-      [
-        ["Should we change his heart?", "0"],
-        ["Let's talk to Takeishi.", "+10"],
-      ],
-      [
-        ["I think it's cool, Ryuji.", "+15"],
-        ["Wait, what?", "+5"],
-      ],
-      [
-        ["Never know until you try.", "+5"],
-        ["It's out of our hands.", "0"],
-        ["We'll use force if we have to.", "0"]
-      ],
-    ]
-  },
-  7: {
-    points: 60,
-    choices: [
-      [
-        ["What if they start fighting?", "0"],
-        ["I doubt they'll believe you.", "0"],
-      ],
-      [
-        ["Things turned out for the best.", "+15"],
-        ["You deserved it.", "+10"],
-      ],
-      [
-        ["All I did was watch.", "+10"],
-        ["Are you gonna pay me back?", "+5"],
-      ],
-      [
-        ["But I was just standing here...", "+5"],
-        ["You weren't cool though.", "+10"],
-      ],
-      [
-        ["You did a great job.", "0"],
-        ["So. Case closed?", "+5"],
-        ["We make a good team too.", "0"]
-      ],
-    ]
-  },
-  8: {
-    points: 60,
-    choices: [
-      [
-        ["Are you satisfied now?", "+10"],
-        ["Not running?", "+5"],
-      ],
-      [
-        ["What did you say?", "+5"],
-        ["Do you have any time for that?", "+5"],
-        ["Don't do it.", "+10"]
-      ],
-      [
-        ["You're right.", "+10"],
-        ["I never realized that.", "+15"],
-      ],
-      [
-        ["I agree.", "+5"],
-        ["Be more specific.", "0"],
-        ["And where is this place?", "0"]
-      ],
-      [
-        ["Congratulations.", "+5"],
-        ["Got him under control, how?", "0"],
-        ["Better watch out for them.", "+5"]
-      ],
-    ]
-  },
-  9: {
-    points: 0,
-    choices: [
-      [
-        ["I'm looking forward to it.", "+15"],
-        ["We can't lose either.", "+15"],
-      ],
-      [
-        ["You're welcome.", "0"],
-        ["It's all because of you.", "0"],
-      ],
-    ]
-  },
-};
-
 export const LoversChoices = {
   1: {
     points: 35,
@@ -1425,6 +1224,207 @@ export const LoversChoices = {
   },
 };
 
+export const ChariotChoices = {
+  1: {
+    points: 20,
+    choices: [
+      [
+        ["I'm counting on you.", "+15"],
+        ["You seem pretty excited.", "+10"],
+        ["...Help with what?", "+5"]
+      ],
+      [
+        ["What about them?", "0"],
+        ["And then you punched him?", "0"],
+      ],
+      [
+        ["Do you go want to go back?", "+5"],
+        ["Do you regret it?", "+5"],
+      ],
+      [
+        ["You're already fast enough.", "+5"],
+        ["Are your legs okay?", "+5"],
+        ["It's never too late, man.", "+5"]
+      ],
+    ]
+  },
+  2: {
+    points: 30,
+    choices: [
+      [
+        ["Let's not fight.", "+5"],
+        ["Want to train with us?", "0"],
+        ["It's nice to meet you.", "0"]
+      ],
+      [
+        ["Calm down, Ryuji.", "+10"],
+        ["Just endure it.", "+5"],
+        ["I'll shut them up.", "0"]
+      ],
+      [
+        ["I can't exactly blame you.", "+5"],
+        ["Violence is not the answer.", "0"],
+        ["Yeah, that'd be best.", "0"]
+      ],
+    ]
+  },
+  3: {
+    points: 20,
+    choices: [
+      [
+        ["Nakaoka?", "0"],
+        ["Are you worried about him?", "+5"],
+        ["Just leave him be.", "0"]
+      ],
+      [
+        ["But you're doing great.", "+15"],
+        ["It's not so bad.", "+5"],
+        ["I know how you feel.", "+10"]
+      ],
+    ]
+  },
+  4: {
+    points: 30,
+    choices: [
+      [
+        ["A towel?", "+5"],
+        ["Protein powder?", "+10"],
+      ],
+      [
+        ["You seem conflicted.", "+5"],
+        ["Do you want to rejoin?", "+5"],
+        ["You're done with them, right?", "0"]
+      ],
+      [
+        ["So he's short?", "+5"],
+        ["So he's an asshole?", "+10"],
+      ],
+      [
+        ["Don't worry. I gotcha.", "+5"],
+        ["I haven't agreed to anything.", "0"],
+        ["Fine, but you're buying ramen.", "0"]
+      ],
+    ]
+  },
+  5: {
+    points: 45,
+    choices: [
+      [
+        ["Let's stay here.", "+5"],
+        ["How about Protein Lovers?", "+5"],
+        ["We can train at my place.", "+10"]
+      ],
+      [
+        ["You guys should trust Nakaoka.", "+15"],
+        ["This is no time for arguing.", "+10"],
+      ],
+      [
+        ["Absolutely.", "+15"],
+        ["More or less.", "+10"],
+        ["Not in the slightest.", "0"]
+      ],
+      [
+        ["I don't get it.", "0"],
+        ["Can you explain that?", "0"],
+      ],
+      [
+        ["...Huh?", "0"],
+        ["I really don't understand.", "0"],
+      ],
+      [
+        ["Sounds like you two were close.", "0"],
+        ["Just like you.", "0"],
+        ["So he should've punched back?", "+5"]
+      ],
+    ]
+  },
+  6: {
+    points: 45,
+    choices: [
+      [
+        ["Should we change his heart?", "0"],
+        ["Let's talk to Takeishi.", "+10"],
+      ],
+      [
+        ["I think it's cool, Ryuji.", "+15"],
+        ["Wait, what?", "+5"],
+      ],
+      [
+        ["Never know until you try.", "+5"],
+        ["It's out of our hands.", "0"],
+        ["We'll use force if we have to.", "0"]
+      ],
+    ]
+  },
+  7: {
+    points: 60,
+    choices: [
+      [
+        ["What if they start fighting?", "0"],
+        ["I doubt they'll believe you.", "0"],
+      ],
+      [
+        ["Things turned out for the best.", "+15"],
+        ["You deserved it.", "+10"],
+      ],
+      [
+        ["All I did was watch.", "+10"],
+        ["Are you gonna pay me back?", "+5"],
+      ],
+      [
+        ["But I was just standing here...", "+5"],
+        ["You weren't cool though.", "+10"],
+      ],
+      [
+        ["You did a great job.", "0"],
+        ["So. Case closed?", "+5"],
+        ["We make a good team too.", "0"]
+      ],
+    ]
+  },
+  8: {
+    points: 60,
+    choices: [
+      [
+        ["Are you satisfied now?", "+10"],
+        ["Not running?", "+5"],
+      ],
+      [
+        ["What did you say?", "+5"],
+        ["Do you have any time for that?", "+5"],
+        ["Don't do it.", "+10"]
+      ],
+      [
+        ["You're right.", "+10"],
+        ["I never realized that.", "+15"],
+      ],
+      [
+        ["I agree.", "+5"],
+        ["Be more specific.", "0"],
+        ["And where is this place?", "0"]
+      ],
+      [
+        ["Congratulations.", "+5"],
+        ["Got him under control, how?", "0"],
+        ["Better watch out for them.", "+5"]
+      ],
+    ]
+  },
+  9: {
+    points: 0,
+    choices: [
+      [
+        ["I'm looking forward to it.", "+15"],
+        ["We can't lose either.", "+15"],
+      ],
+      [
+        ["You're welcome.", "0"],
+        ["It's all because of you.", "0"],
+      ],
+    ]
+  },
+};
+
 export const JusticeChoices = {
   1: {
     points: 0,
@@ -1666,6 +1666,253 @@ export const JusticeChoices = {
       [
         ["I accept.", "0"],
         ["Let me think about it.", "0"],
+      ],
+    ]
+  },
+};
+
+export const HermitChoices = {
+  1: {
+    points: 0,
+    choices: [
+      [
+        ["That wouldn't solve anything.", "0"],
+        ["That's a great idea.", "+5"],
+      ],
+      [
+        ["If we work together.", "+10"],
+        ["Want me to help?", "+5"],
+        ["I don't know.", "0"],
+      ],
+      [
+        ["Sounds good to me.", "0"],
+        ["Can you tell me again?", "0 (REPEATS PROMPT)"],
+      ],
+      [
+        ["I bet it will.", "+5"],
+        ["I'm not sure.", "0"],
+        ["Why not ask him directly?", "0"],
+      ],
+    ]
+  },
+  2: {
+    points: 0,
+    choices: [
+      [
+        ["I what?", "0"],
+        ["So you're okay?", "0"],
+        ["I was about to come find you.", "+10"],
+      ],
+      [
+        ["Good to see you again.", "+15"],
+        ["You're the one who appeared.", "+5"],
+        ["You need to be more careful.", "0"],
+      ],
+      [
+        ["It'll only get toughter.", "0"],
+        ["You will.", "0"],
+        ["We'll both do our best.", "+5"],
+      ],
+    ]
+  },
+  3: {
+    points: 10,
+    choices: [
+      [
+        ["Nope.", "+5"],
+        ["Let's do this together.", "+15"],
+        ["If you want.", "0"],
+      ],
+      [
+        ["No, you're talented.", "0"],
+        ["I bet they were just surprised.", "0"],
+      ],
+      [
+        ["Not at all.", "+5"],
+        ["Everyone does it.", "+5"],
+        ["I think it's cute.", "+10"],
+      ],
+      [
+        ["We'll take it slow.", "+5"],
+        ["You need more training.", "0"],
+        ["I'll help you anytime.", "+5"],
+      ],
+    ]
+  },
+  4: {
+    points: 15,
+    choices: [
+      [
+        ["He's in my class.", "0"],
+        ["Friend might be a bit much.", "0"],
+      ],
+      [
+        ["I think you're right.", "+10"],
+        ["No.", "0"],
+        ["Your... what?", "+5"],
+      ],
+      [
+        ["What's an NPC?", "+5"],
+        ["Savage.", "0"],
+        ["He's the protagonist.", "+10"],
+      ],
+      [
+        ["You did great.", "+5"],
+        ["That's nothing special.", "0"],
+        ["Ding! Level up!", "0"],
+      ],
+    ]
+  },
+  5: {
+    points: 26,
+    choices: [
+      [
+        ["Were you happy?", "+5"],
+        ["That must have been a shock.", "+10"],
+        ["How did you react?", "0"],
+      ],
+      [
+        ["You didn't know any better.", "+5"],
+        ["Did you apologize to her?", "0"],
+        ["Sounds like it was her fault.", "0"],
+      ],
+      [
+        ["Understood.", "0"],
+        ["Someone's pushy today.", "0"],
+      ],
+      [
+        ["Are you running away again?", "+5"],
+        ["Let's calm down first.", "0"],
+        ["I'm right here with you.", "0"],
+      ],
+    ]
+  },
+  6: {
+    points: 21,
+    choices: [
+      [
+        ["What horrible parents.", "+5"],
+        ["We have to put a stop to this.", "+5"],
+        ["Strange... how?", "0"],
+      ],
+      [
+        ["I'll do it, for you.", "+15"],
+        ["We'll show them the truth.", "+10"],
+        ["Give me some time.", "+5"],
+      ],
+    ]
+  },
+  7: {
+    points: 0,
+    choices: [
+      [
+        ["That's incredible.", "+15"],
+        ["I'm glad to hear that.", "+10"],
+        ["Did you stutter at all?", "+5"],
+      ],
+      [
+        ["You worked really hard too.", "+10"],
+        ["You're making me blush...", "+5"],
+        ["Do I get a reward?", "0"],
+      ],
+      [
+        ["Fine by me.", "0"],
+        ["That's all?", "0"],
+      ],
+      [
+        ["Congrats.", "+5"],
+        ["You've still got more.", "0"],
+        ["Want more pats?", "+5"],
+      ],
+    ]
+  },
+  8: {
+    points: 30,
+    choices: [
+      [
+        ["You've really matured.", "+10"],
+        ["And if you're bullied again?", "+5"],
+      ],
+      [
+        ["That doesn't sound healthy...", "0"],
+        ["Are you okay, Futaba?", "+10"],
+        ["You're imagining things.", "+5"],
+      ],
+      [
+        ["If you want.", "+5"],
+        ["No way.", "+5"],
+        ["You're giving up?", "0"],
+      ],
+      [
+        ["Because we're teammates.", "0 (FRIENDS)"],
+        ["Because I love you.", "0 (ROMANCE)"],
+      ],
+      [
+        ["(ROMANCE) I would like that.", "0"],
+        ["(ROMANCE) If that's okay with you.", "0"],
+      ],
+      [
+        ["(ROMANCE) Um, hello?", "0"],
+        ["(ROMANCE) Is something wrong?", "0"],
+      ],
+      [
+        ["(ROMANCE) Earth to Futaba?", "0"],
+        ["(ROMANCE) Are you still alive?", "0"],
+      ],
+      [
+        ["(ROMANCE) Instant yakisoba.", "0"],
+        ["(ROMANCE) Morgana.", "0"],
+        ["(ROMANCE) Do I really have to say it?", "+5"],
+        ["(FRIENDS) A true friend.", "+5"],
+        ["(FRIENDS) A partner.", "+5"],
+        ["(FRIENDS) A key item.", "+5"],
+      ],
+    ]
+  },
+  9: {
+    points: 35,
+    choices: [
+      [
+        ["(ROMANCE) What are you talking about?", "0"],
+        ["(ROMANCE) Don't worry about it.", "0"],
+        ["(ROMANCE) ...Pardoned?", "0"],
+      ],
+      [
+        ["(ROMANCE) Mission complete.", "0"],
+        ["(ROMANCE) Nice job, Futaba.", "0"],
+        ["(ROMANCE) You did great.", "0"],
+      ],
+      [
+        ["(ROMANCE) I know.", "0"],
+        ["(ROMANCE) I don't mind it.", "0"],
+        ["(ROMANCE) I like being close.", "0"],
+      ],
+      [
+        ["(ROMANCE) What's wrong?", "0"],
+        ["(ROMANCE) Come closer.", "0"],
+      ],
+      [
+        ["Take your time.", "+10"],
+        ["You can do this.", "+10"],
+        ["We'll do it together.", "+15"],
+      ],
+      [
+        ["You can't lose to her.", "+10"],
+        ["Do you want a job too?", "+5"],
+      ],
+      [
+        ["I honor my promises.", "0"],
+        ["Just keep it cheap.", "0"],
+        ["You remember that?", "0"],
+      ],
+      [
+        ["I'm counting on you.", "0"],
+        ["That's a lot of pressure.", "0"],
+      ],
+      [
+        ["(ROMANCE) You already have that right.", "+15"],
+        ["(ROMANCE) Took you long enough to ask.", "+15"],
+        ["(ROMANCE) I want that right too.", "+15"],
       ],
     ]
   },
@@ -3476,6 +3723,7 @@ export const activityDetailsChoices = [
   { name: "Lovers", details: LoversChoices },
   { name: "Chariot", details: ChariotChoices },
   { name: "Justice", details: JusticeChoices },
+  { name: "Hermit", details: HermitChoices },
   { name: "Hanged Man", details: HangedChoices },
   { name: "Tower", details: TowerChoices },
   { name: "Star", details: StarChoices },
