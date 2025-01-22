@@ -2167,6 +2167,243 @@ export const HangedChoices = {
   },
 };
 
+export const DeathChoices = {
+  1: {
+    points: 0,
+    choices: [
+      [
+        ["I have a bad heart.", "+5"],
+        ["We're on a date.", "0"],
+        ["I know my rights.", "0"]
+      ],
+      [
+        ["I agree.", "+5"],
+        ["Harassment?", "0"],
+        ["The Plague?", "0"]
+      ],
+      [
+        ["I'm totally fine.", "+5"],
+        ["I feel lightheaded.", "0"],
+        ["I think I have superpowers.", "+5"]
+      ],
+    ]
+  },
+  2: {
+    points: 11,
+    choices: [
+      [
+        ["What was that about?", "0"],
+        ["Was that an emergency?", "0"],
+      ],
+      [
+        ["A medical error?", "0"],
+        ["What do you mean?", "0"],
+      ],
+      [
+        ["I don't mind.", "+5"],
+        ["Is it true?", "0"],
+        ["I need the medicine.", "+5"]
+      ],
+      [
+        ["Of course not.", "+5"],
+        ["I don't think I did…", "0"],
+        ["Have you?", "0"]
+      ],
+    ]
+  },
+  3: {
+    points: 20,
+    choices: [
+      [
+        ["You'll be okay.", "0"],
+        ["Dr. Takemi will help.", "+5"],
+      ],
+      [
+        ["You seem happy.", "+10"],
+        ["You're so kind.", "+5"],
+        ["Why free?", "+5"]
+      ],
+      [
+        ["I'll reflect on my mistakes.", "+5"],
+        ["But she ended up okay.", "0"],
+        ["Punish me more.", "0"]
+      ],
+    ]
+  },
+  4: {
+    points: 11,
+    choices: [
+      [
+        ["They trust you.", "0"],
+        ["Was it really your fault?", "0"],
+      ],
+      [
+        ["I had no idea.", "0"],
+        ["It's not too late.", "0"],
+      ],
+      [
+        ["That's good.", "+10"],
+        ["When will it be done?", "+5"],
+        ["...\"Probably\"?", "0"]
+      ],
+      [
+        ["About Miwa-chan?", "+5"],
+        ["About Oyamada?", "0"],
+        ["About Crawford-Ende's?", "0"]
+      ],
+    ]
+  },
+  5: {
+    points: 11,
+    choices: [
+      [
+        ["Well, someone's popular.", "0"],
+        ["You seem annoyed.", "0"],
+        ["Did something happen?", "0"]
+      ],
+      [
+        ["Having fun?", "0"],
+        ["You ARE a genius.", "0"],
+      ],
+      [
+        ["You're a masochist.", "0"],
+        ["It suits you.", "+10"],
+        ["You're not honest.", "+5"]
+      ],
+      [
+        ["You can count on me.", "+5"],
+        ["I think I'm at my limit…", "0"],
+        ["Anything for you.", "+5"]
+      ],
+    ]
+  },
+  6: {
+    points: 0,
+    choices: [
+      [
+        ["This is harassment.", "+5"],
+        ["She's a great doctor.", "+5"],
+        ["Please be quiet.", "+5"]
+      ],
+      [
+        ["Don't lose hope.", "0"],
+        ["Let's ask for details.", "0"],
+        ["......", "0"]
+      ],
+      [
+        ["Just rest for today.", "+5"],
+        ["Anything I can do?", "+5"],
+        ["Let's retaliate.", "0"]
+      ],
+      [
+        ["It was inevitable.", "0"],
+        ["We all do sometimes.", "+10"],
+        ["I'm glad you did.", "+5 (ROMANCE FLAG)"]
+      ],
+    ]
+  },
+  7: {
+    points: 42,
+    choices: [
+      [
+        ["What about Miwa-chan?", "0"],
+        ["You okay with this?", "0"],
+      ],
+      [
+        ["Don't give up.", "0"],
+        ["Anything you can do?", "0"],
+        ["I'm your ally.", "+5 (ROMANCE FLAG)"]
+      ],
+      [
+        ["You gonna run away?", "0"],
+        ["And your patients?", "0"],
+      ],
+      [
+        ["What's his full name?", "0"],
+        ["Tell me about him.", "0"],
+      ],
+      [
+        ["I won't do anything.", "0"],
+        ["It's for my research.", "0"],
+      ],
+      [
+        ["COMPLETE \"Bad Medicine\"", "0"],
+      ],
+      [
+        ["Miwa-chan is alive.", "0"],
+        ["Oyamada lied to you.", "0"],
+      ],
+      [
+        ["You should hurry.", "+5"],
+        ["Let's get to work, doctor.", "0"],
+        ["It's not over yet.", "0"]
+      ],
+      [
+        ["It's for Miwa-chan.", "0 (ROMANCE FLAG)"],
+        ["It's for my exams.", "+5"],
+        ["It's for you.", "0"]
+      ],
+      [
+        ["I'll be cheering you on.", "+5"],
+        ["Don't burn yourself out.", "0"],
+        ["Anything else I can do?", "+5"]
+      ],
+    ]
+  },
+  8: {
+    points: 36,
+    choices: [
+      [
+        ["Don't worry about it.", "+5"],
+        ["It was for my exams.", "+5"],
+        ["It was rough.", "0"]
+      ],
+      [
+        ["That's troubling.", "0"],
+        ["And your patients?", "0"],
+      ],
+      [
+        ["I wanted to see you.", "0 (ROMANCE)*"],
+        ["It was for my exams.", "0 (FRIENDS)"],
+      ],
+      [
+        ["*I love you.", "+5 (ROMANCE)**"],
+        ["*What do you think?", "0 (FRIENDS)"],
+      ],
+      [
+        ["**It isn't a joke.", "+15 (ROMANCE)"],
+        ["**That sounds good.", "0 (FRIENDS)"],
+      ],
+      [
+        ["(ROMANCE) It's true love.", "0"],
+        ["(ROMANCE) So did you.", "+5"],
+        ["(ROMANCE) I've always loved you.", "0"],
+        ["(FRIENDS) You're welcome.", "0"],
+        ["(FRIENDS) It was a breeze.", "0"],
+        ["(FRIENDS) I'm glad we saw it through.", "+5"]
+      ],
+    ]
+  },
+  9: {
+    points: 0,
+    choices: [
+      [
+        ["Uh, what?", "0"],
+        ["Is that a joke?", "0"],
+      ],
+      [
+        ["It's a coincidence.", "0"],
+        ["I wonder...", "+5"],
+        ["So what if it's true?", "0"]
+      ],
+      [
+        ["(ROMANCE) What kind?", "+5"],
+        ["(ROMANCE) Yes, please.", "+10"],
+      ],
+    ]
+  },
+};
+
 export const TowerChoices = {
   1: {
     points: 0,
@@ -3725,6 +3962,7 @@ export const activityDetailsChoices = [
   { name: "Justice", details: JusticeChoices },
   { name: "Hermit", details: HermitChoices },
   { name: "Hanged Man", details: HangedChoices },
+  { name: "Death", details: DeathChoices },
   { name: "Tower", details: TowerChoices },
   { name: "Star", details: StarChoices },
   { name: "Moon", details: MoonChoices },
