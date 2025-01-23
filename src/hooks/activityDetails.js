@@ -2404,6 +2404,289 @@ export const DeathChoices = {
   },
 };
 
+export const TemperanceChoices = {
+  1: {
+    points: 20,
+    choices: [
+      [
+        ["It does.", "+5"],
+        ["I feel nothing.", "0"],
+        ["I'll tell your boss.", "0"]
+      ],
+      [
+        ["I can't say I wasn't...", "0"],
+        ["Absolutely not!", "+5"],
+        ["What kind of weird things?", "0"]
+      ],
+      [
+        ["You need money?", "0"],
+        ["What's it for?", "0"],
+      ],
+      [
+        ["Are you scolding me?", "0"],
+        ["This is all for you.", "0"],
+        ["I requested you.", "0"]
+      ],
+      [
+        ["You have the wrong number.", "+5"],
+        ["Uh, what the hell?", "+5"],
+        ["Is this the hard sell?", "+5"]
+      ],
+    ]
+  },
+  2: {
+    points: 37,
+    choices: [
+      [
+        ["Yeah, they do.", "+5"],
+        ["Do some real cooking.", "+5"],
+        ["Can I have a different maid?", "0"]
+      ],
+      [
+        ["I was curious.", "0"],
+        ["So I could slack off in class.", "0"],
+        ["I wanted to see you.", "0"]
+      ],
+      [
+        ["Your sister's bills, right?", "0"],
+        ["I'll request you more often.", "+15"],
+        ["You're really blunt.", "0"]
+      ],
+      [
+        ["You have it rough.", "0"],
+        ["Are they that expensive?", "0"],
+        ["Don't overdo it.", "0"]
+      ],
+      [
+        ["Thanks.", "+5"],
+        ["I'll work hard at it.", "0"],
+        ["You're not in character.", "0"]
+      ],
+    ]
+  },
+  3: {
+    points: 0,
+    choices: [
+      [
+        ["That would be great.", "0"],
+        ["What are you scheming?", "0"],
+      ],
+      [
+        ["How rude.", "+5"],
+        ["No surprise there.", "0"],
+        ["How old ARE you?", "0"]
+      ],
+      [
+        ["Yes, you do.", "+5"],
+        ["You're pushing it.", "0"],
+        ["You need to love yourself.", "+10"]
+      ],
+      [
+        ["I already knew that.", "0"],
+        ["Why did you lie to me?", "0"],
+        ["You're a bad teacher.", "0"]
+      ],
+    ]
+  },
+  4: {
+    points: 11,
+    choices: [
+      [
+        ["It's fun.", "+5"],
+        ["I want to know more.", "0"],
+        ["Who's the Master here?", "+5"]
+      ],
+      [
+        ["How terrible...", "+5"],
+        ["It was inevitable.", "0"],
+        ["So, did you stop?", "+5"]
+      ],
+      [
+        ["It's not your fault.", "0"],
+        ["It was bad luck.", "0"],
+        ["It's no one's fault.", "0"]
+      ],
+      [
+        ["You OK with that?", "0"],
+        ["Guardians, huh...", "0"],
+      ],
+      [
+        ["It's too late now.", "0"],
+        ["What about our deal?", "0"],
+        ["I want to see you again.", "0"]
+      ],
+      [
+        ["Curry is all I eat.", "0"],
+        ["You get bored of the taste.", "0"],
+        ["You want some?", "+5"]
+      ],
+    ]
+  },
+  5: {
+    points: 37,
+    choices: [
+      [
+        ["You just got here.", "0"],
+        ["Want to rest a bit?", "+5"],
+        ["Give me back my money.", "0"]
+      ],
+      [
+        ["Are you all right?", "+15"],
+        ["Have you seen a doctor?", "+5"],
+        ["You should go home.", "+15"]
+      ],
+      [
+        ["Are you okay?", "0"],
+        ["Don't overdo it.", "0"],
+      ],
+      [
+        ["I'll be fine.", "0"],
+        ["Nah, too lazy.", "0"],
+        ["How are you feeling, though?", "+5"]
+      ],
+    ]
+  },
+  6: {
+    points: 0,
+    choices: [
+      [
+        ["Don't strain yourself.", "+5"],
+        ["Don't lie.", "0"],
+        ["Don't pay them.", "+10"]
+      ],
+      [
+        ["Sister company?", "0"],
+        ["Can you make a lot there?", "0"],
+        ["Think this through more.", "+15 (ROMANCE FLAG)"]
+      ],
+      [
+        ["That's the wrong choice.", "0"],
+        ["Isn't there another way?", "0"],
+        ["Just rest for now.", "0"]
+      ],
+    ]
+  },
+  7: {
+    points: 0,
+    choices: [
+      [
+        ["That's the wrong decision.", "0"],
+        ["Please reconsider.", "0"],
+        ["Is this really what you want?", "+10"]
+      ],
+      [
+        ["You're running away.", "+5"],
+        ["If that's what you decided.", "+10"],
+        ["I need my teacher.", "0"]
+      ],
+      [
+        ["Try to remember.", "0"],
+        ["That's your answer.", "0"],
+        ["Take a look at yourself.", "0"]
+      ],
+      [
+        ["Are you going to give up?", "0"],
+        ["Mistakes can be fixed.", "0"],
+      ],
+      [
+        ["Be confident in your answer.", "+10"],
+        ["That's the right choice.", "+10"],
+        ["You're asking a student?", "+10"]
+      ],
+      [
+        ["I want to protect you.", "+10"],
+        ["That's reassuring.", "+10"],
+      ],
+      [
+        ["You're welcome.", "+5"],
+        ["So much for being a maid.", "0"],
+        ["I'll do anything for you.", "+5"]
+      ],
+    ]
+  },
+  8: {
+    points: 0,
+    choices: [
+      [
+        ["Nonsense.", "+10"],
+        ["You may be right.", "0"],
+        ["Aren't you old already...?", "0"]
+      ],
+      [
+        ["What a bummer.", "+15"],
+        ["Thank you for your service.", "+15"],
+      ],
+      [
+        ["Not really.", "+5 (FRIENDS)"],
+        ["I want to keep seeing you.", "+5 (ROMANCE)*"],
+      ],
+      [
+        ["*Got it.", "+5 (FRIENDS)"],
+        ["*I mean what I say.", "0 (ROMANCE)**"],
+      ],
+      [
+        ["**I'm a master; you're a maid.", "0 (FRIENDS)"],
+        ["**I'm a man; you're a woman.", "0 (ROMANCE)"],
+      ],
+      [
+        ["(FRIENDS) I agree.", "0"],
+        ["(FRIENDS) You can do it.", "+5"],
+        ["(FRIENDS) You were a pretty good maid.", "0"]
+      ],
+    ]
+  },
+  9: {
+    points: 0,
+    choices: [
+      [
+        ["(FRIENDS) I'm glad to hear that.", "+10"],
+        ["(FRIENDS) Sounds like you're busy.", "+5"],
+      ],
+      [
+        ["(FRIENDS) I will.", "+5"],
+        ["(FRIENDS) You're not my mom...", "0"],
+        ["(FRIENDS) Same goes for you.", "0"]
+      ],
+      [
+        ["(FRIENDS) What are you talking about?", "0"],
+        ["(FRIENDS) Why do you think that?", "0"],
+        ["(FRIENDS) I'm just a high schooler.", "0"]
+      ],
+      [
+        ["(ROMANCE) ...Really?", "0"],
+        ["(ROMANCE) I see.", "0"],
+        ["(ROMANCE) That's too bad...", "0"]
+      ],
+      [
+        ["(ROMANCE) It doesn't matter.", "0"],
+        ["(ROMANCE) That's the best part.", "0"],
+      ],
+      [
+        ["(ROMANCE) We won't get caught.", "0"],
+        ["(ROMANCE) Don't worry about it.", "0"],
+        ["(ROMANCE) You're so responsible.", "0"]
+      ],
+      [
+        ["(ROMANCE) What are you talking about?", "0"],
+        ["(ROMANCE) When did you realize?", "0"],
+      ],
+      [
+        ["You got me.", "0"],
+        ["You have no proof.", "0"],
+        ["...So what if I am?", "0"]
+      ],
+      [
+        ["That sounds promising.", "0"],
+        ["I'll make sure of it.", "0"],
+      ],
+      [
+        ["(ROMANCE) I want to rely on you.", "0"],
+        ["(ROMANCE) I want you to rely on me.", "0"]
+      ],
+    ]
+  },
+};
+
 export const TowerChoices = {
   1: {
     points: 0,
@@ -3963,6 +4246,7 @@ export const activityDetailsChoices = [
   { name: "Hermit", details: HermitChoices },
   { name: "Hanged Man", details: HangedChoices },
   { name: "Death", details: DeathChoices },
+  { name: "Temperance", details: TemperanceChoices },
   { name: "Tower", details: TowerChoices },
   { name: "Star", details: StarChoices },
   { name: "Moon", details: MoonChoices },
