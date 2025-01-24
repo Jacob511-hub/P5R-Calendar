@@ -1918,6 +1918,252 @@ export const HermitChoices = {
   },
 };
 
+export const FortuneChoices = {
+  1: {
+    points: 0,
+    choices: [
+      [
+        ["Suggest she gives up.", "0 (REPEATS PROMPT)"],
+        ["Change her boss's heart.", "0 (REPEATS PROMPT)"],
+        ["Encourage her.", "0"],
+      ],
+      [
+        ["Hrahhh!", "0 (REPEATS PROMPT)"],
+        ["Overturn your fate!", "0"],
+        ["Fight the power!", "0 (REPEATS PROMPT)"],
+      ],
+      [
+        ["You're so stubborn.", "0"],
+        ["Open your mind to change.", "+5"],
+      ],
+      [
+        ["Of course I am.", "+5"],
+        ["And if I am?", "0"],
+        ["Are you stalking me?", "0"],
+      ],
+    ]
+  },
+  2: {
+    points: 15,
+    choices: [
+      [
+        ["Go for the money.", "0 (REPEATS PROMPT)"],
+        ["Follow his heart.", "0"],
+        ["Chase a promotion.", "0 (REPEATS PROMPT)"],
+      ],
+      [
+        ["Thieves may steal her away.", "0"],
+        ["Marriage kills individuality.", "0 (REPEATS PROMPT)"],
+        ["She'll be sad if you break it off.", "0 (REPEATS PROMPT)"],
+      ],
+      [
+        ["I'm not, sorry.", "0"],
+        ["Who knows?", "0"],
+      ],
+    ]
+  },
+  3: {
+    points: 15,
+    choices: [
+      [
+        ["You're only realizing that now?", "0"],
+        ["Do you want to test it again?", "0"],
+      ],
+      [
+        ["Strengthen your will.", "+5"],
+        ["I don't know.", "0"],
+        ["Trust in yourself.", "+10"],
+      ],
+      [
+        ["Tell me more.", "0"],
+        ["That sounds so peaceful.", "0"],
+      ],
+      [
+        ["...The chairman?", "0"],
+        ["I'm not sure I follow.", "0"],
+      ],
+      [
+        ["I think it'll work.", "0"],
+        ["It all depends on you.", "0"],
+      ],
+      [
+        ["I'm glad to hear that.", "0"],
+        ["I didn't do much.", "+5"],
+        ["Tell me more about your home.", "0"],
+      ],
+    ]
+  },
+  4: {
+    points: 15,
+    choices: [
+      [
+        ["You're such a hard worker.", "+10"],
+        ["What about the divine power?", "0"],
+        ["You must have lots of free time.", "+5"],
+      ],
+      [
+        ["But what?", "0"],
+        ["Did you spend it all?", "0"],
+      ],
+      [
+        ["Who was he?", "0"],
+        ["Maiden?", "0"],
+        ["Are you in trouble?", "0"],
+      ],
+    ]
+  },
+  5: {
+    points: 30,
+    choices: [
+      [
+        ["I like fortune telling.", "0"],
+        ["She's really cool.", "0"],
+        ["I'm doing research for school.", "0"],
+      ],
+      [
+        ["...Maiden of Relief?", "0"],
+        ["This has to be a joke.", "0"],
+      ],
+      [
+        ["This guy's sketchy.", "0"],
+        ["Leave her alone.", "0"],
+      ],
+      [
+        ["What's a Maiden of Relief?", "0"],
+        ["Who thinks you're a monster?", "0"],
+        ["You're just Chihaya to me.", "+15 (ROMANCE FLAG)"],
+      ],
+      [
+        ["No need to strain yourself.", "0"],
+        ["Be honest with yourself.", "+5"],
+        ["We'll work on it together.", "0"],
+      ],
+    ]
+  },
+  6: {
+    points: 20,
+    choices: [
+      [
+        ["You're not wrong about that.", "0"],
+        ["You shouldn't have tricked them.", "+5"],
+        ["I don't think so.", "+15"],
+      ],
+      [
+        ["Are you gonna be okay?", "+5"],
+        ["Be careful.", "+5"],
+        ["So the Maiden's taking action.", "0"],
+      ],
+    ]
+  },
+  7: {
+    points: 46,
+    choices: [
+      [
+        ["How so?", "0"],
+        ["What have you found?", "0"],
+      ],
+      [
+        ["Tell me his name.", "0"],
+        ["What's Fukurai's first name?", "0"],
+      ],
+      [
+        ["I can't tell you.", "0"],
+        ["Don't worry about it.", "0"],
+      ],
+      [
+        ["COMPLETE \"Debunking the Psychic!\"", "0"],
+      ],
+      [
+        ["I had no idea.", "+5"],
+        ["I know.", "+10"],
+      ],
+      [
+        ["I'm glad to hear that.", "+15"],
+        ["That's some good luck.", "+15"],
+        ["It's because you're strong.", "+15"],
+      ],
+      [
+        ["Why do you ask?", "0"],
+        ["Hell yeah I am.", "+15 (ROMANCE FLAG)"],
+      ],
+      [
+        ["You give me too much credit.", "0"],
+        ["It was all your own will.", "+5"],
+        ["I knew it would happen.", "0"],
+      ],
+    ]
+  },
+  8: {
+    points: 21,
+    choices: [
+      [
+        ["You really don't understand.", "0"],
+        ["Listen to what Chihaya's saying.", "0"],
+      ],
+      [
+        ["Do you regret what you did?", "0"],
+        ["Well, fate can be changed.", "+15"],
+        ["That's all in the past now.", "+5"],
+      ],
+      [
+        ["I like having my fortune read.", "0 (FRIENDS)"],
+        ["So I can be with you.", "0 (ROMANCE)"],
+      ],
+      [
+        ["(ROMANCE) I wanted to hear your voice too.", "+5"],
+        ["(ROMANCE) Oh, you didn't mean it...?", "0"],
+        ["(ROMANCE) ......", "0"],
+        ["(FRIENDS) I'm planning on it.", "+5"],
+        ["(FRIENDS) If I'm ever in the mood.", "0"],
+        ["(FRIENDS) I want one of those stones.", "0"],
+      ],
+    ]
+  },
+  9: {
+    points: 0,
+    choices: [
+      [
+        ["(FRIENDS) You seem to be well.", "+5"],
+        ["(FRIENDS) You've changed.", "+5"],
+      ],
+      [
+        ["(FRIENDS) You should.", "0"],
+        ["(FRIENDS) It's never too late.", "0"],
+      ],
+      [
+        ["(ROMANCE) You've never been here?", "0"],
+        ["(ROMANCE) It wasn't that far away.", "0"],
+      ],
+      [
+        ["I support you.", "+10"],
+        ["You have strong convictions.", "+15"],
+      ],
+      [
+        ["I wonder if you're right...", "0"],
+        ["So what if I am the Trickster?", "0"],
+        ["You're pretty sharp.", "0"],
+      ],
+      [
+        ["It's not a problem.", "0"],
+        ["Are you worried about me?", "0"],
+        ["What does it mean?", "0"],
+      ],
+      [
+        ["Thank you.", "0"],
+        ["That's reassuring.", "0"],
+      ],
+      [
+        ["(ROMANCE) I don't care about that.", "+5"],
+        ["(ROMANCE) It's actually pretty cute.", "+15"],
+      ],
+      [
+        ["(ROMANCE) I was hoping you'd say that.", "0"],
+        ["(ROMANCE) I don't want to go home.", "0"],
+      ],
+    ]
+  },
+};
+
 export const HangedChoices = {
   1: {
     points: 5,
@@ -4244,6 +4490,7 @@ export const activityDetailsChoices = [
   { name: "Chariot", details: ChariotChoices },
   { name: "Justice", details: JusticeChoices },
   { name: "Hermit", details: HermitChoices },
+  { name: "Fortune", details: FortuneChoices },
   { name: "Hanged Man", details: HangedChoices },
   { name: "Death", details: DeathChoices },
   { name: "Temperance", details: TemperanceChoices },
