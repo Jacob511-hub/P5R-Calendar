@@ -2933,6 +2933,258 @@ export const TemperanceChoices = {
   },
 };
 
+export const DevilChoices = {
+  1: {
+    points: 0,
+    choices: [
+      [
+        ["Why do you ask?", "0"],
+        ["I don't.", "0"],
+        ["Mishima might...", "+5"],
+      ],
+      [
+        ["Worth...?", "0"],
+        ["What about their justice?", "0"],
+      ],
+      [
+        ["I like the atmosphere.", "0"],
+        ["It's for the article.", "+5"],
+        ["Tell me about that incident.", "0"],
+      ],
+    ]
+  },
+  2: {
+    points: 12,
+    choices: [
+      [
+        ["Minors couldn't do that stuff.", "0"],
+        ["You might be right.", "0"],
+        ["You shouldn't make assumptions.", "+5"],
+      ],
+      [
+        ["What's the difference?", "0"],
+        ["I'm sure you are.", "0"],
+      ],
+      [
+        ["Why not change careers?", "0"],
+        ["Maybe you should quit.", "0"],
+      ],
+      [
+        ["What was she accused of?", "0"],
+        ["What happened?", "0"],
+        ["She was falsely accused?", "+5"],
+      ],
+    ]
+  },
+  3: {
+    points: 15,
+    choices: [
+      [
+        ["What's this about?", "0"],
+        ["She hasn't done anything wrong.", "0"],
+      ],
+      [
+        ["Of course we are.", "+5"],
+        ["Don't tell anybody.", "+5"],
+      ],
+      [
+        ["Our movie is about to start.", "0"],
+        ["That's enough.", "0"],
+        ["We're dating. Seriously.", "0"],
+      ],
+      [
+        ["Leave it to me.", "+5"],
+        ["That was our deal.", "+5"],
+        ["Anything for my girlfriend.", "0"],
+      ],
+    ]
+  },
+  4: {
+    points: 25,
+    choices: [
+      [
+        ["Because of your investigation?", "0"],
+        ["Because of your incident?", "0"],
+        ["Are you sure we're the same?", "0"],
+      ],
+      [
+        ["I'm curious.", "0"],
+        ["You can trust me.", "0"],
+      ],
+      [
+        ["What was the cause of death?", "0"],
+        ["Who killed him?", "0"],
+      ],
+      [
+        ["That sounds like defamation.", "+5"],
+        ["That's unforgivable.", "+10"],
+        ["How's your search going?", "0"],
+      ],
+      [
+        ["I don't mind it.", "+5"],
+        ["As long as I'm compensated.", "0"],
+        ["I did the same to you.", "0"],
+      ],
+    ]
+  },
+  5: {
+    points: 22,
+    choices: [
+      [
+        ["Did something bad happen?", "0"],
+        ["Having trouble at work?", "0"],
+      ],
+      [
+        ["He must not like you.", "+5"],
+        ["Did he find out?", "0"],
+      ],
+      [
+        ["Do you have evidence of that?", "0"],
+        ["You should trust in her.", "+5"],
+        ["You might be right.", "0"],
+      ],
+      [
+        ["That's the spirit.", "+5"],
+        ["You're a great journalist.	", "+5"],
+        ["What about your quota?", "0"],
+      ],
+      [
+        ["Glad to hear that.", "0"],
+        ["Don't work yourself to death.", "0"],
+        ["I'll dig up some more for you.", "+5"],
+      ],
+    ]
+  },
+  6: {
+    points: 0,
+    choices: [
+      [
+        ["What was that about?", "0"],
+        ["Could it be...?", "0"],
+      ],
+      [
+        ["Calm down.", "+5"],
+        ["Don't let him provoke you.", "+15"],
+        ["Let's think of another way.", "+10"],
+      ],
+      [
+        ["You should work on that.", "+5"],
+        ["You're charming as you are.", "+15 (ROMANCE FLAG)"],
+      ],
+      [
+        ["That's the spirit.", "+5"],
+        ["Sounds tough.", "0"],
+        ["Don't strain yourself.", "0"],
+      ],
+    ]
+  },
+  7: {
+    points: 21,
+    choices: [
+      [
+        ["Like what?", "0"],
+        ["You seem tired.", "+5"],
+        ["So... I have a pet cat...", "0"],
+      ],
+      [
+        ["What's the chief's name?", "0"],
+        ["Tell me more about him.", "0"],
+      ],
+      [
+        ["COMPLETE \"Fighting For Truth in Journalism.\"", "0"],
+      ],
+      [
+        ["He reflected on his actions.", "0"],
+        ["Aren't you happy?", "0"],
+      ],
+      [
+        ["Did I? Can't remember.", "0"],
+        ["Uh, nope.", "0"],
+      ],
+      [
+        ["I'm glad to hear that.", "0"],
+        ["Thank god.", "0"],
+      ],
+      [
+        ["That's not like you.", "+15"],
+        ["You need to pursue the truth.", "+10"],
+        ["I'll go with you.", "+10"],
+      ],
+      [
+        ["Good luck.", "+5"],
+        ["Be careful.", "+5"],
+        ["Grab a souvenir for me.", "0"],
+      ],
+    ]
+  },
+  8: {
+    points: 38,
+    choices: [
+      [
+        ["Are you okay?", "0"],
+        ["Did you learn the truth?", "0"],
+      ],
+      [
+        ["What are you going to do?", "0"],
+        ["You're not giving up, are you?", "+5"],
+      ],
+      [
+        ["I can't leave you.", "+10"],
+        ["I want to help.", "+15"],
+        ["I need those articles.", "0"],
+      ],
+      [
+        ["Of course not.", "0"],
+        ["Well, about that...", "0"],
+      ],
+      [
+        ["I took it seriously.", "0 (ROMANCE)*"],
+        ["I didn't take it seriously.", "0 (FRIENDS)"],
+      ],
+      [
+        ["*I love you, Ichiko.", "0 (ROMANCE)"],
+        ["*I'm just kidding.", "0 (FRIENDS)"],
+      ],
+      [
+        ["(ROMANCE) I wanted to hear your voice.", "+5"],
+        ["(ROMANCE) Please don't dump me.", "+5"],
+        ["(ROMANCE) IloveyouIloveyouIloveyou.", "0"],
+      ],
+    ]
+  },
+  9: {
+    points: 0,
+    choices: [
+      [
+        ["(FRIENDS) You two are on good terms?", "0"],
+        ["(FRIENDS) What're you up to?", "0"],
+      ],
+      [
+        ["You're really earnest.", "+5"],
+        ["Is that entertainment?", "+10"],
+        ["You don't need my info?", "0"],
+      ],
+      [
+        ["I'm glad to hear that.", "+10"],
+        ["I'll read the next issue.", "+15"],
+      ],
+      [
+        ["(FRIENDS) About what?", "0"],
+        ["(FRIENDS) I'm happy to talk.", "0"],
+      ],
+      [
+        ["So you knew all along?", "0"],
+        ["It's just a coincidence.", "0"],
+        ["Lala's the real phantom thief.", "0"],
+      ],
+      [
+        ["(ROMANCE) It's up to you.", "+15"],
+        ["(ROMANCE) I want to go to your place.", "+15"],
+      ],
+    ]
+  },
+};
+
 export const TowerChoices = {
   1: {
     points: 0,
@@ -4494,6 +4746,7 @@ export const activityDetailsChoices = [
   { name: "Hanged Man", details: HangedChoices },
   { name: "Death", details: DeathChoices },
   { name: "Temperance", details: TemperanceChoices },
+  { name: "Devil", details: DevilChoices },
   { name: "Tower", details: TowerChoices },
   { name: "Star", details: StarChoices },
   { name: "Moon", details: MoonChoices },
