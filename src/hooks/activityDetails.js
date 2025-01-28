@@ -22,6 +22,18 @@ export const ChariotDetails = [
   "This Confidant's Rank 7 event only occurs Wednesday and Friday nights."
 ];
 
+export const FortuneDetails = [
+  "To start this Confidant, the player must visit the Fortune Teller in Shinjuku, then return at a later date to purchase a Holy Stone for ¥100,000. Visit the Fortune Teller again at a later date to receive the request \"Ending the Boyfriend's Abuse\". After completing this request, speaking to the Fortune Teller will start this Confidant. To pursue romance with this Confidant, \"You're just Chihaya to me.\" must be chosen during the Rank 6 event and \"Hell yeah I am.\" must be chosen during the Rank 8 event."
+];
+
+export const DeathDetails = [
+  "This Confidant's rank up events can only be done once every three days. Progressing the Confidant to Rank 2 requires Rank 2 Guts (Bold). Progressing the Confidant to Rank 8 requires Rank 4 Charm (Charismatic). To pursue romance with this Confidant, at least one of the following dialogue options must be chosen: \"I'm glad you did.\" during the Rank 7 event, \"I'm your ally.\" during the Rank 8 event, or \"It's for Miwa-chan.\" during the Rank 8 event."
+];
+
+export const TemperanceDetails = [
+  "To start this Confidant, the player must participate in \"Operation Maidwatch\" with Mishima at Shibuya's Central Street as early as 5/24. Afterwards, speak with Kawakami in the 2F hallway of Shujin Academy. This Confidant can then be started by interacting with the yellow phone in Leblanc during the evening once the player has Rank 3 Guts (Staunch). To pursue romance with this Confidant, \"Think this through more.\" must be chosen during the Rank 7 event."
+];
+
 export const SunDetails = [
     "To start this Confidant, once the player is able to leave Yongen-Jaya at night starting on 5/6, they must work at the Beef Bowl Shop twice, then listen to Yoshida's speech on a following night. The player can then start this Conifidant the next time they visit Yoshida."
 ];
@@ -33,6 +45,9 @@ export const activityDetailsNames = [
   { name: "Empress", details: EmpressDetails },
   { name: "Emperor", details: EmperorDetails },
   { name: "Chariot", details: ChariotDetails },
+  { name: "Fortune", details: FortuneDetails },
+  { name: "Death", details: DeathDetails },
+  { name: "Temperance", details: TemperanceDetails },
   { name: "Sun", details: SunDetails },
 ];
 
