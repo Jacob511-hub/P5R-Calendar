@@ -22,6 +22,10 @@ export const ChariotDetails = [
   "This Confidant's Rank 7 event only occurs Wednesday and Friday nights."
 ];
 
+export const JusticeDetails = [
+  "This Confidant's Rank 3 event requires Rank 3 Knowledge (Scholarly) and Rank 3 Charm (Suave). Rank 6 is unavailable until 9/3. Rank 7 is unavailable until 11/2. If Rank 8 is reached, Rank 9 and Rank 10 occur automatically."
+];
+
 export const FortuneDetails = [
   "To start this Confidant, the player must visit the Fortune Teller in Shinjuku, then return at a later date to purchase a Holy Stone for ¥100,000. Visit the Fortune Teller again at a later date to receive the request \"Ending the Boyfriend's Abuse\". After completing this request, speaking to the Fortune Teller will start this Confidant. To pursue romance with this Confidant, \"You're just Chihaya to me.\" must be chosen during the Rank 6 event and \"Hell yeah I am.\" must be chosen during the Rank 8 event."
 ];
@@ -32,6 +36,14 @@ export const DeathDetails = [
 
 export const TemperanceDetails = [
   "To start this Confidant, the player must participate in \"Operation Maidwatch\" with Mishima at Shibuya's Central Street as early as 5/24. Afterwards, speak with Kawakami in the 2F hallway of Shujin Academy. This Confidant can then be started by interacting with the yellow phone in Leblanc during the evening once the player has Rank 3 Guts (Staunch). To pursue romance with this Confidant, \"Think this through more.\" must be chosen during the Rank 7 event."
+];
+
+export const TowerDetails = [
+  "To start this Confidant, the player must receive the request \"Winners Don't Use Cheats\" and battle the target Shadow in Mementos as early as 9/4. Afterwards, this Confidant can be found in the arcade in Akihabara. After speaking with them, speak with Futaba. The next interaction with them will start the Confidant."
+];
+
+export const StarDetails = [
+  "Starting this Confidant requires Rank 3 Charm (Suave). This Confidant's Rank 8 event requires Rank 5 Knowledge (Erudite)."
 ];
 
 export const SunDetails = [
@@ -45,9 +57,12 @@ export const activityDetailsNames = [
   { name: "Empress", details: EmpressDetails },
   { name: "Emperor", details: EmperorDetails },
   { name: "Chariot", details: ChariotDetails },
+  { name: "Justice", details: JusticeDetails },
   { name: "Fortune", details: FortuneDetails },
   { name: "Death", details: DeathDetails },
   { name: "Temperance", details: TemperanceDetails },
+  { name: "Tower", details: TowerDetails },
+  { name: "Star", details: StarDetails },
   { name: "Sun", details: SunDetails },
 ];
 
