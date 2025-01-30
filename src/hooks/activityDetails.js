@@ -18,6 +18,14 @@ export const EmperorDetails = [
   "This Confidant's Rank 6 event requires Rank 4 Proficiency (Masterful)."
 ];
 
+export const HierophantDetails = [
+  "This Confidant starts automatically on 5/6 if it has not been started manually prior. The player must brew coffee at least once for the Rank 3 event to be available. Rank 5 is unavailable until 8/22. This Confidant's Rank 7 event requires Rank 5 Kindness (Angelic)."
+];
+
+export const LoversDetails = [
+  "This Confidant's Rank 2 is unavailable until 5/6. This Confidant's Rank 2 event requires Rank 4 Kindness (Considerate)."
+];
+
 export const ChariotDetails = [
   "This Confidant's Rank 7 event only occurs Wednesday and Friday nights."
 ];
@@ -28,6 +36,10 @@ export const JusticeDetails = [
 
 export const FortuneDetails = [
   "To start this Confidant, the player must visit the Fortune Teller in Shinjuku, then return at a later date to purchase a Holy Stone for ¥100,000. Visit the Fortune Teller again at a later date to receive the request \"Ending the Boyfriend's Abuse\". After completing this request, speaking to the Fortune Teller will start this Confidant. To pursue romance with this Confidant, \"You're just Chihaya to me.\" must be chosen during the Rank 6 event and \"Hell yeah I am.\" must be chosen during the Rank 8 event."
+];
+
+export const HangedDetails = [
+  "Starting this Confidant requires Rank 4 Guts (Dauntless). This Confidant's Rank 8 event requires Rank 5 Guts (Lionhearted)."
 ];
 
 export const DeathDetails = [
@@ -56,9 +68,12 @@ export const activityDetailsNames = [
   { name: "Priestess", details: PriestessDetails },
   { name: "Empress", details: EmpressDetails },
   { name: "Emperor", details: EmperorDetails },
+  { name: "Hierophant", details: HierophantDetails },
+  { name: "Lovers", details: LoversDetails },
   { name: "Chariot", details: ChariotDetails },
   { name: "Justice", details: JusticeDetails },
   { name: "Fortune", details: FortuneDetails },
+  { name: "Hanged Man", details: HangedDetails },
   { name: "Death", details: DeathDetails },
   { name: "Temperance", details: TemperanceDetails },
   { name: "Tower", details: TowerDetails },
