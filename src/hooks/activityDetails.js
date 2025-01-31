@@ -50,6 +50,10 @@ export const TemperanceDetails = [
   "To start this Confidant, the player must participate in \"Operation Maidwatch\" with Mishima at Shibuya's Central Street as early as 5/24. Afterwards, speak with Kawakami in the 2F hallway of Shujin Academy. This Confidant can then be started by interacting with the yellow phone in Leblanc during the evening once the player has Rank 3 Guts (Staunch). To pursue romance with this Confidant, \"Think this through more.\" must be chosen during the Rank 7 event."
 ];
 
+export const DevilDetails = [
+  "To pursue romance with this Confidant, at least one of the following dialogue options must be chosen: \"You're charming as you are.\" during the Rank 7 event, \"I'll go with you.\" during the Rank 8 event, or \"I can't leave you.\" during the Rank 9 event."
+];
+
 export const TowerDetails = [
   "To start this Confidant, the player must receive the request \"Winners Don't Use Cheats\" and battle the target Shadow in Mementos as early as 9/4. Afterwards, this Confidant can be found in the arcade in Akihabara. After speaking with them, speak with Futaba. The next interaction with them will start the Confidant."
 ];
@@ -58,8 +62,16 @@ export const StarDetails = [
   "Starting this Confidant requires Rank 3 Charm (Suave). This Confidant's Rank 8 event requires Rank 5 Knowledge (Erudite)."
 ];
 
+export const MoonDetails = [
+  "Rank 1 and Rank 2 of this Confidant are automatic. Ranking up this Confidant requires completing the provided Requests. This Confidant is unavailable for two days following a rank up event."
+];
+
 export const SunDetails = [
     "To start this Confidant, once the player is able to leave Yongen-Jaya at night starting on 5/6, they must work at the Beef Bowl Shop twice, then listen to Yoshida's speech on a following night. The player can then start this Conifidant the next time they visit Yoshida."
+];
+
+export const JudgementDetails = [
+  "This entire Confidant progresses automatically."
 ];
 
 export const activityDetailsNames = [
@@ -76,9 +88,12 @@ export const activityDetailsNames = [
   { name: "Hanged Man", details: HangedDetails },
   { name: "Death", details: DeathDetails },
   { name: "Temperance", details: TemperanceDetails },
+  { name: "Devil", details: DevilDetails },
   { name: "Tower", details: TowerDetails },
   { name: "Star", details: StarDetails },
+  { name: "Moon", details: MoonDetails },
   { name: "Sun", details: SunDetails },
+  { name: "Judgement", details: JudgementDetails },
 ];
 
 export const PriestessChoices = {
