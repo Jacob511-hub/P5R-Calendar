@@ -23,7 +23,7 @@ export const HierophantDetails = [
 ];
 
 export const LoversDetails = [
-  "This Confidant's Rank 2 is unavailable until 5/6. This Confidant's Rank 2 event requires Rank 4 Kindness (Considerate)."
+  "This Confidant's Rank 2 is unavailable until 5/6. This Confidant's Rank 2 event requires Rank 2 Kindness (Considerate)."
 ];
 
 export const ChariotDetails = [
@@ -32,6 +32,10 @@ export const ChariotDetails = [
 
 export const JusticeDetails = [
   "This Confidant's Rank 3 event requires Rank 3 Knowledge (Scholarly) and Rank 3 Charm (Suave). Rank 6 is unavailable until 9/3. Rank 7 is unavailable until 11/2. If Rank 8 is reached, Rank 9 and Rank 10 occur automatically."
+];
+
+export const HermitDetails = [
+  "This Confidant's Rank 2 event requires Rank 4 Kindness (Selfless). This Confidant's Rank 4 event can only be done while school is in session."
 ];
 
 export const FortuneDetails = [
@@ -74,6 +78,14 @@ export const JudgementDetails = [
   "This entire Confidant progresses automatically."
 ];
 
+export const FaithDetails = [
+  "This Confidant cannot be progressed past Rank 5 until 1/13 (requires the third semester to be unlocked)."
+];
+
+export const CouncillorDetails = [
+  "Rank 1 and Rank 2 of this Confidant are automatic. This Confidant cannot be progressed past Rank 5 until 9/20. If Rank 9 is reached before the end of 11/17, Rank 10 will occur automatically on 11/18. This Confidant must reach Rank 10 in order to unlock the third semester."
+];
+
 export const activityDetailsNames = [
   { name: "Fool", details: FoolDetails },
   { name: "Magician", details: MagicianDetails },
@@ -84,6 +96,7 @@ export const activityDetailsNames = [
   { name: "Lovers", details: LoversDetails },
   { name: "Chariot", details: ChariotDetails },
   { name: "Justice", details: JusticeDetails },
+  { name: "Hermit", details: HermitDetails },
   { name: "Fortune", details: FortuneDetails },
   { name: "Hanged Man", details: HangedDetails },
   { name: "Death", details: DeathDetails },
@@ -94,6 +107,8 @@ export const activityDetailsNames = [
   { name: "Moon", details: MoonDetails },
   { name: "Sun", details: SunDetails },
   { name: "Judgement", details: JudgementDetails },
+  { name: "Faith", details: FaithDetails },
+  { name: "Councillor", details: CouncillorDetails },
 ];
 
 export const PriestessChoices = {
