@@ -2,10 +2,20 @@ export const FoolDates = [
     "4/12",
     "5/5",
     "5/25",
+    "6/11",
+    "8/22",
+    "8/31",
+    "10/11",
+    "12/24",
 ];
 
 export const MagicianDates = [
     "4/15",
+    "6/20",
+    "7/25",
+    "8/29",
+    "9/17",
+    "12/23",
 ];
 
 export const PriestessDates = [
