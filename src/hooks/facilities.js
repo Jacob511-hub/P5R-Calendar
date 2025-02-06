@@ -35,6 +35,19 @@ const facilities = [
         ],
         ["Charm", "Kindness", "Guts"]
     ),
+    new Facility(
+        "Big Bang Burger",
+        "Any",
+        [
+            "Level 1: Knowledge +1, Charm +1, Guts +1, Proficiency +1",
+            "Level 2: Knowledge +2, Charm +2, Guts +2, Proficiency +2",
+            "Level 3: Knowledge +3, Charm +3, Guts +3, Proficiency +3",
+            "Beating Level 1 requires: Rank 2 Knowledge, Rank 2 Charm, Rank 2 Guts, Rank 2 Proficiency",
+            "Beating Level 2 requires: Rank 3 Knowledge, Rank 3 Charm, Rank 3 Guts, Rank 3 Proficiency",
+            "Beating Level 3 requires: Rank 4 Knowledge, Rank 4 Charm, Rank 4 Guts, Rank 4 Proficiency",
+        ],
+        ["Knowledge", "Charm", "Guts", "Proficiency"]
+    ),
 ];
 
 export { facilities }
