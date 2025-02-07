@@ -48,6 +48,19 @@ const facilities = [
         ],
         ["Knowledge", "Charm", "Guts", "Proficiency"]
     ),
+    new Facility(
+        "Diner",
+        "Any",
+        [
+            "Knowledge +2",
+            "Rainy Days: Additional Knowledge +2",
+            "Order Surprise Sando: Additional Guts +2 (¥700)",
+            "Order Nostalgic Steak: Additional Kindness +2 (¥1,100)",
+            "Order Frui-Tea: Additional Charm +2 (¥800)",
+            "Order Totem Pole: Additional Proficiency +2 (¥900)",
+        ],
+        ["Knowledge", "Charm", "Guts", "Proficiency", "Kindness"]
+    ),
 ];
 
 export { facilities }
