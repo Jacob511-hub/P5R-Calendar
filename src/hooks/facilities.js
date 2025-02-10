@@ -61,6 +61,15 @@ const facilities = [
         ],
         ["Knowledge", "Charm", "Guts", "Proficiency", "Kindness"]
     ),
+    new Facility(
+        "Shujin Library",
+        "After School",
+        [
+            "Knowledge +2, Guts +2",
+            "From 5/6 onwards: Knowledge +3",
+        ],
+        ["Knowledge", "Guts"]
+    ),
 ];
 
 export { facilities }
