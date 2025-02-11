@@ -70,6 +70,19 @@ const facilities = [
         ],
         ["Knowledge", "Guts"]
     ),
+    new Facility(
+        "Shinjuku Cinema",
+        "Any",
+        [
+            "STATS ONLY GAINED ON FIRST VIEWING OR HANGOUTS",
+            "Like a Dragon: Guts +5 (June, July)",
+            "Saraemon: Knowledge +5 (August, September)",
+            "Duh-vengers: Kindness +5 (October)",
+            "Pach-Saw: Guts +5 (November, December)",
+            "Bite Club: Guts +5 (January)",
+        ],
+        ["Knowledge", "Guts", "Kindness"]
+    ),
 ];
 
 export { facilities }
