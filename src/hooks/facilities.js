@@ -83,6 +83,20 @@ const facilities = [
         ],
         ["Knowledge", "Guts", "Kindness"]
     ),
+    new Facility(
+        "Yongen-Jaya Cinema",
+        "Any",
+        [
+            "STATS ONLY GAINED ON FIRST VIEWING OR HANGOUTS",
+            "Showtime Redemption: Charm +5 (September)",
+            "Back to the Ninja: Knowledge +5 (October)",
+            "Over the Pigeon's Nest: Kindness +5 (November)",
+            "Merry Christmess: Guts +5 (December)",
+            "March of the Lambs: Proficiency +5 (January)",
+            "The Goodfather: Kindness +5 (February)",
+        ],
+        ["Knowledge", "Charm", "Guts", "Proficiency", "Kindness"]
+    ),
 ];
 
 export { facilities }
