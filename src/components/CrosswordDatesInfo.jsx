@@ -22,7 +22,7 @@ const CrosswordDatesInfo = () => {
                     maxWidth: 'unset',
                     top: '0px',
                 }}>
-                    <h1 className='info-header info-header-alt'>Crossword Dates</h1>
+                    <h1 className='info-header info-header-alt'>Dates</h1>
                 </div>
                 <DividerCustom />
                 <ul style={{ listStyleType: 'none', padding: 0, margin: 0 }}>

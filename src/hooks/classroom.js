@@ -315,4 +315,14 @@ const ExamAnswers = [
     ),
 ]
 
-export { ClassroomQuestions, ExamAnswers };
+const ChalkDates = [
+    "4/16",
+    "5/6",
+    "6/6",
+    "6/21",
+    "7/11",
+    "9/2",
+    "10/15",
+]
+
+export { ClassroomQuestions, ExamAnswers, ChalkDates };
