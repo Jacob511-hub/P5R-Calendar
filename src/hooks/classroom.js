@@ -325,4 +325,21 @@ const ChalkDates = [
     "10/15",
 ]
 
-export { ClassroomQuestions, ExamAnswers, ChalkDates };
+const SlackOffDates = [
+    "6/3",
+    "6/16",
+    "6/25",
+    "7/2",
+    "7/6",
+    "9/23",
+    "9/30",
+    "10/5",
+    "10/31",
+    "11/5",
+    "11/11",
+    "11/16",
+    "1/20",
+    "1/25",
+]
+
+export { ClassroomQuestions, ExamAnswers, ChalkDates, SlackOffDates };
