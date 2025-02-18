@@ -342,4 +342,27 @@ const SlackOffDates = [
     "1/25",
 ]
 
-export { ClassroomQuestions, ExamAnswers, ChalkDates, SlackOffDates };
+const TrainDates = [
+    "4/20",
+    "4/25",
+    "4/30",
+    "5/21",
+    "5/24",
+    "5/30",
+    "6/3",
+    "6/15",
+    "6/23",
+    "7/1",
+    "7/4",
+    "7/8",
+    "9/24",
+    "9/28",
+    "10/6",
+    "11/2",
+    "11/5",
+    "11/10",
+    "11/14",
+    "11/17",
+]
+
+export { ClassroomQuestions, ExamAnswers, ChalkDates, SlackOffDates, TrainDates };
