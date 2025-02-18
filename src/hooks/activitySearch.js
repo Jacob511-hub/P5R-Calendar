@@ -5,7 +5,7 @@ import * as crosswordDetails from './crosswords';
 import * as confidantRankExceptions from './confidantRankExceptions'
 import { HomeShoppingProgramItems } from './homeShopping';
 import { TVQuizAnswers } from './quizAnswers';
-import { ClassroomQuestions } from './classroom';
+import { ClassroomQuestions, TrainDates } from './classroom';
 
 //Search for activities with set dates
 export function searchByDate(date, confidants) {
@@ -169,6 +169,10 @@ export function searchHomeShoppingDates(date) {
 
 export function searchQuizDates(date) {
     return TVQuizAnswers.some(obj => obj.date === date);
+}
+
+export function searchTrainReadDates(date) {
+    return TrainDates.includes(date);
 }
 
 export function searchClassroomQuestionDates(date) {

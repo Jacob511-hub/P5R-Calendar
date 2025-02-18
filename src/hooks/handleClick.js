@@ -14,6 +14,7 @@ import {
     searchHomeShoppingDates,
     searchQuizDates,
     searchClassroomQuestionDates,
+    searchTrainReadDates,
 } from './activitySearch';
 import splitArrayByTime from './splitArrayByTime';
 import { useInfo } from '../components/CalendarContext';
@@ -68,6 +69,7 @@ const useReset = () => {
         updateQuizDates,
         updateQuizAnswers,
         updateQuizAvailable,
+        updateTrainReadAvailable,
 
         updateClassroomQuestionDates,
         updateClassroomQuestionAnswers,
@@ -127,6 +129,7 @@ const useReset = () => {
         updateQuizDates("");
         updateQuizAnswers("");
         updateQuizAvailable(false);
+        updateTrainReadAvailable(false);
 
         updateClassroomQuestionDates("");
         updateClassroomQuestionAnswers("");
@@ -155,6 +158,7 @@ export const dateClick = (monthIndex, dateType, dateNumber, weekday) => {
         updateCrosswordAvailable,
         updateHomeShoppingAvailable,
         updateQuizAvailable,
+        updateTrainReadAvailable,
         updateClassroomQuestionAvailable,
 
         confidants,
@@ -189,6 +193,7 @@ export const dateClick = (monthIndex, dateType, dateNumber, weekday) => {
             updateCrosswordAvailable(searchCrosswordDates(`${monthIndex}/${dateNumber}`));
             updateHomeShoppingAvailable(searchHomeShoppingDates(`${monthIndex}/${dateNumber}`));
             updateQuizAvailable(searchQuizDates(`${monthIndex}/${dateNumber}`));
+            updateTrainReadAvailable(searchTrainReadDates(`${monthIndex}/${dateNumber}`));
             updateClassroomQuestionAvailable(searchClassroomQuestionDates(`${monthIndex}/${dateNumber}`));
         } else {
             stateReset();

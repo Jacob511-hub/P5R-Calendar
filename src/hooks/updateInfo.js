@@ -51,6 +51,8 @@ export function useUpdateInfo() {
   const [quizDates, setQuizDates] = useState("");
   const [quizAnswers, setQuizAnswers] = useState("");
   const [quizAvailable, setQuizAvailable] = useState("");
+  
+  const [trainReadAvailable, setTrainReadAvailable] = useState("");
 
   const [filter, setFilter] = useState("");
   const [stat, setStat] = useState("");
@@ -135,6 +137,8 @@ export function useUpdateInfo() {
   const updateQuizDates = (quizDates) => setQuizDates(quizDates);
   const updateQuizAnswers = (quizAnswers) => setQuizAnswers(quizAnswers);
   const updateQuizAvailable = (quizAvailable) => setQuizAvailable(quizAvailable);
+  
+  const updateTrainReadAvailable = (trainReadAvailable) => setTrainReadAvailable(trainReadAvailable);
 
   const updateFilter = (filter) => setFilter(filter);
   const updateStat = (stat) => setStat(stat);
@@ -238,6 +242,8 @@ export function useUpdateInfo() {
     updateQuizAnswers,
     quizAvailable,
     updateQuizAvailable,
+    trainReadAvailable,
+    updateTrainReadAvailable,
 
     filter,
     updateFilter,
