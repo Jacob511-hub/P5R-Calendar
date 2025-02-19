@@ -53,6 +53,7 @@ export function useUpdateInfo() {
   const [quizAvailable, setQuizAvailable] = useState("");
   
   const [trainReadAvailable, setTrainReadAvailable] = useState("");
+  const [dodgeChalkAvailable, setDodgeChalkAvailable] = useState("");
 
   const [filter, setFilter] = useState("");
   const [stat, setStat] = useState("");
@@ -139,6 +140,7 @@ export function useUpdateInfo() {
   const updateQuizAvailable = (quizAvailable) => setQuizAvailable(quizAvailable);
   
   const updateTrainReadAvailable = (trainReadAvailable) => setTrainReadAvailable(trainReadAvailable);
+  const updateDodgeChalkAvailable = (dodgeChalkAvailable) => setDodgeChalkAvailable(dodgeChalkAvailable);
 
   const updateFilter = (filter) => setFilter(filter);
   const updateStat = (stat) => setStat(stat);
@@ -244,6 +246,8 @@ export function useUpdateInfo() {
     updateQuizAvailable,
     trainReadAvailable,
     updateTrainReadAvailable,
+    dodgeChalkAvailable,
+    updateDodgeChalkAvailable,
 
     filter,
     updateFilter,

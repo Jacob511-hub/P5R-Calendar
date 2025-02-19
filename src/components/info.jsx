@@ -13,6 +13,7 @@ import HomeShoppingAvailable from './HomeShoppingAvailable';
 import TVQuizAvailable from './TVQuizAvailable';
 import ClassroomQuestionAvailable from './ClassroomQuestionAvailable';
 import TrainReadAvailable from './TrainReadAvailable';
+import ChalkDodgeAvailable from './ChalkDodgeAvailable';
 import TVQuizInfo from './TVQuizInfo';
 import HomeShoppingInfo from './HomeShoppingInfo';
 import ClassroomInfo from './ClassroomInfo';
@@ -87,6 +88,7 @@ const Info = () => {
                 <TVQuizAvailable />
                 <ClassroomQuestionAvailable />
                 <TrainReadAvailable />
+                <ChalkDodgeAvailable />
 
                 <BookDVDGameInfo />
                 <JobsInfo />
