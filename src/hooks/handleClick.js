@@ -16,6 +16,7 @@ import {
     searchClassroomQuestionDates,
     searchTrainReadDates,
     searchChalkDodgeDates,
+    searchSlackOffDates,
 } from './activitySearch';
 import splitArrayByTime from './splitArrayByTime';
 import { useInfo } from '../components/CalendarContext';
@@ -72,6 +73,7 @@ const useReset = () => {
         updateQuizAvailable,
         updateTrainReadAvailable,
         updateDodgeChalkAvailable,
+        updateSlackOffAvailable,
 
         updateClassroomQuestionDates,
         updateClassroomQuestionAnswers,
@@ -133,6 +135,7 @@ const useReset = () => {
         updateQuizAvailable(false);
         updateTrainReadAvailable(false);
         updateDodgeChalkAvailable(false);
+        updateSlackOffAvailable(false);
 
         updateClassroomQuestionDates("");
         updateClassroomQuestionAnswers("");
@@ -164,6 +167,7 @@ export const dateClick = (monthIndex, dateType, dateNumber, weekday) => {
         updateTrainReadAvailable,
         updateDodgeChalkAvailable,
         updateClassroomQuestionAvailable,
+        updateSlackOffAvailable,
 
         confidants,
     } = useInfo();
@@ -200,6 +204,7 @@ export const dateClick = (monthIndex, dateType, dateNumber, weekday) => {
             updateTrainReadAvailable(searchTrainReadDates(`${monthIndex}/${dateNumber}`));
             updateDodgeChalkAvailable(searchChalkDodgeDates(`${monthIndex}/${dateNumber}`));
             updateClassroomQuestionAvailable(searchClassroomQuestionDates(`${monthIndex}/${dateNumber}`));
+            updateSlackOffAvailable(searchSlackOffDates(`${monthIndex}/${dateNumber}`));
         } else {
             stateReset();
         }
