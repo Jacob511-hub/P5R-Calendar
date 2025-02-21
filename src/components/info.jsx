@@ -12,6 +12,7 @@ import CrosswordAvailable from './CrosswordAvailable';
 import HomeShoppingAvailable from './HomeShoppingAvailable';
 import TVQuizAvailable from './TVQuizAvailable';
 import ClassroomQuestionAvailable from './ClassroomQuestionAvailable';
+import ExamAvailable from './ExamAvailable';
 import TrainReadAvailable from './TrainReadAvailable';
 import ChalkDodgeAvailable from './ChalkDodgeAvailable';
 import SlackOffAvailable from './SlackOffAvailable';
@@ -88,6 +89,7 @@ const Info = () => {
                 <HomeShoppingAvailable />
                 <TVQuizAvailable />
                 <ClassroomQuestionAvailable />
+                <ExamAvailable />
                 <TrainReadAvailable />
                 <ChalkDodgeAvailable />
                 <SlackOffAvailable />

@@ -86,6 +86,7 @@ export function useUpdateInfo() {
   const [classroomQuestionDates, setClassroomQuestionDates] = useState("");
   const [classroomQuestionAnswers, setClassroomQuestionAnswers] = useState("");
   const [classroomQuestionAvailable, setClassroomQuestionAvailable] = useState("");
+  const [examAvailable, setExamAvailable] = useState("");
 
   const [facilityName, setFacilityName] = useState("");
   const [facilityAvailable, setFacilityAvailable] = useState("");
@@ -150,6 +151,7 @@ export function useUpdateInfo() {
   const updateClassroomQuestionDates = (classroomQuestionDates) => setClassroomQuestionDates(classroomQuestionDates);
   const updateClassroomQuestionAnswers = (classroomQuestionAnswers) => setClassroomQuestionAnswers(classroomQuestionAnswers);
   const updateClassroomQuestionAvailable = (classroomQuestionAvailable) => setClassroomQuestionAvailable(classroomQuestionAvailable);
+  const updateExamAvailable = (examAvailable) => setExamAvailable(examAvailable);
 
   const updateFacilityName = (facilityName) => setFacilityName(facilityName);
   const updateFacilityAvailable = (facilityAvailable) => setFacilityAvailable(facilityAvailable);
@@ -274,6 +276,8 @@ export function useUpdateInfo() {
     updateClassroomQuestionAnswers,
     classroomQuestionAvailable,
     updateClassroomQuestionAvailable,
+    examAvailable,
+    updateExamAvailable,
 
     facilityName,
     updateFacilityName,

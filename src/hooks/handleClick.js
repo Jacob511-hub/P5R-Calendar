@@ -14,6 +14,7 @@ import {
     searchHomeShoppingDates,
     searchQuizDates,
     searchClassroomQuestionDates,
+    searchExamDates,
     searchTrainReadDates,
     searchChalkDodgeDates,
     searchSlackOffDates,
@@ -78,6 +79,7 @@ const useReset = () => {
         updateClassroomQuestionDates,
         updateClassroomQuestionAnswers,
         updateClassroomQuestionAvailable,
+        updateExamAvailable,
 
         updateFacilityName,
         updateFacilityAvailable,
@@ -140,6 +142,7 @@ const useReset = () => {
         updateClassroomQuestionDates("");
         updateClassroomQuestionAnswers("");
         updateClassroomQuestionAvailable(false);
+        updateExamAvailable(false);
 
         updateFacilityName("");
         updateFacilityAvailable("");
@@ -167,6 +170,7 @@ export const dateClick = (monthIndex, dateType, dateNumber, weekday) => {
         updateTrainReadAvailable,
         updateDodgeChalkAvailable,
         updateClassroomQuestionAvailable,
+        updateExamAvailable,
         updateSlackOffAvailable,
 
         confidants,
@@ -204,6 +208,7 @@ export const dateClick = (monthIndex, dateType, dateNumber, weekday) => {
             updateTrainReadAvailable(searchTrainReadDates(`${monthIndex}/${dateNumber}`));
             updateDodgeChalkAvailable(searchChalkDodgeDates(`${monthIndex}/${dateNumber}`));
             updateClassroomQuestionAvailable(searchClassroomQuestionDates(`${monthIndex}/${dateNumber}`));
+            updateExamAvailable(searchExamDates(`${monthIndex}/${dateNumber}`));
             updateSlackOffAvailable(searchSlackOffDates(`${monthIndex}/${dateNumber}`));
         } else {
             stateReset();
